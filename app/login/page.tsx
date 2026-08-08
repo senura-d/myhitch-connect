@@ -24,6 +24,7 @@ import {
   IconLock,
   IconMail,
   IconCircleDot,
+  IconHome,
 } from "@tabler/icons-react";
 import type { Role } from "@/types/user";
 
@@ -466,8 +467,14 @@ function LoginPageInner() {
 
 export default function LoginPage() {
   return (
-    <div className="flex min-h-screen flex-col bg-[#eef3f9] font-sans text-slate-900">
-      <Header />
+    <div className="relative flex min-h-screen flex-col bg-[#eef3f9] font-sans text-slate-900">
+      <Link
+        href="/"
+        className="absolute top-6 right-6 z-50 inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-4.5 py-2.5 text-xs font-bold text-slate-700 shadow-xs transition-all hover:bg-slate-50 hover:text-brand hover:border-brand/30"
+      >
+        <IconHome className="h-3.5 w-3.5 text-brand" />
+        <span>Back to Home</span>
+      </Link>
       <main className="flex flex-1 items-center justify-center p-4 sm:p-6 lg:p-10">
         <Suspense
           fallback={
