@@ -15,6 +15,9 @@ import {
   IconLayoutGrid,
   IconLogout,
   IconLogin,
+  IconInfoCircle,
+  IconMail,
+  IconChevronRight,
 } from "@tabler/icons-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -216,98 +219,177 @@ export function Header() {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="xl:hidden border-b border-zinc-200 bg-white px-4 pt-2 pb-6 space-y-3">
-          <Link
-            href="/"
-            className="block text-sm py-2 font-bold text-black hover:text-brand border-b border-zinc-100"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            🏠 Home Page
-          </Link>
-          <Link
-            href="/category"
-            className="block text-sm py-2 font-bold text-black hover:text-brand border-b border-zinc-100"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            🧭 Explore Services
-          </Link>
-
-          <Link
-            href="/search"
-            className="block text-sm py-2 font-bold text-black hover:text-brand border-t border-zinc-100 pt-2"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            🔎 Search Providers
-          </Link>
-          <Link
-            href="/about"
-            className="block text-sm py-1.5 font-bold text-black hover:text-brand"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            ℹ️ About Us
-          </Link>
-          <Link
-            href="/contact"
-            className="block text-sm py-1.5 font-bold text-black hover:text-brand border-b border-zinc-100 pb-2"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            ✉️ Contact Us
-          </Link>
-
-          {/* Conditional Dashboard Link in Mobile Drawer */}
+        <div className="xl:hidden border-b border-zinc-200 bg-white/98 backdrop-blur-md px-4 py-6 space-y-6 shadow-2xl transition-all duration-300 ease-in-out">
+          
+          {/* User Profile Card (if logged in) */}
           {user && (
-            <div className="pt-2 border-t border-zinc-200 font-semibold text-xs text-zinc-500 uppercase tracking-wider mb-1">
-              Your Dashboard
+            <div className="flex items-center gap-3 p-3 bg-linear-to-br from-brand/5 to-brand-dark/5 border border-brand/10 rounded-2xl">
+              {user.avatarUrl ? (
+                <img
+                  src={user.avatarUrl}
+                  alt=""
+                  className="h-10 w-10 shrink-0 rounded-full object-cover border-2 border-brand/20"
+                />
+              ) : (
+                <div className="h-10 w-10 rounded-full bg-brand text-white flex items-center justify-center shrink-0 font-bold">
+                  {user.name.charAt(0)}
+                </div>
+              )}
+              <div className="min-w-0">
+                <div className="font-bold text-slate-900 text-sm truncate">{user.name}</div>
+                <div className="text-[10px] text-slate-400 font-semibold truncate capitalize">{user.role} Account</div>
+              </div>
             </div>
           )}
-          {user?.role === "customer" && (
+
+          {/* Navigation Links */}
+          <div className="space-y-2">
+            <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest px-2 mb-2">Navigation</div>
             <Link
-              href="/dashboard/customer"
-              className="block text-sm py-1.5 font-bold text-brand"
+              href="/"
+              className="flex items-center justify-between p-2 rounded-xl text-sm font-bold text-slate-700 hover:bg-brand-light hover:text-brand transition-all"
               onClick={() => setMobileMenuOpen(false)}
             >
-              👤 Customer Dashboard
+              <div className="flex items-center gap-3">
+                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand/10 text-brand">
+                  <IconHome className="h-4.5 w-4.5" />
+                </div>
+                <span>Home Page</span>
+              </div>
+              <IconChevronRight className="h-4 w-4 text-slate-400" />
             </Link>
-          )}
-          {user?.role === "provider" && (
+
             <Link
-              href="/dashboard/provider"
-              className="block text-sm py-1.5 font-bold text-brand"
+              href="/category"
+              className="flex items-center justify-between p-2 rounded-xl text-sm font-bold text-slate-700 hover:bg-brand-light hover:text-brand transition-all"
               onClick={() => setMobileMenuOpen(false)}
             >
-              🏪 Provider Dashboard
+              <div className="flex items-center gap-3">
+                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-indigo-50 text-indigo-600">
+                  <IconLayoutGrid className="h-4.5 w-4.5" />
+                </div>
+                <span>Explore Services</span>
+              </div>
+              <IconChevronRight className="h-4 w-4 text-slate-400" />
             </Link>
-          )}
-          {user?.role === "admin" && (
+
             <Link
-              href="/admin/providers/verification"
-              className="block text-sm py-1.5 font-bold text-brand"
+              href="/search"
+              className="flex items-center justify-between p-2 rounded-xl text-sm font-bold text-slate-700 hover:bg-brand-light hover:text-brand transition-all"
               onClick={() => setMobileMenuOpen(false)}
             >
-              🛡️ Admin Verification Queue
+              <div className="flex items-center gap-3">
+                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-50 text-emerald-600">
+                  <IconSearch className="h-4.5 w-4.5" />
+                </div>
+                <span>Search Providers</span>
+              </div>
+              <IconChevronRight className="h-4 w-4 text-slate-400" />
             </Link>
+
+            <Link
+              href="/about"
+              className="flex items-center justify-between p-2 rounded-xl text-sm font-bold text-slate-700 hover:bg-brand-light hover:text-brand transition-all"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              <div className="flex items-center gap-3">
+                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-amber-50 text-amber-600">
+                  <IconInfoCircle className="h-4.5 w-4.5" />
+                </div>
+                <span>About Us</span>
+              </div>
+              <IconChevronRight className="h-4 w-4 text-slate-400" />
+            </Link>
+
+            <Link
+              href="/contact"
+              className="flex items-center justify-between p-2 rounded-xl text-sm font-bold text-slate-700 hover:bg-brand-light hover:text-brand transition-all"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              <div className="flex items-center gap-3">
+                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-rose-50 text-rose-600">
+                  <IconMail className="h-4.5 w-4.5" />
+                </div>
+                <span>Contact Us</span>
+              </div>
+              <IconChevronRight className="h-4 w-4 text-slate-400" />
+            </Link>
+          </div>
+
+          {/* Conditional Dashboard Portal Section */}
+          {user && (
+            <div className="space-y-2 pt-4 border-t border-slate-100">
+              <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest px-2 mb-2">Your Dashboard</div>
+              {user.role === "customer" && (
+                <Link
+                  href="/dashboard/customer"
+                  className="flex items-center justify-between p-2 rounded-xl text-sm font-bold text-brand bg-brand-light/50 hover:bg-brand-light transition-all"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand text-white">
+                      <IconUser className="h-4.5 w-4.5" />
+                    </div>
+                    <span>Customer Dashboard</span>
+                  </div>
+                  <IconChevronRight className="h-4 w-4 text-brand" />
+                </Link>
+              )}
+              {user.role === "provider" && (
+                <Link
+                  href="/dashboard/provider"
+                  className="flex items-center justify-between p-2 rounded-xl text-sm font-bold text-brand bg-brand-light/50 hover:bg-brand-light transition-all"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand text-white">
+                      <IconBuildingStore className="h-4.5 w-4.5" />
+                    </div>
+                    <span>Provider Dashboard</span>
+                  </div>
+                  <IconChevronRight className="h-4 w-4 text-brand" />
+                </Link>
+              )}
+              {user.role === "admin" && (
+                <Link
+                  href="/admin/providers/verification"
+                  className="flex items-center justify-between p-2 rounded-xl text-sm font-bold text-brand bg-brand-light/50 hover:bg-brand-light transition-all"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand text-white">
+                      <IconUserCheck className="h-4.5 w-4.5" />
+                    </div>
+                    <span>Admin Verification Queue</span>
+                  </div>
+                  <IconChevronRight className="h-4 w-4 text-brand" />
+                </Link>
+              )}
+            </div>
           )}
 
-          {/* Login/Logout in Mobile Drawer */}
-          <div className="pt-3 border-t border-zinc-200 flex flex-col gap-2">
+          {/* Session Footer Buttons */}
+          <div className="pt-4 border-t border-slate-100 flex flex-col gap-3">
             {user ? (
               <Button
                 variant="outline"
-                className="w-full justify-center text-red-600 border-red-200 hover:bg-red-50"
+                className="w-full justify-center rounded-xl font-bold border-rose-200 text-rose-600 hover:bg-rose-50 hover:text-rose-700 hover:border-rose-300 transition-all text-xs uppercase tracking-wider h-11"
                 onClick={() => {
                   logout();
                   setMobileMenuOpen(false);
                 }}
               >
-                Log Out ({user.name})
+                <IconLogout className="h-4 w-4 mr-2" />
+                <span>Log Out</span>
               </Button>
             ) : (
               <Button
                 asChild
-                className="w-full justify-center bg-brand font-semibold text-white"
+                className="w-full justify-center rounded-xl bg-[#1b76ff] hover:bg-[#145ed8] font-bold text-white shadow-md shadow-blue-500/20 text-xs uppercase tracking-wider h-11 transition-all"
               >
                 <Link href="/login" onClick={() => setMobileMenuOpen(false)}>
-                  Log In
+                  <IconLogin className="h-4 w-4 mr-2" />
+                  <span>Log In</span>
                 </Link>
               </Button>
             )}
