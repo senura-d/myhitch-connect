@@ -183,12 +183,11 @@ export default function Home() {
                 From licensed plumbers and accountants to personal trainers and photographers. 100% verified credentials, licences, and public liability insurance.
               </p>
 
-              {/* SEARCH BOX MATCHING LOGIN FORM STYLE */}
               <form
                 onSubmit={handleSearch}
-                className="w-full max-w-2xl p-2 rounded-full bg-white backdrop-blur-md border border-white/60 shadow-2xl shadow-blue-900/30 flex flex-col sm:flex-row items-center gap-2 text-left"
+                className="w-full max-w-2xl flex flex-col sm:flex-row items-center gap-2 text-left"
               >
-                <div className="flex-1 w-full flex items-center gap-2 px-4 py-2 bg-[#f4f6fa] rounded-full border-l-4 border-l-brand">
+                <div className="flex-1 w-full flex items-center gap-2 px-4 h-11 bg-[#f4f6fa] rounded-full border-l-4 border-l-brand">
                   <IconSearch className="h-4 w-4 text-brand shrink-0" />
                   <input
                     type="text"
@@ -199,7 +198,7 @@ export default function Home() {
                   />
                 </div>
 
-                <div className="w-full sm:w-44 flex items-center gap-2 px-4 py-2 bg-[#f4f6fa] rounded-full border-l-4 border-l-brand">
+                <div className="w-full sm:w-44 flex items-center gap-2 px-4 h-11 bg-[#f4f6fa] rounded-full border-l-4 border-l-brand">
                   <IconMapPin className="h-4 w-4 text-brand shrink-0" />
                   <input
                     type="text"
