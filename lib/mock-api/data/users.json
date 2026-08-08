@@ -1,0 +1,187 @@
+[
+  {
+    "id": "user-admin-01",
+    "role": "admin",
+    "name": "Priya Admin",
+    "email": "admin@myhitchconnect.test"
+  },
+  {
+    "id": "user-cust-01",
+    "role": "customer",
+    "name": "Linda Blair",
+    "email": "lindablair@mail.com",
+    "avatarUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80",
+    "phone": "050 414 8778",
+    "address": "1833 Bel Meadow Drive, Fontana, California 92335, USA",
+    "username": "@linda_blair321",
+    "isPremium": true
+  },
+  {
+    "id": "user-cust-02",
+    "role": "customer",
+    "name": "Liam Carter",
+    "email": "liam-carter@example.test"
+  },
+  {
+    "id": "user-cust-03",
+    "role": "customer",
+    "name": "Ava Thompson",
+    "email": "ava-thompson@example.test"
+  },
+  {
+    "id": "user-cust-04",
+    "role": "customer",
+    "name": "Noah Reyes",
+    "email": "noah-reyes@example.test"
+  },
+  {
+    "id": "user-cust-05",
+    "role": "customer",
+    "name": "Isla Martin",
+    "email": "isla-martin@example.test"
+  },
+  {
+    "id": "user-cust-06",
+    "role": "customer",
+    "name": "Ethan Brooks",
+    "email": "ethan-brooks@example.test"
+  },
+  {
+    "id": "user-cust-07",
+    "role": "customer",
+    "name": "Mia Johansson",
+    "email": "mia-johansson@example.test"
+  },
+  {
+    "id": "user-cust-08",
+    "role": "customer",
+    "name": "Lucas Ferreira",
+    "email": "lucas-ferreira@example.test"
+  },
+  {
+    "id": "user-prov-prov-01",
+    "role": "provider",
+    "name": "Sunrise Plumbing Co.",
+    "email": "sunrise-plumbing-co@example.test",
+    "providerId": "prov-01"
+  },
+  {
+    "id": "user-prov-prov-02",
+    "role": "provider",
+    "name": "BrightSpark Electrical",
+    "email": "brightspark-electrical@example.test",
+    "providerId": "prov-02"
+  },
+  {
+    "id": "user-prov-prov-03",
+    "role": "provider",
+    "name": "CrystalClear Cleaning Services",
+    "email": "crystalclear-cleaning-services@example.test",
+    "providerId": "prov-03"
+  },
+  {
+    "id": "user-prov-prov-04",
+    "role": "provider",
+    "name": "GreenScape Landscaping",
+    "email": "greenscape-landscaping@example.test",
+    "providerId": "prov-04"
+  },
+  {
+    "id": "user-prov-prov-05",
+    "role": "provider",
+    "name": "Harbor Plumbing & Gas",
+    "email": "harbor-plumbing-and-gas@example.test",
+    "providerId": "prov-05"
+  },
+  {
+    "id": "user-prov-prov-06",
+    "role": "provider",
+    "name": "Precision Tax & Bookkeeping",
+    "email": "precision-tax-and-bookkeeping@example.test",
+    "providerId": "prov-06"
+  },
+  {
+    "id": "user-prov-prov-07",
+    "role": "provider",
+    "name": "Whitfield Legal Consulting",
+    "email": "whitfield-legal-consulting@example.test",
+    "providerId": "prov-07"
+  },
+  {
+    "id": "user-prov-prov-08",
+    "role": "provider",
+    "name": "Meridian Business Advisory",
+    "email": "meridian-business-advisory@example.test",
+    "providerId": "prov-08"
+  },
+  {
+    "id": "user-prov-prov-09",
+    "role": "provider",
+    "name": "Coastal Accounting Partners",
+    "email": "coastal-accounting-partners@example.test",
+    "providerId": "prov-09"
+  },
+  {
+    "id": "user-prov-prov-10",
+    "role": "provider",
+    "name": "Elevate Personal Training",
+    "email": "elevate-personal-training@example.test",
+    "providerId": "prov-10"
+  },
+  {
+    "id": "user-prov-prov-11",
+    "role": "provider",
+    "name": "Zen Remedial Massage",
+    "email": "zen-remedial-massage@example.test",
+    "providerId": "prov-11"
+  },
+  {
+    "id": "user-prov-prov-12",
+    "role": "provider",
+    "name": "BrightPath Tutoring",
+    "email": "brightpath-tutoring@example.test",
+    "providerId": "prov-12"
+  },
+  {
+    "id": "user-prov-prov-13",
+    "role": "provider",
+    "name": "PulseFit Group Training",
+    "email": "pulsefit-group-training@example.test",
+    "providerId": "prov-13"
+  },
+  {
+    "id": "user-prov-prov-14",
+    "role": "provider",
+    "name": "Golden Hour Photography",
+    "email": "golden-hour-photography@example.test",
+    "providerId": "prov-14"
+  },
+  {
+    "id": "user-prov-prov-15",
+    "role": "provider",
+    "name": "Harvest Table Catering",
+    "email": "harvest-table-catering@example.test",
+    "providerId": "prov-15"
+  },
+  {
+    "id": "user-prov-prov-16",
+    "role": "provider",
+    "name": "Nightwave DJ Collective",
+    "email": "nightwave-dj-collective@example.test",
+    "providerId": "prov-16"
+  },
+  {
+    "id": "user-prov-prov-17",
+    "role": "provider",
+    "name": "Neighbourhood Volunteers Network",
+    "email": "neighbourhood-volunteers-network@example.test",
+    "providerId": "prov-17"
+  },
+  {
+    "id": "user-prov-prov-18",
+    "role": "provider",
+    "name": "Civic Hall Bookings",
+    "email": "civic-hall-bookings@example.test",
+    "providerId": "prov-18"
+  }
+]

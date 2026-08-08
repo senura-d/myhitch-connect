@@ -1,0 +1,423 @@
+[
+  {
+    "id": "cat-home-trade",
+    "name": "Home & Trade Services",
+    "slug": "home-trade-services",
+    "icon": "IconHammer",
+    "description": "Licensed trades for repairs, installs and property upkeep.",
+    "complianceAttributes": [
+      {
+        "key": "licenseNumber",
+        "label": "Trade licence number",
+        "type": "text",
+        "required": true
+      },
+      {
+        "key": "yearsExperience",
+        "label": "Years of experience",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "insuranceCertificate",
+        "label": "Public liability insurance",
+        "type": "file",
+        "required": true
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "key": "trade-license",
+        "label": "Trade licence",
+        "required": true
+      },
+      {
+        "key": "public-liability-insurance",
+        "label": "Public liability insurance certificate",
+        "required": true
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "sub-plumbing",
+        "name": "Plumbing",
+        "slug": "plumbing",
+        "serviceTypes": [
+          {
+            "id": "st-plumbing-repair",
+            "name": "Plumbing Repair",
+            "slug": "plumbing-repair"
+          },
+          {
+            "id": "st-plumbing-install",
+            "name": "Fixture Installation",
+            "slug": "fixture-installation"
+          }
+        ]
+      },
+      {
+        "id": "sub-electrical",
+        "name": "Electrical",
+        "slug": "electrical",
+        "serviceTypes": [
+          {
+            "id": "st-electrical-repair",
+            "name": "Electrical Repair",
+            "slug": "electrical-repair"
+          },
+          {
+            "id": "st-electrical-safety",
+            "name": "Safety Inspection",
+            "slug": "electrical-safety-inspection"
+          }
+        ]
+      },
+      {
+        "id": "sub-cleaning",
+        "name": "Cleaning",
+        "slug": "cleaning",
+        "serviceTypes": [
+          {
+            "id": "st-home-cleaning",
+            "name": "Home Cleaning",
+            "slug": "home-cleaning"
+          },
+          {
+            "id": "st-end-of-lease-cleaning",
+            "name": "End of Lease Cleaning",
+            "slug": "end-of-lease-cleaning"
+          }
+        ]
+      },
+      {
+        "id": "sub-landscaping",
+        "name": "Landscaping",
+        "slug": "landscaping",
+        "serviceTypes": [
+          {
+            "id": "st-lawn-care",
+            "name": "Lawn Care",
+            "slug": "lawn-care"
+          },
+          {
+            "id": "st-garden-design",
+            "name": "Garden Design",
+            "slug": "garden-design"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cat-professional",
+    "name": "Professional Services",
+    "slug": "professional-services",
+    "icon": "IconBriefcase",
+    "description": "Accounting, legal and business advisory expertise.",
+    "complianceAttributes": [
+      {
+        "key": "certificationNumber",
+        "label": "Professional certification number",
+        "type": "text",
+        "required": true
+      },
+      {
+        "key": "indemnityInsurance",
+        "label": "Professional indemnity insurance",
+        "type": "file",
+        "required": true
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "key": "professional-certification",
+        "label": "Professional certification",
+        "required": true
+      },
+      {
+        "key": "indemnity-insurance",
+        "label": "Professional indemnity insurance",
+        "required": true
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "sub-accounting",
+        "name": "Accounting",
+        "slug": "accounting",
+        "serviceTypes": [
+          {
+            "id": "st-bookkeeping",
+            "name": "Bookkeeping",
+            "slug": "bookkeeping"
+          },
+          {
+            "id": "st-tax-prep",
+            "name": "Tax Preparation",
+            "slug": "tax-preparation"
+          }
+        ]
+      },
+      {
+        "id": "sub-legal",
+        "name": "Legal Consulting",
+        "slug": "legal-consulting",
+        "serviceTypes": [
+          {
+            "id": "st-contract-review",
+            "name": "Contract Review",
+            "slug": "contract-review"
+          },
+          {
+            "id": "st-legal-consult",
+            "name": "General Legal Consultation",
+            "slug": "general-legal-consultation"
+          }
+        ]
+      },
+      {
+        "id": "sub-business-consulting",
+        "name": "Business Consulting",
+        "slug": "business-consulting",
+        "serviceTypes": [
+          {
+            "id": "st-strategy-consulting",
+            "name": "Strategy Consulting",
+            "slug": "strategy-consulting"
+          },
+          {
+            "id": "st-process-improvement",
+            "name": "Process Improvement",
+            "slug": "process-improvement"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cat-personal-care",
+    "name": "Personal Care & Wellness",
+    "slug": "personal-care-wellness",
+    "icon": "IconHeartHandshake",
+    "description": "Training, therapy and tutoring for individual wellbeing.",
+    "complianceAttributes": [
+      {
+        "key": "certification",
+        "label": "Certification",
+        "type": "text",
+        "required": true
+      },
+      {
+        "key": "firstAidCertificate",
+        "label": "First aid certificate",
+        "type": "file",
+        "required": false
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "key": "certification",
+        "label": "Certification",
+        "required": true
+      },
+      {
+        "key": "police-check",
+        "label": "Police check",
+        "required": true
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "sub-personal-training",
+        "name": "Personal Training",
+        "slug": "personal-training",
+        "serviceTypes": [
+          {
+            "id": "st-one-on-one-training",
+            "name": "One-on-One Training",
+            "slug": "one-on-one-training"
+          },
+          {
+            "id": "st-group-fitness",
+            "name": "Group Fitness",
+            "slug": "group-fitness"
+          }
+        ]
+      },
+      {
+        "id": "sub-massage-therapy",
+        "name": "Massage Therapy",
+        "slug": "massage-therapy",
+        "serviceTypes": [
+          {
+            "id": "st-remedial-massage",
+            "name": "Remedial Massage",
+            "slug": "remedial-massage"
+          },
+          {
+            "id": "st-relaxation-massage",
+            "name": "Relaxation Massage",
+            "slug": "relaxation-massage"
+          }
+        ]
+      },
+      {
+        "id": "sub-tutoring",
+        "name": "Tutoring",
+        "slug": "tutoring",
+        "serviceTypes": [
+          {
+            "id": "st-maths-tutoring",
+            "name": "Maths Tutoring",
+            "slug": "maths-tutoring"
+          },
+          {
+            "id": "st-language-tutoring",
+            "name": "Language Tutoring",
+            "slug": "language-tutoring"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cat-events-creative",
+    "name": "Events & Creative",
+    "slug": "events-creative",
+    "icon": "IconCamera",
+    "description": "Photography, catering and entertainment for every occasion.",
+    "complianceAttributes": [
+      {
+        "key": "portfolioUrl",
+        "label": "Portfolio link",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "equipmentInsurance",
+        "label": "Equipment insurance",
+        "type": "file",
+        "required": false
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "key": "portfolio-samples",
+        "label": "Portfolio samples",
+        "required": true
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "sub-photography",
+        "name": "Photography",
+        "slug": "photography",
+        "serviceTypes": [
+          {
+            "id": "st-event-photography",
+            "name": "Event Photography",
+            "slug": "event-photography"
+          },
+          {
+            "id": "st-portrait-photography",
+            "name": "Portrait Photography",
+            "slug": "portrait-photography"
+          }
+        ]
+      },
+      {
+        "id": "sub-catering",
+        "name": "Catering",
+        "slug": "catering",
+        "serviceTypes": [
+          {
+            "id": "st-event-catering",
+            "name": "Event Catering",
+            "slug": "event-catering"
+          },
+          {
+            "id": "st-private-chef",
+            "name": "Private Chef",
+            "slug": "private-chef"
+          }
+        ]
+      },
+      {
+        "id": "sub-dj-entertainment",
+        "name": "DJ & Entertainment",
+        "slug": "dj-entertainment",
+        "serviceTypes": [
+          {
+            "id": "st-wedding-dj",
+            "name": "Wedding DJ",
+            "slug": "wedding-dj"
+          },
+          {
+            "id": "st-party-entertainment",
+            "name": "Party Entertainment",
+            "slug": "party-entertainment"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cat-community",
+    "name": "Community & Government-Adjacent",
+    "slug": "community-government-adjacent",
+    "icon": "IconBuildingCommunity",
+    "description": "Non-profit and community-facing services and venue bookings.",
+    "complianceAttributes": [
+      {
+        "key": "registrationNumber",
+        "label": "Organisation registration number",
+        "type": "text",
+        "required": true
+      },
+      {
+        "key": "isNonProfit",
+        "label": "Registered non-profit",
+        "type": "boolean",
+        "required": false
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "key": "registration-certificate",
+        "label": "Registration certificate",
+        "required": true
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "sub-volunteering",
+        "name": "Volunteering Coordination",
+        "slug": "volunteering-coordination",
+        "serviceTypes": [
+          {
+            "id": "st-volunteer-matching",
+            "name": "Volunteer Matching",
+            "slug": "volunteer-matching"
+          }
+        ]
+      },
+      {
+        "id": "sub-community-hall",
+        "name": "Community Hall Booking",
+        "slug": "community-hall-booking",
+        "serviceTypes": [
+          {
+            "id": "st-hall-hire",
+            "name": "Hall Hire",
+            "slug": "hall-hire"
+          },
+          {
+            "id": "st-meeting-room-hire",
+            "name": "Meeting Room Hire",
+            "slug": "meeting-room-hire"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -20,11 +20,14 @@ export type QuoteStatus = "requested" | "quoted" | "accepted" | "declined" | "ex
 
 export type ListingStatus = "draft" | "pending" | "published" | "paused" | "rejected" | "archived";
 
+export type EnquiryStatus = "pending" | "resolved";
+
 export type AnyStatus =
   | ProviderVerificationStatus
   | BookingStatus
   | QuoteStatus
-  | ListingStatus;
+  | ListingStatus
+  | EnquiryStatus;
 
 type StatusVariant = "default" | "secondary" | "success" | "warning" | "destructive" | "outline";
 
@@ -70,6 +73,14 @@ export const LISTING_STATUS_META: Record<ListingStatus, StatusMeta> = {
   archived: { label: "Archived", variant: "secondary" },
 };
 
+export const ENQUIRY_STATUS_META: Record<EnquiryStatus, StatusMeta> = {
+  pending: { label: "Pending", variant: "warning" },
+  resolved: { label: "Resolved", variant: "success" },
+};
+
+export function isEnquiryStatus(s: string): s is EnquiryStatus {
+  return s in ENQUIRY_STATUS_META;
+}
 export function isProviderVerificationStatus(s: string): s is ProviderVerificationStatus {
   return s in PROVIDER_VERIFICATION_STATUS_META;
 }

@@ -1,0 +1,302 @@
+[
+  {
+    "id": "thread-enq-001",
+    "customerId": "user-cust-08",
+    "providerId": "prov-06",
+    "listingId": "list-010",
+    "subject": "Enquiry about your service",
+    "lastMessageAt": "2026-07-21T09:00:00.000Z",
+    "messages": [
+      {
+        "id": "thread-enq-001-m1",
+        "threadId": "thread-enq-001",
+        "senderId": "user-cust-08",
+        "senderRole": "customer",
+        "body": "Hi, I'd love to know more about this service before booking. Are you available next week?",
+        "createdAt": "2026-07-21T09:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "thread-enq-002",
+    "customerId": "user-cust-01",
+    "providerId": "prov-06",
+    "listingId": "list-010",
+    "subject": "Enquiry about your service",
+    "lastMessageAt": "2026-07-19T09:00:00.000Z",
+    "messages": [
+      {
+        "id": "thread-enq-002-m1",
+        "threadId": "thread-enq-002",
+        "senderId": "user-cust-01",
+        "senderRole": "customer",
+        "body": "Hi, I'd love to know more about this service before booking. Are you available next week?",
+        "createdAt": "2026-07-19T09:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "thread-enq-003",
+    "customerId": "user-cust-01",
+    "providerId": "prov-06",
+    "listingId": "list-010",
+    "subject": "Enquiry about your service",
+    "lastMessageAt": "2026-07-13T09:00:00.000Z",
+    "messages": [
+      {
+        "id": "thread-enq-003-m1",
+        "threadId": "thread-enq-003",
+        "senderId": "user-cust-01",
+        "senderRole": "customer",
+        "body": "Hi, I'd love to know more about this service before booking. Are you available next week?",
+        "createdAt": "2026-07-13T09:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "thread-enq-004",
+    "customerId": "user-cust-07",
+    "providerId": "prov-06",
+    "listingId": "list-010",
+    "subject": "Enquiry about your service",
+    "lastMessageAt": "2026-07-06T09:00:00.000Z",
+    "messages": [
+      {
+        "id": "thread-enq-004-m1",
+        "threadId": "thread-enq-004",
+        "senderId": "user-cust-07",
+        "senderRole": "customer",
+        "body": "Hi, I'd love to know more about this service before booking. Are you available next week?",
+        "createdAt": "2026-07-06T09:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "thread-enq-005",
+    "customerId": "user-cust-02",
+    "providerId": "prov-06",
+    "listingId": "list-010",
+    "subject": "Enquiry about your service",
+    "lastMessageAt": "2026-07-29T09:00:00.000Z",
+    "messages": [
+      {
+        "id": "thread-enq-005-m1",
+        "threadId": "thread-enq-005",
+        "senderId": "user-cust-02",
+        "senderRole": "customer",
+        "body": "Hi, I'd love to know more about this service before booking. Are you available next week?",
+        "createdAt": "2026-07-29T09:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "thread-enq-006",
+    "customerId": "user-cust-04",
+    "providerId": "prov-06",
+    "listingId": "list-010",
+    "subject": "Enquiry about your service",
+    "lastMessageAt": "2026-07-03T09:00:00.000Z",
+    "messages": [
+      {
+        "id": "thread-enq-006-m1",
+        "threadId": "thread-enq-006",
+        "senderId": "user-cust-04",
+        "senderRole": "customer",
+        "body": "Hi, I'd love to know more about this service before booking. Are you available next week?",
+        "createdAt": "2026-07-03T09:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "thread-enq-007",
+    "customerId": "user-cust-04",
+    "providerId": "prov-06",
+    "listingId": "list-010",
+    "subject": "Enquiry about your service",
+    "lastMessageAt": "2026-07-21T09:00:00.000Z",
+    "messages": [
+      {
+        "id": "thread-enq-007-m1",
+        "threadId": "thread-enq-007",
+        "senderId": "user-cust-04",
+        "senderRole": "customer",
+        "body": "Hi, I'd love to know more about this service before booking. Are you available next week?",
+        "createdAt": "2026-07-21T09:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "thread-enq-008",
+    "customerId": "user-cust-01",
+    "providerId": "prov-06",
+    "listingId": "list-010",
+    "subject": "Enquiry about your service",
+    "lastMessageAt": "2026-07-14T09:00:00.000Z",
+    "messages": [
+      {
+        "id": "thread-enq-008-m1",
+        "threadId": "thread-enq-008",
+        "senderId": "user-cust-01",
+        "senderRole": "customer",
+        "body": "Hi, I'd love to know more about this service before booking. Are you available next week?",
+        "createdAt": "2026-07-14T09:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "thread-book-001",
+    "customerId": "user-cust-08",
+    "providerId": "prov-16",
+    "listingId": "list-025",
+    "subject": "Booking confirmation",
+    "lastMessageAt": "2026-06-19T09:00:00.000Z",
+    "messages": [
+      {
+        "id": "thread-book-001-m1",
+        "threadId": "thread-book-001",
+        "senderId": "user-cust-08",
+        "senderRole": "customer",
+        "body": "Looking forward to the appointment, thank you!",
+        "createdAt": "2026-06-19T09:00:00.000Z"
+      },
+      {
+        "id": "thread-book-001-m2",
+        "threadId": "thread-book-001",
+        "senderId": "prov-16",
+        "senderRole": "provider",
+        "body": "Thanks for booking with us — we'll see you then. Let us know if anything changes.",
+        "createdAt": "2026-07-31T09:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "thread-book-002",
+    "customerId": "user-cust-01",
+    "providerId": "prov-05",
+    "listingId": "list-009",
+    "subject": "Booking confirmation",
+    "lastMessageAt": "2026-06-11T09:00:00.000Z",
+    "messages": [
+      {
+        "id": "thread-book-002-m1",
+        "threadId": "thread-book-002",
+        "senderId": "user-cust-01",
+        "senderRole": "customer",
+        "body": "Looking forward to the appointment, thank you!",
+        "createdAt": "2026-06-11T09:00:00.000Z"
+      },
+      {
+        "id": "thread-book-002-m2",
+        "threadId": "thread-book-002",
+        "senderId": "prov-05",
+        "senderRole": "provider",
+        "body": "Thanks for booking with us — we'll see you then. Let us know if anything changes.",
+        "createdAt": "2026-07-31T09:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "thread-book-003",
+    "customerId": "user-cust-07",
+    "providerId": "prov-05",
+    "listingId": "list-009",
+    "subject": "Booking confirmation",
+    "lastMessageAt": "2026-07-01T09:00:00.000Z",
+    "messages": [
+      {
+        "id": "thread-book-003-m1",
+        "threadId": "thread-book-003",
+        "senderId": "user-cust-07",
+        "senderRole": "customer",
+        "body": "Looking forward to the appointment, thank you!",
+        "createdAt": "2026-07-01T09:00:00.000Z"
+      },
+      {
+        "id": "thread-book-003-m2",
+        "threadId": "thread-book-003",
+        "senderId": "prov-05",
+        "senderRole": "provider",
+        "body": "Thanks for booking with us — we'll see you then. Let us know if anything changes.",
+        "createdAt": "2026-07-31T09:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "thread-book-004",
+    "customerId": "user-cust-07",
+    "providerId": "prov-05",
+    "listingId": "list-009",
+    "subject": "Booking confirmation",
+    "lastMessageAt": "2026-07-23T09:00:00.000Z",
+    "messages": [
+      {
+        "id": "thread-book-004-m1",
+        "threadId": "thread-book-004",
+        "senderId": "user-cust-07",
+        "senderRole": "customer",
+        "body": "Looking forward to the appointment, thank you!",
+        "createdAt": "2026-07-23T09:00:00.000Z"
+      },
+      {
+        "id": "thread-book-004-m2",
+        "threadId": "thread-book-004",
+        "senderId": "prov-05",
+        "senderRole": "provider",
+        "body": "Thanks for booking with us — we'll see you then. Let us know if anything changes.",
+        "createdAt": "2026-07-31T09:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "thread-book-005",
+    "customerId": "user-cust-05",
+    "providerId": "prov-18",
+    "listingId": "list-027",
+    "subject": "Booking confirmation",
+    "lastMessageAt": "2026-07-16T09:00:00.000Z",
+    "messages": [
+      {
+        "id": "thread-book-005-m1",
+        "threadId": "thread-book-005",
+        "senderId": "user-cust-05",
+        "senderRole": "customer",
+        "body": "Looking forward to the appointment, thank you!",
+        "createdAt": "2026-07-16T09:00:00.000Z"
+      },
+      {
+        "id": "thread-book-005-m2",
+        "threadId": "thread-book-005",
+        "senderId": "prov-18",
+        "senderRole": "provider",
+        "body": "Thanks for booking with us — we'll see you then. Let us know if anything changes.",
+        "createdAt": "2026-07-31T09:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "thread-book-006",
+    "customerId": "user-cust-07",
+    "providerId": "prov-13",
+    "listingId": "list-019",
+    "subject": "Booking confirmation",
+    "lastMessageAt": "2026-05-31T09:00:00.000Z",
+    "messages": [
+      {
+        "id": "thread-book-006-m1",
+        "threadId": "thread-book-006",
+        "senderId": "user-cust-07",
+        "senderRole": "customer",
+        "body": "Looking forward to the appointment, thank you!",
+        "createdAt": "2026-05-31T09:00:00.000Z"
+      },
+      {
+        "id": "thread-book-006-m2",
+        "threadId": "thread-book-006",
+        "senderId": "prov-13",
+        "senderRole": "provider",
+        "body": "Thanks for booking with us — we'll see you then. Let us know if anything changes.",
+        "createdAt": "2026-07-31T09:00:00.000Z"
+      }
+    ]
+  }
+]

@@ -6,6 +6,10 @@ export interface User {
   name: string;
   email: string;
   avatarUrl?: string;
+  phone?: string;
+  address?: string;
+  username?: string;
+  isPremium?: boolean;
   /** Present only for role "provider" — links to their Provider record. */
   providerId?: string;
 }

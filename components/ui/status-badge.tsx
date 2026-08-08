@@ -5,10 +5,12 @@ import {
   BOOKING_STATUS_META,
   QUOTE_STATUS_META,
   LISTING_STATUS_META,
+  ENQUIRY_STATUS_META,
   isProviderVerificationStatus,
   isBookingStatus,
   isQuoteStatus,
   isListingStatus,
+  isEnquiryStatus,
 } from "@/types/status";
 
 function resolveMeta(status: AnyStatus) {
@@ -16,6 +18,7 @@ function resolveMeta(status: AnyStatus) {
   if (isBookingStatus(status)) return BOOKING_STATUS_META[status];
   if (isQuoteStatus(status)) return QUOTE_STATUS_META[status];
   if (isListingStatus(status)) return LISTING_STATUS_META[status];
+  if (isEnquiryStatus(status)) return ENQUIRY_STATUS_META[status];
   return { label: status, variant: "secondary" as const };
 }
 

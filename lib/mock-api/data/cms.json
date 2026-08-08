@@ -1,0 +1,30 @@
+[
+  {
+    "id": "cms-home-hero",
+    "slug": "landing-hero",
+    "title": "Homepage Hero",
+    "body": "Find trusted local pros for every job.",
+    "updatedAt": "2026-07-21T09:00:00.000Z"
+  },
+  {
+    "id": "cms-faq",
+    "slug": "faq",
+    "title": "Frequently Asked Questions",
+    "body": "How does booking work? ...",
+    "updatedAt": "2026-07-11T09:00:00.000Z"
+  },
+  {
+    "id": "cms-terms",
+    "slug": "terms-of-service",
+    "title": "Terms of Service",
+    "body": "By using MYHitch Connect you agree to...",
+    "updatedAt": "2026-06-01T09:00:00.000Z"
+  },
+  {
+    "id": "cms-privacy",
+    "slug": "privacy-policy",
+    "title": "Privacy Policy",
+    "body": "We respect your privacy...",
+    "updatedAt": "2026-06-01T09:00:00.000Z"
+  }
+]

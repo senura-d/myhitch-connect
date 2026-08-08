@@ -1,0 +1,1433 @@
+[
+  {
+    "id": "prov-01",
+    "slug": "sunrise-plumbing-co",
+    "businessName": "Sunrise Plumbing Co.",
+    "providerType": "sole_trader",
+    "verificationStatus": "draft",
+    "logoUrl": "",
+    "coverImageUrl": "",
+    "description": "Sunrise Plumbing Co. is a trusted provider offering reliable, professional service across the local area.",
+    "categoryIds": [
+      "cat-home-trade"
+    ],
+    "locations": [
+      {
+        "suburb": "Fitzroy",
+        "state": "VIC",
+        "postcode": "3065"
+      }
+    ],
+    "serviceRadiusKm": 20,
+    "languages": [
+      "Spanish",
+      "English"
+    ],
+    "operatingHours": [
+      {
+        "day": "mon",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "tue",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "wed",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "thu",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "fri",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "sat",
+        "open": null,
+        "close": null
+      },
+      {
+        "day": "sun",
+        "open": "08:00",
+        "close": "14:00"
+      }
+    ],
+    "socialLinks": [
+      {
+        "platform": "instagram",
+        "url": "https://instagram.com/sunrise-plumbing-co"
+      }
+    ],
+    "ratingAverage": 4.8,
+    "ratingCount": 56,
+    "responseTimeHours": 2,
+    "isPromoted": true,
+    "createdAt": "2025-05-31T09:00:00.000Z"
+  },
+  {
+    "id": "prov-02",
+    "slug": "brightspark-electrical",
+    "businessName": "BrightSpark Electrical",
+    "providerType": "company",
+    "verificationStatus": "pending_review",
+    "logoUrl": "",
+    "coverImageUrl": "",
+    "description": "BrightSpark Electrical is a trusted provider offering reliable, professional service across the local area.",
+    "categoryIds": [
+      "cat-home-trade"
+    ],
+    "locations": [
+      {
+        "suburb": "Northbridge",
+        "state": "WA",
+        "postcode": "6003"
+      }
+    ],
+    "serviceRadiusKm": 25,
+    "languages": [
+      "Arabic",
+      "English"
+    ],
+    "operatingHours": [
+      {
+        "day": "mon",
+        "open": null,
+        "close": null
+      },
+      {
+        "day": "tue",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "wed",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "thu",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "fri",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "sat",
+        "open": "08:00",
+        "close": "14:00"
+      },
+      {
+        "day": "sun",
+        "open": "08:00",
+        "close": "14:00"
+      }
+    ],
+    "socialLinks": [],
+    "ratingAverage": 4.8,
+    "ratingCount": 53,
+    "responseTimeHours": 24,
+    "isPromoted": false,
+    "createdAt": "2026-04-27T09:00:00.000Z",
+    "staff": [
+      {
+        "id": "prov-02-staff-1",
+        "name": "Priya Nair",
+        "role": "Technician"
+      },
+      {
+        "id": "prov-02-staff-2",
+        "name": "Jordan Smith",
+        "role": "Technician"
+      },
+      {
+        "id": "prov-02-staff-3",
+        "name": "Alex Chen",
+        "role": "Lead"
+      },
+      {
+        "id": "prov-02-staff-4",
+        "name": "Priya Nair",
+        "role": "Coordinator"
+      }
+    ]
+  },
+  {
+    "id": "prov-03",
+    "slug": "crystalclear-cleaning-services",
+    "businessName": "CrystalClear Cleaning Services",
+    "providerType": "company",
+    "verificationStatus": "action_required",
+    "logoUrl": "",
+    "coverImageUrl": "",
+    "description": "CrystalClear Cleaning Services is a trusted provider offering reliable, professional service across the local area.",
+    "categoryIds": [
+      "cat-home-trade"
+    ],
+    "locations": [
+      {
+        "suburb": "St Kilda",
+        "state": "VIC",
+        "postcode": "3182"
+      }
+    ],
+    "serviceRadiusKm": 25,
+    "languages": [
+      "English",
+      "Italian"
+    ],
+    "operatingHours": [
+      {
+        "day": "mon",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "tue",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "wed",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "thu",
+        "open": null,
+        "close": null
+      },
+      {
+        "day": "fri",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "sat",
+        "open": null,
+        "close": null
+      },
+      {
+        "day": "sun",
+        "open": "08:00",
+        "close": "14:00"
+      }
+    ],
+    "socialLinks": [
+      {
+        "platform": "instagram",
+        "url": "https://instagram.com/crystalclear-cleaning-services"
+      }
+    ],
+    "ratingAverage": 4.2,
+    "ratingCount": 47,
+    "responseTimeHours": 2,
+    "isPromoted": false,
+    "createdAt": "2025-09-08T09:00:00.000Z",
+    "staff": [
+      {
+        "id": "prov-03-staff-1",
+        "name": "Alex Chen",
+        "role": "Lead"
+      },
+      {
+        "id": "prov-03-staff-2",
+        "name": "Jordan Smith",
+        "role": "Lead"
+      },
+      {
+        "id": "prov-03-staff-3",
+        "name": "Priya Nair",
+        "role": "Account Manager"
+      }
+    ]
+  },
+  {
+    "id": "prov-04",
+    "slug": "greenscape-landscaping",
+    "businessName": "GreenScape Landscaping",
+    "providerType": "sole_trader",
+    "verificationStatus": "approved",
+    "logoUrl": "",
+    "coverImageUrl": "",
+    "description": "GreenScape Landscaping is a trusted provider offering reliable, professional service across the local area.",
+    "categoryIds": [
+      "cat-home-trade"
+    ],
+    "locations": [
+      {
+        "suburb": "Fitzroy",
+        "state": "VIC",
+        "postcode": "3065"
+      }
+    ],
+    "serviceRadiusKm": 25,
+    "languages": [
+      "Spanish",
+      "Italian",
+      "English"
+    ],
+    "operatingHours": [
+      {
+        "day": "mon",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "tue",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "wed",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "thu",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "fri",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "sat",
+        "open": null,
+        "close": null
+      },
+      {
+        "day": "sun",
+        "open": "08:00",
+        "close": "14:00"
+      }
+    ],
+    "socialLinks": [
+      {
+        "platform": "instagram",
+        "url": "https://instagram.com/greenscape-landscaping"
+      }
+    ],
+    "ratingAverage": 4.4,
+    "ratingCount": 17,
+    "responseTimeHours": 1,
+    "isPromoted": false,
+    "createdAt": "2025-06-05T09:00:00.000Z"
+  },
+  {
+    "id": "prov-05",
+    "slug": "harbor-plumbing-and-gas",
+    "businessName": "Harbor Plumbing & Gas",
+    "providerType": "individual",
+    "verificationStatus": "approved",
+    "logoUrl": "",
+    "coverImageUrl": "",
+    "description": "Harbor Plumbing & Gas is a trusted provider offering reliable, professional service across the local area.",
+    "categoryIds": [
+      "cat-home-trade"
+    ],
+    "locations": [
+      {
+        "suburb": "St Kilda",
+        "state": "VIC",
+        "postcode": "3182"
+      }
+    ],
+    "serviceRadiusKm": 20,
+    "languages": [
+      "Arabic",
+      "English"
+    ],
+    "operatingHours": [
+      {
+        "day": "mon",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "tue",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "wed",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "thu",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "fri",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "sat",
+        "open": "08:00",
+        "close": "14:00"
+      },
+      {
+        "day": "sun",
+        "open": null,
+        "close": null
+      }
+    ],
+    "socialLinks": [
+      {
+        "platform": "instagram",
+        "url": "https://instagram.com/harbor-plumbing-and-gas"
+      }
+    ],
+    "ratingAverage": 4.9,
+    "ratingCount": 74,
+    "responseTimeHours": 8,
+    "isPromoted": false,
+    "createdAt": "2025-10-28T09:00:00.000Z"
+  },
+  {
+    "id": "prov-06",
+    "slug": "precision-tax-and-bookkeeping",
+    "businessName": "Precision Tax & Bookkeeping",
+    "providerType": "company",
+    "verificationStatus": "approved",
+    "logoUrl": "",
+    "coverImageUrl": "",
+    "description": "Precision Tax & Bookkeeping is a trusted provider offering reliable, professional service across the local area.",
+    "categoryIds": [
+      "cat-professional"
+    ],
+    "locations": [
+      {
+        "suburb": "Newtown",
+        "state": "NSW",
+        "postcode": "2042"
+      }
+    ],
+    "serviceRadiusKm": 20,
+    "languages": [
+      "Arabic",
+      "English"
+    ],
+    "operatingHours": [
+      {
+        "day": "mon",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "tue",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "wed",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "thu",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "fri",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "sat",
+        "open": "08:00",
+        "close": "14:00"
+      },
+      {
+        "day": "sun",
+        "open": null,
+        "close": null
+      }
+    ],
+    "socialLinks": [
+      {
+        "platform": "instagram",
+        "url": "https://instagram.com/precision-tax-and-bookkeeping"
+      }
+    ],
+    "ratingAverage": 4.9,
+    "ratingCount": 23,
+    "responseTimeHours": 1,
+    "isPromoted": true,
+    "createdAt": "2026-03-09T09:00:00.000Z",
+    "staff": [
+      {
+        "id": "prov-06-staff-1",
+        "name": "Jordan Smith",
+        "role": "Technician"
+      },
+      {
+        "id": "prov-06-staff-2",
+        "name": "Sam Okafor",
+        "role": "Coordinator"
+      }
+    ]
+  },
+  {
+    "id": "prov-07",
+    "slug": "whitfield-legal-consulting",
+    "businessName": "Whitfield Legal Consulting",
+    "providerType": "individual",
+    "verificationStatus": "conditionally_approved",
+    "logoUrl": "",
+    "coverImageUrl": "",
+    "description": "Whitfield Legal Consulting is a trusted provider offering reliable, professional service across the local area.",
+    "categoryIds": [
+      "cat-professional"
+    ],
+    "locations": [
+      {
+        "suburb": "Northbridge",
+        "state": "WA",
+        "postcode": "6003"
+      }
+    ],
+    "serviceRadiusKm": 10,
+    "languages": [
+      "Mandarin",
+      "English"
+    ],
+    "operatingHours": [
+      {
+        "day": "mon",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "tue",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "wed",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "thu",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "fri",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "sat",
+        "open": null,
+        "close": null
+      },
+      {
+        "day": "sun",
+        "open": "08:00",
+        "close": "14:00"
+      }
+    ],
+    "socialLinks": [
+      {
+        "platform": "instagram",
+        "url": "https://instagram.com/whitfield-legal-consulting"
+      }
+    ],
+    "ratingAverage": 4.9,
+    "ratingCount": 49,
+    "responseTimeHours": 1,
+    "isPromoted": false,
+    "createdAt": "2026-05-28T09:00:00.000Z"
+  },
+  {
+    "id": "prov-08",
+    "slug": "meridian-business-advisory",
+    "businessName": "Meridian Business Advisory",
+    "providerType": "company",
+    "verificationStatus": "suspended",
+    "logoUrl": "",
+    "coverImageUrl": "",
+    "description": "Meridian Business Advisory is a trusted provider offering reliable, professional service across the local area.",
+    "categoryIds": [
+      "cat-professional"
+    ],
+    "locations": [
+      {
+        "suburb": "New Farm",
+        "state": "QLD",
+        "postcode": "4005"
+      }
+    ],
+    "serviceRadiusKm": 20,
+    "languages": [
+      "Spanish",
+      "English"
+    ],
+    "operatingHours": [
+      {
+        "day": "mon",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "tue",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "wed",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "thu",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "fri",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "sat",
+        "open": "08:00",
+        "close": "14:00"
+      },
+      {
+        "day": "sun",
+        "open": null,
+        "close": null
+      }
+    ],
+    "socialLinks": [
+      {
+        "platform": "instagram",
+        "url": "https://instagram.com/meridian-business-advisory"
+      }
+    ],
+    "ratingAverage": 4.4,
+    "ratingCount": 39,
+    "responseTimeHours": 1,
+    "isPromoted": false,
+    "createdAt": "2026-04-13T09:00:00.000Z",
+    "staff": [
+      {
+        "id": "prov-08-staff-1",
+        "name": "Priya Nair",
+        "role": "Account Manager"
+      },
+      {
+        "id": "prov-08-staff-2",
+        "name": "Alex Chen",
+        "role": "Technician"
+      }
+    ]
+  },
+  {
+    "id": "prov-09",
+    "slug": "coastal-accounting-partners",
+    "businessName": "Coastal Accounting Partners",
+    "providerType": "sole_trader",
+    "verificationStatus": "rejected",
+    "logoUrl": "",
+    "coverImageUrl": "",
+    "description": "Coastal Accounting Partners is a trusted provider offering reliable, professional service across the local area.",
+    "categoryIds": [
+      "cat-professional"
+    ],
+    "locations": [
+      {
+        "suburb": "St Kilda",
+        "state": "VIC",
+        "postcode": "3182"
+      }
+    ],
+    "serviceRadiusKm": 10,
+    "languages": [
+      "Vietnamese",
+      "English"
+    ],
+    "operatingHours": [
+      {
+        "day": "mon",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "tue",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "wed",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "thu",
+        "open": null,
+        "close": null
+      },
+      {
+        "day": "fri",
+        "open": null,
+        "close": null
+      },
+      {
+        "day": "sat",
+        "open": null,
+        "close": null
+      },
+      {
+        "day": "sun",
+        "open": null,
+        "close": null
+      }
+    ],
+    "socialLinks": [
+      {
+        "platform": "instagram",
+        "url": "https://instagram.com/coastal-accounting-partners"
+      }
+    ],
+    "ratingAverage": 3.8,
+    "ratingCount": 91,
+    "responseTimeHours": 8,
+    "isPromoted": false,
+    "createdAt": "2025-12-30T09:00:00.000Z"
+  },
+  {
+    "id": "prov-10",
+    "slug": "elevate-personal-training",
+    "businessName": "Elevate Personal Training",
+    "providerType": "individual",
+    "verificationStatus": "expired_verification",
+    "logoUrl": "",
+    "coverImageUrl": "",
+    "description": "Elevate Personal Training is a trusted provider offering reliable, professional service across the local area.",
+    "categoryIds": [
+      "cat-personal-care"
+    ],
+    "locations": [
+      {
+        "suburb": "Northbridge",
+        "state": "WA",
+        "postcode": "6003"
+      }
+    ],
+    "serviceRadiusKm": 15,
+    "languages": [
+      "English"
+    ],
+    "operatingHours": [
+      {
+        "day": "mon",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "tue",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "wed",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "thu",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "fri",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "sat",
+        "open": "08:00",
+        "close": "14:00"
+      },
+      {
+        "day": "sun",
+        "open": null,
+        "close": null
+      }
+    ],
+    "socialLinks": [],
+    "ratingAverage": 4.3,
+    "ratingCount": 38,
+    "responseTimeHours": 2,
+    "isPromoted": false,
+    "createdAt": "2026-03-31T09:00:00.000Z"
+  },
+  {
+    "id": "prov-11",
+    "slug": "zen-remedial-massage",
+    "businessName": "Zen Remedial Massage",
+    "providerType": "sole_trader",
+    "verificationStatus": "draft",
+    "logoUrl": "",
+    "coverImageUrl": "",
+    "description": "Zen Remedial Massage is a trusted provider offering reliable, professional service across the local area.",
+    "categoryIds": [
+      "cat-personal-care"
+    ],
+    "locations": [
+      {
+        "suburb": "St Kilda",
+        "state": "VIC",
+        "postcode": "3182"
+      }
+    ],
+    "serviceRadiusKm": 10,
+    "languages": [
+      "Arabic",
+      "English"
+    ],
+    "operatingHours": [
+      {
+        "day": "mon",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "tue",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "wed",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "thu",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "fri",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "sat",
+        "open": "08:00",
+        "close": "14:00"
+      },
+      {
+        "day": "sun",
+        "open": "08:00",
+        "close": "14:00"
+      }
+    ],
+    "socialLinks": [
+      {
+        "platform": "instagram",
+        "url": "https://instagram.com/zen-remedial-massage"
+      }
+    ],
+    "ratingAverage": 4,
+    "ratingCount": 81,
+    "responseTimeHours": 4,
+    "isPromoted": true,
+    "createdAt": "2025-04-13T09:00:00.000Z"
+  },
+  {
+    "id": "prov-12",
+    "slug": "brightpath-tutoring",
+    "businessName": "BrightPath Tutoring",
+    "providerType": "company",
+    "verificationStatus": "pending_review",
+    "logoUrl": "",
+    "coverImageUrl": "",
+    "description": "BrightPath Tutoring is a trusted provider offering reliable, professional service across the local area.",
+    "categoryIds": [
+      "cat-personal-care"
+    ],
+    "locations": [
+      {
+        "suburb": "New Farm",
+        "state": "QLD",
+        "postcode": "4005"
+      }
+    ],
+    "serviceRadiusKm": 25,
+    "languages": [
+      "English"
+    ],
+    "operatingHours": [
+      {
+        "day": "mon",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "tue",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "wed",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "thu",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "fri",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "sat",
+        "open": "08:00",
+        "close": "14:00"
+      },
+      {
+        "day": "sun",
+        "open": "08:00",
+        "close": "14:00"
+      }
+    ],
+    "socialLinks": [
+      {
+        "platform": "instagram",
+        "url": "https://instagram.com/brightpath-tutoring"
+      }
+    ],
+    "ratingAverage": 4.6,
+    "ratingCount": 88,
+    "responseTimeHours": 24,
+    "isPromoted": false,
+    "createdAt": "2025-04-06T09:00:00.000Z",
+    "staff": [
+      {
+        "id": "prov-12-staff-1",
+        "name": "Lena Novak",
+        "role": "Technician"
+      },
+      {
+        "id": "prov-12-staff-2",
+        "name": "Lena Novak",
+        "role": "Technician"
+      }
+    ]
+  },
+  {
+    "id": "prov-13",
+    "slug": "pulsefit-group-training",
+    "businessName": "PulseFit Group Training",
+    "providerType": "company",
+    "verificationStatus": "action_required",
+    "logoUrl": "",
+    "coverImageUrl": "",
+    "description": "PulseFit Group Training is a trusted provider offering reliable, professional service across the local area.",
+    "categoryIds": [
+      "cat-personal-care"
+    ],
+    "locations": [
+      {
+        "suburb": "New Farm",
+        "state": "QLD",
+        "postcode": "4005"
+      }
+    ],
+    "serviceRadiusKm": 15,
+    "languages": [
+      "Spanish",
+      "English"
+    ],
+    "operatingHours": [
+      {
+        "day": "mon",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "tue",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "wed",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "thu",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "fri",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "sat",
+        "open": null,
+        "close": null
+      },
+      {
+        "day": "sun",
+        "open": null,
+        "close": null
+      }
+    ],
+    "socialLinks": [],
+    "ratingAverage": 4.8,
+    "ratingCount": 24,
+    "responseTimeHours": 2,
+    "isPromoted": false,
+    "createdAt": "2025-04-02T09:00:00.000Z",
+    "staff": [
+      {
+        "id": "prov-13-staff-1",
+        "name": "Jordan Smith",
+        "role": "Lead"
+      },
+      {
+        "id": "prov-13-staff-2",
+        "name": "Maria Lopez",
+        "role": "Coordinator"
+      }
+    ]
+  },
+  {
+    "id": "prov-14",
+    "slug": "golden-hour-photography",
+    "businessName": "Golden Hour Photography",
+    "providerType": "individual",
+    "verificationStatus": "approved",
+    "logoUrl": "",
+    "coverImageUrl": "",
+    "description": "Golden Hour Photography is a trusted provider offering reliable, professional service across the local area.",
+    "categoryIds": [
+      "cat-events-creative"
+    ],
+    "locations": [
+      {
+        "suburb": "Fitzroy",
+        "state": "VIC",
+        "postcode": "3065"
+      }
+    ],
+    "serviceRadiusKm": 40,
+    "languages": [
+      "English"
+    ],
+    "operatingHours": [
+      {
+        "day": "mon",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "tue",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "wed",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "thu",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "fri",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "sat",
+        "open": "08:00",
+        "close": "14:00"
+      },
+      {
+        "day": "sun",
+        "open": null,
+        "close": null
+      }
+    ],
+    "socialLinks": [],
+    "ratingAverage": 4.2,
+    "ratingCount": 18,
+    "responseTimeHours": 24,
+    "isPromoted": false,
+    "createdAt": "2025-06-16T09:00:00.000Z"
+  },
+  {
+    "id": "prov-15",
+    "slug": "harvest-table-catering",
+    "businessName": "Harvest Table Catering",
+    "providerType": "company",
+    "verificationStatus": "approved",
+    "logoUrl": "",
+    "coverImageUrl": "",
+    "description": "Harvest Table Catering is a trusted provider offering reliable, professional service across the local area.",
+    "categoryIds": [
+      "cat-events-creative"
+    ],
+    "locations": [
+      {
+        "suburb": "Northbridge",
+        "state": "WA",
+        "postcode": "6003"
+      }
+    ],
+    "serviceRadiusKm": 20,
+    "languages": [
+      "Mandarin",
+      "English"
+    ],
+    "operatingHours": [
+      {
+        "day": "mon",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "tue",
+        "open": null,
+        "close": null
+      },
+      {
+        "day": "wed",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "thu",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "fri",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "sat",
+        "open": null,
+        "close": null
+      },
+      {
+        "day": "sun",
+        "open": "08:00",
+        "close": "14:00"
+      }
+    ],
+    "socialLinks": [],
+    "ratingAverage": 4.8,
+    "ratingCount": 104,
+    "responseTimeHours": 8,
+    "isPromoted": false,
+    "createdAt": "2025-05-12T09:00:00.000Z",
+    "staff": [
+      {
+        "id": "prov-15-staff-1",
+        "name": "Jordan Smith",
+        "role": "Lead"
+      },
+      {
+        "id": "prov-15-staff-2",
+        "name": "Sam Okafor",
+        "role": "Coordinator"
+      }
+    ]
+  },
+  {
+    "id": "prov-16",
+    "slug": "nightwave-dj-collective",
+    "businessName": "Nightwave DJ Collective",
+    "providerType": "sole_trader",
+    "verificationStatus": "approved",
+    "logoUrl": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=400&q=80",
+    "coverImageUrl": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1600&q=80",
+    "description": "Nightwave DJ Collective is a trusted provider offering reliable, professional service across the local area.",
+    "categoryIds": [
+      "cat-events-creative"
+    ],
+    "locations": [
+      {
+        "suburb": "New Farm",
+        "state": "QLD",
+        "postcode": "4005"
+      }
+    ],
+    "serviceRadiusKm": 20,
+    "languages": [
+      "Vietnamese",
+      "English"
+    ],
+    "operatingHours": [
+      {
+        "day": "mon",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "tue",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "wed",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "thu",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "fri",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "sat",
+        "open": "08:00",
+        "close": "14:00"
+      },
+      {
+        "day": "sun",
+        "open": "08:00",
+        "close": "14:00"
+      }
+    ],
+    "socialLinks": [
+      {
+        "platform": "instagram",
+        "url": "https://instagram.com/nightwave-dj-collective"
+      }
+    ],
+    "ratingAverage": 3.7,
+    "ratingCount": 46,
+    "responseTimeHours": 2,
+    "isPromoted": true,
+    "createdAt": "2025-04-27T09:00:00.000Z"
+  },
+  {
+    "id": "prov-17",
+    "slug": "neighbourhood-volunteers-network",
+    "businessName": "Neighbourhood Volunteers Network",
+    "providerType": "non_profit",
+    "verificationStatus": "conditionally_approved",
+    "logoUrl": "",
+    "coverImageUrl": "",
+    "description": "Neighbourhood Volunteers Network is a trusted provider offering reliable, professional service across the local area.",
+    "categoryIds": [
+      "cat-community"
+    ],
+    "locations": [
+      {
+        "suburb": "Glenelg",
+        "state": "SA",
+        "postcode": "5045"
+      }
+    ],
+    "serviceRadiusKm": 40,
+    "languages": [
+      "Italian",
+      "Arabic",
+      "English"
+    ],
+    "operatingHours": [
+      {
+        "day": "mon",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "tue",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "wed",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "thu",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "fri",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "sat",
+        "open": "08:00",
+        "close": "14:00"
+      },
+      {
+        "day": "sun",
+        "open": "08:00",
+        "close": "14:00"
+      }
+    ],
+    "socialLinks": [
+      {
+        "platform": "instagram",
+        "url": "https://instagram.com/neighbourhood-volunteers-network"
+      }
+    ],
+    "ratingAverage": 4.2,
+    "ratingCount": 62,
+    "responseTimeHours": 1,
+    "isPromoted": false,
+    "createdAt": "2026-04-14T09:00:00.000Z",
+    "staff": [
+      {
+        "id": "prov-17-staff-1",
+        "name": "Priya Nair",
+        "role": "Coordinator"
+      },
+      {
+        "id": "prov-17-staff-2",
+        "name": "Priya Nair",
+        "role": "Lead"
+      },
+      {
+        "id": "prov-17-staff-3",
+        "name": "Lena Novak",
+        "role": "Account Manager"
+      },
+      {
+        "id": "prov-17-staff-4",
+        "name": "Maria Lopez",
+        "role": "Coordinator"
+      }
+    ]
+  },
+  {
+    "id": "prov-18",
+    "slug": "civic-hall-bookings",
+    "businessName": "Civic Hall Bookings",
+    "providerType": "government",
+    "verificationStatus": "suspended",
+    "logoUrl": "",
+    "coverImageUrl": "",
+    "description": "Civic Hall Bookings is a trusted provider offering reliable, professional service across the local area.",
+    "categoryIds": [
+      "cat-community"
+    ],
+    "locations": [
+      {
+        "suburb": "Fitzroy",
+        "state": "VIC",
+        "postcode": "3065"
+      }
+    ],
+    "serviceRadiusKm": 40,
+    "languages": [
+      "Spanish",
+      "English"
+    ],
+    "operatingHours": [
+      {
+        "day": "mon",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "tue",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "wed",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "thu",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "fri",
+        "open": "08:00",
+        "close": "17:30"
+      },
+      {
+        "day": "sat",
+        "open": null,
+        "close": null
+      },
+      {
+        "day": "sun",
+        "open": null,
+        "close": null
+      }
+    ],
+    "socialLinks": [
+      {
+        "platform": "instagram",
+        "url": "https://instagram.com/civic-hall-bookings"
+      }
+    ],
+    "ratingAverage": 3.6,
+    "ratingCount": 29,
+    "responseTimeHours": 24,
+    "isPromoted": false,
+    "createdAt": "2025-12-14T09:00:00.000Z",
+    "staff": [
+      {
+        "id": "prov-18-staff-1",
+        "name": "Jordan Smith",
+        "role": "Lead"
+      },
+      {
+        "id": "prov-18-staff-2",
+        "name": "Sam Okafor",
+        "role": "Coordinator"
+      },
+      {
+        "id": "prov-18-staff-3",
+        "name": "Lena Novak",
+        "role": "Lead"
+      },
+      {
+        "id": "prov-18-staff-4",
+        "name": "Sam Okafor",
+        "role": "Account Manager"
+      }
+    ]
+  }
+]

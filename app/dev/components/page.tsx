@@ -2,7 +2,6 @@
 
 import * as React from "react";
 import { IconHome } from "@tabler/icons-react";
-import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -80,7 +79,6 @@ export default function DevComponentsPage() {
     <div className="mx-auto max-w-5xl space-y-10 p-6 md:p-10">
       <div className="flex items-center justify-between">
         <h1 className="text-2xl font-semibold">Component Library — Dev QA</h1>
-        <ThemeToggle />
       </div>
 
       <section className="space-y-3">

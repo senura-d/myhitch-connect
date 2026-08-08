@@ -1,0 +1,74 @@
+[
+  {
+    "id": "enq-001",
+    "listingId": "list-010",
+    "providerId": "prov-06",
+    "customerId": "user-cust-08",
+    "message": "Hi, I'd love to know more about this service before booking. Are you available next week?",
+    "threadId": "thread-enq-001",
+    "createdAt": "2026-07-21T09:00:00.000Z"
+  },
+  {
+    "id": "enq-002",
+    "listingId": "list-010",
+    "providerId": "prov-06",
+    "customerId": "user-cust-01",
+    "message": "Hi, I'd love to know more about this service before booking. Are you available next week?",
+    "threadId": "thread-enq-002",
+    "createdAt": "2026-07-19T09:00:00.000Z"
+  },
+  {
+    "id": "enq-003",
+    "listingId": "list-010",
+    "providerId": "prov-06",
+    "customerId": "user-cust-01",
+    "message": "Hi, I'd love to know more about this service before booking. Are you available next week?",
+    "threadId": "thread-enq-003",
+    "createdAt": "2026-07-13T09:00:00.000Z"
+  },
+  {
+    "id": "enq-004",
+    "listingId": "list-010",
+    "providerId": "prov-06",
+    "customerId": "user-cust-07",
+    "message": "Hi, I'd love to know more about this service before booking. Are you available next week?",
+    "threadId": "thread-enq-004",
+    "createdAt": "2026-07-06T09:00:00.000Z"
+  },
+  {
+    "id": "enq-005",
+    "listingId": "list-010",
+    "providerId": "prov-06",
+    "customerId": "user-cust-02",
+    "message": "Hi, I'd love to know more about this service before booking. Are you available next week?",
+    "threadId": "thread-enq-005",
+    "createdAt": "2026-07-29T09:00:00.000Z"
+  },
+  {
+    "id": "enq-006",
+    "listingId": "list-010",
+    "providerId": "prov-06",
+    "customerId": "user-cust-04",
+    "message": "Hi, I'd love to know more about this service before booking. Are you available next week?",
+    "threadId": "thread-enq-006",
+    "createdAt": "2026-07-03T09:00:00.000Z"
+  },
+  {
+    "id": "enq-007",
+    "listingId": "list-010",
+    "providerId": "prov-06",
+    "customerId": "user-cust-04",
+    "message": "Hi, I'd love to know more about this service before booking. Are you available next week?",
+    "threadId": "thread-enq-007",
+    "createdAt": "2026-07-21T09:00:00.000Z"
+  },
+  {
+    "id": "enq-008",
+    "listingId": "list-010",
+    "providerId": "prov-06",
+    "customerId": "user-cust-01",
+    "message": "Hi, I'd love to know more about this service before booking. Are you available next week?",
+    "threadId": "thread-enq-008",
+    "createdAt": "2026-07-14T09:00:00.000Z"
+  }
+]

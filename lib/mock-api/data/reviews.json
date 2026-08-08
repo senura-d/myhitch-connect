@@ -1,0 +1,227 @@
+[
+  {
+    "id": "rev-001",
+    "bookingId": "book-004",
+    "listingId": "list-009",
+    "providerId": "prov-05",
+    "customerId": "user-cust-01",
+    "customerName": "Linda Blair",
+    "ratings": {
+      "quality": 3,
+      "communication": 4,
+      "punctuality": 4,
+      "value": 3,
+      "professionalism": 5
+    },
+    "overallRating": 3.8,
+    "body": "Solid service, fair pricing, will use again.",
+    "providerResponse": {
+      "body": "Thank you so much for the kind words — see you next time!",
+      "createdAt": "2026-07-26T09:00:00.000Z"
+    },
+    "reported": false,
+    "createdAt": "2026-06-23T09:00:00.000Z"
+  },
+  {
+    "id": "rev-002",
+    "bookingId": "book-005",
+    "listingId": "list-009",
+    "providerId": "prov-05",
+    "customerId": "user-cust-07",
+    "customerName": "Mia Johansson",
+    "ratings": {
+      "quality": 5,
+      "communication": 3,
+      "punctuality": 3,
+      "value": 4,
+      "professionalism": 3
+    },
+    "overallRating": 3.6,
+    "body": "Fantastic experience, exceeded expectations!",
+    "reported": false,
+    "createdAt": "2026-07-02T09:00:00.000Z"
+  },
+  {
+    "id": "rev-003",
+    "bookingId": "book-006",
+    "listingId": "list-009",
+    "providerId": "prov-05",
+    "customerId": "user-cust-07",
+    "customerName": "Mia Johansson",
+    "ratings": {
+      "quality": 4,
+      "communication": 5,
+      "punctuality": 4,
+      "value": 5,
+      "professionalism": 5
+    },
+    "overallRating": 4.6,
+    "body": "Very professional and arrived right on time. Highly recommend.",
+    "reported": false,
+    "createdAt": "2026-07-26T09:00:00.000Z"
+  },
+  {
+    "id": "rev-004",
+    "bookingId": "book-007",
+    "listingId": "list-027",
+    "providerId": "prov-18",
+    "customerId": "user-cust-05",
+    "customerName": "Isla Martin",
+    "ratings": {
+      "quality": 5,
+      "communication": 3,
+      "punctuality": 4,
+      "value": 3,
+      "professionalism": 3
+    },
+    "overallRating": 3.6,
+    "body": "Very professional and arrived right on time. Highly recommend.",
+    "providerResponse": {
+      "body": "Thank you so much for the kind words — see you next time!",
+      "createdAt": "2026-07-26T09:00:00.000Z"
+    },
+    "reported": false,
+    "createdAt": "2026-06-19T09:00:00.000Z"
+  },
+  {
+    "id": "rev-005",
+    "bookingId": "book-008",
+    "listingId": "list-019",
+    "providerId": "prov-13",
+    "customerId": "user-cust-07",
+    "customerName": "Mia Johansson",
+    "ratings": {
+      "quality": 3,
+      "communication": 3,
+      "punctuality": 4,
+      "value": 3,
+      "professionalism": 4
+    },
+    "overallRating": 3.4,
+    "body": "Good work overall, communication could have been a touch faster.",
+    "reported": false,
+    "createdAt": "2026-07-01T09:00:00.000Z"
+  },
+  {
+    "id": "rev-006",
+    "bookingId": "book-014",
+    "listingId": "list-002",
+    "providerId": "prov-01",
+    "customerId": "user-cust-02",
+    "customerName": "Liam Carter",
+    "ratings": {
+      "quality": 3,
+      "communication": 4,
+      "punctuality": 4,
+      "value": 5,
+      "professionalism": 3
+    },
+    "overallRating": 3.8,
+    "body": "Fantastic experience, exceeded expectations!",
+    "reported": false,
+    "createdAt": "2026-07-17T09:00:00.000Z"
+  },
+  {
+    "id": "rev-007",
+    "bookingId": "book-015",
+    "listingId": "list-018",
+    "providerId": "prov-13",
+    "customerId": "user-cust-06",
+    "customerName": "Ethan Brooks",
+    "ratings": {
+      "quality": 5,
+      "communication": 3,
+      "punctuality": 3,
+      "value": 3,
+      "professionalism": 5
+    },
+    "overallRating": 3.8,
+    "body": "Excellent service from start to finish, would book again.",
+    "providerResponse": {
+      "body": "Thank you so much for the kind words — see you next time!",
+      "createdAt": "2026-07-31T09:00:00.000Z"
+    },
+    "reported": false,
+    "createdAt": "2026-07-23T09:00:00.000Z"
+  },
+  {
+    "id": "rev-008",
+    "bookingId": "book-016",
+    "listingId": "list-018",
+    "providerId": "prov-13",
+    "customerId": "user-cust-07",
+    "customerName": "Mia Johansson",
+    "ratings": {
+      "quality": 3,
+      "communication": 3,
+      "punctuality": 5,
+      "value": 5,
+      "professionalism": 4
+    },
+    "overallRating": 4,
+    "body": "Fantastic experience, exceeded expectations!",
+    "reported": false,
+    "createdAt": "2026-06-22T09:00:00.000Z"
+  },
+  {
+    "id": "rev-009",
+    "bookingId": "book-017",
+    "listingId": "list-019",
+    "providerId": "prov-13",
+    "customerId": "user-cust-01",
+    "customerName": "Linda Blair",
+    "ratings": {
+      "quality": 3,
+      "communication": 3,
+      "punctuality": 3,
+      "value": 5,
+      "professionalism": 5
+    },
+    "overallRating": 3.8,
+    "body": "Excellent service from start to finish, would book again.",
+    "reported": false,
+    "createdAt": "2026-07-03T09:00:00.000Z"
+  },
+  {
+    "id": "rev-010",
+    "bookingId": "book-018",
+    "listingId": "list-019",
+    "providerId": "prov-13",
+    "customerId": "user-cust-01",
+    "customerName": "Linda Blair",
+    "ratings": {
+      "quality": 4,
+      "communication": 3,
+      "punctuality": 5,
+      "value": 3,
+      "professionalism": 3
+    },
+    "overallRating": 3.6,
+    "body": "Excellent service from start to finish, would book again.",
+    "providerResponse": {
+      "body": "Thank you so much for the kind words — see you next time!",
+      "createdAt": "2026-07-29T09:00:00.000Z"
+    },
+    "reported": false,
+    "createdAt": "2026-06-30T09:00:00.000Z"
+  },
+  {
+    "id": "rev-011",
+    "bookingId": "book-024",
+    "listingId": "list-003",
+    "providerId": "prov-02",
+    "customerId": "user-cust-07",
+    "customerName": "Mia Johansson",
+    "ratings": {
+      "quality": 4,
+      "communication": 3,
+      "punctuality": 4,
+      "value": 3,
+      "professionalism": 5
+    },
+    "overallRating": 3.8,
+    "body": "Solid service, fair pricing, will use again.",
+    "reported": true,
+    "createdAt": "2026-07-15T09:00:00.000Z"
+  }
+]

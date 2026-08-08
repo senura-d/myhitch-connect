@@ -1,0 +1,182 @@
+[
+  {
+    "id": "audit-001",
+    "actorId": "user-admin-01",
+    "actorName": "Priya Admin",
+    "action": "issued refund",
+    "targetType": "category",
+    "targetId": "list-009",
+    "createdAt": "2026-07-11T09:00:00.000Z"
+  },
+  {
+    "id": "audit-002",
+    "actorId": "user-admin-01",
+    "actorName": "Priya Admin",
+    "action": "updated category taxonomy",
+    "targetType": "booking",
+    "targetId": "list-012",
+    "createdAt": "2026-05-12T09:00:00.000Z"
+  },
+  {
+    "id": "audit-003",
+    "actorId": "user-admin-01",
+    "actorName": "Priya Admin",
+    "action": "resolved review report",
+    "targetType": "booking",
+    "targetId": "list-020",
+    "createdAt": "2026-06-08T09:00:00.000Z"
+  },
+  {
+    "id": "audit-004",
+    "actorId": "user-admin-01",
+    "actorName": "Priya Admin",
+    "action": "updated category taxonomy",
+    "targetType": "provider",
+    "targetId": "prov-02",
+    "createdAt": "2026-05-03T09:00:00.000Z"
+  },
+  {
+    "id": "audit-005",
+    "actorId": "user-admin-01",
+    "actorName": "Priya Admin",
+    "action": "rejected listing",
+    "targetType": "review",
+    "targetId": "list-023",
+    "createdAt": "2026-06-27T09:00:00.000Z"
+  },
+  {
+    "id": "audit-006",
+    "actorId": "user-admin-01",
+    "actorName": "Priya Admin",
+    "action": "approved provider verification",
+    "targetType": "review",
+    "targetId": "prov-04",
+    "createdAt": "2026-07-31T09:00:00.000Z"
+  },
+  {
+    "id": "audit-007",
+    "actorId": "user-admin-01",
+    "actorName": "Priya Admin",
+    "action": "paused listing",
+    "targetType": "review",
+    "targetId": "prov-14",
+    "createdAt": "2026-07-24T09:00:00.000Z"
+  },
+  {
+    "id": "audit-008",
+    "actorId": "user-admin-01",
+    "actorName": "Priya Admin",
+    "action": "resolved review report",
+    "targetType": "booking",
+    "targetId": "list-024",
+    "createdAt": "2026-06-12T09:00:00.000Z"
+  },
+  {
+    "id": "audit-009",
+    "actorId": "user-admin-01",
+    "actorName": "Priya Admin",
+    "action": "updated category taxonomy",
+    "targetType": "booking",
+    "targetId": "prov-02",
+    "createdAt": "2026-06-17T09:00:00.000Z"
+  },
+  {
+    "id": "audit-010",
+    "actorId": "user-admin-01",
+    "actorName": "Priya Admin",
+    "action": "paused listing",
+    "targetType": "review",
+    "targetId": "list-006",
+    "createdAt": "2026-07-29T09:00:00.000Z"
+  },
+  {
+    "id": "audit-011",
+    "actorId": "user-admin-01",
+    "actorName": "Priya Admin",
+    "action": "rejected listing",
+    "targetType": "listing",
+    "targetId": "prov-16",
+    "createdAt": "2026-06-04T09:00:00.000Z"
+  },
+  {
+    "id": "audit-012",
+    "actorId": "user-admin-01",
+    "actorName": "Priya Admin",
+    "action": "approved provider verification",
+    "targetType": "review",
+    "targetId": "list-022",
+    "createdAt": "2026-06-13T09:00:00.000Z"
+  },
+  {
+    "id": "audit-013",
+    "actorId": "user-admin-01",
+    "actorName": "Priya Admin",
+    "action": "issued refund",
+    "targetType": "listing",
+    "targetId": "list-016",
+    "createdAt": "2026-07-03T09:00:00.000Z"
+  },
+  {
+    "id": "audit-014",
+    "actorId": "user-admin-01",
+    "actorName": "Priya Admin",
+    "action": "paused listing",
+    "targetType": "listing",
+    "targetId": "list-015",
+    "createdAt": "2026-07-13T09:00:00.000Z"
+  },
+  {
+    "id": "audit-015",
+    "actorId": "user-admin-01",
+    "actorName": "Priya Admin",
+    "action": "paused listing",
+    "targetType": "booking",
+    "targetId": "list-025",
+    "createdAt": "2026-06-17T09:00:00.000Z"
+  },
+  {
+    "id": "audit-016",
+    "actorId": "user-admin-01",
+    "actorName": "Priya Admin",
+    "action": "updated category taxonomy",
+    "targetType": "listing",
+    "targetId": "prov-17",
+    "createdAt": "2026-05-28T09:00:00.000Z"
+  },
+  {
+    "id": "audit-017",
+    "actorId": "user-admin-01",
+    "actorName": "Priya Admin",
+    "action": "updated category taxonomy",
+    "targetType": "listing",
+    "targetId": "list-007",
+    "createdAt": "2026-06-06T09:00:00.000Z"
+  },
+  {
+    "id": "audit-018",
+    "actorId": "user-admin-01",
+    "actorName": "Priya Admin",
+    "action": "approved provider verification",
+    "targetType": "category",
+    "targetId": "prov-06",
+    "createdAt": "2026-07-29T09:00:00.000Z"
+  },
+  {
+    "id": "audit-019",
+    "actorId": "user-admin-01",
+    "actorName": "Priya Admin",
+    "action": "issued refund",
+    "targetType": "category",
+    "targetId": "prov-10",
+    "createdAt": "2026-06-08T09:00:00.000Z"
+  },
+  {
+    "id": "audit-020",
+    "actorId": "user-admin-01",
+    "actorName": "Priya Admin",
+    "action": "resolved review report",
+    "targetType": "category",
+    "targetId": "prov-12",
+    "createdAt": "2026-05-02T09:00:00.000Z"
+  }
+]

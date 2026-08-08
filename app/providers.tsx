@@ -1,7 +1,6 @@
 "use client";
 
 import * as React from "react";
-import { ThemeProvider } from "next-themes";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/sonner";
 import { SessionProvider } from "@/lib/mock-api/session";
@@ -12,26 +11,21 @@ export function AppProviders({ children }: { children: React.ReactNode }) {
       new QueryClient({
         defaultOptions: {
           queries: {
-            staleTime: 30_000,
+            staleTime: 5 * 60 * 1000, // 5 minutes — data is in-memory, no need to refetch often
+            gcTime: 10 * 60 * 1000,   // 10 minutes garbage collection
             refetchOnWindowFocus: false,
+            refetchOnReconnect: false,
           },
         },
       })
   );
 
   return (
-    <ThemeProvider
-      attribute="class"
-      defaultTheme="system"
-      enableSystem
-      disableTransitionOnChange
-    >
-      <QueryClientProvider client={queryClient}>
-        <SessionProvider>
-          {children}
-          <Toaster richColors position="top-right" />
-        </SessionProvider>
-      </QueryClientProvider>
-    </ThemeProvider>
+    <QueryClientProvider client={queryClient}>
+      <SessionProvider>
+        {children}
+        <Toaster richColors position="top-right" />
+      </SessionProvider>
+    </QueryClientProvider>
   );
 }

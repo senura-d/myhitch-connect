@@ -1,0 +1,1488 @@
+[
+  {
+    "id": "list-001",
+    "providerId": "prov-01",
+    "title": "End of Lease Cleaning — Sunrise Plumbing Co.",
+    "primaryCategoryId": "st-end-of-lease-cleaning",
+    "description": "Professional end of lease cleaning delivered by Sunrise Plumbing Co. Fully insured and highly rated by local customers.",
+    "pricing": {
+      "method": "package",
+      "amount": 388,
+      "currency": "AUD"
+    },
+    "deliveryMode": "at_customer_location",
+    "bookingPathway": "quote",
+    "coverage": {
+      "type": "suburb_radius",
+      "values": [
+        "Fitzroy"
+      ],
+      "radiusKm": 20
+    },
+    "durationMinutes": 120,
+    "capacity": 1,
+    "availability": {
+      "leadTimeHours": 2,
+      "blackoutDates": [],
+      "bookableDays": [
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat"
+      ]
+    },
+    "media": [
+      {
+        "id": "list-001-media-1",
+        "type": "image",
+        "url": "",
+        "caption": "End of Lease Cleaning example work"
+      }
+    ],
+    "terms": {
+      "cancellationPolicy": "Free cancellation up to 24 hours before the scheduled time.",
+      "refundPolicy": "Full refund if cancelled outside the cancellation window.",
+      "travelCharges": "Included within service radius.",
+      "exclusions": "Parts and materials charged separately unless stated in the quote."
+    },
+    "complianceValues": {
+      "licenseNumber": "licenseNumber-prov-01",
+      "yearsExperience": 12,
+      "insuranceCertificate": "insuranceCertificate-prov-01"
+    },
+    "status": "published",
+    "isFeatured": false,
+    "createdAt": "2025-10-24T09:00:00.000Z"
+  },
+  {
+    "id": "list-002",
+    "providerId": "prov-01",
+    "title": "Plumbing Repair — Sunrise Plumbing Co.",
+    "primaryCategoryId": "st-plumbing-repair",
+    "description": "Professional plumbing repair delivered by Sunrise Plumbing Co. Fully insured and highly rated by local customers.",
+    "pricing": {
+      "method": "recurring_fee",
+      "amount": 411,
+      "currency": "AUD",
+      "unit": "month",
+      "recurringInterval": "monthly"
+    },
+    "deliveryMode": "mobile",
+    "bookingPathway": "instant",
+    "coverage": {
+      "type": "suburb_radius",
+      "values": [
+        "Fitzroy"
+      ],
+      "radiusKm": 20
+    },
+    "durationMinutes": 30,
+    "capacity": 8,
+    "availability": {
+      "leadTimeHours": 72,
+      "blackoutDates": [
+        "2026-08-13"
+      ],
+      "bookableDays": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat"
+      ]
+    },
+    "media": [
+      {
+        "id": "list-002-media-1",
+        "type": "image",
+        "url": "",
+        "caption": "Plumbing Repair example work"
+      }
+    ],
+    "terms": {
+      "cancellationPolicy": "Free cancellation up to 24 hours before the scheduled time.",
+      "refundPolicy": "Full refund if cancelled outside the cancellation window.",
+      "travelCharges": "Included within service radius.",
+      "exclusions": "Parts and materials charged separately unless stated in the quote."
+    },
+    "complianceValues": {
+      "licenseNumber": "licenseNumber-prov-01",
+      "yearsExperience": 9,
+      "insuranceCertificate": "insuranceCertificate-prov-01"
+    },
+    "status": "published",
+    "isFeatured": false,
+    "createdAt": "2026-01-13T09:00:00.000Z"
+  },
+  {
+    "id": "list-003",
+    "providerId": "prov-02",
+    "title": "Plumbing Repair — BrightSpark Electrical",
+    "primaryCategoryId": "st-plumbing-repair",
+    "description": "Professional plumbing repair delivered by BrightSpark Electrical. Fully insured and highly rated by local customers.",
+    "pricing": {
+      "method": "hourly",
+      "amount": 126,
+      "currency": "AUD",
+      "unit": "hour"
+    },
+    "deliveryMode": "mobile",
+    "bookingPathway": "instant",
+    "coverage": {
+      "type": "suburb_radius",
+      "values": [
+        "Northbridge"
+      ],
+      "radiusKm": 25
+    },
+    "availability": {
+      "leadTimeHours": 72,
+      "blackoutDates": [],
+      "bookableDays": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri"
+      ]
+    },
+    "media": [
+      {
+        "id": "list-003-media-1",
+        "type": "image",
+        "url": "",
+        "caption": "Plumbing Repair example work"
+      }
+    ],
+    "terms": {
+      "cancellationPolicy": "Free cancellation up to 24 hours before the scheduled time.",
+      "refundPolicy": "Full refund if cancelled outside the cancellation window.",
+      "travelCharges": "Included within service radius.",
+      "exclusions": "Parts and materials charged separately unless stated in the quote."
+    },
+    "complianceValues": {
+      "licenseNumber": "licenseNumber-prov-02",
+      "yearsExperience": 7,
+      "insuranceCertificate": "insuranceCertificate-prov-02"
+    },
+    "status": "published",
+    "isFeatured": false,
+    "createdAt": "2026-02-28T09:00:00.000Z"
+  },
+  {
+    "id": "list-004",
+    "providerId": "prov-02",
+    "title": "Garden Design — BrightSpark Electrical",
+    "primaryCategoryId": "st-garden-design",
+    "description": "Professional garden design delivered by BrightSpark Electrical. Fully insured and highly rated by local customers.",
+    "pricing": {
+      "method": "quote_required",
+      "currency": "AUD"
+    },
+    "deliveryMode": "at_provider_location",
+    "bookingPathway": "quote",
+    "coverage": {
+      "type": "suburb_radius",
+      "values": [
+        "Northbridge"
+      ],
+      "radiusKm": 25
+    },
+    "durationMinutes": 90,
+    "availability": {
+      "leadTimeHours": 2,
+      "blackoutDates": [
+        "2026-08-14"
+      ],
+      "bookableDays": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat"
+      ]
+    },
+    "media": [
+      {
+        "id": "list-004-media-1",
+        "type": "image",
+        "url": "",
+        "caption": "Garden Design example work"
+      }
+    ],
+    "terms": {
+      "cancellationPolicy": "Free cancellation up to 24 hours before the scheduled time.",
+      "refundPolicy": "Full refund if cancelled outside the cancellation window.",
+      "exclusions": "Parts and materials charged separately unless stated in the quote."
+    },
+    "complianceValues": {
+      "licenseNumber": "licenseNumber-prov-02",
+      "yearsExperience": 14,
+      "insuranceCertificate": "insuranceCertificate-prov-02"
+    },
+    "status": "paused",
+    "isFeatured": false,
+    "createdAt": "2025-11-03T09:00:00.000Z"
+  },
+  {
+    "id": "list-005",
+    "providerId": "prov-02",
+    "title": "Fixture Installation — BrightSpark Electrical",
+    "primaryCategoryId": "st-plumbing-install",
+    "description": "Professional fixture installation delivered by BrightSpark Electrical. Fully insured and highly rated by local customers.",
+    "pricing": {
+      "method": "fixed",
+      "amount": 350,
+      "currency": "AUD"
+    },
+    "deliveryMode": "at_provider_location",
+    "bookingPathway": "quote",
+    "coverage": {
+      "type": "suburb_radius",
+      "values": [
+        "Northbridge"
+      ],
+      "radiusKm": 25
+    },
+    "durationMinutes": 120,
+    "availability": {
+      "leadTimeHours": 48,
+      "blackoutDates": [],
+      "bookableDays": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat"
+      ]
+    },
+    "media": [
+      {
+        "id": "list-005-media-1",
+        "type": "image",
+        "url": "",
+        "caption": "Fixture Installation example work"
+      }
+    ],
+    "terms": {
+      "cancellationPolicy": "Free cancellation up to 24 hours before the scheduled time.",
+      "refundPolicy": "Full refund if cancelled outside the cancellation window.",
+      "exclusions": "Parts and materials charged separately unless stated in the quote."
+    },
+    "complianceValues": {
+      "licenseNumber": "licenseNumber-prov-02",
+      "yearsExperience": 12,
+      "insuranceCertificate": "insuranceCertificate-prov-02"
+    },
+    "status": "rejected",
+    "isFeatured": false,
+    "createdAt": "2026-01-22T09:00:00.000Z"
+  },
+  {
+    "id": "list-006",
+    "providerId": "prov-03",
+    "title": "End of Lease Cleaning — CrystalClear Cleaning Services",
+    "primaryCategoryId": "st-end-of-lease-cleaning",
+    "description": "Professional end of lease cleaning delivered by CrystalClear Cleaning Services. Fully insured and highly rated by local customers.",
+    "pricing": {
+      "method": "quote_required",
+      "currency": "AUD"
+    },
+    "deliveryMode": "mobile",
+    "bookingPathway": "quote",
+    "coverage": {
+      "type": "suburb_radius",
+      "values": [
+        "St Kilda"
+      ],
+      "radiusKm": 25
+    },
+    "durationMinutes": 60,
+    "availability": {
+      "leadTimeHours": 72,
+      "blackoutDates": [],
+      "bookableDays": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat"
+      ]
+    },
+    "media": [
+      {
+        "id": "list-006-media-1",
+        "type": "image",
+        "url": "",
+        "caption": "End of Lease Cleaning example work"
+      }
+    ],
+    "terms": {
+      "cancellationPolicy": "Free cancellation up to 24 hours before the scheduled time.",
+      "refundPolicy": "Full refund if cancelled outside the cancellation window.",
+      "travelCharges": "Included within service radius.",
+      "exclusions": "Parts and materials charged separately unless stated in the quote."
+    },
+    "complianceValues": {
+      "licenseNumber": "licenseNumber-prov-03",
+      "yearsExperience": 14,
+      "insuranceCertificate": "insuranceCertificate-prov-03"
+    },
+    "status": "archived",
+    "isFeatured": false,
+    "createdAt": "2026-02-22T09:00:00.000Z"
+  },
+  {
+    "id": "list-007",
+    "providerId": "prov-03",
+    "title": "Home Cleaning — CrystalClear Cleaning Services",
+    "primaryCategoryId": "st-home-cleaning",
+    "description": "Professional home cleaning delivered by CrystalClear Cleaning Services. Fully insured and highly rated by local customers.",
+    "pricing": {
+      "method": "free_consultation",
+      "currency": "AUD"
+    },
+    "deliveryMode": "mobile",
+    "bookingPathway": "quote",
+    "coverage": {
+      "type": "suburb_radius",
+      "values": [
+        "St Kilda"
+      ],
+      "radiusKm": 25
+    },
+    "durationMinutes": 90,
+    "availability": {
+      "leadTimeHours": 2,
+      "blackoutDates": [
+        "2026-08-07"
+      ],
+      "bookableDays": [
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat"
+      ]
+    },
+    "media": [
+      {
+        "id": "list-007-media-1",
+        "type": "image",
+        "url": "",
+        "caption": "Home Cleaning example work"
+      }
+    ],
+    "terms": {
+      "cancellationPolicy": "Free cancellation up to 24 hours before the scheduled time.",
+      "refundPolicy": "Full refund if cancelled outside the cancellation window.",
+      "travelCharges": "Included within service radius.",
+      "exclusions": "Parts and materials charged separately unless stated in the quote."
+    },
+    "complianceValues": {
+      "licenseNumber": "licenseNumber-prov-03",
+      "yearsExperience": 7,
+      "insuranceCertificate": "insuranceCertificate-prov-03"
+    },
+    "status": "draft",
+    "isFeatured": false,
+    "createdAt": "2026-01-06T09:00:00.000Z"
+  },
+  {
+    "id": "list-008",
+    "providerId": "prov-04",
+    "title": "Fixture Installation — GreenScape Landscaping",
+    "primaryCategoryId": "st-plumbing-install",
+    "description": "Professional fixture installation delivered by GreenScape Landscaping. Fully insured and highly rated by local customers.",
+    "pricing": {
+      "method": "starting_from",
+      "amount": 433,
+      "currency": "AUD"
+    },
+    "deliveryMode": "at_customer_location",
+    "bookingPathway": "quote",
+    "coverage": {
+      "type": "suburb_radius",
+      "values": [
+        "Fitzroy"
+      ],
+      "radiusKm": 25
+    },
+    "durationMinutes": 30,
+    "availability": {
+      "leadTimeHours": 48,
+      "blackoutDates": [],
+      "bookableDays": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri"
+      ]
+    },
+    "media": [
+      {
+        "id": "list-008-media-1",
+        "type": "image",
+        "url": "",
+        "caption": "Fixture Installation example work"
+      }
+    ],
+    "terms": {
+      "cancellationPolicy": "Free cancellation up to 24 hours before the scheduled time.",
+      "refundPolicy": "Full refund if cancelled outside the cancellation window.",
+      "travelCharges": "Included within service radius.",
+      "exclusions": "Parts and materials charged separately unless stated in the quote."
+    },
+    "complianceValues": {
+      "licenseNumber": "licenseNumber-prov-04",
+      "yearsExperience": 10,
+      "insuranceCertificate": "insuranceCertificate-prov-04"
+    },
+    "status": "pending",
+    "isFeatured": false,
+    "createdAt": "2026-07-14T09:00:00.000Z"
+  },
+  {
+    "id": "list-009",
+    "providerId": "prov-05",
+    "title": "Garden Design — Harbor Plumbing & Gas",
+    "primaryCategoryId": "st-garden-design",
+    "description": "Professional garden design delivered by Harbor Plumbing & Gas. Fully insured and highly rated by local customers.",
+    "pricing": {
+      "method": "free_consultation",
+      "currency": "AUD"
+    },
+    "deliveryMode": "online",
+    "bookingPathway": "instant",
+    "coverage": {
+      "type": "online",
+      "values": [
+        "Australia-wide"
+      ]
+    },
+    "availability": {
+      "leadTimeHours": 48,
+      "blackoutDates": [
+        "2026-08-19"
+      ],
+      "bookableDays": [
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat"
+      ]
+    },
+    "media": [
+      {
+        "id": "list-009-media-1",
+        "type": "image",
+        "url": "",
+        "caption": "Garden Design example work"
+      }
+    ],
+    "terms": {
+      "cancellationPolicy": "Free cancellation up to 24 hours before the scheduled time.",
+      "refundPolicy": "Full refund if cancelled outside the cancellation window.",
+      "exclusions": "Parts and materials charged separately unless stated in the quote."
+    },
+    "complianceValues": {
+      "licenseNumber": "licenseNumber-prov-05",
+      "yearsExperience": 3,
+      "insuranceCertificate": "insuranceCertificate-prov-05"
+    },
+    "status": "published",
+    "isFeatured": false,
+    "createdAt": "2026-05-02T09:00:00.000Z"
+  },
+  {
+    "id": "list-010",
+    "providerId": "prov-06",
+    "title": "Bookkeeping — Precision Tax & Bookkeeping",
+    "primaryCategoryId": "st-bookkeeping",
+    "description": "Professional bookkeeping delivered by Precision Tax & Bookkeeping. Fully insured and highly rated by local customers.",
+    "pricing": {
+      "method": "hourly",
+      "amount": 438,
+      "currency": "AUD",
+      "unit": "hour"
+    },
+    "deliveryMode": "at_customer_location",
+    "bookingPathway": "enquiry",
+    "coverage": {
+      "type": "suburb_radius",
+      "values": [
+        "Newtown"
+      ],
+      "radiusKm": 20
+    },
+    "durationMinutes": 60,
+    "capacity": 5,
+    "availability": {
+      "leadTimeHours": 72,
+      "blackoutDates": [],
+      "bookableDays": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat"
+      ]
+    },
+    "media": [
+      {
+        "id": "list-010-media-1",
+        "type": "image",
+        "url": "",
+        "caption": "Bookkeeping example work"
+      }
+    ],
+    "terms": {
+      "cancellationPolicy": "Free cancellation up to 24 hours before the scheduled time.",
+      "refundPolicy": "Full refund if cancelled outside the cancellation window.",
+      "travelCharges": "Included within service radius.",
+      "exclusions": "Parts and materials charged separately unless stated in the quote."
+    },
+    "complianceValues": {
+      "certificationNumber": "certificationNumber-prov-06",
+      "indemnityInsurance": "indemnityInsurance-prov-06"
+    },
+    "status": "published",
+    "isFeatured": true,
+    "createdAt": "2026-05-29T09:00:00.000Z"
+  },
+  {
+    "id": "list-011",
+    "providerId": "prov-07",
+    "title": "Process Improvement — Whitfield Legal Consulting",
+    "primaryCategoryId": "st-process-improvement",
+    "description": "Professional process improvement delivered by Whitfield Legal Consulting. Fully insured and highly rated by local customers.",
+    "pricing": {
+      "method": "hourly",
+      "amount": 358,
+      "currency": "AUD",
+      "unit": "hour"
+    },
+    "deliveryMode": "mobile",
+    "bookingPathway": "quote",
+    "coverage": {
+      "type": "suburb_radius",
+      "values": [
+        "Northbridge"
+      ],
+      "radiusKm": 10
+    },
+    "durationMinutes": 60,
+    "capacity": 1,
+    "availability": {
+      "leadTimeHours": 2,
+      "blackoutDates": [],
+      "bookableDays": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat"
+      ]
+    },
+    "media": [
+      {
+        "id": "list-011-media-1",
+        "type": "image",
+        "url": "",
+        "caption": "Process Improvement example work"
+      }
+    ],
+    "terms": {
+      "cancellationPolicy": "Free cancellation up to 24 hours before the scheduled time.",
+      "refundPolicy": "Full refund if cancelled outside the cancellation window.",
+      "travelCharges": "Included within service radius.",
+      "exclusions": "Parts and materials charged separately unless stated in the quote."
+    },
+    "complianceValues": {
+      "certificationNumber": "certificationNumber-prov-07",
+      "indemnityInsurance": "indemnityInsurance-prov-07"
+    },
+    "status": "published",
+    "isFeatured": false,
+    "createdAt": "2026-01-23T09:00:00.000Z"
+  },
+  {
+    "id": "list-012",
+    "providerId": "prov-08",
+    "title": "General Legal Consultation — Meridian Business Advisory",
+    "primaryCategoryId": "st-legal-consult",
+    "description": "Professional general legal consultation delivered by Meridian Business Advisory. Fully insured and highly rated by local customers.",
+    "pricing": {
+      "method": "hourly",
+      "amount": 128,
+      "currency": "AUD",
+      "unit": "hour"
+    },
+    "deliveryMode": "at_provider_location",
+    "bookingPathway": "enquiry",
+    "coverage": {
+      "type": "suburb_radius",
+      "values": [
+        "New Farm"
+      ],
+      "radiusKm": 20
+    },
+    "durationMinutes": 90,
+    "availability": {
+      "leadTimeHours": 2,
+      "blackoutDates": [],
+      "bookableDays": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat"
+      ]
+    },
+    "media": [
+      {
+        "id": "list-012-media-1",
+        "type": "image",
+        "url": "",
+        "caption": "General Legal Consultation example work"
+      }
+    ],
+    "terms": {
+      "cancellationPolicy": "Free cancellation up to 24 hours before the scheduled time.",
+      "refundPolicy": "Full refund if cancelled outside the cancellation window.",
+      "exclusions": "Parts and materials charged separately unless stated in the quote."
+    },
+    "complianceValues": {
+      "certificationNumber": "certificationNumber-prov-08",
+      "indemnityInsurance": "indemnityInsurance-prov-08"
+    },
+    "status": "paused",
+    "isFeatured": true,
+    "createdAt": "2026-07-01T09:00:00.000Z"
+  },
+  {
+    "id": "list-013",
+    "providerId": "prov-09",
+    "title": "Bookkeeping — Coastal Accounting Partners",
+    "primaryCategoryId": "st-bookkeeping",
+    "description": "Professional bookkeeping delivered by Coastal Accounting Partners. Fully insured and highly rated by local customers.",
+    "pricing": {
+      "method": "quote_required",
+      "currency": "AUD"
+    },
+    "deliveryMode": "at_provider_location",
+    "bookingPathway": "quote",
+    "coverage": {
+      "type": "suburb_radius",
+      "values": [
+        "St Kilda"
+      ],
+      "radiusKm": 10
+    },
+    "availability": {
+      "leadTimeHours": 48,
+      "blackoutDates": [
+        "2026-08-19"
+      ],
+      "bookableDays": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri"
+      ]
+    },
+    "media": [
+      {
+        "id": "list-013-media-1",
+        "type": "image",
+        "url": "",
+        "caption": "Bookkeeping example work"
+      }
+    ],
+    "terms": {
+      "cancellationPolicy": "Free cancellation up to 24 hours before the scheduled time.",
+      "refundPolicy": "Full refund if cancelled outside the cancellation window.",
+      "exclusions": "Parts and materials charged separately unless stated in the quote."
+    },
+    "complianceValues": {
+      "certificationNumber": "certificationNumber-prov-09",
+      "indemnityInsurance": "indemnityInsurance-prov-09"
+    },
+    "status": "rejected",
+    "isFeatured": false,
+    "createdAt": "2025-12-12T09:00:00.000Z"
+  },
+  {
+    "id": "list-014",
+    "providerId": "prov-10",
+    "title": "One-on-One Training — Elevate Personal Training",
+    "primaryCategoryId": "st-one-on-one-training",
+    "description": "Professional one-on-one training delivered by Elevate Personal Training. Fully insured and highly rated by local customers.",
+    "pricing": {
+      "method": "quote_required",
+      "currency": "AUD"
+    },
+    "deliveryMode": "at_customer_location",
+    "bookingPathway": "quote",
+    "coverage": {
+      "type": "suburb_radius",
+      "values": [
+        "Northbridge"
+      ],
+      "radiusKm": 15
+    },
+    "durationMinutes": 30,
+    "availability": {
+      "leadTimeHours": 48,
+      "blackoutDates": [
+        "2026-08-16"
+      ],
+      "bookableDays": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat"
+      ]
+    },
+    "media": [
+      {
+        "id": "list-014-media-1",
+        "type": "image",
+        "url": "",
+        "caption": "One-on-One Training example work"
+      }
+    ],
+    "terms": {
+      "cancellationPolicy": "Free cancellation up to 24 hours before the scheduled time.",
+      "refundPolicy": "Full refund if cancelled outside the cancellation window.",
+      "travelCharges": "Included within service radius.",
+      "exclusions": "Parts and materials charged separately unless stated in the quote."
+    },
+    "complianceValues": {
+      "certification": "certification-prov-10",
+      "firstAidCertificate": "firstAidCertificate-prov-10"
+    },
+    "status": "archived",
+    "isFeatured": false,
+    "createdAt": "2026-07-18T09:00:00.000Z"
+  },
+  {
+    "id": "list-015",
+    "providerId": "prov-10",
+    "title": "Group Fitness — Elevate Personal Training",
+    "primaryCategoryId": "st-group-fitness",
+    "description": "Professional group fitness delivered by Elevate Personal Training. Fully insured and highly rated by local customers.",
+    "pricing": {
+      "method": "package",
+      "amount": 417,
+      "currency": "AUD"
+    },
+    "deliveryMode": "hybrid",
+    "bookingPathway": "instant",
+    "coverage": {
+      "type": "suburb_radius",
+      "values": [
+        "Northbridge"
+      ],
+      "radiusKm": 15
+    },
+    "durationMinutes": 30,
+    "availability": {
+      "leadTimeHours": 48,
+      "blackoutDates": [],
+      "bookableDays": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri"
+      ]
+    },
+    "media": [
+      {
+        "id": "list-015-media-1",
+        "type": "image",
+        "url": "",
+        "caption": "Group Fitness example work"
+      }
+    ],
+    "terms": {
+      "cancellationPolicy": "Free cancellation up to 24 hours before the scheduled time.",
+      "refundPolicy": "Full refund if cancelled outside the cancellation window.",
+      "exclusions": "Parts and materials charged separately unless stated in the quote."
+    },
+    "complianceValues": {
+      "certification": "certification-prov-10",
+      "firstAidCertificate": "firstAidCertificate-prov-10"
+    },
+    "status": "draft",
+    "isFeatured": false,
+    "createdAt": "2025-10-10T09:00:00.000Z"
+  },
+  {
+    "id": "list-016",
+    "providerId": "prov-11",
+    "title": "Remedial Massage — Zen Remedial Massage",
+    "primaryCategoryId": "st-remedial-massage",
+    "description": "Professional remedial massage delivered by Zen Remedial Massage. Fully insured and highly rated by local customers.",
+    "pricing": {
+      "method": "quote_required",
+      "currency": "AUD"
+    },
+    "deliveryMode": "nationwide",
+    "bookingPathway": "quote",
+    "coverage": {
+      "type": "states",
+      "values": [
+        "WA",
+        "NSW",
+        "VIC",
+        "QLD",
+        "SA"
+      ]
+    },
+    "durationMinutes": 120,
+    "capacity": 10,
+    "availability": {
+      "leadTimeHours": 2,
+      "blackoutDates": [
+        "2026-08-10"
+      ],
+      "bookableDays": [
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat"
+      ]
+    },
+    "media": [
+      {
+        "id": "list-016-media-1",
+        "type": "image",
+        "url": "",
+        "caption": "Remedial Massage example work"
+      }
+    ],
+    "terms": {
+      "cancellationPolicy": "Free cancellation up to 24 hours before the scheduled time.",
+      "refundPolicy": "Full refund if cancelled outside the cancellation window.",
+      "exclusions": "Parts and materials charged separately unless stated in the quote."
+    },
+    "complianceValues": {
+      "certification": "certification-prov-11",
+      "firstAidCertificate": "firstAidCertificate-prov-11"
+    },
+    "status": "pending",
+    "isFeatured": true,
+    "createdAt": "2026-04-04T09:00:00.000Z"
+  },
+  {
+    "id": "list-017",
+    "providerId": "prov-12",
+    "title": "Maths Tutoring — BrightPath Tutoring",
+    "primaryCategoryId": "st-maths-tutoring",
+    "description": "Professional maths tutoring delivered by BrightPath Tutoring. Fully insured and highly rated by local customers.",
+    "pricing": {
+      "method": "quote_required",
+      "currency": "AUD"
+    },
+    "deliveryMode": "nationwide",
+    "bookingPathway": "quote",
+    "coverage": {
+      "type": "states",
+      "values": [
+        "WA",
+        "NSW",
+        "VIC",
+        "QLD",
+        "SA"
+      ]
+    },
+    "durationMinutes": 90,
+    "availability": {
+      "leadTimeHours": 2,
+      "blackoutDates": [
+        "2026-08-20"
+      ],
+      "bookableDays": [
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat"
+      ]
+    },
+    "media": [
+      {
+        "id": "list-017-media-1",
+        "type": "image",
+        "url": "",
+        "caption": "Maths Tutoring example work"
+      }
+    ],
+    "terms": {
+      "cancellationPolicy": "Free cancellation up to 24 hours before the scheduled time.",
+      "refundPolicy": "Full refund if cancelled outside the cancellation window.",
+      "exclusions": "Parts and materials charged separately unless stated in the quote."
+    },
+    "complianceValues": {
+      "certification": "certification-prov-12",
+      "firstAidCertificate": "firstAidCertificate-prov-12"
+    },
+    "status": "published",
+    "isFeatured": false,
+    "createdAt": "2025-10-19T09:00:00.000Z"
+  },
+  {
+    "id": "list-018",
+    "providerId": "prov-13",
+    "title": "One-on-One Training — PulseFit Group Training",
+    "primaryCategoryId": "st-one-on-one-training",
+    "description": "Professional one-on-one training delivered by PulseFit Group Training. Fully insured and highly rated by local customers.",
+    "pricing": {
+      "method": "hourly",
+      "amount": 414,
+      "currency": "AUD",
+      "unit": "hour"
+    },
+    "deliveryMode": "at_customer_location",
+    "bookingPathway": "instant",
+    "coverage": {
+      "type": "suburb_radius",
+      "values": [
+        "New Farm"
+      ],
+      "radiusKm": 15
+    },
+    "durationMinutes": 120,
+    "availability": {
+      "leadTimeHours": 72,
+      "blackoutDates": [],
+      "bookableDays": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri"
+      ]
+    },
+    "media": [
+      {
+        "id": "list-018-media-1",
+        "type": "image",
+        "url": "",
+        "caption": "One-on-One Training example work"
+      }
+    ],
+    "terms": {
+      "cancellationPolicy": "Free cancellation up to 24 hours before the scheduled time.",
+      "refundPolicy": "Full refund if cancelled outside the cancellation window.",
+      "travelCharges": "Included within service radius.",
+      "exclusions": "Parts and materials charged separately unless stated in the quote."
+    },
+    "complianceValues": {
+      "certification": "certification-prov-13",
+      "firstAidCertificate": "firstAidCertificate-prov-13"
+    },
+    "status": "published",
+    "isFeatured": false,
+    "createdAt": "2026-05-19T09:00:00.000Z"
+  },
+  {
+    "id": "list-019",
+    "providerId": "prov-13",
+    "title": "Maths Tutoring — PulseFit Group Training",
+    "primaryCategoryId": "st-maths-tutoring",
+    "description": "Professional maths tutoring delivered by PulseFit Group Training. Fully insured and highly rated by local customers.",
+    "pricing": {
+      "method": "starting_from",
+      "amount": 50,
+      "currency": "AUD"
+    },
+    "deliveryMode": "online",
+    "bookingPathway": "instant",
+    "coverage": {
+      "type": "online",
+      "values": [
+        "Australia-wide"
+      ]
+    },
+    "durationMinutes": 60,
+    "availability": {
+      "leadTimeHours": 72,
+      "blackoutDates": [],
+      "bookableDays": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri"
+      ]
+    },
+    "media": [
+      {
+        "id": "list-019-media-1",
+        "type": "image",
+        "url": "",
+        "caption": "Maths Tutoring example work"
+      }
+    ],
+    "terms": {
+      "cancellationPolicy": "Free cancellation up to 24 hours before the scheduled time.",
+      "refundPolicy": "Full refund if cancelled outside the cancellation window.",
+      "exclusions": "Parts and materials charged separately unless stated in the quote."
+    },
+    "complianceValues": {
+      "certification": "certification-prov-13",
+      "firstAidCertificate": "firstAidCertificate-prov-13"
+    },
+    "status": "published",
+    "isFeatured": false,
+    "createdAt": "2026-06-16T09:00:00.000Z"
+  },
+  {
+    "id": "list-020",
+    "providerId": "prov-13",
+    "title": "Group Fitness — PulseFit Group Training",
+    "primaryCategoryId": "st-group-fitness",
+    "description": "Professional group fitness delivered by PulseFit Group Training. Fully insured and highly rated by local customers.",
+    "pricing": {
+      "method": "package",
+      "amount": 128,
+      "currency": "AUD"
+    },
+    "deliveryMode": "at_customer_location",
+    "bookingPathway": "instant",
+    "coverage": {
+      "type": "suburb_radius",
+      "values": [
+        "New Farm"
+      ],
+      "radiusKm": 15
+    },
+    "durationMinutes": 60,
+    "capacity": 5,
+    "availability": {
+      "leadTimeHours": 24,
+      "blackoutDates": [],
+      "bookableDays": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri"
+      ]
+    },
+    "media": [
+      {
+        "id": "list-020-media-1",
+        "type": "image",
+        "url": "",
+        "caption": "Group Fitness example work"
+      }
+    ],
+    "terms": {
+      "cancellationPolicy": "Free cancellation up to 24 hours before the scheduled time.",
+      "refundPolicy": "Full refund if cancelled outside the cancellation window.",
+      "travelCharges": "Included within service radius.",
+      "exclusions": "Parts and materials charged separately unless stated in the quote."
+    },
+    "complianceValues": {
+      "certification": "certification-prov-13",
+      "firstAidCertificate": "firstAidCertificate-prov-13"
+    },
+    "status": "paused",
+    "isFeatured": false,
+    "createdAt": "2026-06-07T09:00:00.000Z"
+  },
+  {
+    "id": "list-021",
+    "providerId": "prov-14",
+    "title": "Wedding DJ — Golden Hour Photography",
+    "primaryCategoryId": "st-wedding-dj",
+    "description": "Professional wedding dj delivered by Golden Hour Photography. Fully insured and highly rated by local customers.",
+    "pricing": {
+      "method": "free_consultation",
+      "currency": "AUD"
+    },
+    "deliveryMode": "at_customer_location",
+    "bookingPathway": "instant",
+    "coverage": {
+      "type": "suburb_radius",
+      "values": [
+        "Fitzroy"
+      ],
+      "radiusKm": 40
+    },
+    "availability": {
+      "leadTimeHours": 2,
+      "blackoutDates": [],
+      "bookableDays": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri"
+      ]
+    },
+    "media": [
+      {
+        "id": "list-021-media-1",
+        "type": "image",
+        "url": "",
+        "caption": "Wedding DJ example work"
+      }
+    ],
+    "terms": {
+      "cancellationPolicy": "Free cancellation up to 24 hours before the scheduled time.",
+      "refundPolicy": "Full refund if cancelled outside the cancellation window.",
+      "travelCharges": "Included within service radius.",
+      "exclusions": "Parts and materials charged separately unless stated in the quote."
+    },
+    "complianceValues": {
+      "portfolioUrl": "portfolioUrl-prov-14",
+      "equipmentInsurance": "equipmentInsurance-prov-14"
+    },
+    "status": "rejected",
+    "isFeatured": false,
+    "createdAt": "2026-06-26T09:00:00.000Z"
+  },
+  {
+    "id": "list-022",
+    "providerId": "prov-15",
+    "title": "Portrait Photography — Harvest Table Catering",
+    "primaryCategoryId": "st-portrait-photography",
+    "description": "Professional portrait photography delivered by Harvest Table Catering. Fully insured and highly rated by local customers.",
+    "pricing": {
+      "method": "starting_from",
+      "amount": 414,
+      "currency": "AUD"
+    },
+    "deliveryMode": "at_provider_location",
+    "bookingPathway": "enquiry",
+    "coverage": {
+      "type": "suburb_radius",
+      "values": [
+        "Northbridge"
+      ],
+      "radiusKm": 20
+    },
+    "availability": {
+      "leadTimeHours": 2,
+      "blackoutDates": [],
+      "bookableDays": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri"
+      ]
+    },
+    "media": [
+      {
+        "id": "list-022-media-1",
+        "type": "image",
+        "url": "",
+        "caption": "Portrait Photography example work"
+      }
+    ],
+    "terms": {
+      "cancellationPolicy": "Free cancellation up to 24 hours before the scheduled time.",
+      "refundPolicy": "Full refund if cancelled outside the cancellation window.",
+      "exclusions": "Parts and materials charged separately unless stated in the quote."
+    },
+    "complianceValues": {
+      "portfolioUrl": "portfolioUrl-prov-15",
+      "equipmentInsurance": "equipmentInsurance-prov-15"
+    },
+    "status": "archived",
+    "isFeatured": false,
+    "createdAt": "2026-06-23T09:00:00.000Z"
+  },
+  {
+    "id": "list-023",
+    "providerId": "prov-15",
+    "title": "Event Catering — Harvest Table Catering",
+    "primaryCategoryId": "st-event-catering",
+    "description": "Professional event catering delivered by Harvest Table Catering. Fully insured and highly rated by local customers.",
+    "pricing": {
+      "method": "quote_required",
+      "currency": "AUD"
+    },
+    "deliveryMode": "online",
+    "bookingPathway": "quote",
+    "coverage": {
+      "type": "online",
+      "values": [
+        "Australia-wide"
+      ]
+    },
+    "durationMinutes": 30,
+    "capacity": 4,
+    "availability": {
+      "leadTimeHours": 72,
+      "blackoutDates": [],
+      "bookableDays": [
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat"
+      ]
+    },
+    "media": [
+      {
+        "id": "list-023-media-1",
+        "type": "image",
+        "url": "",
+        "caption": "Event Catering example work"
+      }
+    ],
+    "terms": {
+      "cancellationPolicy": "Free cancellation up to 24 hours before the scheduled time.",
+      "refundPolicy": "Full refund if cancelled outside the cancellation window.",
+      "exclusions": "Parts and materials charged separately unless stated in the quote."
+    },
+    "complianceValues": {
+      "portfolioUrl": "portfolioUrl-prov-15",
+      "equipmentInsurance": "equipmentInsurance-prov-15"
+    },
+    "status": "draft",
+    "isFeatured": false,
+    "createdAt": "2025-11-01T09:00:00.000Z"
+  },
+  {
+    "id": "list-024",
+    "providerId": "prov-15",
+    "title": "Party Entertainment — Harvest Table Catering",
+    "primaryCategoryId": "st-party-entertainment",
+    "description": "Professional party entertainment delivered by Harvest Table Catering. Fully insured and highly rated by local customers.",
+    "pricing": {
+      "method": "starting_from",
+      "amount": 125,
+      "currency": "AUD"
+    },
+    "deliveryMode": "online",
+    "bookingPathway": "enquiry",
+    "coverage": {
+      "type": "online",
+      "values": [
+        "Australia-wide"
+      ]
+    },
+    "capacity": 3,
+    "availability": {
+      "leadTimeHours": 24,
+      "blackoutDates": [
+        "2026-08-13"
+      ],
+      "bookableDays": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri"
+      ]
+    },
+    "media": [
+      {
+        "id": "list-024-media-1",
+        "type": "image",
+        "url": "",
+        "caption": "Party Entertainment example work"
+      }
+    ],
+    "terms": {
+      "cancellationPolicy": "Free cancellation up to 24 hours before the scheduled time.",
+      "refundPolicy": "Full refund if cancelled outside the cancellation window.",
+      "exclusions": "Parts and materials charged separately unless stated in the quote."
+    },
+    "complianceValues": {
+      "portfolioUrl": "portfolioUrl-prov-15",
+      "equipmentInsurance": "equipmentInsurance-prov-15"
+    },
+    "status": "pending",
+    "isFeatured": true,
+    "createdAt": "2025-12-09T09:00:00.000Z"
+  },
+  {
+    "id": "list-025",
+    "providerId": "prov-16",
+    "title": "Private Chef — Nightwave DJ Collective",
+    "primaryCategoryId": "st-private-chef",
+    "description": "Professional private chef delivered by Nightwave DJ Collective. Fully insured and highly rated by local customers.",
+    "pricing": {
+      "method": "starting_from",
+      "amount": 219,
+      "currency": "AUD"
+    },
+    "deliveryMode": "mobile",
+    "bookingPathway": "instant",
+    "coverage": {
+      "type": "suburb_radius",
+      "values": [
+        "New Farm"
+      ],
+      "radiusKm": 20
+    },
+    "durationMinutes": 90,
+    "availability": {
+      "leadTimeHours": 24,
+      "blackoutDates": [],
+      "bookableDays": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat"
+      ]
+    },
+    "media": [
+      {
+        "id": "list-025-media-1",
+        "type": "image",
+        "url": "",
+        "caption": "Private Chef example work"
+      }
+    ],
+    "terms": {
+      "cancellationPolicy": "Free cancellation up to 24 hours before the scheduled time.",
+      "refundPolicy": "Full refund if cancelled outside the cancellation window.",
+      "travelCharges": "Included within service radius.",
+      "exclusions": "Parts and materials charged separately unless stated in the quote."
+    },
+    "complianceValues": {
+      "portfolioUrl": "portfolioUrl-prov-16",
+      "equipmentInsurance": "equipmentInsurance-prov-16"
+    },
+    "status": "published",
+    "isFeatured": true,
+    "createdAt": "2026-01-23T09:00:00.000Z"
+  },
+  {
+    "id": "list-026",
+    "providerId": "prov-17",
+    "title": "Volunteer Matching — Neighbourhood Volunteers Network",
+    "primaryCategoryId": "st-volunteer-matching",
+    "description": "Professional volunteer matching delivered by Neighbourhood Volunteers Network. Fully insured and highly rated by local customers.",
+    "pricing": {
+      "method": "starting_from",
+      "amount": 71,
+      "currency": "AUD"
+    },
+    "deliveryMode": "at_customer_location",
+    "bookingPathway": "quote",
+    "coverage": {
+      "type": "suburb_radius",
+      "values": [
+        "Glenelg"
+      ],
+      "radiusKm": 40
+    },
+    "availability": {
+      "leadTimeHours": 24,
+      "blackoutDates": [],
+      "bookableDays": [
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat"
+      ]
+    },
+    "media": [
+      {
+        "id": "list-026-media-1",
+        "type": "image",
+        "url": "",
+        "caption": "Volunteer Matching example work"
+      }
+    ],
+    "terms": {
+      "cancellationPolicy": "Free cancellation up to 24 hours before the scheduled time.",
+      "refundPolicy": "Full refund if cancelled outside the cancellation window.",
+      "travelCharges": "Included within service radius.",
+      "exclusions": "Parts and materials charged separately unless stated in the quote."
+    },
+    "complianceValues": {
+      "registrationNumber": "registrationNumber-prov-17",
+      "isNonProfit": true
+    },
+    "status": "published",
+    "isFeatured": false,
+    "createdAt": "2025-11-12T09:00:00.000Z"
+  },
+  {
+    "id": "list-027",
+    "providerId": "prov-18",
+    "title": "Meeting Room Hire — Civic Hall Bookings",
+    "primaryCategoryId": "st-meeting-room-hire",
+    "description": "Professional meeting room hire delivered by Civic Hall Bookings. Fully insured and highly rated by local customers.",
+    "pricing": {
+      "method": "fixed",
+      "amount": 341,
+      "currency": "AUD"
+    },
+    "deliveryMode": "nationwide",
+    "bookingPathway": "instant",
+    "coverage": {
+      "type": "states",
+      "values": [
+        "WA",
+        "NSW",
+        "VIC",
+        "QLD",
+        "SA"
+      ]
+    },
+    "durationMinutes": 120,
+    "availability": {
+      "leadTimeHours": 48,
+      "blackoutDates": [
+        "2026-08-15"
+      ],
+      "bookableDays": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri"
+      ]
+    },
+    "media": [
+      {
+        "id": "list-027-media-1",
+        "type": "image",
+        "url": "",
+        "caption": "Meeting Room Hire example work"
+      }
+    ],
+    "terms": {
+      "cancellationPolicy": "Free cancellation up to 24 hours before the scheduled time.",
+      "refundPolicy": "Full refund if cancelled outside the cancellation window.",
+      "exclusions": "Parts and materials charged separately unless stated in the quote."
+    },
+    "complianceValues": {
+      "registrationNumber": "registrationNumber-prov-18",
+      "isNonProfit": false
+    },
+    "status": "published",
+    "isFeatured": false,
+    "createdAt": "2026-02-16T09:00:00.000Z"
+  }
+]
