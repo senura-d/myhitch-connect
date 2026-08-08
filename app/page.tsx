@@ -178,7 +178,7 @@ export default function Home() {
 
               <form
                 onSubmit={handleSearch}
-                className="w-full max-w-2xl flex flex-col sm:flex-row items-center gap-2 text-left"
+                className="w-full max-w-2xl flex flex-col sm:flex-row items-center justify-center gap-2 text-left"
               >
                 <div className="w-full sm:w-44 flex items-center gap-2 px-4 h-11 bg-[#f4f6fa] rounded-full border-l-4 border-l-brand">
                   <IconSearch className="h-4 w-4 text-brand shrink-0" />
