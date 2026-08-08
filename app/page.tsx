@@ -430,7 +430,7 @@ export default function Home() {
                   <div>
                     <div className="flex items-start justify-between gap-3 mb-4">
                       <div className="flex items-center gap-3">
-                        <div className="h-12 w-12 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to-brand-dark flex items-center justify-center font-black text-white text-lg shadow-md shadow-blue-500/25">
+                        <div className="h-12 w-12 shrink-0 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to-brand-dark flex items-center justify-center font-black text-white text-lg shadow-md shadow-blue-500/25">
                           {provider.businessName.charAt(0)}
                         </div>
                         <div>

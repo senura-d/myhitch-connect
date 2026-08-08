@@ -221,7 +221,7 @@ export function CategoryContent({
               <div>
                 <div className="mb-3.5 flex items-start justify-between gap-3">
                   <div className="flex items-center gap-3">
-                    <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-brand/20 bg-linear-to-br from-brand/10 to-brand/5 text-base font-extrabold text-brand shadow-2xs">
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-brand/20 bg-linear-to-br from-brand/10 to-brand/5 text-base font-extrabold text-brand shadow-2xs">
                       {provider.businessName.charAt(0)}
                     </div>
                     <div>
