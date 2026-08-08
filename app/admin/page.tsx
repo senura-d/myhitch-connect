@@ -302,7 +302,7 @@ export default function AdminOverviewPage() {
               </div>
               <span className="text-[8px] font-extrabold text-[#1b76ff]">+21%</span>
               <div className="w-5 bg-slate-50 border border-slate-100 rounded-full h-20 relative overflow-hidden">
-                <div className="absolute bottom-0 left-0 right-0 bg-linear-to-t from--brand-dark to-[#1b76ff] h-16 rounded-full" />
+                <div className="absolute bottom-0 left-0 right-0 bg-linear-to-t from-brand-dark to-[#1b76ff] h-16 rounded-full" />
               </div>
               <span className="text-[9px] font-extrabold text-slate-800">Wed</span>
             </div>
@@ -416,7 +416,7 @@ export default function AdminOverviewPage() {
                         <div className="flex items-center gap-3">
                           <div className="h-1.5 w-24 bg-slate-100 rounded-full overflow-hidden shrink-0">
                             <div
-                              className="h-full bg-linear-to-r from-[#1b76ff] to--brand-dark rounded-full transition-all duration-300"
+                              className="h-full bg-linear-to-r from-[#1b76ff] to-brand-dark rounded-full transition-all duration-300"
                               style={{ width: `${progressVal}%` }}
                             />
                           </div>

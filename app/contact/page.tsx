@@ -72,7 +72,7 @@ export default function ContactUsPage() {
 
       <main className="flex-1">
         {/* HERO BANNER SECTION MATCHING LOGIN WAVE GRAPHICS */}
-        <section className="relative overflow-hidden bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark text-white py-16 lg:py-20">
+        <section className="relative overflow-hidden bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to-brand-dark text-white py-16 lg:py-20">
           <svg
             className="absolute inset-0 h-full w-full opacity-20 pointer-events-none"
             xmlns="http://www.w3.org/2000/svg"
@@ -131,7 +131,7 @@ export default function ContactUsPage() {
 
                 <div className="space-y-4">
                   <div className="p-5 rounded-3xl bg-slate-50/70 border border-slate-200/80 flex items-start gap-4 hover:border--brand transition-all hover:shadow-xl hover:shadow-blue-500/5">
-                    <div className="h-11 w-11 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark text-white flex shrink-0 items-center justify-center shadow-md shadow-blue-500/20">
+                    <div className="h-11 w-11 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to-brand-dark text-white flex shrink-0 items-center justify-center shadow-md shadow-blue-500/20">
                       <IconMail className="h-5 w-5" />
                     </div>
                     <div>
@@ -142,7 +142,7 @@ export default function ContactUsPage() {
                   </div>
 
                   <div className="p-5 rounded-3xl bg-slate-50/70 border border-slate-200/80 flex items-start gap-4 hover:border--brand transition-all hover:shadow-xl hover:shadow-blue-500/5">
-                    <div className="h-11 w-11 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark text-white flex shrink-0 items-center justify-center shadow-md shadow-blue-500/20">
+                    <div className="h-11 w-11 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to-brand-dark text-white flex shrink-0 items-center justify-center shadow-md shadow-blue-500/20">
                       <IconBuildingStore className="h-5 w-5" />
                     </div>
                     <div>
@@ -153,7 +153,7 @@ export default function ContactUsPage() {
                   </div>
 
                   <div className="p-5 rounded-3xl bg-slate-50/70 border border-slate-200/80 flex items-start gap-4 hover:border--brand transition-all hover:shadow-xl hover:shadow-blue-500/5">
-                    <div className="h-11 w-11 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark text-white flex shrink-0 items-center justify-center shadow-md shadow-blue-500/20">
+                    <div className="h-11 w-11 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to-brand-dark text-white flex shrink-0 items-center justify-center shadow-md shadow-blue-500/20">
                       <IconPhone className="h-5 w-5" />
                     </div>
                     <div>
@@ -164,7 +164,7 @@ export default function ContactUsPage() {
                   </div>
 
                   <div className="p-5 rounded-3xl bg-slate-50/70 border border-slate-200/80 flex items-start gap-4 hover:border--brand transition-all hover:shadow-xl hover:shadow-blue-500/5">
-                    <div className="h-11 w-11 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark text-white flex shrink-0 items-center justify-center shadow-md shadow-blue-500/20">
+                    <div className="h-11 w-11 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to-brand-dark text-white flex shrink-0 items-center justify-center shadow-md shadow-blue-500/20">
                       <IconMapPin className="h-5 w-5" />
                     </div>
                     <div>
@@ -298,7 +298,7 @@ export default function ContactUsPage() {
                       <Button
                         type="submit"
                         disabled={isSubmitting}
-                        className="w-full h-12 rounded-full bg-linear-to-r from-[#2c89ff] via-[#1c6df3] to--brand-dark hover:opacity-95 text-white font-black text-xs uppercase tracking-widest shadow-lg shadow-blue-500/25 transition-all active:scale-[0.99] gap-2 mt-3"
+                        className="w-full h-12 rounded-full bg-linear-to-r from-[#2c89ff] via-[#1c6df3] to-brand-dark hover:opacity-95 text-white font-black text-xs uppercase tracking-widest shadow-lg shadow-blue-500/25 transition-all active:scale-[0.99] gap-2 mt-3"
                       >
                         {isSubmitting ? (
                           <span>Sending Inquiry...</span>

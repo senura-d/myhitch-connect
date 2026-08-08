@@ -61,7 +61,7 @@ export default function SearchPage() {
 
       <main className="flex-1 overflow-x-clip">
         {/* HERO WAVE BACKDROP */}
-        <section className="relative overflow-hidden bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark text-white py-14 lg:py-16">
+        <section className="relative overflow-hidden bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to-brand-dark text-white py-14 lg:py-16">
           <svg
             className="absolute inset-0 h-full w-full opacity-20 pointer-events-none"
             xmlns="http://www.w3.org/2000/svg"

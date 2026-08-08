@@ -122,7 +122,7 @@ export default function CustomerProfilePage() {
                     className="h-20 w-20 rounded-full object-cover shadow-lg shadow-blue-500/25"
                   />
                 ) : (
-                  <div className="flex h-20 w-20 items-center justify-center rounded-full bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark text-3xl font-black text-white shadow-lg shadow-blue-500/25">
+                  <div className="flex h-20 w-20 items-center justify-center rounded-full bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to-brand-dark text-3xl font-black text-white shadow-lg shadow-blue-500/25">
                     {(user?.name ?? "G").charAt(0)}
                   </div>
                 )}

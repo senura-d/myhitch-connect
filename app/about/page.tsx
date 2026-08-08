@@ -25,7 +25,7 @@ export default function AboutUsPage() {
 
       <main className="flex-1">
         {/* HERO BANNER SECTION MATCHING LOGIN WAVE GRAPHICS */}
-        <section className="relative overflow-hidden bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark text-white py-20 lg:py-28">
+        <section className="relative overflow-hidden bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to-brand-dark text-white py-20 lg:py-28">
           {/* Abstract SVG Grid Lines */}
           <svg
             className="absolute inset-0 h-full w-full opacity-20 pointer-events-none"
@@ -89,7 +89,7 @@ export default function AboutUsPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               <div className="p-8 sm:p-10 rounded-3xl bg--brand-light border border--brand/30 space-y-4 shadow-xl shadow-blue-500/5 hover:border--brand transition-all">
-                <div className="h-14 w-14 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark text-white flex items-center justify-center font-black text-xl shadow-md shadow-blue-500/25">
+                <div className="h-14 w-14 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to-brand-dark text-white flex items-center justify-center font-black text-xl shadow-md shadow-blue-500/25">
                   <IconHeartHandshake className="h-7 w-7 text-white" />
                 </div>
                 <h2 className="text-2xl font-black text-slate-900">Our Core Mission</h2>
@@ -99,7 +99,7 @@ export default function AboutUsPage() {
               </div>
 
               <div className="p-8 sm:p-10 rounded-3xl bg-white border border-slate-200/80 space-y-4 shadow-xl shadow-blue-500/5 hover:border--brand transition-all">
-                <div className="h-14 w-14 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark text-white flex items-center justify-center font-black text-xl shadow-md shadow-blue-500/25">
+                <div className="h-14 w-14 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to-brand-dark text-white flex items-center justify-center font-black text-xl shadow-md shadow-blue-500/25">
                   <IconSparkles className="h-7 w-7 text-white" />
                 </div>
                 <h2 className="text-2xl font-black text-slate-900">Our Vision</h2>
@@ -218,7 +218,7 @@ export default function AboutUsPage() {
         {/* CTA BANNER SECTION */}
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="relative overflow-hidden rounded-3xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark p-10 sm:p-14 text-white text-center shadow-2xl shadow-blue-900/20">
+            <div className="relative overflow-hidden rounded-3xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to-brand-dark p-10 sm:p-14 text-white text-center shadow-2xl shadow-blue-900/20">
               <div className="relative z-10 max-w-2xl mx-auto space-y-6">
                 <h2 className="text-3xl sm:text-4xl font-black uppercase tracking-wider text-white">
                   READY TO GET STARTED WITH MYHITCH CONNECT?

@@ -102,7 +102,7 @@ function LoginPageInner() {
   return (
     <div className="w-full max-w-5xl overflow-hidden rounded-3xl bg-white shadow-2xl shadow-blue-900/15 border border-slate-200/60 grid grid-cols-1 lg:grid-cols-12 min-h-145">
       {/* LEFT BLUE VISUAL PANEL */}
-      <div className="relative hidden lg:flex lg:col-span-6 flex-col justify-between p-10 overflow-hidden bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark text-white">
+      <div className="relative hidden lg:flex lg:col-span-6 flex-col justify-between p-10 overflow-hidden bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to-brand-dark text-white">
         {/* Abstract Background SVG Grid Lines */}
         <svg
           className="absolute inset-0 h-full w-full opacity-20 pointer-events-none"

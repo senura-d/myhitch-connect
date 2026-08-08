@@ -58,7 +58,7 @@ export default function AdminVerificationQueuePage() {
         <div className="lg:col-span-4 space-y-6">
           {/* MODERATION PROFILE CARD */}
           <div className="rounded-3xl bg-white border border-slate-200/80 overflow-hidden shadow-xl shadow-blue-500/5">
-            <div className="h-28 bg-linear-to-r from-[#2c89ff] via-[#1c6df3] to--brand-dark relative" />
+            <div className="h-28 bg-linear-to-r from-[#2c89ff] via-[#1c6df3] to-brand-dark relative" />
             <div className="p-6 pt-0 text-center relative space-y-4">
               <div className="relative -mt-14 inline-block">
                 <div className="h-24 w-24 rounded-full border-4 border-white overflow-hidden shadow-lg relative mx-auto bg-slate-100 flex items-center justify-center text--brand">

@@ -96,7 +96,7 @@ export default function Home() {
 
       <main className="flex-1 overflow-x-clip">
         {/* HERO SECTION MATCHING LOGIN WAVE DESIGN */}
-        <section className="relative overflow-hidden min-h-[90vh] flex flex-col justify-center items-center bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark text-white py-16 px-4">
+        <section className="relative overflow-hidden min-h-[90vh] flex flex-col justify-center items-center bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to-brand-dark text-white py-16 px-4">
           {/* Abstract SVG Grid Overlay */}
           <svg
             className="absolute inset-0 h-full w-full opacity-20 pointer-events-none"
@@ -430,7 +430,7 @@ export default function Home() {
                   <div>
                     <div className="flex items-start justify-between gap-3 mb-4">
                       <div className="flex items-center gap-3">
-                        <div className="h-12 w-12 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark flex items-center justify-center font-black text-white text-lg shadow-md shadow-blue-500/25">
+                        <div className="h-12 w-12 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to-brand-dark flex items-center justify-center font-black text-white text-lg shadow-md shadow-blue-500/25">
                           {provider.businessName.charAt(0)}
                         </div>
                         <div>
@@ -499,7 +499,7 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="p-8 rounded-3xl bg-white border border-slate-200/80 text-center relative space-y-4 shadow-xs hover:border--brand transition-all hover:shadow-xl hover:shadow-blue-500/10">
-                <div className="h-14 w-14 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark text-white font-black text-xl flex items-center justify-center mx-auto shadow-md shadow-blue-500/25">
+                <div className="h-14 w-14 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to-brand-dark text-white font-black text-xl flex items-center justify-center mx-auto shadow-md shadow-blue-500/25">
                   1
                 </div>
                 <h3 className="font-extrabold text-lg text-slate-900">Search & Compare</h3>
@@ -509,7 +509,7 @@ export default function Home() {
               </div>
 
               <div className="p-8 rounded-3xl bg-white border border-slate-200/80 text-center relative space-y-4 shadow-xs hover:border--brand transition-all hover:shadow-xl hover:shadow-blue-500/10">
-                <div className="h-14 w-14 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark text-white font-black text-xl flex items-center justify-center mx-auto shadow-md shadow-blue-500/25">
+                <div className="h-14 w-14 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to-brand-dark text-white font-black text-xl flex items-center justify-center mx-auto shadow-md shadow-blue-500/25">
                   2
                 </div>
                 <h3 className="font-extrabold text-lg text-slate-900">Book or Request Quotes</h3>
@@ -519,7 +519,7 @@ export default function Home() {
               </div>
 
               <div className="p-8 rounded-3xl bg-white border border-slate-200/80 text-center relative space-y-4 shadow-xs hover:border--brand transition-all hover:shadow-xl hover:shadow-blue-500/10">
-                <div className="h-14 w-14 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark text-white font-black text-xl flex items-center justify-center mx-auto shadow-md shadow-blue-500/25">
+                <div className="h-14 w-14 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to-brand-dark text-white font-black text-xl flex items-center justify-center mx-auto shadow-md shadow-blue-500/25">
                   3
                 </div>
                 <h3 className="font-extrabold text-lg text-slate-900">Work Done & Review</h3>
@@ -534,7 +534,7 @@ export default function Home() {
         {/* PROVIDER CTA BANNER CARD */}
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="relative overflow-hidden rounded-3xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark p-10 sm:p-14 text-white text-center shadow-2xl shadow-blue-900/20">
+            <div className="relative overflow-hidden rounded-3xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to-brand-dark p-10 sm:p-14 text-white text-center shadow-2xl shadow-blue-900/20">
               <svg
                 className="absolute inset-0 h-full w-full opacity-20 pointer-events-none"
                 xmlns="http://www.w3.org/2000/svg"
