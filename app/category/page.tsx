@@ -90,13 +90,7 @@ export default function CategoryIndexPage() {
             </defs>
           </svg>
 
-          {/* Constellation Light Nodes */}
-          <div className="absolute inset-0 pointer-events-none overflow-hidden">
-            <div className="absolute top-1/4 right-20 w-3 h-3 rounded-full border border-white/60 flex items-center justify-center">
-              <div className="w-1 h-1 rounded-full bg-white" />
-            </div>
-            <div className="absolute bottom-1/3 left-20 w-2.5 h-2.5 rounded-full bg-white/80 shadow-xs shadow-white" />
-          </div>
+
 
           <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
             <div className="inline-flex items-center gap-2 rounded-full bg-white/15 backdrop-blur-md px-4 py-1.5 text-xs font-bold text-white border border-white/25 mb-4 shadow-lg">

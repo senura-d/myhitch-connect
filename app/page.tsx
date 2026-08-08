@@ -156,14 +156,7 @@ export default function Home() {
             </defs>
           </svg>
 
-          {/* Constellation Light Nodes */}
-          <div className="absolute inset-0 pointer-events-none overflow-hidden">
-            <div className="absolute top-1/4 right-20 w-3 h-3 rounded-full border border-white/60 flex items-center justify-center">
-              <div className="w-1 h-1 rounded-full bg-white" />
-            </div>
-            <div className="absolute bottom-1/3 left-20 w-2.5 h-2.5 rounded-full bg-white/80 shadow-xs shadow-white" />
-            <div className="absolute top-20 left-1/3 w-2 h-2 rounded-full bg-white/60" />
-          </div>
+
 
           <div className="container relative z-10 mx-auto text-center max-w-3xl flex-1 flex flex-col items-center justify-center">
             <div className="flex flex-col items-center space-y-6">
