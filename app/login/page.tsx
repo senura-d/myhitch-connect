@@ -100,9 +100,9 @@ function LoginPageInner() {
   };
 
   return (
-    <div className="w-full max-w-5xl overflow-hidden rounded-3xl bg-white shadow-2xl shadow-blue-900/15 border border-slate-200/60 grid grid-cols-1 lg:grid-cols-12 min-h-[580px]">
+    <div className="w-full max-w-5xl overflow-hidden rounded-3xl bg-white shadow-2xl shadow-blue-900/15 border border-slate-200/60 grid grid-cols-1 lg:grid-cols-12 min-h-145">
       {/* LEFT BLUE VISUAL PANEL */}
-      <div className="relative hidden lg:flex lg:col-span-6 flex-col justify-between p-10 overflow-hidden bg-gradient-to-br from-[#2c89ff] via-[#1c6df3] to-[#0946cd] text-white">
+      <div className="relative hidden lg:flex lg:col-span-6 flex-col justify-between p-10 overflow-hidden bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark text-white">
         {/* Abstract Background SVG Grid Lines */}
         <svg
           className="absolute inset-0 h-full w-full opacity-20 pointer-events-none"
@@ -146,7 +146,7 @@ function LoginPageInner() {
         </svg>
 
         <svg
-          className="absolute -bottom-20 -right-20 w-[480px] h-[480px] opacity-40 pointer-events-none"
+          className="absolute -bottom-20 -right-20 w-120 h-120 opacity-40 pointer-events-none"
           viewBox="0 0 600 600"
           fill="none"
         >
@@ -164,8 +164,8 @@ function LoginPageInner() {
 
         {/* Diagonal Light Rays & Constellation Nodes */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
-          <div className="absolute top-12 left-1/4 w-72 h-[1px] bg-gradient-to-r from-transparent via-white/40 to-transparent transform -rotate-45" />
-          <div className="absolute bottom-20 left-10 w-96 h-[1px] bg-gradient-to-r from-transparent via-white/30 to-transparent transform -rotate-45" />
+          <div className="absolute top-12 left-1/4 w-72 h-px bg-linear-to-r from-transparent via-white/40 to-transparent transform -rotate-45" />
+          <div className="absolute bottom-20 left-10 w-96 h-px bg-linear-to-r from-transparent via-white/30 to-transparent transform -rotate-45" />
           
           <div className="absolute top-1/4 right-12 w-3 h-3 rounded-full border border-white/60 flex items-center justify-center">
             <div className="w-1 h-1 rounded-full bg-white" />
@@ -214,7 +214,7 @@ function LoginPageInner() {
         {/* Header and Mode Toggle */}
         <div className="mb-6 flex items-center justify-between border-b border-slate-100 pb-4">
           <div>
-            <h1 className="text-2xl sm:text-3xl font-extrabold text-[#2b89ff] tracking-tight">
+            <h1 className="text-2xl sm:text-3xl font-extrabold text--brand tracking-tight">
               {tab === "signin" ? "Login Account" : "Create Account"}
             </h1>
             <p className="mt-1 text-xs text-slate-400">
@@ -232,7 +232,7 @@ function LoginPageInner() {
               }}
               className={`rounded-full px-3.5 py-1 text-xs font-bold transition-all ${
                 tab === "signin"
-                  ? "bg-[#2b89ff] text-white shadow-xs"
+                  ? "bg--brand text-white shadow-xs"
                   : "text-slate-600 hover:text-slate-900"
               }`}
             >
@@ -243,7 +243,7 @@ function LoginPageInner() {
               onClick={() => setTab("signup")}
               className={`rounded-full px-3.5 py-1 text-xs font-bold transition-all ${
                 tab === "signup"
-                  ? "bg-[#2b89ff] text-white shadow-xs"
+                  ? "bg--brand text-white shadow-xs"
                   : "text-slate-600 hover:text-slate-900"
               }`}
             >
@@ -272,7 +272,7 @@ function LoginPageInner() {
                     setSigninEmail(e.target.value);
                     setSigninError(null);
                   }}
-                  className="h-12 border-0 border-l-4 border-l-[#2b89ff] bg-[#f4f6fa] pl-4 pr-10 text-sm font-medium text-slate-800 placeholder:text-slate-400 focus-visible:bg-white focus-visible:ring-1 focus-visible:ring-[#2b89ff] rounded-r-xl rounded-l-none"
+                  className="h-12 border-0 border-l-4 border-l--brand bg-[#f4f6fa] pl-4 pr-10 text-sm font-medium text-slate-800 placeholder:text-slate-400 focus-visible:bg-white focus-visible:ring-1 focus-visible:ring--brand rounded-r-xl rounded-l-none"
                   aria-invalid={signinError ? true : undefined}
                 />
                 <IconMail className="absolute right-3.5 h-4 w-4 text-slate-400 pointer-events-none" />
@@ -293,7 +293,7 @@ function LoginPageInner() {
                   placeholder="Password"
                   value={signinPassword}
                   onChange={(e) => setSigninPassword(e.target.value)}
-                  className="h-12 border-0 border-l-4 border-l-[#2b89ff] bg-[#f4f6fa] pl-4 pr-10 text-sm font-medium text-slate-800 placeholder:text-slate-400 focus-visible:bg-white focus-visible:ring-1 focus-visible:ring-[#2b89ff] rounded-r-xl rounded-l-none"
+                  className="h-12 border-0 border-l-4 border-l--brand bg-[#f4f6fa] pl-4 pr-10 text-sm font-medium text-slate-800 placeholder:text-slate-400 focus-visible:bg-white focus-visible:ring-1 focus-visible:ring--brand rounded-r-xl rounded-l-none"
                 />
                 <IconLock className="absolute right-3.5 h-4 w-4 text-slate-400 pointer-events-none" />
               </div>
@@ -306,10 +306,10 @@ function LoginPageInner() {
                   type="checkbox"
                   checked={keepSignedIn}
                   onChange={(e) => setKeepSignedIn(e.target.checked)}
-                  className="h-4 w-4 rounded border-slate-300 text-[#2b89ff] focus:ring-[#2b89ff]"
+                  className="h-4 w-4 rounded border-slate-300 text--brand focus:ring--brand"
                 />
                 <span className="flex items-center gap-1">
-                  <IconCheck className="h-3.5 w-3.5 text-[#2b89ff]" />
+                  <IconCheck className="h-3.5 w-3.5 text--brand" />
                   Keep me signed in
                 </span>
               </label>
@@ -317,7 +317,7 @@ function LoginPageInner() {
               <button
                 type="button"
                 onClick={() => setTab("signup")}
-                className="font-semibold text-[#2b89ff] hover:underline"
+                className="font-semibold text--brand hover:underline"
               >
                 Already a member?
               </button>
@@ -359,13 +359,13 @@ function LoginPageInner() {
                       onClick={() => setSignupRole(choice.role)}
                       className={`flex flex-col gap-1 p-3 rounded-xl border text-left transition-all ${
                         isSelected
-                          ? "border-[#2b89ff] bg-[#f0f7ff] text-[#2b89ff] shadow-xs"
+                          ? "border--brand bg--brand-light text--brand shadow-xs"
                           : "border-slate-200 bg-slate-50/50 text-slate-600 hover:bg-white"
                       }`}
                     >
                       <div className="flex items-center justify-between">
                         <span className="font-bold text-xs">{choice.title}</span>
-                        {isSelected && <IconCheck className="h-3.5 w-3.5 text-[#2b89ff]" />}
+                        {isSelected && <IconCheck className="h-3.5 w-3.5 text--brand" />}
                       </div>
                       <span className="text-[10px] text-slate-500 line-clamp-2">
                         {choice.blurb}
@@ -384,7 +384,7 @@ function LoginPageInner() {
                 placeholder={signupRole === "provider" ? "Business Name" : "Full Name"}
                 value={signupName}
                 onChange={(e) => setSignupName(e.target.value)}
-                className="h-11 border-0 border-l-4 border-l-[#2b89ff] bg-[#f4f6fa] pl-4 text-xs font-medium text-slate-800 placeholder:text-slate-400 focus-visible:bg-white focus-visible:ring-1 focus-visible:ring-[#2b89ff] rounded-r-xl rounded-l-none"
+                className="h-11 border-0 border-l-4 border-l--brand bg-[#f4f6fa] pl-4 text-xs font-medium text-slate-800 placeholder:text-slate-400 focus-visible:bg-white focus-visible:ring-1 focus-visible:ring--brand rounded-r-xl rounded-l-none"
               />
             </div>
 
@@ -397,7 +397,7 @@ function LoginPageInner() {
                 placeholder="Email ID"
                 value={signupEmail}
                 onChange={(e) => setSignupEmail(e.target.value)}
-                className="h-11 border-0 border-l-4 border-l-[#2b89ff] bg-[#f4f6fa] pl-4 text-xs font-medium text-slate-800 placeholder:text-slate-400 focus-visible:bg-white focus-visible:ring-1 focus-visible:ring-[#2b89ff] rounded-r-xl rounded-l-none"
+                className="h-11 border-0 border-l-4 border-l--brand bg-[#f4f6fa] pl-4 text-xs font-medium text-slate-800 placeholder:text-slate-400 focus-visible:bg-white focus-visible:ring-1 focus-visible:ring--brand rounded-r-xl rounded-l-none"
               />
             </div>
 
@@ -411,13 +411,13 @@ function LoginPageInner() {
                 placeholder="Password (min 8 chars)"
                 value={signupPassword}
                 onChange={(e) => setSignupPassword(e.target.value)}
-                className="h-11 border-0 border-l-4 border-l-[#2b89ff] bg-[#f4f6fa] pl-4 text-xs font-medium text-slate-800 placeholder:text-slate-400 focus-visible:bg-white focus-visible:ring-1 focus-visible:ring-[#2b89ff] rounded-r-xl rounded-l-none"
+                className="h-11 border-0 border-l-4 border-l--brand bg-[#f4f6fa] pl-4 text-xs font-medium text-slate-800 placeholder:text-slate-400 focus-visible:bg-white focus-visible:ring-1 focus-visible:ring--brand rounded-r-xl rounded-l-none"
               />
             </div>
 
             {signupRole === "provider" && (
-              <p className="flex items-center gap-2 rounded-xl border border-blue-100 bg-[#f0f7ff] p-2.5 text-[11px] text-slate-700">
-                <IconShieldCheck className="h-4 w-4 shrink-0 text-[#2b89ff]" />
+              <p className="flex items-center gap-2 rounded-xl border border-blue-100 bg--brand-light p-2.5 text-[11px] text-slate-700">
+                <IconShieldCheck className="h-4 w-4 shrink-0 text--brand" />
                 Provider credentials and insurance are verified before going live.
               </p>
             )}
@@ -447,12 +447,12 @@ function LoginPageInner() {
                   setSigninPassword("demo-password");
                   setSigninError(null);
                 }}
-                className="flex flex-col items-center justify-center p-2 rounded-xl border border-slate-200/80 bg-slate-50/50 hover:bg-[#f0f7ff] hover:border-[#2b89ff] transition-all text-center group"
+                className="flex flex-col items-center justify-center p-2 rounded-xl border border-slate-200/80 bg-slate-50/50 hover:bg--brand-light hover:border--brand transition-all text-center group"
               >
-                <span className="text-[11px] font-bold text-slate-800 group-hover:text-[#2b89ff] truncate w-full">
+                <span className="text-[11px] font-bold text-slate-800 group-hover:text--brand truncate w-full">
                   {user.name.split(" ")[0]}
                 </span>
-                <span className="text-[9px] uppercase tracking-wider font-semibold text-slate-400 group-hover:text-[#2b89ff]/80">
+                <span className="text-[9px] uppercase tracking-wider font-semibold text-slate-400 group-hover:text--brand/80">
                   {user.role}
                 </span>
               </button>
@@ -471,7 +471,7 @@ export default function LoginPage() {
       <main className="flex flex-1 items-center justify-center p-4 sm:p-6 lg:p-10">
         <Suspense
           fallback={
-            <div className="h-[560px] w-full max-w-5xl animate-pulse rounded-3xl bg-white shadow-xl" />
+            <div className="h-140 w-full max-w-5xl animate-pulse rounded-3xl bg-white shadow-xl" />
           }
         >
           <LoginPageInner />

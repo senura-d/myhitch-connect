@@ -113,13 +113,13 @@ export default function CategoryDetailPage({ params }: { params: Promise<{ slug:
               </div>
 
               {/* Image Content */}
-              <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-2xl border border-slate-200/50">
+              <div className="relative aspect-4/3 w-full rounded-2xl overflow-hidden shadow-2xl border border-slate-200/50">
                 <img
                   src={categoryMeta.image}
                   alt={category.name}
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-tr from-brand/10 to-transparent mix-blend-overlay" />
+                <div className="absolute inset-0 bg-linear-to-tr from-brand/10 to-transparent mix-blend-overlay" />
                 
                 {/* Floating Trust Badge */}
                 <div className="absolute bottom-4 left-4 flex items-center gap-3 p-3 bg-white/90 backdrop-blur-md border border-slate-200/80 rounded-xl shadow-lg">

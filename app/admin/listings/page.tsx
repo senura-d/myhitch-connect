@@ -45,7 +45,7 @@ export default function AdminListingsPage() {
         <div>
           <h1 className="text-2xl font-black text-slate-900 tracking-tight">All Service Listings</h1>
           <div className="flex items-center gap-2 text-xs text-slate-400 font-semibold mt-1">
-            <Link href="/admin" className="text-[#2b89ff] hover:underline">Admin</Link>
+            <Link href="/admin" className="text--brand hover:underline">Admin</Link>
             <span>&gt;</span>
             <span className="text-slate-600 font-bold">Listings</span>
           </div>
@@ -60,7 +60,7 @@ export default function AdminListingsPage() {
             placeholder="Search service title, provider..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="h-10 border border-slate-200 bg-slate-50 !pl-10 text-xs font-semibold text-slate-800 rounded-full focus-visible:bg-white focus-visible:ring-1 focus-visible:ring-[#2b89ff]"
+            className="h-10 border border-slate-200 bg-slate-50 pl-10! text-xs font-semibold text-slate-800 rounded-full focus-visible:bg-white focus-visible:ring-1 focus-visible:ring--brand"
           />
         </div>
 
@@ -70,7 +70,7 @@ export default function AdminListingsPage() {
             <select
               value={statusFilter}
               onChange={(e) => setStatusFilter(e.target.value)}
-              className="w-full h-10 pl-4 pr-10 border border-slate-200 bg-slate-50 text-xs font-bold text-slate-700 rounded-full appearance-none focus:outline-none focus:ring-1 focus:ring-[#2b89ff] cursor-pointer"
+              className="w-full h-10 pl-4 pr-10 border border-slate-200 bg-slate-50 text-xs font-bold text-slate-700 rounded-full appearance-none focus:outline-none focus:ring-1 focus:ring--brand cursor-pointer"
             >
               <option value="all">All Statuses</option>
               <option value="published">Published</option>
@@ -122,7 +122,7 @@ export default function AdminListingsPage() {
                     </td>
                     <td className="py-3.5 px-3">
                       {item.provider ? (
-                        <Link href={`/provider/${item.provider.id}`} className="hover:underline text-[#2b89ff] font-bold">
+                        <Link href={`/provider/${item.provider.id}`} className="hover:underline text--brand font-bold">
                           {item.provider.businessName}
                         </Link>
                       ) : (

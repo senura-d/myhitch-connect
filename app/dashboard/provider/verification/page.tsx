@@ -63,7 +63,7 @@ export default function ProviderVerificationPage() {
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center gap-4">
             <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#f0f9ff]">
-              <IconShieldCheck className="h-6 w-6 text-[#2b89ff]" />
+              <IconShieldCheck className="h-6 w-6 text--brand" />
             </div>
             <div className="min-w-0">
               <h2 className="text-sm font-extrabold text-slate-900">
@@ -78,8 +78,8 @@ export default function ProviderVerificationPage() {
           {provider && <StatusBadge status={provider.verificationStatus} />}
         </div>
 
-        <p className="mt-5 flex items-start gap-2 rounded-xl border border-[#2b89ff]/25 bg-[#f0f9ff] px-3 py-2.5 text-[11px] font-medium text-slate-700">
-          <IconAlertCircle className="mt-0.5 h-4 w-4 shrink-0 text-[#2b89ff]" />
+        <p className="mt-5 flex items-start gap-2 rounded-xl border border--brand/25 bg-[#f0f9ff] px-3 py-2.5 text-[11px] font-medium text-slate-700">
+          <IconAlertCircle className="mt-0.5 h-4 w-4 shrink-0 text--brand" />
           We verify every licence and insurance policy against official registers.
           Re-check happens automatically before expiry — keep these details current
           or your listings are paused.
@@ -193,7 +193,7 @@ export default function ProviderVerificationPage() {
                     key={doc.key}
                     className="flex items-center gap-3 rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5"
                   >
-                    <IconFileText className="h-4 w-4 shrink-0 text-[#2b89ff]" />
+                    <IconFileText className="h-4 w-4 shrink-0 text--brand" />
                     <span className="min-w-0 flex-1 text-[11px] font-bold text-slate-800">
                       {doc.label}
                     </span>
@@ -226,7 +226,7 @@ export default function ProviderVerificationPage() {
             </div>
 
             <p className="mt-4 flex items-start gap-2 text-[11px] text-slate-500">
-              <IconCheck className="mt-0.5 h-3.5 w-3.5 shrink-0 text-[#2b89ff]" />
+              <IconCheck className="mt-0.5 h-3.5 w-3.5 shrink-0 text--brand" />
               Documents are only used for verification and are never shown on your
               public profile.
             </p>

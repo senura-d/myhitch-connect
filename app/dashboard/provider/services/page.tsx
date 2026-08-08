@@ -94,7 +94,7 @@ export default function ProviderServicesPage() {
                 <div className="absolute right-2.5 top-2.5">
                   <Badge
                     variant="secondary"
-                    className="border border-[#2b89ff]/30 bg-white/95 px-2.5 py-0.5 text-[10px] font-bold capitalize text-[#2b89ff]"
+                    className="border border--brand/30 bg-white/95 px-2.5 py-0.5 text-[10px] font-bold capitalize text--brand"
                   >
                     {listing.pricing.method.replace("_", " ")}
                   </Badge>

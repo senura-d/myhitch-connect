@@ -64,7 +64,7 @@ export default function CustomerServicesPage() {
 
               <div className="min-w-0 flex-1">
                 <div className="flex items-center gap-2">
-                  {getCategoryIcon(cat.icon, "h-4 w-4 text-[#2b89ff]")}
+                  {getCategoryIcon(cat.icon, "h-4 w-4 text--brand")}
                   <h3 className="truncate text-sm font-extrabold text-slate-900 transition-colors group-hover:text-[#1b76ff]">
                     {cat.name}
                   </h3>

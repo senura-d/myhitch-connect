@@ -57,7 +57,7 @@ export function CategoryContent({
       <div className="bg-slate-50/80 p-3 rounded-full border border-slate-200/80 shadow-2xs">
         <div className="flex items-center gap-2 overflow-x-auto pb-0.5 scrollbar-none">
           <span className="mr-2 flex shrink-0 items-center gap-1 text-[11px] font-bold uppercase tracking-wider text-slate-400 pl-3">
-            <IconFilter className="h-3.5 w-3.5 text-[#2b89ff]" /> Subcategories:
+            <IconFilter className="h-3.5 w-3.5 text--brand" /> Subcategories:
           </span>
           <button
             type="button"
@@ -65,7 +65,7 @@ export function CategoryContent({
             aria-pressed={selectedSubcategory === "all"}
             className={`shrink-0 rounded-full px-4 py-2 text-xs font-bold transition-all duration-200 ${
               selectedSubcategory === "all"
-                ? "bg-[#2b89ff] text-white shadow-md shadow-blue-500/20 border border-[#2b89ff]"
+                ? "bg--brand text-white shadow-md shadow-blue-500/20 border border--brand"
                 : "bg-white text-slate-700 hover:bg-slate-100 hover:text-slate-900 border border-slate-200/80"
             }`}
           >
@@ -79,7 +79,7 @@ export function CategoryContent({
               aria-pressed={selectedSubcategory === sub.slug}
               className={`shrink-0 whitespace-nowrap rounded-full px-4 py-2 text-xs font-bold transition-all duration-200 ${
                 selectedSubcategory === sub.slug
-                  ? "bg-[#2b89ff] text-white shadow-md shadow-blue-500/20 border border-[#2b89ff]"
+                  ? "bg--brand text-white shadow-md shadow-blue-500/20 border border--brand"
                   : "bg-white text-slate-700 hover:bg-slate-100 hover:text-slate-900 border border-slate-200/80"
               }`}
             >
@@ -95,7 +95,7 @@ export function CategoryContent({
           <div>
             <h2 className="text-xl font-black tracking-tight text-slate-900 sm:text-2xl flex items-center gap-2">
               Available Service Listings
-              <span className="inline-flex items-center justify-center h-5 px-2 rounded-full text-xs font-bold bg-[#f0f7ff] text-[#2b89ff] border border-[#2b89ff]/30">
+              <span className="inline-flex items-center justify-center h-5 px-2 rounded-full text-xs font-bold bg--brand-light text--brand border border--brand/30">
                 {filteredListings?.length || 0}
               </span>
             </h2>
@@ -125,7 +125,7 @@ export function CategoryContent({
             {filteredListings?.map(({ listing, provider }) => (
               <Card
                 key={listing.id}
-                className="group flex flex-col justify-between overflow-hidden rounded-3xl border border-slate-200/80 bg-white pt-0 transition-all duration-300 hover:-translate-y-0.5 hover:border-[#2b89ff] hover:shadow-xl hover:shadow-blue-500/10"
+                className="group flex flex-col justify-between overflow-hidden rounded-3xl border border-slate-200/80 bg-white pt-0 transition-all duration-300 hover:-translate-y-0.5 hover:border--brand hover:shadow-xl hover:shadow-blue-500/10"
               >
                 <div className="relative w-full flex-1 min-h-36 overflow-hidden bg-slate-100">
                   <Image
@@ -138,7 +138,7 @@ export function CategoryContent({
                   <div className="absolute right-2.5 top-2.5">
                     <Badge
                       variant="secondary"
-                      className="shadow-2xs border border-[#2b89ff]/30 bg-white/95 backdrop-blur-xs px-2.5 py-0.5 text-[10px] font-bold capitalize text-[#2b89ff]"
+                      className="shadow-2xs border border--brand/30 bg-white/95 backdrop-blur-xs px-2.5 py-0.5 text-[10px] font-bold capitalize text--brand"
                     >
                       {listing.pricing.method.replace("_", " ")}
                     </Badge>
@@ -149,7 +149,7 @@ export function CategoryContent({
                 </div>
 
                 <CardHeader className="space-y-0.5 p-3.5 pb-2">
-                  <CardTitle className="line-clamp-1 text-sm font-bold text-slate-900 transition-colors group-hover:text-[#2b89ff]">
+                  <CardTitle className="line-clamp-1 text-sm font-bold text-slate-900 transition-colors group-hover:text--brand">
                     <Link href={`/provider/${provider.id}/service/${listing.id}`}>
                       {listing.title}
                     </Link>
@@ -162,7 +162,7 @@ export function CategoryContent({
                 <CardContent className="space-y-1.5 border-b border-t border-slate-100 bg-slate-50/50 px-3.5 py-2">
                   <div className="flex items-center justify-between text-[11px]">
                     <span className="flex max-w-[130px] items-center gap-1.5 truncate font-semibold text-slate-800">
-                      <IconBuildingStore className="h-3.5 w-3.5 shrink-0 text-[#2b89ff]" />
+                      <IconBuildingStore className="h-3.5 w-3.5 shrink-0 text--brand" />
                       <span className="truncate">{provider.businessName}</span>
                     </span>
                     <div className="flex shrink-0 items-center gap-1">
@@ -179,7 +179,7 @@ export function CategoryContent({
                     <span className="block text-[10px] font-semibold uppercase tracking-wider text-slate-400">
                       Starting at
                     </span>
-                    <span className="text-base font-extrabold text-[#2b89ff]">
+                    <span className="text-base font-extrabold text--brand">
                       ${listing.pricing.amount || "Quote"}
                     </span>
                   </div>
@@ -221,7 +221,7 @@ export function CategoryContent({
               <div>
                 <div className="mb-3.5 flex items-start justify-between gap-3">
                   <div className="flex items-center gap-3">
-                    <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-brand/20 bg-gradient-to-br from-brand/10 to-brand/5 text-base font-extrabold text-brand shadow-2xs">
+                    <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-brand/20 bg-linear-to-br from-brand/10 to-brand/5 text-base font-extrabold text-brand shadow-2xs">
                       {provider.businessName.charAt(0)}
                     </div>
                     <div>

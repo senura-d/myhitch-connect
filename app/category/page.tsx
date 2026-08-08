@@ -47,7 +47,7 @@ export default function CategoryIndexPage() {
 
       <main className="flex-1 overflow-x-clip">
         {/* MASTHEAD WITH HERO WAVE GRAPHICS & BACKDROP (MATCHING LOGIN/HOMEPAGE) */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-[#2c89ff] via-[#1c6df3] to-[#0946cd] text-white py-16 lg:py-24">
+        <section className="relative overflow-hidden bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark text-white py-16 lg:py-24">
           {/* Abstract SVG Grid Lines */}
           <svg
             className="absolute inset-0 h-full w-full opacity-20 pointer-events-none"
@@ -74,7 +74,7 @@ export default function CategoryIndexPage() {
 
           {/* Curved Vector Waves */}
           <svg
-            className="absolute -top-16 -left-16 w-[480px] h-[480px] opacity-30 pointer-events-none"
+            className="absolute -top-16 -left-16 w-120 h-120 opacity-30 pointer-events-none"
             viewBox="0 0 500 500"
             fill="none"
           >
@@ -161,7 +161,7 @@ export default function CategoryIndexPage() {
               <div className="bg-white p-6 sm:p-10 rounded-3xl border border-slate-200/80 shadow-xl shadow-blue-500/5">
                 <div className="mb-8 border-b border-slate-100 pb-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                   <div>
-                    <span className="text-xs font-extrabold text-[#2b89ff] uppercase tracking-wider block mb-1">
+                    <span className="text-xs font-extrabold text--brand uppercase tracking-wider block mb-1">
                       Category #{activeIndex + 1}
                     </span>
                     <h2 className="text-3xl font-black text-slate-900 tracking-tight">

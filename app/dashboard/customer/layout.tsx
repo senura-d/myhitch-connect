@@ -53,7 +53,7 @@ export default function CustomerDashboardLayout({
   return (
     <div className="min-h-screen flex bg-[#f4f6fa] text-slate-900 font-sans">
       {/* LEFT VERTICAL SIDEBAR */}
-      <aside className="w-64 bg-white border-r border-slate-200/80 flex flex-col p-6 space-y-8 shrink-0 hidden lg:flex">
+      <aside className="w-64 bg-white border-r border-slate-200/80 hidden lg:flex flex-col p-6 space-y-8 shrink-0">
         <div className="space-y-8">
           <Link href="/" className="flex items-center">
             <Image
@@ -112,7 +112,7 @@ export default function CustomerDashboardLayout({
                 name="dashboard-search"
                 aria-label="Search the dashboard"
                 placeholder="Search bookings, services, providers..."
-                className="h-9 border border-slate-200/80 bg-slate-50 !pl-10 text-xs font-medium text-slate-800 placeholder:text-slate-400 rounded-full focus-visible:bg-white focus-visible:ring-1 focus-visible:ring-[#2b89ff]"
+                className="h-9 border border-slate-200/80 bg-slate-50 pl-10! text-xs font-medium text-slate-800 placeholder:text-slate-400 rounded-full focus-visible:bg-white focus-visible:ring-1 focus-visible:ring--brand"
               />
             </div>
           </div>
@@ -170,7 +170,7 @@ export default function CustomerDashboardLayout({
           })}
         </nav>
 
-        <main className="p-6 lg:p-8 space-y-6 max-w-[1400px]">{children}</main>
+        <main className="p-6 lg:p-8 space-y-6 max-w-350">{children}</main>
       </div>
     </div>
   );

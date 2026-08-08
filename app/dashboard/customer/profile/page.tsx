@@ -122,7 +122,7 @@ export default function CustomerProfilePage() {
                     className="h-20 w-20 rounded-full object-cover shadow-lg shadow-blue-500/25"
                   />
                 ) : (
-                  <div className="flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-[#2c89ff] via-[#1c6df3] to-[#0946cd] text-3xl font-black text-white shadow-lg shadow-blue-500/25">
+                  <div className="flex h-20 w-20 items-center justify-center rounded-full bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark text-3xl font-black text-white shadow-lg shadow-blue-500/25">
                     {(user?.name ?? "G").charAt(0)}
                   </div>
                 )}
@@ -194,21 +194,21 @@ export default function CustomerProfilePage() {
 
             <div className="mt-5 space-y-2.5 border-t border-slate-100 pt-5 text-left">
               <p className="flex items-center gap-2 text-[11px] font-semibold text-slate-600">
-                <IconMail className="h-3.5 w-3.5 shrink-0 text-[#2b89ff]" />
+                <IconMail className="h-3.5 w-3.5 shrink-0 text--brand" />
                 <span className="truncate">{user?.email ?? "—"}</span>
               </p>
               <p className="flex items-center gap-2 text-[11px] font-semibold text-slate-600">
-                <IconPhone className="h-3.5 w-3.5 shrink-0 text-[#2b89ff]" />
+                <IconPhone className="h-3.5 w-3.5 shrink-0 text--brand" />
                 {phone || "No phone added"}
               </p>
               <p className="flex items-center gap-2 text-[11px] font-semibold text-slate-600">
-                <IconMapPin className="h-3.5 w-3.5 shrink-0 text-[#2b89ff]" />
+                <IconMapPin className="h-3.5 w-3.5 shrink-0 text--brand" />
                 {suburb || "No suburb added"}
               </p>
             </div>
 
-            <p className="mt-5 flex items-start gap-2 rounded-xl border border-[#2b89ff]/25 bg-[#f0f9ff] px-3 py-2 text-left text-[11px] font-medium text-slate-700">
-              <IconShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-[#2b89ff]" />
+            <p className="mt-5 flex items-start gap-2 rounded-xl border border--brand/25 bg-[#f0f9ff] px-3 py-2 text-left text-[11px] font-medium text-slate-700">
+              <IconShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text--brand" />
               Your contact details are only shared with a provider once you book
               or request a quote.
             </p>

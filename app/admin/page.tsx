@@ -199,7 +199,7 @@ export default function AdminOverviewPage() {
                     placeholder="Search..."
                     value={taskSearch}
                     onChange={(e) => setTaskSearch(e.target.value)}
-                    className="h-8 border border-slate-200 bg-slate-50 !pl-8 text-[11px] font-semibold text-slate-800 rounded-full focus-visible:bg-white focus-visible:ring-1 focus-visible:ring-[#2b89ff]"
+                    className="h-8 border border-slate-200 bg-slate-50 pl-8! text-[11px] font-semibold text-slate-800 rounded-full focus-visible:bg-white focus-visible:ring-1 focus-visible:ring--brand"
                   />
                 </div>
               </div>
@@ -223,13 +223,13 @@ export default function AdminOverviewPage() {
                     {filteredQueue.map((item) => (
                       <tr key={item.id} className="hover:bg-slate-50/50 transition-colors">
                         <td className="py-3 px-2">
-                          <Link href={`/provider/${item.id}`} className="hover:underline text-[#2b89ff] font-bold">
+                          <Link href={`/provider/${item.id}`} className="hover:underline text--brand font-bold">
                             {item.businessName}
                           </Link>
                         </td>
                         <td className="py-3 px-2">
                           <div className="inline-flex items-center gap-1.5 text-[10px] text-slate-500 font-extrabold uppercase">
-                            <IconFolder className="h-3.5 w-3.5 text-[#2b89ff]/70" />
+                            <IconFolder className="h-3.5 w-3.5 text--brand/70" />
                             <span>{item.providerType.replace("_", " ")}</span>
                           </div>
                         </td>
@@ -302,7 +302,7 @@ export default function AdminOverviewPage() {
               </div>
               <span className="text-[8px] font-extrabold text-[#1b76ff]">+21%</span>
               <div className="w-5 bg-slate-50 border border-slate-100 rounded-full h-20 relative overflow-hidden">
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0946cd] to-[#1b76ff] h-16 rounded-full" />
+                <div className="absolute bottom-0 left-0 right-0 bg-linear-to-t from--brand-dark to-[#1b76ff] h-16 rounded-full" />
               </div>
               <span className="text-[9px] font-extrabold text-slate-800">Wed</span>
             </div>
@@ -360,7 +360,7 @@ export default function AdminOverviewPage() {
               placeholder="Search bookings, providers..."
               value={bookingSearch}
               onChange={(e) => setBookingSearch(e.target.value)}
-              className="h-9 border border-slate-200 bg-slate-50 !pl-10 text-xs font-semibold text-slate-800 rounded-full focus-visible:bg-white focus-visible:ring-1 focus-visible:ring-[#2b89ff]"
+              className="h-9 border border-slate-200 bg-slate-50 pl-10! text-xs font-semibold text-slate-800 rounded-full focus-visible:bg-white focus-visible:ring-1 focus-visible:ring--brand"
             />
           </div>
         </div>
@@ -416,7 +416,7 @@ export default function AdminOverviewPage() {
                         <div className="flex items-center gap-3">
                           <div className="h-1.5 w-24 bg-slate-100 rounded-full overflow-hidden shrink-0">
                             <div
-                              className="h-full bg-gradient-to-r from-[#1b76ff] to-[#0946cd] rounded-full transition-all duration-300"
+                              className="h-full bg-linear-to-r from-[#1b76ff] to--brand-dark rounded-full transition-all duration-300"
                               style={{ width: `${progressVal}%` }}
                             />
                           </div>

@@ -188,7 +188,7 @@ export function ExportAuditDesk({ id }: { id?: string }) {
       <div className="xl:col-span-5">
         <div className="h-full rounded-3xl border border-slate-200/80 bg-white p-6 shadow-xs">
           <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-blue-50 text-[#2b89ff]">
+            <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-blue-50 text--brand">
               <IconFileExport className="h-5 w-5" />
             </div>
             <div>
@@ -214,7 +214,7 @@ export function ExportAuditDesk({ id }: { id?: string }) {
                 return (
                   <label
                     key={d.key}
-                    className={`flex cursor-pointer items-center gap-3 rounded-2xl border p-3 transition-colors focus-within:ring-2 focus-within:ring-[#2b89ff]/40 ${
+                    className={`flex cursor-pointer items-center gap-3 rounded-2xl border p-3 transition-colors focus-within:ring-2 focus-within:ring--brand/40 ${
                       selected
                         ? "border-[#1b76ff] bg-blue-50/60"
                         : "border-slate-200 bg-white hover:border-[#1b76ff]/40"
@@ -270,7 +270,7 @@ export function ExportAuditDesk({ id }: { id?: string }) {
         <div className="h-full rounded-3xl border border-slate-200/80 bg-white p-6 shadow-xs">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-blue-50 text-[#2b89ff]">
+              <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-blue-50 text--brand">
                 <IconHistory className="h-5 w-5" />
               </div>
               <div>
@@ -303,7 +303,7 @@ export function ExportAuditDesk({ id }: { id?: string }) {
               value={auditSearch}
               onChange={(e) => setAuditSearch(e.target.value)}
               placeholder="Search by actor, action or target..."
-              className="h-9 rounded-full border border-slate-200/80 bg-slate-50 !pl-10 text-xs font-medium text-slate-800 placeholder:text-slate-400 focus-visible:bg-white focus-visible:ring-1 focus-visible:ring-[#2b89ff]"
+              className="h-9 rounded-full border border-slate-200/80 bg-slate-50 pl-10! text-xs font-medium text-slate-800 placeholder:text-slate-400 focus-visible:bg-white focus-visible:ring-1 focus-visible:ring--brand"
             />
           </div>
 

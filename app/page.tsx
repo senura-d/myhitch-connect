@@ -69,17 +69,17 @@ export default function Home() {
   const getCategoryIcon = (iconName: string) => {
     switch (iconName) {
       case "IconHammer":
-        return <IconHammer className="h-5 w-5 text-[#2b89ff]" />;
+        return <IconHammer className="h-5 w-5 text--brand" />;
       case "IconBriefcase":
-        return <IconBriefcase className="h-5 w-5 text-[#2b89ff]" />;
+        return <IconBriefcase className="h-5 w-5 text--brand" />;
       case "IconHeartHandshake":
-        return <IconHeartHandshake className="h-5 w-5 text-[#2b89ff]" />;
+        return <IconHeartHandshake className="h-5 w-5 text--brand" />;
       case "IconCamera":
-        return <IconCamera className="h-5 w-5 text-[#2b89ff]" />;
+        return <IconCamera className="h-5 w-5 text--brand" />;
       case "IconBuildingCommunity":
-        return <IconBuildingCommunity className="h-5 w-5 text-[#2b89ff]" />;
+        return <IconBuildingCommunity className="h-5 w-5 text--brand" />;
       default:
-        return <IconSparkles className="h-5 w-5 text-[#2b89ff]" />;
+        return <IconSparkles className="h-5 w-5 text--brand" />;
     }
   };
 
@@ -96,7 +96,7 @@ export default function Home() {
 
       <main className="flex-1 overflow-x-clip">
         {/* HERO SECTION MATCHING LOGIN WAVE DESIGN */}
-        <section className="relative overflow-hidden min-h-[90vh] flex flex-col justify-center items-center bg-gradient-to-br from-[#2c89ff] via-[#1c6df3] to-[#0946cd] text-white py-16 px-4">
+        <section className="relative overflow-hidden min-h-[90vh] flex flex-col justify-center items-center bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark text-white py-16 px-4">
           {/* Abstract SVG Grid Overlay */}
           <svg
             className="absolute inset-0 h-full w-full opacity-20 pointer-events-none"
@@ -123,7 +123,7 @@ export default function Home() {
 
           {/* Curved Vector Waves */}
           <svg
-            className="absolute -top-16 -left-16 w-[500px] h-[500px] opacity-30 pointer-events-none"
+            className="absolute -top-16 -left-16 w-125 h-125 opacity-30 pointer-events-none"
             viewBox="0 0 500 500"
             fill="none"
           >
@@ -140,7 +140,7 @@ export default function Home() {
           </svg>
 
           <svg
-            className="absolute -bottom-24 -right-24 w-[600px] h-[600px] opacity-40 pointer-events-none"
+            className="absolute -bottom-24 -right-24 w-150 h-150 opacity-40 pointer-events-none"
             viewBox="0 0 600 600"
             fill="none"
           >
@@ -188,8 +188,8 @@ export default function Home() {
                 onSubmit={handleSearch}
                 className="w-full max-w-2xl p-2 rounded-full bg-white backdrop-blur-md border border-white/60 shadow-2xl shadow-blue-900/30 flex flex-col sm:flex-row items-center gap-2 text-left"
               >
-                <div className="flex-1 w-full flex items-center gap-2 px-4 py-2 bg-[#f4f6fa] rounded-full border-l-4 border-l-[#2b89ff]">
-                  <IconSearch className="h-4 w-4 text-[#2b89ff] shrink-0" />
+                <div className="flex-1 w-full flex items-center gap-2 px-4 py-2 bg-[#f4f6fa] rounded-full border-l-4 border-l--brand">
+                  <IconSearch className="h-4 w-4 text--brand shrink-0" />
                   <input
                     type="text"
                     placeholder="What service do you need?"
@@ -199,8 +199,8 @@ export default function Home() {
                   />
                 </div>
 
-                <div className="w-full sm:w-44 flex items-center gap-2 px-4 py-2 bg-[#f4f6fa] rounded-full border-l-4 border-l-[#2b89ff]">
-                  <IconMapPin className="h-4 w-4 text-[#2b89ff] shrink-0" />
+                <div className="w-full sm:w-44 flex items-center gap-2 px-4 py-2 bg-[#f4f6fa] rounded-full border-l-4 border-l--brand">
+                  <IconMapPin className="h-4 w-4 text--brand shrink-0" />
                   <input
                     type="text"
                     placeholder="Location"
@@ -244,7 +244,7 @@ export default function Home() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-12 gap-4">
               <div>
-                <Badge variant="outline" className="mb-2.5 text-xs border-[#2b89ff]/30 bg-[#f0f7ff] text-[#2b89ff] font-extrabold uppercase tracking-wider">
+                <Badge variant="outline" className="mb-2.5 text-xs border--brand/30 bg--brand-light text--brand font-extrabold uppercase tracking-wider">
                   Taxonomy
                 </Badge>
                 <h2 className="text-3xl font-black text-slate-900 tracking-tight">
@@ -254,7 +254,7 @@ export default function Home() {
                   Discover pre-vetted professionals across trade & expert domain areas.
                 </p>
               </div>
-              <Button asChild variant="outline" size="sm" className="rounded-full border-slate-300 text-slate-800 hover:border-[#2b89ff] hover:text-[#2b89ff] font-bold text-xs">
+              <Button asChild variant="outline" size="sm" className="rounded-full border-slate-300 text-slate-800 hover:border--brand hover:text--brand font-bold text-xs">
                 <Link href="/category">View All Categories &rarr;</Link>
               </Button>
             </div>
@@ -264,7 +264,7 @@ export default function Home() {
                 <Link
                   key={cat.id}
                   href={`/category/${cat.slug}`}
-                  className="group relative rounded-3xl bg-white border border-slate-200/80 overflow-hidden hover:border-[#2b89ff] transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 hover:-translate-y-1 flex flex-col justify-between"
+                  className="group relative rounded-3xl bg-white border border-slate-200/80 overflow-hidden hover:border--brand transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 hover:-translate-y-1 flex flex-col justify-between"
                 >
                   <div className="relative h-36 w-full overflow-hidden bg-slate-100">
                     <img
@@ -273,14 +273,14 @@ export default function Home() {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       loading="lazy"
                     />
-                    <div className="absolute top-3 left-3 p-2.5 rounded-2xl bg-white/95 backdrop-blur-xs border border-[#2b89ff]/30 shadow-xs">
+                    <div className="absolute top-3 left-3 p-2.5 rounded-2xl bg-white/95 backdrop-blur-xs border border--brand/30 shadow-xs">
                       {getCategoryIcon(cat.icon)}
                     </div>
                   </div>
 
                   <div className="p-5 flex-1 flex flex-col justify-between">
                     <div>
-                      <h3 className="font-extrabold text-base text-slate-900 group-hover:text-[#2b89ff] transition-colors">
+                      <h3 className="font-extrabold text-base text-slate-900 group-hover:text--brand transition-colors">
                         {cat.name}
                       </h3>
                       <p className="text-xs text-slate-500 mt-1 line-clamp-2 leading-relaxed">
@@ -290,7 +290,7 @@ export default function Home() {
 
                     <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-slate-700">
                       <span>{cat.subcategories.length} subcategories</span>
-                      <IconArrowRight className="h-4 w-4 text-[#2b89ff] group-hover:translate-x-1 transition-transform" />
+                      <IconArrowRight className="h-4 w-4 text--brand group-hover:translate-x-1 transition-transform" />
                     </div>
                   </div>
                 </Link>
@@ -304,7 +304,7 @@ export default function Home() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-12 gap-4">
               <div>
-                <Badge className="mb-2.5 bg-[#f0f7ff] text-[#2b89ff] border-[#2b89ff]/30 font-extrabold uppercase tracking-wider text-xs">
+                <Badge className="mb-2.5 bg--brand-light text--brand border--brand/30 font-extrabold uppercase tracking-wider text-xs">
                   Featured Services
                 </Badge>
                 <h2 className="text-3xl font-black text-slate-900 tracking-tight">
@@ -314,7 +314,7 @@ export default function Home() {
                   Book instant slots or request custom quotes directly from top-rated providers.
                 </p>
               </div>
-              <Button asChild variant="outline" className="rounded-full border-slate-300 text-slate-800 hover:border-[#2b89ff] hover:text-[#2b89ff] font-bold text-xs">
+              <Button asChild variant="outline" className="rounded-full border-slate-300 text-slate-800 hover:border--brand hover:text--brand font-bold text-xs">
                 <Link href="/search">Browse All Listings</Link>
               </Button>
             </div>
@@ -328,7 +328,7 @@ export default function Home() {
             ) : (
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {featuredListings?.map(({ listing, provider }) => (
-                  <Card key={listing.id} className="overflow-hidden rounded-3xl hover:border-[#2b89ff] hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 flex flex-col justify-between border border-slate-200/80 bg-white pt-0">
+                  <Card key={listing.id} className="overflow-hidden rounded-3xl hover:border--brand hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 flex flex-col justify-between border border-slate-200/80 bg-white pt-0">
                     <div className="relative h-36 w-full bg-slate-100 overflow-hidden">
                       <Image
                         src={getListingImage(listing.primaryCategoryId)}
@@ -338,7 +338,7 @@ export default function Home() {
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 33vw, 25vw"
                       />
                       <div className="absolute top-2.5 right-2.5">
-                        <Badge variant="secondary" className="capitalize text-[10px] bg-white/95 text-[#2b89ff] border border-[#2b89ff]/30 font-bold shadow-xs px-2.5 py-0.5">
+                        <Badge variant="secondary" className="capitalize text-[10px] bg-white/95 text--brand border border--brand/30 font-bold shadow-xs px-2.5 py-0.5">
                           {listing.pricing.method.replace("_", " ")}
                         </Badge>
                       </div>
@@ -348,7 +348,7 @@ export default function Home() {
                     </div>
 
                     <CardHeader className="p-4 pb-2 space-y-1">
-                      <CardTitle className="text-sm font-extrabold line-clamp-1 text-slate-900 hover:text-[#2b89ff] transition-colors">
+                      <CardTitle className="text-sm font-extrabold line-clamp-1 text-slate-900 hover:text--brand transition-colors">
                         <Link href={`/provider/${provider.id}/service/${listing.id}`}>
                           {listing.title}
                         </Link>
@@ -361,7 +361,7 @@ export default function Home() {
                     <CardContent className="px-4 py-2.5 space-y-1.5 border-t border-b border-slate-100 bg-[#f8fafc]">
                       <div className="flex items-center justify-between text-[11px]">
                         <span className="font-semibold text-slate-800 flex items-center gap-1.5 truncate max-w-[130px]">
-                          <IconBuildingStore className="h-3.5 w-3.5 text-[#2b89ff] shrink-0" />
+                          <IconBuildingStore className="h-3.5 w-3.5 text--brand shrink-0" />
                           <span className="truncate">{provider.businessName}</span>
                         </span>
                         <div className="flex items-center gap-1 shrink-0">
@@ -372,11 +372,11 @@ export default function Home() {
 
                       <div className="flex items-center justify-between text-[11px] text-slate-500 font-medium">
                         <span className="flex items-center gap-1">
-                          <IconMapPin className="h-3 w-3 text-[#2b89ff]" />
+                          <IconMapPin className="h-3 w-3 text--brand" />
                           {provider.locations[0]?.suburb || "Local Service"}
                         </span>
                         <span className="flex items-center gap-1">
-                          <IconClock className="h-3 w-3 text-[#2b89ff]" />
+                          <IconClock className="h-3 w-3 text--brand" />
                           ~{provider.responseTimeHours}h
                         </span>
                       </div>
@@ -385,7 +385,7 @@ export default function Home() {
                     <CardFooter className="p-4 pt-2.5 flex items-center justify-between">
                       <div>
                         <span className="text-[10px] text-slate-400 block uppercase tracking-wider font-bold">Starting at</span>
-                        <span className="text-base font-black text-[#2b89ff]">
+                        <span className="text-base font-black text--brand">
                           ${listing.pricing.amount || "Quote"}
                         </span>
                         {listing.pricing.unit && (
@@ -410,7 +410,7 @@ export default function Home() {
         <section className="py-20 bg-white border-t border-b border-slate-200/80">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-2xl mx-auto mb-12">
-              <Badge variant="outline" className="mb-2.5 border-[#2b89ff]/30 bg-[#f0f7ff] text-[#2b89ff] font-extrabold uppercase tracking-wider text-xs">
+              <Badge variant="outline" className="mb-2.5 border--brand/30 bg--brand-light text--brand font-extrabold uppercase tracking-wider text-xs">
                 Top Talent
               </Badge>
               <h2 className="text-3xl font-black text-slate-900 tracking-tight">
@@ -425,16 +425,16 @@ export default function Home() {
               {providers?.slice(0, 6).map((provider) => (
                 <div
                   key={provider.id}
-                  className="p-6 rounded-3xl bg-white border border-slate-200/80 hover:border-[#2b89ff] hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 flex flex-col justify-between"
+                  className="p-6 rounded-3xl bg-white border border-slate-200/80 hover:border--brand hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 flex flex-col justify-between"
                 >
                   <div>
                     <div className="flex items-start justify-between gap-3 mb-4">
                       <div className="flex items-center gap-3">
-                        <div className="h-12 w-12 rounded-2xl bg-gradient-to-br from-[#2c89ff] via-[#1c6df3] to-[#0946cd] flex items-center justify-center font-black text-white text-lg shadow-md shadow-blue-500/25">
+                        <div className="h-12 w-12 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark flex items-center justify-center font-black text-white text-lg shadow-md shadow-blue-500/25">
                           {provider.businessName.charAt(0)}
                         </div>
                         <div>
-                          <h3 className="font-extrabold text-base text-slate-900 hover:text-[#2b89ff] transition-colors">
+                          <h3 className="font-extrabold text-base text-slate-900 hover:text--brand transition-colors">
                             <Link href={`/provider/${provider.id}`}>{provider.businessName}</Link>
                           </h3>
                           <p className="text-xs text-slate-400 capitalize font-medium">
@@ -469,7 +469,7 @@ export default function Home() {
                   </div>
 
                   <div className="mt-6 pt-4 border-t border-slate-100 flex items-center gap-2.5">
-                    <Button asChild variant="outline" size="sm" className="flex-1 rounded-full text-xs font-bold border-slate-300 text-slate-700 hover:border-[#2b89ff] hover:text-[#2b89ff]">
+                    <Button asChild variant="outline" size="sm" className="flex-1 rounded-full text-xs font-bold border-slate-300 text-slate-700 hover:border--brand hover:text--brand">
                       <Link href={`/provider/${provider.id}`}>View Profile</Link>
                     </Button>
                     <Button asChild size="sm" className="flex-1 rounded-full text-xs font-bold bg-[#1b76ff] text-white hover:bg-[#145ed8] shadow-md shadow-blue-500/20">
@@ -486,7 +486,7 @@ export default function Home() {
         <section className="py-20 bg-[#f8fafc]">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-2xl mx-auto mb-12">
-              <Badge className="mb-2.5 bg-[#f0f7ff] text-[#2b89ff] border-[#2b89ff]/30 font-extrabold uppercase tracking-wider text-xs">
+              <Badge className="mb-2.5 bg--brand-light text--brand border--brand/30 font-extrabold uppercase tracking-wider text-xs">
                 Simple & Transparent
               </Badge>
               <h2 className="text-3xl font-black text-slate-900 tracking-tight">
@@ -498,8 +498,8 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="p-8 rounded-3xl bg-white border border-slate-200/80 text-center relative space-y-4 shadow-xs hover:border-[#2b89ff] transition-all hover:shadow-xl hover:shadow-blue-500/10">
-                <div className="h-14 w-14 rounded-2xl bg-gradient-to-br from-[#2c89ff] via-[#1c6df3] to-[#0946cd] text-white font-black text-xl flex items-center justify-center mx-auto shadow-md shadow-blue-500/25">
+              <div className="p-8 rounded-3xl bg-white border border-slate-200/80 text-center relative space-y-4 shadow-xs hover:border--brand transition-all hover:shadow-xl hover:shadow-blue-500/10">
+                <div className="h-14 w-14 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark text-white font-black text-xl flex items-center justify-center mx-auto shadow-md shadow-blue-500/25">
                   1
                 </div>
                 <h3 className="font-extrabold text-lg text-slate-900">Search & Compare</h3>
@@ -508,8 +508,8 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="p-8 rounded-3xl bg-white border border-slate-200/80 text-center relative space-y-4 shadow-xs hover:border-[#2b89ff] transition-all hover:shadow-xl hover:shadow-blue-500/10">
-                <div className="h-14 w-14 rounded-2xl bg-gradient-to-br from-[#2c89ff] via-[#1c6df3] to-[#0946cd] text-white font-black text-xl flex items-center justify-center mx-auto shadow-md shadow-blue-500/25">
+              <div className="p-8 rounded-3xl bg-white border border-slate-200/80 text-center relative space-y-4 shadow-xs hover:border--brand transition-all hover:shadow-xl hover:shadow-blue-500/10">
+                <div className="h-14 w-14 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark text-white font-black text-xl flex items-center justify-center mx-auto shadow-md shadow-blue-500/25">
                   2
                 </div>
                 <h3 className="font-extrabold text-lg text-slate-900">Book or Request Quotes</h3>
@@ -518,8 +518,8 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="p-8 rounded-3xl bg-white border border-slate-200/80 text-center relative space-y-4 shadow-xs hover:border-[#2b89ff] transition-all hover:shadow-xl hover:shadow-blue-500/10">
-                <div className="h-14 w-14 rounded-2xl bg-gradient-to-br from-[#2c89ff] via-[#1c6df3] to-[#0946cd] text-white font-black text-xl flex items-center justify-center mx-auto shadow-md shadow-blue-500/25">
+              <div className="p-8 rounded-3xl bg-white border border-slate-200/80 text-center relative space-y-4 shadow-xs hover:border--brand transition-all hover:shadow-xl hover:shadow-blue-500/10">
+                <div className="h-14 w-14 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark text-white font-black text-xl flex items-center justify-center mx-auto shadow-md shadow-blue-500/25">
                   3
                 </div>
                 <h3 className="font-extrabold text-lg text-slate-900">Work Done & Review</h3>
@@ -534,7 +534,7 @@ export default function Home() {
         {/* PROVIDER CTA BANNER CARD */}
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#2c89ff] via-[#1c6df3] to-[#0946cd] p-10 sm:p-14 text-white text-center shadow-2xl shadow-blue-900/20">
+            <div className="relative overflow-hidden rounded-3xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark p-10 sm:p-14 text-white text-center shadow-2xl shadow-blue-900/20">
               <svg
                 className="absolute inset-0 h-full w-full opacity-20 pointer-events-none"
                 xmlns="http://www.w3.org/2000/svg"

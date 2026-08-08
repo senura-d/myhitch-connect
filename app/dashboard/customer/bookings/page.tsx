@@ -148,11 +148,11 @@ export default function CustomerBookingsPage() {
 
                 <div className="mt-2 flex flex-wrap items-center gap-x-5 gap-y-1.5 text-[11px] font-semibold text-slate-500">
                   <span className="inline-flex items-center gap-1.5">
-                    <IconCalendar className="h-3.5 w-3.5 text-[#2b89ff]" />
+                    <IconCalendar className="h-3.5 w-3.5 text--brand" />
                     {formatDate(booking.scheduledAt)}
                   </span>
                   <span className="inline-flex items-center gap-1.5">
-                    <IconClock className="h-3.5 w-3.5 text-[#2b89ff]" />
+                    <IconClock className="h-3.5 w-3.5 text--brand" />
                     {formatTime(booking.scheduledAt)} · {booking.durationMinutes} min
                   </span>
                 </div>

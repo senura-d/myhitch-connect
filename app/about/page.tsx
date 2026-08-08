@@ -25,7 +25,7 @@ export default function AboutUsPage() {
 
       <main className="flex-1">
         {/* HERO BANNER SECTION MATCHING LOGIN WAVE GRAPHICS */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-[#2c89ff] via-[#1c6df3] to-[#0946cd] text-white py-20 lg:py-28">
+        <section className="relative overflow-hidden bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark text-white py-20 lg:py-28">
           {/* Abstract SVG Grid Lines */}
           <svg
             className="absolute inset-0 h-full w-full opacity-20 pointer-events-none"
@@ -52,7 +52,7 @@ export default function AboutUsPage() {
 
           {/* Wavy Vector Shapes */}
           <svg
-            className="absolute -top-16 -left-16 w-[480px] h-[480px] opacity-30 pointer-events-none"
+            className="absolute -top-16 -left-16 w-120 h-120 opacity-30 pointer-events-none"
             viewBox="0 0 500 500"
             fill="none"
           >
@@ -88,8 +88,8 @@ export default function AboutUsPage() {
         <section className="py-20 bg-white border-b border-slate-200/80">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-              <div className="p-8 sm:p-10 rounded-3xl bg-[#f0f7ff] border border-[#2b89ff]/30 space-y-4 shadow-xl shadow-blue-500/5 hover:border-[#2b89ff] transition-all">
-                <div className="h-14 w-14 rounded-2xl bg-gradient-to-br from-[#2c89ff] via-[#1c6df3] to-[#0946cd] text-white flex items-center justify-center font-black text-xl shadow-md shadow-blue-500/25">
+              <div className="p-8 sm:p-10 rounded-3xl bg--brand-light border border--brand/30 space-y-4 shadow-xl shadow-blue-500/5 hover:border--brand transition-all">
+                <div className="h-14 w-14 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark text-white flex items-center justify-center font-black text-xl shadow-md shadow-blue-500/25">
                   <IconHeartHandshake className="h-7 w-7 text-white" />
                 </div>
                 <h2 className="text-2xl font-black text-slate-900">Our Core Mission</h2>
@@ -98,8 +98,8 @@ export default function AboutUsPage() {
                 </p>
               </div>
 
-              <div className="p-8 sm:p-10 rounded-3xl bg-white border border-slate-200/80 space-y-4 shadow-xl shadow-blue-500/5 hover:border-[#2b89ff] transition-all">
-                <div className="h-14 w-14 rounded-2xl bg-gradient-to-br from-[#2c89ff] via-[#1c6df3] to-[#0946cd] text-white flex items-center justify-center font-black text-xl shadow-md shadow-blue-500/25">
+              <div className="p-8 sm:p-10 rounded-3xl bg-white border border-slate-200/80 space-y-4 shadow-xl shadow-blue-500/5 hover:border--brand transition-all">
+                <div className="h-14 w-14 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark text-white flex items-center justify-center font-black text-xl shadow-md shadow-blue-500/25">
                   <IconSparkles className="h-7 w-7 text-white" />
                 </div>
                 <h2 className="text-2xl font-black text-slate-900">Our Vision</h2>
@@ -112,7 +112,7 @@ export default function AboutUsPage() {
         </section>
 
         {/* MARKETPLACE STATS SECTION */}
-        <section className="py-20 bg-[#0946cd] text-white border-b border-blue-900 relative overflow-hidden">
+        <section className="py-20 bg--brand-dark text-white border-b border-blue-900 relative overflow-hidden">
           <svg
             className="absolute inset-0 h-full w-full opacity-15 pointer-events-none"
             xmlns="http://www.w3.org/2000/svg"
@@ -162,7 +162,7 @@ export default function AboutUsPage() {
         <section className="py-20 bg-white border-b border-slate-200/80">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
             <div className="text-center max-w-2xl mx-auto mb-14 space-y-3">
-              <Badge className="bg-[#f0f7ff] text-[#2b89ff] border border-[#2b89ff]/30 font-extrabold uppercase tracking-wider text-xs px-3 py-1">
+              <Badge className="bg--brand-light text--brand border border--brand/30 font-extrabold uppercase tracking-wider text-xs px-3 py-1">
                 The MYHitch Promise
               </Badge>
               <h2 className="text-3xl font-black text-slate-900 tracking-tight">Why Customers & Providers Trust MYHitch</h2>
@@ -172,8 +172,8 @@ export default function AboutUsPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="p-6 rounded-3xl bg-white border border-slate-200/80 shadow-xs space-y-3 hover:border-[#2b89ff] transition-all hover:shadow-xl hover:shadow-blue-500/10">
-                <div className="h-12 w-12 rounded-2xl bg-[#f0f7ff] text-[#2b89ff] border border-[#2b89ff]/30 flex items-center justify-center">
+              <div className="p-6 rounded-3xl bg-white border border-slate-200/80 shadow-xs space-y-3 hover:border--brand transition-all hover:shadow-xl hover:shadow-blue-500/10">
+                <div className="h-12 w-12 rounded-2xl bg--brand-light text--brand border border--brand/30 flex items-center justify-center">
                   <IconShieldCheck className="h-6 w-6" />
                 </div>
                 <h3 className="font-extrabold text-base text-slate-900">1. Licence Verification</h3>
@@ -182,8 +182,8 @@ export default function AboutUsPage() {
                 </p>
               </div>
 
-              <div className="p-6 rounded-3xl bg-white border border-slate-200/80 shadow-xs space-y-3 hover:border-[#2b89ff] transition-all hover:shadow-xl hover:shadow-blue-500/10">
-                <div className="h-12 w-12 rounded-2xl bg-[#f0f7ff] text-[#2b89ff] border border-[#2b89ff]/30 flex items-center justify-center">
+              <div className="p-6 rounded-3xl bg-white border border-slate-200/80 shadow-xs space-y-3 hover:border--brand transition-all hover:shadow-xl hover:shadow-blue-500/10">
+                <div className="h-12 w-12 rounded-2xl bg--brand-light text--brand border border--brand/30 flex items-center justify-center">
                   <IconUserCheck className="h-6 w-6" />
                 </div>
                 <h3 className="font-extrabold text-base text-slate-900">2. Insurance Compliance</h3>
@@ -192,8 +192,8 @@ export default function AboutUsPage() {
                 </p>
               </div>
 
-              <div className="p-6 rounded-3xl bg-white border border-slate-200/80 shadow-xs space-y-3 hover:border-[#2b89ff] transition-all hover:shadow-xl hover:shadow-blue-500/10">
-                <div className="h-12 w-12 rounded-2xl bg-[#f0f7ff] text-[#2b89ff] border border-[#2b89ff]/30 flex items-center justify-center">
+              <div className="p-6 rounded-3xl bg-white border border-slate-200/80 shadow-xs space-y-3 hover:border--brand transition-all hover:shadow-xl hover:shadow-blue-500/10">
+                <div className="h-12 w-12 rounded-2xl bg--brand-light text--brand border border--brand/30 flex items-center justify-center">
                   <IconStar className="h-6 w-6" />
                 </div>
                 <h3 className="font-extrabold text-base text-slate-900">3. Authentic Reviews</h3>
@@ -202,8 +202,8 @@ export default function AboutUsPage() {
                 </p>
               </div>
 
-              <div className="p-6 rounded-3xl bg-white border border-slate-200/80 shadow-xs space-y-3 hover:border-[#2b89ff] transition-all hover:shadow-xl hover:shadow-blue-500/10">
-                <div className="h-12 w-12 rounded-2xl bg-[#f0f7ff] text-[#2b89ff] border border-[#2b89ff]/30 flex items-center justify-center">
+              <div className="p-6 rounded-3xl bg-white border border-slate-200/80 shadow-xs space-y-3 hover:border--brand transition-all hover:shadow-xl hover:shadow-blue-500/10">
+                <div className="h-12 w-12 rounded-2xl bg--brand-light text--brand border border--brand/30 flex items-center justify-center">
                   <IconClock className="h-6 w-6" />
                 </div>
                 <h3 className="font-extrabold text-base text-slate-900">4. Fast Direct Booking</h3>
@@ -218,7 +218,7 @@ export default function AboutUsPage() {
         {/* CTA BANNER SECTION */}
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#2c89ff] via-[#1c6df3] to-[#0946cd] p-10 sm:p-14 text-white text-center shadow-2xl shadow-blue-900/20">
+            <div className="relative overflow-hidden rounded-3xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark p-10 sm:p-14 text-white text-center shadow-2xl shadow-blue-900/20">
               <div className="relative z-10 max-w-2xl mx-auto space-y-6">
                 <h2 className="text-3xl sm:text-4xl font-black uppercase tracking-wider text-white">
                   READY TO GET STARTED WITH MYHITCH CONNECT?

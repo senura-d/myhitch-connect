@@ -72,7 +72,7 @@ export default function ContactUsPage() {
 
       <main className="flex-1">
         {/* HERO BANNER SECTION MATCHING LOGIN WAVE GRAPHICS */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-[#2c89ff] via-[#1c6df3] to-[#0946cd] text-white py-16 lg:py-20">
+        <section className="relative overflow-hidden bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark text-white py-16 lg:py-20">
           <svg
             className="absolute inset-0 h-full w-full opacity-20 pointer-events-none"
             xmlns="http://www.w3.org/2000/svg"
@@ -120,7 +120,7 @@ export default function ContactUsPage() {
               {/* LEFT COLUMN: CONTACT CARDS */}
               <div className="lg:col-span-5 space-y-6">
                 <div>
-                  <Badge className="bg-[#f0f7ff] text-[#2b89ff] border border-[#2b89ff]/30 font-extrabold uppercase tracking-wider text-xs mb-3">
+                  <Badge className="bg--brand-light text--brand border border--brand/30 font-extrabold uppercase tracking-wider text-xs mb-3">
                     Direct Contact Channels
                   </Badge>
                   <h2 className="text-3xl font-black text-slate-900">Get in Touch</h2>
@@ -130,19 +130,19 @@ export default function ContactUsPage() {
                 </div>
 
                 <div className="space-y-4">
-                  <div className="p-5 rounded-3xl bg-slate-50/70 border border-slate-200/80 flex items-start gap-4 hover:border-[#2b89ff] transition-all hover:shadow-xl hover:shadow-blue-500/5">
-                    <div className="h-11 w-11 rounded-2xl bg-gradient-to-br from-[#2c89ff] via-[#1c6df3] to-[#0946cd] text-white flex shrink-0 items-center justify-center shadow-md shadow-blue-500/20">
+                  <div className="p-5 rounded-3xl bg-slate-50/70 border border-slate-200/80 flex items-start gap-4 hover:border--brand transition-all hover:shadow-xl hover:shadow-blue-500/5">
+                    <div className="h-11 w-11 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark text-white flex shrink-0 items-center justify-center shadow-md shadow-blue-500/20">
                       <IconMail className="h-5 w-5" />
                     </div>
                     <div>
                       <h3 className="font-extrabold text-sm text-slate-900">Email Support</h3>
                       <p className="text-xs text-slate-600 mt-0.5 font-medium">support@myhitchconnect.com.au</p>
-                      <p className="text-[11px] text-[#2b89ff] font-bold mt-1">Mon-Fri response within 2 hours</p>
+                      <p className="text-[11px] text--brand font-bold mt-1">Mon-Fri response within 2 hours</p>
                     </div>
                   </div>
 
-                  <div className="p-5 rounded-3xl bg-slate-50/70 border border-slate-200/80 flex items-start gap-4 hover:border-[#2b89ff] transition-all hover:shadow-xl hover:shadow-blue-500/5">
-                    <div className="h-11 w-11 rounded-2xl bg-gradient-to-br from-[#2c89ff] via-[#1c6df3] to-[#0946cd] text-white flex shrink-0 items-center justify-center shadow-md shadow-blue-500/20">
+                  <div className="p-5 rounded-3xl bg-slate-50/70 border border-slate-200/80 flex items-start gap-4 hover:border--brand transition-all hover:shadow-xl hover:shadow-blue-500/5">
+                    <div className="h-11 w-11 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark text-white flex shrink-0 items-center justify-center shadow-md shadow-blue-500/20">
                       <IconBuildingStore className="h-5 w-5" />
                     </div>
                     <div>
@@ -152,8 +152,8 @@ export default function ContactUsPage() {
                     </div>
                   </div>
 
-                  <div className="p-5 rounded-3xl bg-slate-50/70 border border-slate-200/80 flex items-start gap-4 hover:border-[#2b89ff] transition-all hover:shadow-xl hover:shadow-blue-500/5">
-                    <div className="h-11 w-11 rounded-2xl bg-gradient-to-br from-[#2c89ff] via-[#1c6df3] to-[#0946cd] text-white flex shrink-0 items-center justify-center shadow-md shadow-blue-500/20">
+                  <div className="p-5 rounded-3xl bg-slate-50/70 border border-slate-200/80 flex items-start gap-4 hover:border--brand transition-all hover:shadow-xl hover:shadow-blue-500/5">
+                    <div className="h-11 w-11 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark text-white flex shrink-0 items-center justify-center shadow-md shadow-blue-500/20">
                       <IconPhone className="h-5 w-5" />
                     </div>
                     <div>
@@ -163,8 +163,8 @@ export default function ContactUsPage() {
                     </div>
                   </div>
 
-                  <div className="p-5 rounded-3xl bg-slate-50/70 border border-slate-200/80 flex items-start gap-4 hover:border-[#2b89ff] transition-all hover:shadow-xl hover:shadow-blue-500/5">
-                    <div className="h-11 w-11 rounded-2xl bg-gradient-to-br from-[#2c89ff] via-[#1c6df3] to-[#0946cd] text-white flex shrink-0 items-center justify-center shadow-md shadow-blue-500/20">
+                  <div className="p-5 rounded-3xl bg-slate-50/70 border border-slate-200/80 flex items-start gap-4 hover:border--brand transition-all hover:shadow-xl hover:shadow-blue-500/5">
+                    <div className="h-11 w-11 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to--brand-dark text-white flex shrink-0 items-center justify-center shadow-md shadow-blue-500/20">
                       <IconMapPin className="h-5 w-5" />
                     </div>
                     <div>
@@ -186,13 +186,13 @@ export default function ContactUsPage() {
                   </div>
 
                   {submittedSuccess ? (
-                    <div className="p-8 rounded-3xl bg-[#f0f7ff] border border-[#2b89ff]/40 text-center space-y-4 my-8">
+                    <div className="p-8 rounded-3xl bg--brand-light border border--brand/40 text-center space-y-4 my-8">
                       <div className="h-14 w-14 rounded-full bg-[#1b76ff] text-white mx-auto flex items-center justify-center shadow-lg shadow-blue-500/30">
                         <IconCheck className="h-7 w-7 text-white" />
                       </div>
                       <h4 className="text-xl font-black text-slate-900">Message Sent Successfully!</h4>
                       <p className="text-xs sm:text-sm text-slate-600 max-w-md mx-auto">
-                        Thank you for contacting MYHitch Connect. Ticket reference <span className="font-mono font-bold text-[#2b89ff]">#MHC-{Math.floor(100000 + Math.random() * 900000)}</span> has been dispatched to our team.
+                        Thank you for contacting MYHitch Connect. Ticket reference <span className="font-mono font-bold text--brand">#MHC-{Math.floor(100000 + Math.random() * 900000)}</span> has been dispatched to our team.
                       </p>
                       <Button
                         onClick={() => setSubmittedSuccess(false)}
@@ -207,13 +207,13 @@ export default function ContactUsPage() {
                         <div className="space-y-1.5">
                           <label className="text-xs font-black uppercase tracking-wider text-slate-800">Full Name *</label>
                           <div className="relative flex items-center">
-                            <IconUser className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-[#2b89ff] z-10 pointer-events-none" />
+                            <IconUser className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text--brand z-10 pointer-events-none" />
                             <Input
                               required
                               placeholder="John Citizen"
                               value={formData.fullName}
                               onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-                              className="h-11 border border-slate-200 bg-[#f8fafc] !pl-10 text-xs font-semibold text-slate-900 placeholder:text-slate-500 focus-visible:bg-white focus-visible:ring-2 focus-visible:ring-[#2b89ff]/40 rounded-xl transition-all shadow-xs"
+                              className="h-11 border border-slate-200 bg-[#f8fafc] pl-10! text-xs font-semibold text-slate-900 placeholder:text-slate-500 focus-visible:bg-white focus-visible:ring-2 focus-visible:ring--brand/40 rounded-xl transition-all shadow-xs"
                             />
                           </div>
                         </div>
@@ -221,14 +221,14 @@ export default function ContactUsPage() {
                         <div className="space-y-1.5">
                           <label className="text-xs font-black uppercase tracking-wider text-slate-800">Email Address *</label>
                           <div className="relative flex items-center">
-                            <IconMail className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-[#2b89ff] z-10 pointer-events-none" />
+                            <IconMail className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text--brand z-10 pointer-events-none" />
                             <Input
                               required
                               type="email"
                               placeholder="john@example.com.au"
                               value={formData.email}
                               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                              className="h-11 border border-slate-200 bg-[#f8fafc] !pl-10 text-xs font-semibold text-slate-900 placeholder:text-slate-500 focus-visible:bg-white focus-visible:ring-2 focus-visible:ring-[#2b89ff]/40 rounded-xl transition-all shadow-xs"
+                              className="h-11 border border-slate-200 bg-[#f8fafc] pl-10! text-xs font-semibold text-slate-900 placeholder:text-slate-500 focus-visible:bg-white focus-visible:ring-2 focus-visible:ring--brand/40 rounded-xl transition-all shadow-xs"
                             />
                           </div>
                         </div>
@@ -238,12 +238,12 @@ export default function ContactUsPage() {
                         <div className="space-y-1.5">
                           <label className="text-xs font-black uppercase tracking-wider text-slate-800">Phone Number</label>
                           <div className="relative flex items-center">
-                            <IconPhone className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-[#2b89ff] z-10 pointer-events-none" />
+                            <IconPhone className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text--brand z-10 pointer-events-none" />
                             <Input
                               placeholder="0400 000 000"
                               value={formData.phone}
                               onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                              className="h-11 border border-slate-200 bg-[#f8fafc] !pl-10 text-xs font-semibold text-slate-900 placeholder:text-slate-500 focus-visible:bg-white focus-visible:ring-2 focus-visible:ring-[#2b89ff]/40 rounded-xl transition-all shadow-xs"
+                              className="h-11 border border-slate-200 bg-[#f8fafc] pl-10! text-xs font-semibold text-slate-900 placeholder:text-slate-500 focus-visible:bg-white focus-visible:ring-2 focus-visible:ring--brand/40 rounded-xl transition-all shadow-xs"
                             />
                           </div>
                         </div>
@@ -251,11 +251,11 @@ export default function ContactUsPage() {
                         <div className="space-y-1.5">
                           <label className="text-xs font-black uppercase tracking-wider text-slate-800">Inquiry Type</label>
                           <div className="relative flex items-center">
-                            <IconHelpCircle className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-[#2b89ff] z-10 pointer-events-none" />
+                            <IconHelpCircle className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text--brand z-10 pointer-events-none" />
                             <select
                               value={formData.inquiryType}
                               onChange={(e) => setFormData({ ...formData, inquiryType: e.target.value })}
-                              className="w-full h-11 border border-slate-200 bg-[#f8fafc] !pl-10 pr-4 text-xs font-semibold text-slate-900 focus:bg-white focus:ring-2 focus:ring-[#2b89ff]/40 focus:outline-none rounded-xl transition-all shadow-xs"
+                              className="w-full h-11 border border-slate-200 bg-[#f8fafc] pl-10! pr-4 text-xs font-semibold text-slate-900 focus:bg-white focus:ring-2 focus:ring--brand/40 focus:outline-none rounded-xl transition-all shadow-xs"
                             >
                               <option value="Customer Inquiry">Customer General Inquiry</option>
                               <option value="Provider Verification">Provider Verification Support</option>
@@ -269,13 +269,13 @@ export default function ContactUsPage() {
                       <div className="space-y-1.5">
                         <label className="text-xs font-black uppercase tracking-wider text-slate-800">Subject *</label>
                         <div className="relative flex items-center">
-                          <IconMessage className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-[#2b89ff] z-10 pointer-events-none" />
+                          <IconMessage className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text--brand z-10 pointer-events-none" />
                           <Input
                             required
                             placeholder="How can we assist you?"
                             value={formData.subject}
                             onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                            className="h-11 border border-slate-200 border-l-4 border-l-[#2b89ff] bg-[#f8fafc] !pl-10 text-xs font-semibold text-slate-900 placeholder:text-slate-500 focus-visible:bg-white focus-visible:ring-2 focus-visible:ring-[#2b89ff]/40 rounded-r-xl rounded-l-none transition-all shadow-xs"
+                            className="h-11 border border-slate-200 border-l-4 border-l--brand bg-[#f8fafc] pl-10! text-xs font-semibold text-slate-900 placeholder:text-slate-500 focus-visible:bg-white focus-visible:ring-2 focus-visible:ring--brand/40 rounded-r-xl rounded-l-none transition-all shadow-xs"
                           />
                         </div>
                       </div>
@@ -283,14 +283,14 @@ export default function ContactUsPage() {
                       <div className="space-y-1.5">
                         <label className="text-xs font-black uppercase tracking-wider text-slate-800">Message *</label>
                         <div className="relative">
-                          <IconPencil className="absolute left-3.5 top-3.5 h-4 w-4 text-[#2b89ff] z-10 pointer-events-none" />
+                          <IconPencil className="absolute left-3.5 top-3.5 h-4 w-4 text--brand z-10 pointer-events-none" />
                           <Textarea
                             required
                             rows={4}
                             placeholder="Provide details about your inquiry..."
                             value={formData.message}
                             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                            className="border border-slate-200 bg-[#f8fafc] !pl-10 pt-3 text-xs font-semibold text-slate-900 placeholder:text-slate-500 focus-visible:bg-white focus-visible:ring-2 focus-visible:ring-[#2b89ff]/40 rounded-xl transition-all shadow-xs"
+                            className="border border-slate-200 bg-[#f8fafc] pl-10! pt-3 text-xs font-semibold text-slate-900 placeholder:text-slate-500 focus-visible:bg-white focus-visible:ring-2 focus-visible:ring--brand/40 rounded-xl transition-all shadow-xs"
                           />
                         </div>
                       </div>
@@ -298,7 +298,7 @@ export default function ContactUsPage() {
                       <Button
                         type="submit"
                         disabled={isSubmitting}
-                        className="w-full h-12 rounded-full bg-gradient-to-r from-[#2c89ff] via-[#1c6df3] to-[#0946cd] hover:opacity-95 text-white font-black text-xs uppercase tracking-widest shadow-lg shadow-blue-500/25 transition-all active:scale-[0.99] gap-2 mt-3"
+                        className="w-full h-12 rounded-full bg-linear-to-r from-[#2c89ff] via-[#1c6df3] to--brand-dark hover:opacity-95 text-white font-black text-xs uppercase tracking-widest shadow-lg shadow-blue-500/25 transition-all active:scale-[0.99] gap-2 mt-3"
                       >
                         {isSubmitting ? (
                           <span>Sending Inquiry...</span>
@@ -322,7 +322,7 @@ export default function ContactUsPage() {
         <section className="py-20 bg-[#f8fafc] border-b border-slate-200/80">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <div className="text-center mb-12 space-y-2">
-              <Badge className="bg-[#f0f7ff] text-[#2b89ff] border border-[#2b89ff]/30 font-extrabold uppercase tracking-wider text-xs px-3 py-1">
+              <Badge className="bg--brand-light text--brand border border--brand/30 font-extrabold uppercase tracking-wider text-xs px-3 py-1">
                 FAQ Support
               </Badge>
               <h2 className="text-3xl font-black text-slate-900 tracking-tight">Frequently Asked Questions</h2>
@@ -334,15 +334,15 @@ export default function ContactUsPage() {
                 return (
                   <div
                     key={idx}
-                    className="rounded-3xl bg-white border border-slate-200/80 overflow-hidden shadow-xs hover:border-[#2b89ff] transition-all"
+                    className="rounded-3xl bg-white border border-slate-200/80 overflow-hidden shadow-xs hover:border--brand transition-all"
                   >
                     <button
                       onClick={() => setOpenFaq(isOpen ? null : idx)}
-                      className="w-full p-6 text-left flex items-center justify-between font-extrabold text-sm text-slate-900 hover:text-[#2b89ff]"
+                      className="w-full p-6 text-left flex items-center justify-between font-extrabold text-sm text-slate-900 hover:text--brand"
                     >
                       <span>{faq.q}</span>
                       <IconChevronDown
-                        className={`h-5 w-5 text-[#2b89ff] transition-transform duration-300 ${
+                        className={`h-5 w-5 text--brand transition-transform duration-300 ${
                           isOpen ? "rotate-180" : ""
                         }`}
                       />

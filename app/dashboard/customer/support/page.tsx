@@ -67,19 +67,19 @@ export default function CustomerSupportPage() {
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
         {[
           {
-            icon: <IconMail className="h-5 w-5 text-[#2b89ff]" />,
+            icon: <IconMail className="h-5 w-5 text--brand" />,
             label: "Email us",
             value: "support@myhitchconnect.test",
             hint: "Replies within 1 business day",
           },
           {
-            icon: <IconPhone className="h-5 w-5 text-[#2b89ff]" />,
+            icon: <IconPhone className="h-5 w-5 text--brand" />,
             label: "Call us",
             value: "1300 000 000",
             hint: "Mon–Fri, 9am–5pm AEST",
           },
           {
-            icon: <IconClock className="h-5 w-5 text-[#2b89ff]" />,
+            icon: <IconClock className="h-5 w-5 text--brand" />,
             label: "Urgent booking issue",
             value: "Contact your provider",
             hint: "Fastest route for same-day jobs",
@@ -201,8 +201,8 @@ export default function CustomerSupportPage() {
               Send message
             </Button>
 
-            <p className="flex items-start gap-2 rounded-xl border border-[#2b89ff]/25 bg-[#f0f9ff] px-3 py-2 text-[11px] font-medium text-slate-700">
-              <IconShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-[#2b89ff]" />
+            <p className="flex items-start gap-2 rounded-xl border border--brand/25 bg-[#f0f9ff] px-3 py-2 text-[11px] font-medium text-slate-700">
+              <IconShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text--brand" />
               Reporting a provider? Include the booking reference and we&apos;ll
               review their verification status.
             </p>

@@ -27,7 +27,7 @@ function LetterRevealText({ text, className = "", highlightWords = [] }: LetterR
             key={wordIdx}
             aria-hidden="true"
             className={`inline-block whitespace-nowrap ${
-              isHighlighted ? "text-[#2b89ff] font-black" : ""
+              isHighlighted ? "text--brand font-black" : ""
             }`}
           >
             {letters.map((char, charIdx) => (
