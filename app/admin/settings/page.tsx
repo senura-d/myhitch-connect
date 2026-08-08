@@ -47,7 +47,7 @@ export default function AdminSettingsPage() {
         <div>
           <h1 className="text-2xl font-black text-slate-900 tracking-tight">Platform Settings</h1>
           <div className="flex items-center gap-2 text-xs text-slate-400 font-semibold mt-1">
-            <Link href="/admin" className="text--brand hover:underline">Admin</Link>
+            <Link href="/admin" className="text-brand hover:underline">Admin</Link>
             <span>&gt;</span>
             <span className="text-slate-600 font-bold">Platform Settings</span>
           </div>
@@ -127,7 +127,7 @@ export default function AdminSettingsPage() {
                     max="50"
                     value={commissionRate}
                     onChange={(e) => setCommissionRate(e.target.value)}
-                    className="h-10 border border-slate-200 bg-slate-50 font-mono text-xs font-bold text-slate-800 rounded-full focus-visible:bg-white focus-visible:ring-1 focus-visible:ring--brand"
+                    className="h-10 border border-slate-200 bg-slate-50 font-mono text-xs font-bold text-slate-800 rounded-full focus-visible:bg-white focus-visible:ring-1 focus-visible:ring-brand"
                   />
                 </div>
                 <span className="text-[10px] text-slate-400 font-semibold mt-1 block">

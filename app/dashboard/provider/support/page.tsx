@@ -66,19 +66,19 @@ export default function ProviderSupportPage() {
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
         {[
           {
-            icon: <IconMail className="h-5 w-5 text--brand" />,
+            icon: <IconMail className="h-5 w-5 text-brand" />,
             label: "Provider support",
             value: "providers@myhitchconnect.test",
             hint: "Replies within 1 business day",
           },
           {
-            icon: <IconPhone className="h-5 w-5 text--brand" />,
+            icon: <IconPhone className="h-5 w-5 text-brand" />,
             label: "Call us",
             value: "1300 000 111",
             hint: "Mon–Fri, 8am–6pm AEST",
           },
           {
-            icon: <IconClock className="h-5 w-5 text--brand" />,
+            icon: <IconClock className="h-5 w-5 text-brand" />,
             label: "Verification queries",
             value: "Usually 2 business days",
             hint: "From document upload to decision",
@@ -196,8 +196,8 @@ export default function ProviderSupportPage() {
               Send message
             </Button>
 
-            <p className="flex items-start gap-2 rounded-xl border border--brand/25 bg-[#f0f9ff] px-3 py-2 text-[11px] font-medium text-slate-700">
-              <IconShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text--brand" />
+            <p className="flex items-start gap-2 rounded-xl border border-brand/25 bg-[#f0f9ff] px-3 py-2 text-[11px] font-medium text-slate-700">
+              <IconShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-brand" />
               Verification questions are handled by the compliance team — expect a
               reply within two business days.
             </p>

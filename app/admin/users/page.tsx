@@ -46,7 +46,7 @@ export default function AdminUsersPage() {
         <div>
           <h1 className="text-2xl font-black text-slate-900 tracking-tight">User Directory</h1>
           <div className="flex items-center gap-2 text-xs text-slate-400 font-semibold mt-1">
-            <Link href="/admin" className="text--brand hover:underline">Admin</Link>
+            <Link href="/admin" className="text-brand hover:underline">Admin</Link>
             <span>&gt;</span>
             <span className="text-slate-600 font-bold">Users</span>
           </div>
@@ -61,7 +61,7 @@ export default function AdminUsersPage() {
             placeholder="Search name, email, handle..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="h-10 border border-slate-200 bg-slate-50 pl-10! text-xs font-semibold text-slate-800 rounded-full focus-visible:bg-white focus-visible:ring-1 focus-visible:ring--brand"
+            className="h-10 border border-slate-200 bg-slate-50 pl-10! text-xs font-semibold text-slate-800 rounded-full focus-visible:bg-white focus-visible:ring-1 focus-visible:ring-brand"
           />
         </div>
 
@@ -71,7 +71,7 @@ export default function AdminUsersPage() {
             <select
               value={roleFilter}
               onChange={(e) => setRoleFilter(e.target.value)}
-              className="w-full h-10 pl-4 pr-10 border border-slate-200 bg-slate-50 text-xs font-bold text-slate-700 rounded-full appearance-none focus:outline-none focus:ring-1 focus:ring--brand cursor-pointer"
+              className="w-full h-10 pl-4 pr-10 border border-slate-200 bg-slate-50 text-xs font-bold text-slate-700 rounded-full appearance-none focus:outline-none focus:ring-1 focus:ring-brand cursor-pointer"
             >
               <option value="all">All Roles</option>
               <option value="customer">Customer</option>
@@ -101,7 +101,7 @@ export default function AdminUsersPage() {
                 <tr className="border-b border-slate-100 text-[11px] font-extrabold text-slate-400 uppercase tracking-wider">
                   <th className="py-3 px-3">Name</th>
                   <th className="py-3 px-3">Email</th>
-                  <th className="py-3 px-3 text--brand">Role</th>
+                  <th className="py-3 px-3 text-brand">Role</th>
                   <th className="py-3 px-3">Username / Handle</th>
                   <th className="py-3 px-3 text-right">Account Actions</th>
                 </tr>

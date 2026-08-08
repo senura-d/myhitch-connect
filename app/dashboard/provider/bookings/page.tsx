@@ -138,15 +138,15 @@ export default function ProviderBookingsPage() {
 
                     <div className="mt-2 flex flex-wrap items-center gap-x-5 gap-y-1.5 text-[11px] font-semibold text-slate-500">
                       <span className="inline-flex items-center gap-1.5">
-                        <IconUser className="h-3.5 w-3.5 text--brand" />
+                        <IconUser className="h-3.5 w-3.5 text-brand" />
                         {booking.customerId}
                       </span>
                       <span className="inline-flex items-center gap-1.5">
-                        <IconCalendar className="h-3.5 w-3.5 text--brand" />
+                        <IconCalendar className="h-3.5 w-3.5 text-brand" />
                         {formatDate(booking.scheduledAt)}
                       </span>
                       <span className="inline-flex items-center gap-1.5">
-                        <IconClock className="h-3.5 w-3.5 text--brand" />
+                        <IconClock className="h-3.5 w-3.5 text-brand" />
                         {formatTime(booking.scheduledAt)} · {booking.durationMinutes} min
                       </span>
                     </div>

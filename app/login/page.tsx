@@ -214,7 +214,7 @@ function LoginPageInner() {
         {/* Header and Mode Toggle */}
         <div className="mb-6 flex items-center justify-between border-b border-slate-100 pb-4">
           <div>
-            <h1 className="text-2xl sm:text-3xl font-extrabold text--brand tracking-tight">
+            <h1 className="text-2xl sm:text-3xl font-extrabold text-brand tracking-tight">
               {tab === "signin" ? "Login Account" : "Create Account"}
             </h1>
             <p className="mt-1 text-xs text-slate-400">
@@ -232,7 +232,7 @@ function LoginPageInner() {
               }}
               className={`rounded-full px-3.5 py-1 text-xs font-bold transition-all ${
                 tab === "signin"
-                  ? "bg--brand text-white shadow-xs"
+                  ? "bg-brand text-white shadow-xs"
                   : "text-slate-600 hover:text-slate-900"
               }`}
             >
@@ -243,7 +243,7 @@ function LoginPageInner() {
               onClick={() => setTab("signup")}
               className={`rounded-full px-3.5 py-1 text-xs font-bold transition-all ${
                 tab === "signup"
-                  ? "bg--brand text-white shadow-xs"
+                  ? "bg-brand text-white shadow-xs"
                   : "text-slate-600 hover:text-slate-900"
               }`}
             >
@@ -272,7 +272,7 @@ function LoginPageInner() {
                     setSigninEmail(e.target.value);
                     setSigninError(null);
                   }}
-                  className="h-12 border-0 border-l-4 border-l--brand bg-[#f4f6fa] pl-4 pr-10 text-sm font-medium text-slate-800 placeholder:text-slate-400 focus-visible:bg-white focus-visible:ring-1 focus-visible:ring--brand rounded-r-xl rounded-l-none"
+                  className="h-12 border-0 border-l-4 border-l-brand bg-[#f4f6fa] pl-4 pr-10 text-sm font-medium text-slate-800 placeholder:text-slate-400 focus-visible:bg-white focus-visible:ring-1 focus-visible:ring-brand rounded-r-xl rounded-l-none"
                   aria-invalid={signinError ? true : undefined}
                 />
                 <IconMail className="absolute right-3.5 h-4 w-4 text-slate-400 pointer-events-none" />
@@ -293,7 +293,7 @@ function LoginPageInner() {
                   placeholder="Password"
                   value={signinPassword}
                   onChange={(e) => setSigninPassword(e.target.value)}
-                  className="h-12 border-0 border-l-4 border-l--brand bg-[#f4f6fa] pl-4 pr-10 text-sm font-medium text-slate-800 placeholder:text-slate-400 focus-visible:bg-white focus-visible:ring-1 focus-visible:ring--brand rounded-r-xl rounded-l-none"
+                  className="h-12 border-0 border-l-4 border-l-brand bg-[#f4f6fa] pl-4 pr-10 text-sm font-medium text-slate-800 placeholder:text-slate-400 focus-visible:bg-white focus-visible:ring-1 focus-visible:ring-brand rounded-r-xl rounded-l-none"
                 />
                 <IconLock className="absolute right-3.5 h-4 w-4 text-slate-400 pointer-events-none" />
               </div>
@@ -306,10 +306,10 @@ function LoginPageInner() {
                   type="checkbox"
                   checked={keepSignedIn}
                   onChange={(e) => setKeepSignedIn(e.target.checked)}
-                  className="h-4 w-4 rounded border-slate-300 text--brand focus:ring--brand"
+                  className="h-4 w-4 rounded border-slate-300 text-brand focus:ring-brand"
                 />
                 <span className="flex items-center gap-1">
-                  <IconCheck className="h-3.5 w-3.5 text--brand" />
+                  <IconCheck className="h-3.5 w-3.5 text-brand" />
                   Keep me signed in
                 </span>
               </label>
@@ -317,7 +317,7 @@ function LoginPageInner() {
               <button
                 type="button"
                 onClick={() => setTab("signup")}
-                className="font-semibold text--brand hover:underline"
+                className="font-semibold text-brand hover:underline"
               >
                 Already a member?
               </button>
@@ -359,13 +359,13 @@ function LoginPageInner() {
                       onClick={() => setSignupRole(choice.role)}
                       className={`flex flex-col gap-1 p-3 rounded-xl border text-left transition-all ${
                         isSelected
-                          ? "border--brand bg--brand-light text--brand shadow-xs"
+                          ? "border-brand bg-brand-light text-brand shadow-xs"
                           : "border-slate-200 bg-slate-50/50 text-slate-600 hover:bg-white"
                       }`}
                     >
                       <div className="flex items-center justify-between">
                         <span className="font-bold text-xs">{choice.title}</span>
-                        {isSelected && <IconCheck className="h-3.5 w-3.5 text--brand" />}
+                        {isSelected && <IconCheck className="h-3.5 w-3.5 text-brand" />}
                       </div>
                       <span className="text-[10px] text-slate-500 line-clamp-2">
                         {choice.blurb}
@@ -384,7 +384,7 @@ function LoginPageInner() {
                 placeholder={signupRole === "provider" ? "Business Name" : "Full Name"}
                 value={signupName}
                 onChange={(e) => setSignupName(e.target.value)}
-                className="h-11 border-0 border-l-4 border-l--brand bg-[#f4f6fa] pl-4 text-xs font-medium text-slate-800 placeholder:text-slate-400 focus-visible:bg-white focus-visible:ring-1 focus-visible:ring--brand rounded-r-xl rounded-l-none"
+                className="h-11 border-0 border-l-4 border-l-brand bg-[#f4f6fa] pl-4 text-xs font-medium text-slate-800 placeholder:text-slate-400 focus-visible:bg-white focus-visible:ring-1 focus-visible:ring-brand rounded-r-xl rounded-l-none"
               />
             </div>
 
@@ -397,7 +397,7 @@ function LoginPageInner() {
                 placeholder="Email ID"
                 value={signupEmail}
                 onChange={(e) => setSignupEmail(e.target.value)}
-                className="h-11 border-0 border-l-4 border-l--brand bg-[#f4f6fa] pl-4 text-xs font-medium text-slate-800 placeholder:text-slate-400 focus-visible:bg-white focus-visible:ring-1 focus-visible:ring--brand rounded-r-xl rounded-l-none"
+                className="h-11 border-0 border-l-4 border-l-brand bg-[#f4f6fa] pl-4 text-xs font-medium text-slate-800 placeholder:text-slate-400 focus-visible:bg-white focus-visible:ring-1 focus-visible:ring-brand rounded-r-xl rounded-l-none"
               />
             </div>
 
@@ -411,13 +411,13 @@ function LoginPageInner() {
                 placeholder="Password (min 8 chars)"
                 value={signupPassword}
                 onChange={(e) => setSignupPassword(e.target.value)}
-                className="h-11 border-0 border-l-4 border-l--brand bg-[#f4f6fa] pl-4 text-xs font-medium text-slate-800 placeholder:text-slate-400 focus-visible:bg-white focus-visible:ring-1 focus-visible:ring--brand rounded-r-xl rounded-l-none"
+                className="h-11 border-0 border-l-4 border-l-brand bg-[#f4f6fa] pl-4 text-xs font-medium text-slate-800 placeholder:text-slate-400 focus-visible:bg-white focus-visible:ring-1 focus-visible:ring-brand rounded-r-xl rounded-l-none"
               />
             </div>
 
             {signupRole === "provider" && (
-              <p className="flex items-center gap-2 rounded-xl border border-blue-100 bg--brand-light p-2.5 text-[11px] text-slate-700">
-                <IconShieldCheck className="h-4 w-4 shrink-0 text--brand" />
+              <p className="flex items-center gap-2 rounded-xl border border-blue-100 bg-brand-light p-2.5 text-[11px] text-slate-700">
+                <IconShieldCheck className="h-4 w-4 shrink-0 text-brand" />
                 Provider credentials and insurance are verified before going live.
               </p>
             )}
@@ -447,12 +447,12 @@ function LoginPageInner() {
                   setSigninPassword("demo-password");
                   setSigninError(null);
                 }}
-                className="flex flex-col items-center justify-center p-2 rounded-xl border border-slate-200/80 bg-slate-50/50 hover:bg--brand-light hover:border--brand transition-all text-center group"
+                className="flex flex-col items-center justify-center p-2 rounded-xl border border-slate-200/80 bg-slate-50/50 hover:bg-brand-light hover:border-brand transition-all text-center group"
               >
-                <span className="text-[11px] font-bold text-slate-800 group-hover:text--brand truncate w-full">
+                <span className="text-[11px] font-bold text-slate-800 group-hover:text-brand truncate w-full">
                   {user.name.split(" ")[0]}
                 </span>
-                <span className="text-[9px] uppercase tracking-wider font-semibold text-slate-400 group-hover:text--brand/80">
+                <span className="text-[9px] uppercase tracking-wider font-semibold text-slate-400 group-hover:text-brand/80">
                   {user.role}
                 </span>
               </button>

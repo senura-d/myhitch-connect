@@ -112,7 +112,7 @@ export default function CustomerDashboardLayout({
                 name="dashboard-search"
                 aria-label="Search the dashboard"
                 placeholder="Search bookings, services, providers..."
-                className="h-9 border border-slate-200/80 bg-slate-50 pl-10! text-xs font-medium text-slate-800 placeholder:text-slate-400 rounded-full focus-visible:bg-white focus-visible:ring-1 focus-visible:ring--brand"
+                className="h-9 border border-slate-200/80 bg-slate-50 pl-10! text-xs font-medium text-slate-800 placeholder:text-slate-400 rounded-full focus-visible:bg-white focus-visible:ring-1 focus-visible:ring-brand"
               />
             </div>
           </div>

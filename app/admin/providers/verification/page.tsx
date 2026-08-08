@@ -46,7 +46,7 @@ export default function AdminVerificationQueuePage() {
         <div>
           <h1 className="text-2xl font-black text-slate-900 tracking-tight">Provider Verification Queue</h1>
           <div className="flex items-center gap-2 text-xs text-slate-400 font-semibold mt-1">
-            <Link href="/admin" className="text--brand hover:underline">Admin</Link>
+            <Link href="/admin" className="text-brand hover:underline">Admin</Link>
             <span>&gt;</span>
             <span className="text-slate-600 font-bold">Licence Verification</span>
           </div>
@@ -61,7 +61,7 @@ export default function AdminVerificationQueuePage() {
             <div className="h-28 bg-linear-to-r from-[#2c89ff] via-[#1c6df3] to-brand-dark relative" />
             <div className="p-6 pt-0 text-center relative space-y-4">
               <div className="relative -mt-14 inline-block">
-                <div className="h-24 w-24 rounded-full border-4 border-white overflow-hidden shadow-lg relative mx-auto bg-slate-100 flex items-center justify-center text--brand">
+                <div className="h-24 w-24 rounded-full border-4 border-white overflow-hidden shadow-lg relative mx-auto bg-slate-100 flex items-center justify-center text-brand">
                   <IconShieldCheck className="h-12 w-12" />
                 </div>
               </div>
@@ -76,7 +76,7 @@ export default function AdminVerificationQueuePage() {
 
               <div className="border-t border-slate-100 pt-4 space-y-3 text-left">
                 <div className="flex items-center gap-3">
-                  <div className="h-8 w-8 rounded-full bg-blue-50 text--brand flex items-center justify-center shrink-0">
+                  <div className="h-8 w-8 rounded-full bg-blue-50 text-brand flex items-center justify-center shrink-0">
                     <IconShieldCheck className="h-4 w-4" />
                   </div>
                   <div>
@@ -86,7 +86,7 @@ export default function AdminVerificationQueuePage() {
                 </div>
 
                 <div className="flex items-center gap-3">
-                  <div className="h-8 w-8 rounded-full bg-blue-50 text--brand flex items-center justify-center shrink-0">
+                  <div className="h-8 w-8 rounded-full bg-blue-50 text-brand flex items-center justify-center shrink-0">
                     <IconMail className="h-4 w-4" />
                   </div>
                   <div>
@@ -96,7 +96,7 @@ export default function AdminVerificationQueuePage() {
                 </div>
 
                 <div className="flex items-center gap-3">
-                  <div className="h-8 w-8 rounded-full bg-blue-50 text--brand flex items-center justify-center shrink-0">
+                  <div className="h-8 w-8 rounded-full bg-blue-50 text-brand flex items-center justify-center shrink-0">
                     <IconClock className="h-4 w-4" />
                   </div>
                   <div>
@@ -116,7 +116,7 @@ export default function AdminVerificationQueuePage() {
 
             <div className="space-y-4 relative pl-3">
               <div className="flex items-start gap-3 relative">
-                <div className="h-7 w-7 rounded-full bg-blue-100 text--brand flex items-center justify-center shrink-0 z-10 font-bold text-xs">
+                <div className="h-7 w-7 rounded-full bg-blue-100 text-brand flex items-center justify-center shrink-0 z-10 font-bold text-xs">
                   1
                 </div>
                 <div>
@@ -126,7 +126,7 @@ export default function AdminVerificationQueuePage() {
               </div>
 
               <div className="flex items-start gap-3 relative">
-                <div className="h-7 w-7 rounded-full bg-blue-100 text--brand flex items-center justify-center shrink-0 z-10 font-bold text-xs">
+                <div className="h-7 w-7 rounded-full bg-blue-100 text-brand flex items-center justify-center shrink-0 z-10 font-bold text-xs">
                   2
                 </div>
                 <div>
@@ -179,14 +179,14 @@ export default function AdminVerificationQueuePage() {
 
             <div className="p-4 rounded-3xl bg-white border border-slate-200/80 shadow-xs space-y-2">
               <div className="flex items-center justify-between">
-                <div className="h-8 w-8 rounded-full bg-blue-100 text--brand flex items-center justify-center">
+                <div className="h-8 w-8 rounded-full bg-blue-100 text-brand flex items-center justify-center">
                   <IconBox className="h-4 w-4" />
                 </div>
-                <span className="text-[10px] font-extrabold px-1.5 py-0.5 rounded-full bg-blue-100 text--brand">Active</span>
+                <span className="text-[10px] font-extrabold px-1.5 py-0.5 rounded-full bg-blue-100 text-brand">Active</span>
               </div>
               <div>
                 <span className="text-[11px] font-bold text-slate-400 block">Active Listings</span>
-                <span className="text-xl font-black text--brand">{stats?.activeListings || 0}</span>
+                <span className="text-xl font-black text-brand">{stats?.activeListings || 0}</span>
               </div>
             </div>
 
@@ -217,7 +217,7 @@ export default function AdminVerificationQueuePage() {
                   <tr className="border-b border-slate-100 text-[11px] font-extrabold text-slate-400 uppercase tracking-wider">
                     <th className="py-3 px-3"><input type="checkbox" className="rounded" /></th>
                     <th className="py-3 px-3">Business Name</th>
-                    <th className="py-3 px-3 text--brand">Type</th>
+                    <th className="py-3 px-3 text-brand">Type</th>
                     <th className="py-3 px-3">Radius</th>
                     <th className="py-3 px-3">Status</th>
                     <th className="py-3 px-3 text-right">Moderation Actions</th>
@@ -228,7 +228,7 @@ export default function AdminVerificationQueuePage() {
                     <tr key={provider.id} className="hover:bg-slate-50/80 transition-colors">
                       <td className="py-3.5 px-3"><input type="checkbox" className="rounded" /></td>
                       <td className="py-3.5 px-3 font-bold text-slate-900">
-                        <Link href={`/provider/${provider.id}`} className="hover:underline text--brand">
+                        <Link href={`/provider/${provider.id}`} className="hover:underline text-brand">
                           {provider.businessName}
                         </Link>
                       </td>

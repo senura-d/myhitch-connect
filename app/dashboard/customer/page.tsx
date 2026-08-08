@@ -88,7 +88,7 @@ export default function CustomerOverviewPage() {
 
                 <div className="border-t border-slate-100 pt-4 space-y-3 text-left">
                   <div className="flex items-center gap-3">
-                    <div className="h-8 w-8 rounded-full bg-blue-50 text--brand flex items-center justify-center shrink-0">
+                    <div className="h-8 w-8 rounded-full bg-blue-50 text-brand flex items-center justify-center shrink-0">
                       <IconId className="h-4 w-4" />
                     </div>
                     <div>
@@ -100,7 +100,7 @@ export default function CustomerOverviewPage() {
                   </div>
 
                   <div className="flex items-center gap-3">
-                    <div className="h-8 w-8 rounded-full bg-blue-50 text--brand flex items-center justify-center shrink-0">
+                    <div className="h-8 w-8 rounded-full bg-blue-50 text-brand flex items-center justify-center shrink-0">
                       <IconMail className="h-4 w-4" />
                     </div>
                     <div>
@@ -110,7 +110,7 @@ export default function CustomerOverviewPage() {
                   </div>
 
                   <div className="flex items-center gap-3">
-                    <div className="h-8 w-8 rounded-full bg-blue-50 text--brand flex items-center justify-center shrink-0">
+                    <div className="h-8 w-8 rounded-full bg-blue-50 text-brand flex items-center justify-center shrink-0">
                       <IconPhone className="h-4 w-4" />
                     </div>
                     <div>
@@ -120,7 +120,7 @@ export default function CustomerOverviewPage() {
                   </div>
 
                   <div className="flex items-center gap-3">
-                    <div className="h-8 w-8 rounded-full bg-blue-50 text--brand flex items-center justify-center shrink-0">
+                    <div className="h-8 w-8 rounded-full bg-blue-50 text-brand flex items-center justify-center shrink-0">
                       <IconMapPin className="h-4 w-4" />
                     </div>
                     <div>
@@ -132,7 +132,7 @@ export default function CustomerOverviewPage() {
                   </div>
 
                   <div className="flex items-center gap-3">
-                    <div className="h-8 w-8 rounded-full bg-blue-50 text--brand flex items-center justify-center shrink-0">
+                    <div className="h-8 w-8 rounded-full bg-blue-50 text-brand flex items-center justify-center shrink-0">
                       <IconClock className="h-4 w-4" />
                     </div>
                     <div>
@@ -148,12 +148,12 @@ export default function CustomerOverviewPage() {
             <div className="rounded-3xl bg-white border border-slate-200/80 p-6 shadow-xl shadow-blue-500/5 space-y-4">
               <div className="flex items-center justify-between">
                 <h3 className="font-extrabold text-base text-slate-900">Order Status</h3>
-                <span className="text-xs font-bold text--brand hover:underline cursor-pointer">Detail</span>
+                <span className="text-xs font-bold text-brand hover:underline cursor-pointer">Detail</span>
               </div>
 
               <div className="space-y-4 relative pl-3">
                 <div className="flex items-start gap-3 relative">
-                  <div className="h-7 w-7 rounded-full bg-blue-100 text--brand flex items-center justify-center shrink-0 z-10 font-bold text-xs">
+                  <div className="h-7 w-7 rounded-full bg-blue-100 text-brand flex items-center justify-center shrink-0 z-10 font-bold text-xs">
                     <IconShoppingBag className="h-4 w-4" />
                   </div>
                   <div>
@@ -164,7 +164,7 @@ export default function CustomerOverviewPage() {
                 </div>
 
                 <div className="flex items-start gap-3 relative">
-                  <div className="h-7 w-7 rounded-full bg-blue-100 text--brand flex items-center justify-center shrink-0 z-10 font-bold text-xs">
+                  <div className="h-7 w-7 rounded-full bg-blue-100 text-brand flex items-center justify-center shrink-0 z-10 font-bold text-xs">
                     <IconRefresh className="h-4 w-4" />
                   </div>
                   <div>
@@ -241,7 +241,7 @@ export default function CustomerOverviewPage() {
 
               <div className="p-4 rounded-3xl bg-white border border-slate-200/80 shadow-xs space-y-2">
                 <div className="flex items-center justify-between">
-                  <div className="h-8 w-8 rounded-full bg-blue-100 text--brand flex items-center justify-center">
+                  <div className="h-8 w-8 rounded-full bg-blue-100 text-brand flex items-center justify-center">
                     <IconStar className="h-4 w-4" />
                   </div>
                   <span className="text-[10px] font-extrabold px-1.5 py-0.5 rounded-full bg-emerald-100 text-emerald-600">+10%</span>
@@ -261,7 +261,7 @@ export default function CustomerOverviewPage() {
                     <tr className="border-b border-slate-100 text-[11px] font-extrabold text-slate-400 uppercase tracking-wider">
                       <th className="py-3 px-3"><input type="checkbox" className="rounded" /></th>
                       <th className="py-3 px-3">Product / Service</th>
-                      <th className="py-3 px-3 text--brand">SKU</th>
+                      <th className="py-3 px-3 text-brand">SKU</th>
                       <th className="py-3 px-3">Category</th>
                       <th className="py-3 px-3">Stock</th>
                       <th className="py-3 px-3">Price</th>
@@ -288,7 +288,7 @@ export default function CustomerOverviewPage() {
                             <span className="text-[10px] text-slate-400 font-semibold">2 Variants</span>
                           </div>
                         </td>
-                        <td className="py-3.5 px-3 font-mono font-bold text--brand">302012</td>
+                        <td className="py-3.5 px-3 font-mono font-bold text-brand">302012</td>
                         <td className="py-3.5 px-3 text-slate-600 font-medium">Trade & Repairs</td>
                         <td className="py-3.5 px-3 font-bold text-slate-800">10</td>
                         <td className="py-3.5 px-3 font-extrabold text-slate-900">${b.breakdown.total}</td>
@@ -299,7 +299,7 @@ export default function CustomerOverviewPage() {
                         </td>
                         <td className="py-3.5 px-3 text-slate-400 font-semibold">{new Date(b.createdAt).toLocaleDateString()}</td>
                         <td className="py-3.5 px-3 text-right space-x-1.5">
-                          <button className="p-1 text-slate-400 hover:text--brand transition-colors"><IconEye className="h-4 w-4" /></button>
+                          <button className="p-1 text-slate-400 hover:text-brand transition-colors"><IconEye className="h-4 w-4" /></button>
                           <button className="p-1 text-slate-400 hover:text-amber-600 transition-colors"><IconPencil className="h-4 w-4" /></button>
                           <button className="p-1 text-slate-400 hover:text-rose-600 transition-colors"><IconTrash className="h-4 w-4" /></button>
                         </td>
@@ -323,7 +323,7 @@ export default function CustomerOverviewPage() {
                           <span className="text-[10px] text-slate-400 font-semibold">3 Variants</span>
                         </div>
                       </td>
-                      <td className="py-3.5 px-3 font-mono font-bold text--brand">302011</td>
+                      <td className="py-3.5 px-3 font-mono font-bold text-brand">302011</td>
                       <td className="py-3.5 px-3 text-slate-600 font-medium">Plumbing</td>
                       <td className="py-3.5 px-3 font-bold text-slate-800">204</td>
                       <td className="py-3.5 px-3 font-extrabold text-slate-900">$590.00</td>
@@ -334,7 +334,7 @@ export default function CustomerOverviewPage() {
                       </td>
                       <td className="py-3.5 px-3 text-slate-400 font-semibold">24 Dec 2022</td>
                       <td className="py-3.5 px-3 text-right space-x-1.5">
-                        <button className="p-1 text-slate-400 hover:text--brand transition-colors"><IconEye className="h-4 w-4" /></button>
+                        <button className="p-1 text-slate-400 hover:text-brand transition-colors"><IconEye className="h-4 w-4" /></button>
                         <button className="p-1 text-slate-400 hover:text-amber-600 transition-colors"><IconPencil className="h-4 w-4" /></button>
                         <button className="p-1 text-slate-400 hover:text-rose-600 transition-colors"><IconTrash className="h-4 w-4" /></button>
                       </td>
@@ -356,7 +356,7 @@ export default function CustomerOverviewPage() {
                           <span className="text-[10px] text-slate-400 font-semibold">1 Variant</span>
                         </div>
                       </td>
-                      <td className="py-3.5 px-3 font-mono font-bold text--brand">302002</td>
+                      <td className="py-3.5 px-3 font-mono font-bold text-brand">302002</td>
                       <td className="py-3.5 px-3 text-slate-600 font-medium">Electrical</td>
                       <td className="py-3.5 px-3 font-bold text-slate-800">48</td>
                       <td className="py-3.5 px-3 font-extrabold text-slate-900">$125.00</td>
@@ -367,7 +367,7 @@ export default function CustomerOverviewPage() {
                       </td>
                       <td className="py-3.5 px-3 text-slate-400 font-semibold">12 Dec 2022</td>
                       <td className="py-3.5 px-3 text-right space-x-1.5">
-                        <button className="p-1 text-slate-400 hover:text--brand transition-colors"><IconEye className="h-4 w-4" /></button>
+                        <button className="p-1 text-slate-400 hover:text-brand transition-colors"><IconEye className="h-4 w-4" /></button>
                         <button className="p-1 text-slate-400 hover:text-amber-600 transition-colors"><IconPencil className="h-4 w-4" /></button>
                         <button className="p-1 text-slate-400 hover:text-rose-600 transition-colors"><IconTrash className="h-4 w-4" /></button>
                       </td>

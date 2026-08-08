@@ -123,7 +123,7 @@ export default function AdminOverviewPage() {
               +15% <span className="text-slate-400 font-semibold">vs last month</span>
             </span>
           </div>
-          <div className="shrink-0 w-24 h-12 flex items-center justify-end">
+          <div className="shrink-0 w-24 h-12 hidden sm:flex items-center justify-end">
             <svg viewBox="0 0 100 30" className="w-20 h-10 stroke-emerald-500" strokeWidth="2.5" fill="none">
               <path d="M0,25 Q15,35 30,10 T60,30 T90,5" strokeLinecap="round" />
             </svg>
@@ -141,7 +141,7 @@ export default function AdminOverviewPage() {
               +5 <span className="text-slate-400 font-semibold">vs last month</span>
             </span>
           </div>
-          <div className="shrink-0 w-24 h-12 flex items-center justify-end">
+          <div className="shrink-0 w-24 h-12 hidden sm:flex items-center justify-end">
             <svg viewBox="0 0 100 30" className="w-20 h-10 stroke-blue-500" strokeWidth="2.5" fill="none">
               <path d="M0,15 Q20,5 40,25 T80,8 T100,2" strokeLinecap="round" />
             </svg>
@@ -159,7 +159,7 @@ export default function AdminOverviewPage() {
               -1 <span className="text-slate-400 font-semibold">vs last month</span>
             </span>
           </div>
-          <div className="shrink-0 w-24 h-12 flex items-center justify-end">
+          <div className="shrink-0 w-24 h-12 hidden sm:flex items-center justify-end">
             <svg viewBox="0 0 100 30" className="w-20 h-10 stroke-rose-500" strokeWidth="2.5" fill="none">
               <path d="M0,5 Q25,25 50,15 T100,28" strokeLinecap="round" />
             </svg>
@@ -177,7 +177,7 @@ export default function AdminOverviewPage() {
               +12 <span className="text-slate-400 font-semibold">vs last month</span>
             </span>
           </div>
-          <div className="shrink-0 w-24 h-12 flex items-center justify-end">
+          <div className="shrink-0 w-24 h-12 hidden sm:flex items-center justify-end">
             <svg viewBox="0 0 100 30" className="w-20 h-10 stroke-emerald-500" strokeWidth="2.5" fill="none">
               <path d="M0,28 Q20,10 40,22 T80,5 T100,12" strokeLinecap="round" />
             </svg>
@@ -199,7 +199,7 @@ export default function AdminOverviewPage() {
                     placeholder="Search..."
                     value={taskSearch}
                     onChange={(e) => setTaskSearch(e.target.value)}
-                    className="h-8 border border-slate-200 bg-slate-50 pl-8! text-[11px] font-semibold text-slate-800 rounded-full focus-visible:bg-white focus-visible:ring-1 focus-visible:ring--brand"
+                    className="h-8 border border-slate-200 bg-slate-50 pl-8! text-[11px] font-semibold text-slate-800 rounded-full focus-visible:bg-white focus-visible:ring-1 focus-visible:ring-brand"
                   />
                 </div>
               </div>
@@ -223,13 +223,13 @@ export default function AdminOverviewPage() {
                     {filteredQueue.map((item) => (
                       <tr key={item.id} className="hover:bg-slate-50/50 transition-colors">
                         <td className="py-3 px-2">
-                          <Link href={`/provider/${item.id}`} className="hover:underline text--brand font-bold">
+                          <Link href={`/provider/${item.id}`} className="hover:underline text-brand font-bold">
                             {item.businessName}
                           </Link>
                         </td>
                         <td className="py-3 px-2">
                           <div className="inline-flex items-center gap-1.5 text-[10px] text-slate-500 font-extrabold uppercase">
-                            <IconFolder className="h-3.5 w-3.5 text--brand/70" />
+                            <IconFolder className="h-3.5 w-3.5 text-brand/70" />
                             <span>{item.providerType.replace("_", " ")}</span>
                           </div>
                         </td>
@@ -360,7 +360,7 @@ export default function AdminOverviewPage() {
               placeholder="Search bookings, providers..."
               value={bookingSearch}
               onChange={(e) => setBookingSearch(e.target.value)}
-              className="h-9 border border-slate-200 bg-slate-50 pl-10! text-xs font-semibold text-slate-800 rounded-full focus-visible:bg-white focus-visible:ring-1 focus-visible:ring--brand"
+              className="h-9 border border-slate-200 bg-slate-50 pl-10! text-xs font-semibold text-slate-800 rounded-full focus-visible:bg-white focus-visible:ring-1 focus-visible:ring-brand"
             />
           </div>
         </div>

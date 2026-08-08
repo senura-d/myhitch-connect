@@ -161,7 +161,7 @@ export default function CategoryIndexPage() {
               <div className="bg-white p-6 sm:p-10 rounded-3xl border border-slate-200/80 shadow-xl shadow-blue-500/5">
                 <div className="mb-8 border-b border-slate-100 pb-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                   <div>
-                    <span className="text-xs font-extrabold text--brand uppercase tracking-wider block mb-1">
+                    <span className="text-xs font-extrabold text-brand uppercase tracking-wider block mb-1">
                       Category #{activeIndex + 1}
                     </span>
                     <h2 className="text-3xl font-black text-slate-900 tracking-tight">

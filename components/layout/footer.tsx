@@ -106,12 +106,12 @@ export function Footer() {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email address"
                 aria-label="Email address"
-                className="h-12 w-full border-0 border-l-4 border-l--brand bg-[#f4f6fa] pl-11 pr-4 text-sm font-medium text-slate-800 placeholder:text-slate-400 transition-all focus:bg-white focus:outline-none focus:ring-1 focus:ring--brand rounded-r-xl rounded-l-none"
+                className="h-12 w-full border-0 border-l-4 border-l-brand bg-[#f4f6fa] pl-11 pr-4 text-sm font-medium text-slate-800 placeholder:text-slate-400 transition-all focus:bg-white focus:outline-none focus:ring-1 focus:ring-brand rounded-r-xl rounded-l-none"
               />
             </div>
             <button
               type="submit"
-              className="group inline-flex h-12 shrink-0 items-center justify-center gap-2 rounded-full bg-[#1b76ff] px-6 text-xs font-bold uppercase tracking-widest text-white shadow-md shadow-blue-500/20 transition-all hover:bg-[#145ed8] hover:shadow-lg hover:shadow-blue-500/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring--brand"
+              className="group inline-flex h-12 shrink-0 items-center justify-center gap-2 rounded-full bg-[#1b76ff] px-6 text-xs font-bold uppercase tracking-widest text-white shadow-md shadow-blue-500/20 transition-all hover:bg-[#145ed8] hover:shadow-lg hover:shadow-blue-500/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
             >
               <span>Subscribe</span>
               <IconArrowRight

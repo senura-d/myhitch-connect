@@ -71,14 +71,14 @@ export default function ProviderOverviewPage() {
                 <div>
                   <h2 className="text-xl font-black text-slate-900">{provider?.businessName || "Sydney Express Plumbing"}</h2>
                   <p className="text-xs font-semibold text-slate-400 mt-0.5">Licence: NSW-PL-883921</p>
-                  <div className="mt-2 inline-flex items-center gap-1 px-3 py-0.5 rounded-full bg-blue-100 text--brand text-[10px] font-extrabold uppercase">
+                  <div className="mt-2 inline-flex items-center gap-1 px-3 py-0.5 rounded-full bg-blue-100 text-brand text-[10px] font-extrabold uppercase">
                     ⭐ {provider?.ratingAverage.toFixed(1) || "5.0"} ({provider?.ratingCount || 48} Reviews)
                   </div>
                 </div>
 
                 <div className="border-t border-slate-100 pt-4 space-y-3 text-left">
                   <div className="flex items-center gap-3">
-                    <div className="h-8 w-8 rounded-full bg-blue-50 text--brand flex items-center justify-center shrink-0">
+                    <div className="h-8 w-8 rounded-full bg-blue-50 text-brand flex items-center justify-center shrink-0">
                       <IconId className="h-4 w-4" />
                     </div>
                     <div>
@@ -88,7 +88,7 @@ export default function ProviderOverviewPage() {
                   </div>
 
                   <div className="flex items-center gap-3">
-                    <div className="h-8 w-8 rounded-full bg-blue-50 text--brand flex items-center justify-center shrink-0">
+                    <div className="h-8 w-8 rounded-full bg-blue-50 text-brand flex items-center justify-center shrink-0">
                       <IconMail className="h-4 w-4" />
                     </div>
                     <div>
@@ -98,7 +98,7 @@ export default function ProviderOverviewPage() {
                   </div>
 
                   <div className="flex items-center gap-3">
-                    <div className="h-8 w-8 rounded-full bg-blue-50 text--brand flex items-center justify-center shrink-0">
+                    <div className="h-8 w-8 rounded-full bg-blue-50 text-brand flex items-center justify-center shrink-0">
                       <IconPhone className="h-4 w-4" />
                     </div>
                     <div>
@@ -108,7 +108,7 @@ export default function ProviderOverviewPage() {
                   </div>
 
                   <div className="flex items-center gap-3">
-                    <div className="h-8 w-8 rounded-full bg-blue-50 text--brand flex items-center justify-center shrink-0">
+                    <div className="h-8 w-8 rounded-full bg-blue-50 text-brand flex items-center justify-center shrink-0">
                       <IconMapPin className="h-4 w-4" />
                     </div>
                     <div>
@@ -124,7 +124,7 @@ export default function ProviderOverviewPage() {
             <div className="rounded-3xl bg-white border border-slate-200/80 p-6 shadow-xl shadow-blue-500/5 space-y-4">
               <div className="flex items-center justify-between">
                 <h3 className="font-extrabold text-base text-slate-900">Verification Audit Status</h3>
-                <span className="text-xs font-bold text--brand hover:underline cursor-pointer">View Certificate</span>
+                <span className="text-xs font-bold text-brand hover:underline cursor-pointer">View Certificate</span>
               </div>
 
               <div className="space-y-4 relative pl-3">
@@ -149,7 +149,7 @@ export default function ProviderOverviewPage() {
                 </div>
 
                 <div className="flex items-start gap-3 relative">
-                  <div className="h-7 w-7 rounded-full bg-blue-100 text--brand flex items-center justify-center shrink-0 z-10 font-bold text-xs">
+                  <div className="h-7 w-7 rounded-full bg-blue-100 text-brand flex items-center justify-center shrink-0 z-10 font-bold text-xs">
                     <IconStar className="h-4 w-4" />
                   </div>
                   <div>
@@ -179,7 +179,7 @@ export default function ProviderOverviewPage() {
 
               <div className="p-4 rounded-3xl bg-white border border-slate-200/80 shadow-xs space-y-2">
                 <div className="flex items-center justify-between">
-                  <div className="h-8 w-8 rounded-full bg-blue-100 text--brand flex items-center justify-center">
+                  <div className="h-8 w-8 rounded-full bg-blue-100 text-brand flex items-center justify-center">
                     <IconShoppingBag className="h-4 w-4" />
                   </div>
                   <span className="text-[10px] font-extrabold px-1.5 py-0.5 rounded-full bg-emerald-100 text-emerald-600">+12%</span>
@@ -230,7 +230,7 @@ export default function ProviderOverviewPage() {
                     <tr className="border-b border-slate-100 text-[11px] font-extrabold text-slate-400 uppercase tracking-wider">
                       <th className="py-3 px-3"><input type="checkbox" className="rounded" /></th>
                       <th className="py-3 px-3">Service Title</th>
-                      <th className="py-3 px-3 text--brand">Booking ID</th>
+                      <th className="py-3 px-3 text-brand">Booking ID</th>
                       <th className="py-3 px-3">Client</th>
                       <th className="py-3 px-3">Scheduled Date</th>
                       <th className="py-3 px-3">Payout Price</th>
@@ -256,7 +256,7 @@ export default function ProviderOverviewPage() {
                             <span className="text-[10px] text-slate-400 font-semibold">Standard Booking</span>
                           </div>
                         </td>
-                        <td className="py-3.5 px-3 font-mono font-bold text--brand">#{b.id}</td>
+                        <td className="py-3.5 px-3 font-mono font-bold text-brand">#{b.id}</td>
                         <td className="py-3.5 px-3 text-slate-700 font-bold">{b.customerId}</td>
                         <td className="py-3.5 px-3 text-slate-500 font-medium">{new Date(b.scheduledAt).toLocaleDateString()}</td>
                         <td className="py-3.5 px-3 font-extrabold text-slate-900">${b.breakdown.total}</td>
@@ -264,7 +264,7 @@ export default function ProviderOverviewPage() {
                           <StatusBadge status={b.status} />
                         </td>
                         <td className="py-3.5 px-3 text-right space-x-1.5">
-                          <button className="p-1 text-slate-400 hover:text--brand transition-colors"><IconEye className="h-4 w-4" /></button>
+                          <button className="p-1 text-slate-400 hover:text-brand transition-colors"><IconEye className="h-4 w-4" /></button>
                           <button className="p-1 text-slate-400 hover:text-amber-600 transition-colors"><IconPencil className="h-4 w-4" /></button>
                         </td>
                       </tr>

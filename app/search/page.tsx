@@ -123,7 +123,7 @@ export default function SearchPage() {
           <div className="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/80 shadow-lg shadow-blue-500/5 mb-8">
             <div className="flex items-center justify-between font-black text-xs text-slate-900 mb-3 border-b border-slate-100 pb-2.5">
               <div className="flex items-center gap-2">
-                <IconFilter className="h-4 w-4 text--brand" />
+                <IconFilter className="h-4 w-4 text-brand" />
                 <span>FILTER PROVIDERS</span>
               </div>
               <span className="text-[11px] text-slate-400 font-semibold">{results?.length || 0} listings found</span>
@@ -134,12 +134,12 @@ export default function SearchPage() {
               <div className="space-y-1.5">
                 <label className="text-[11px] font-extrabold text-slate-700 uppercase tracking-wider block">Keyword</label>
                 <div className="relative flex items-center">
-                  <IconSearch className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text--brand z-10 pointer-events-none" />
+                  <IconSearch className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-brand z-10 pointer-events-none" />
                   <Input
                     placeholder="e.g. Plumbing, Cleaning"
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
-                    className="h-10 border border-slate-200 border-l-4 border-l--brand bg-[#f4f6fa] pl-10! text-xs font-medium text-slate-900 placeholder:text-slate-400 focus-visible:bg-white focus-visible:ring-1 focus-visible:ring--brand rounded-r-xl rounded-l-none transition-all"
+                    className="h-10 border border-slate-200 border-l-4 border-l-brand bg-[#f4f6fa] pl-10! text-xs font-medium text-slate-900 placeholder:text-slate-400 focus-visible:bg-white focus-visible:ring-1 focus-visible:ring-brand rounded-r-xl rounded-l-none transition-all"
                   />
                 </div>
               </div>
@@ -150,7 +150,7 @@ export default function SearchPage() {
                 <select
                   value={selectedCategory}
                   onChange={(e) => setSelectedCategory(e.target.value)}
-                  className="w-full h-10 px-3.5 text-xs font-semibold rounded-r-xl rounded-l-none border border-slate-200 border-l-4 border-l--brand bg-[#f4f6fa] text-slate-900 focus:outline-none focus:bg-white focus:ring-1 focus:ring--brand transition-all"
+                  className="w-full h-10 px-3.5 text-xs font-semibold rounded-r-xl rounded-l-none border border-slate-200 border-l-4 border-l-brand bg-[#f4f6fa] text-slate-900 focus:outline-none focus:bg-white focus:ring-1 focus:ring-brand transition-all"
                 >
                   <option value="">All Categories</option>
                   {taxonomy?.map((cat) => (
@@ -165,12 +165,12 @@ export default function SearchPage() {
               <div className="space-y-1.5">
                 <label className="text-[11px] font-extrabold text-slate-700 uppercase tracking-wider block">Location</label>
                 <div className="relative flex items-center">
-                  <IconMapPin className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text--brand z-10 pointer-events-none" />
+                  <IconMapPin className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-brand z-10 pointer-events-none" />
                   <Input
                     placeholder="Suburb or postcode"
                     value={location}
                     onChange={(e) => setLocation(e.target.value)}
-                    className="h-10 border border-slate-200 border-l-4 border-l--brand bg-[#f4f6fa] pl-10! text-xs font-medium text-slate-900 placeholder:text-slate-400 focus-visible:bg-white focus-visible:ring-1 focus-visible:ring--brand rounded-r-xl rounded-l-none transition-all"
+                    className="h-10 border border-slate-200 border-l-4 border-l-brand bg-[#f4f6fa] pl-10! text-xs font-medium text-slate-900 placeholder:text-slate-400 focus-visible:bg-white focus-visible:ring-1 focus-visible:ring-brand rounded-r-xl rounded-l-none transition-all"
                   />
                 </div>
               </div>
@@ -208,7 +208,7 @@ export default function SearchPage() {
             ) : (
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
                 {results?.map(({ listing, provider }) => (
-                  <Card key={listing.id} className="overflow-hidden rounded-2xl hover:border--brand hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 flex flex-col justify-between border border-slate-200/80 bg-white pt-0">
+                  <Card key={listing.id} className="overflow-hidden rounded-2xl hover:border-brand hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 flex flex-col justify-between border border-slate-200/80 bg-white pt-0">
                     <div className="relative h-36 w-full bg-slate-100 overflow-hidden">
                       <Image
                         src={getListingImage(listing.primaryCategoryId)}
@@ -218,7 +218,7 @@ export default function SearchPage() {
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                       />
                       <div className="absolute top-2.5 right-2.5">
-                        <Badge variant="secondary" className="capitalize text-[9px] bg-white/95 text--brand border border--brand/30 font-extrabold px-2 py-0.5 shadow-xs">
+                        <Badge variant="secondary" className="capitalize text-[9px] bg-white/95 text-brand border border-brand/30 font-extrabold px-2 py-0.5 shadow-xs">
                           {listing.pricing.method.replace("_", " ")}
                         </Badge>
                       </div>
@@ -228,7 +228,7 @@ export default function SearchPage() {
                     </div>
 
                     <CardHeader className="p-4 pb-1.5 space-y-1">
-                      <CardTitle className="text-xs sm:text-sm font-extrabold line-clamp-1 text-slate-900 hover:text--brand transition-colors">
+                      <CardTitle className="text-xs sm:text-sm font-extrabold line-clamp-1 text-slate-900 hover:text-brand transition-colors">
                         <Link href={`/provider/${provider.id}/service/${listing.id}`}>
                           {listing.title}
                         </Link>
@@ -241,7 +241,7 @@ export default function SearchPage() {
                     <CardContent className="px-4 py-2 border-t border-b border-slate-100 bg-slate-50/50 space-y-1">
                       <div className="flex items-center justify-between text-[11px]">
                         <span className="font-bold text-slate-800 flex items-center gap-1.5 truncate max-w-[110px]">
-                          <IconBuildingStore className="h-3.5 w-3.5 text--brand shrink-0" />
+                          <IconBuildingStore className="h-3.5 w-3.5 text-brand shrink-0" />
                           <span className="truncate">{provider.businessName}</span>
                         </span>
                         <div className="flex items-center gap-0.5 shrink-0">
@@ -254,7 +254,7 @@ export default function SearchPage() {
                     <CardFooter className="p-4 pt-2.5 flex items-center justify-between">
                       <div>
                         <span className="text-[9px] text-slate-400 block uppercase tracking-wider font-bold">Starting at</span>
-                        <span className="text-base font-black text--brand">
+                        <span className="text-base font-black text-brand">
                           ${listing.pricing.amount || "Quote Required"}
                         </span>
                       </div>

@@ -101,21 +101,21 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
       {/* MAIN BODY AREA */}
       <div className="flex-1 flex flex-col min-w-0 overflow-y-auto">
         {/* TOP HEADER NAVIGATION BAR */}
-        <header className="bg-white border-b border-slate-200/80 px-6 py-3.5 flex items-center justify-between gap-4 sticky top-0 z-20">
-          <div className="flex items-center gap-4 flex-1 max-w-xl">
-            <div className="relative flex-1">
+        <header className="bg-white border-b border-slate-200/80 px-4 sm:px-6 py-3.5 flex items-center justify-between gap-2 sm:gap-4 sticky top-0 z-20">
+          <div className="flex items-center gap-4 flex-1 min-w-0 max-w-xl">
+            <div className="relative flex-1 min-w-0">
               <IconSearch className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400" />
               <Input
                 id="admin-search"
                 name="admin-search"
                 aria-label="Search the administration system"
                 placeholder="Search resources, users, listings..."
-                className="h-9 border border-slate-200/80 bg-slate-50 pl-10! text-xs font-medium text-slate-800 placeholder:text-slate-400 rounded-full focus-visible:bg-white focus-visible:ring-1 focus-visible:ring--brand"
+                className="h-9 border border-slate-200/80 bg-slate-50 pl-10! text-xs font-medium text-slate-800 placeholder:text-slate-400 rounded-full focus-visible:bg-white focus-visible:ring-1 focus-visible:ring-brand"
               />
             </div>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex shrink-0 items-center gap-1.5 sm:gap-3">
             <NotificationBell role="admin" />
 
             <Button
@@ -138,7 +138,8 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             >
               <Link href="/admin/providers/verification">
                 <IconShieldCheck className="h-4 w-4" />
-                <span>Verification Queue</span>
+                {/* Label would push the row past the viewport on a phone */}
+                <span className="hidden sm:inline">Verification Queue</span>
               </Link>
             </Button>
           </div>
@@ -168,7 +169,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
         </nav>
 
         {/* PAGE CONTENT */}
-        <main className="p-6 lg:p-8 space-y-6 max-w-350">
+        <main className="p-4 sm:p-6 lg:p-8 space-y-6 max-w-350">
           {children}
         </main>
       </div>

@@ -399,11 +399,11 @@ export default function ProviderProfilePage({ params }: { params: Promise<{ id: 
 
                       <div className="absolute bottom-4 left-4 right-4 text-white">
                         {img.category && (
-                          <Badge className="bg--brand text-white border-none font-bold text-[10px] mb-1">
+                          <Badge className="bg-brand text-white border-none font-bold text-[10px] mb-1">
                             {img.category}
                           </Badge>
                         )}
-                        <h4 className="font-extrabold text-sm text-white line-clamp-1 group-hover:text--brand transition-colors">
+                        <h4 className="font-extrabold text-sm text-white line-clamp-1 group-hover:text-brand transition-colors">
                           {img.title}
                         </h4>
                       </div>
@@ -445,11 +445,11 @@ export default function ProviderProfilePage({ params }: { params: Promise<{ id: 
               <TabsContent value="services" className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {listings?.map((listing) => (
-                    <Card key={listing.id} className="rounded-2xl border border-zinc-200 bg-white hover:border--brand hover:shadow-lg transition-all flex flex-col justify-between overflow-hidden">
+                    <Card key={listing.id} className="rounded-2xl border border-zinc-200 bg-white hover:border-brand hover:shadow-lg transition-all flex flex-col justify-between overflow-hidden">
                       <CardHeader className="p-6 pb-4">
                         <div className="flex justify-between items-start gap-2 mb-2">
                           <CardTitle className="text-lg font-extrabold text-black line-clamp-1">{listing.title}</CardTitle>
-                          <Badge variant="secondary" className="capitalize text-[11px] bg-[#f0f9ff] text--brand border border--brand/30 font-bold shrink-0">
+                          <Badge variant="secondary" className="capitalize text-[11px] bg-[#f0f9ff] text-brand border border-brand/30 font-bold shrink-0">
                             {listing.pricing.method.replace("_", " ")}
                           </Badge>
                         </div>
@@ -460,11 +460,11 @@ export default function ProviderProfilePage({ params }: { params: Promise<{ id: 
                       <CardContent className="p-6 pt-4 border-t border-zinc-100 bg-[#f8fafc] flex items-center justify-between">
                         <div>
                           <span className="text-[11px] text-zinc-500 uppercase font-semibold block">Starting Price</span>
-                          <span className="text-xl font-black text--brand">
+                          <span className="text-xl font-black text-brand">
                             ${listing.pricing.amount || "Quote"}
                           </span>
                         </div>
-                        <Button asChild size="sm" className="font-bold bg--brand text-white hover:bg-[#1d8abe] rounded-xl px-5">
+                        <Button asChild size="sm" className="font-bold bg-brand text-white hover:bg-[#1d8abe] rounded-xl px-5">
                           <Link href={`/provider/${provider.id}/service/${listing.id}`}>
                             View Details
                           </Link>
@@ -486,14 +486,14 @@ export default function ProviderProfilePage({ params }: { params: Promise<{ id: 
 
                     <div className="border-t border-zinc-100 pt-6 space-y-4">
                       <h4 className="font-extrabold text-base text-black flex items-center gap-2">
-                        <IconShieldCheck className="h-5 w-5 text--brand" /> Verified Credentials & Protection
+                        <IconShieldCheck className="h-5 w-5 text-brand" /> Verified Credentials & Protection
                       </h4>
                       <div className="flex flex-wrap gap-3">
-                        <div className="flex items-center gap-2 bg-[#f0f9ff] text-black border border--brand/30 px-4 py-2 rounded-xl text-xs font-bold">
-                          <IconCheck className="h-4 w-4 text--brand" /> Trade License Verified
+                        <div className="flex items-center gap-2 bg-[#f0f9ff] text-black border border-brand/30 px-4 py-2 rounded-xl text-xs font-bold">
+                          <IconCheck className="h-4 w-4 text-brand" /> Trade License Verified
                         </div>
-                        <div className="flex items-center gap-2 bg-[#f0f9ff] text-black border border--brand/30 px-4 py-2 rounded-xl text-xs font-bold">
-                          <IconShieldCheck className="h-4 w-4 text--brand" /> $10M Public Liability Active
+                        <div className="flex items-center gap-2 bg-[#f0f9ff] text-black border border-brand/30 px-4 py-2 rounded-xl text-xs font-bold">
+                          <IconShieldCheck className="h-4 w-4 text-brand" /> $10M Public Liability Active
                         </div>
                       </div>
                     </div>

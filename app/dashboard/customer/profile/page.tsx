@@ -194,21 +194,21 @@ export default function CustomerProfilePage() {
 
             <div className="mt-5 space-y-2.5 border-t border-slate-100 pt-5 text-left">
               <p className="flex items-center gap-2 text-[11px] font-semibold text-slate-600">
-                <IconMail className="h-3.5 w-3.5 shrink-0 text--brand" />
+                <IconMail className="h-3.5 w-3.5 shrink-0 text-brand" />
                 <span className="truncate">{user?.email ?? "—"}</span>
               </p>
               <p className="flex items-center gap-2 text-[11px] font-semibold text-slate-600">
-                <IconPhone className="h-3.5 w-3.5 shrink-0 text--brand" />
+                <IconPhone className="h-3.5 w-3.5 shrink-0 text-brand" />
                 {phone || "No phone added"}
               </p>
               <p className="flex items-center gap-2 text-[11px] font-semibold text-slate-600">
-                <IconMapPin className="h-3.5 w-3.5 shrink-0 text--brand" />
+                <IconMapPin className="h-3.5 w-3.5 shrink-0 text-brand" />
                 {suburb || "No suburb added"}
               </p>
             </div>
 
-            <p className="mt-5 flex items-start gap-2 rounded-xl border border--brand/25 bg-[#f0f9ff] px-3 py-2 text-left text-[11px] font-medium text-slate-700">
-              <IconShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text--brand" />
+            <p className="mt-5 flex items-start gap-2 rounded-xl border border-brand/25 bg-[#f0f9ff] px-3 py-2 text-left text-[11px] font-medium text-slate-700">
+              <IconShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-brand" />
               Your contact details are only shared with a provider once you book
               or request a quote.
             </p>

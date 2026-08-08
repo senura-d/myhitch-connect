@@ -95,7 +95,7 @@ export function NotificationBell({ role }: { role: Role }) {
         aria-expanded={open}
         aria-haspopup="true"
         onClick={() => setOpen((v) => !v)}
-        className="relative rounded-full p-2 text-slate-500 transition-colors hover:bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring--brand/40"
+        className="relative rounded-full p-2 text-slate-500 transition-colors hover:bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/40"
       >
         <IconBell className="h-5 w-5" />
         {unreadCount > 0 && (
@@ -124,7 +124,7 @@ export function NotificationBell({ role }: { role: Role }) {
               <button
                 type="button"
                 onClick={markAllRead}
-                className="flex items-center gap-1 text-[11px] font-bold text--brand transition-colors hover:text-[#1b76ff]"
+                className="flex items-center gap-1 text-[11px] font-bold text-brand transition-colors hover:text-[#1b76ff]"
               >
                 <IconCheck className="h-3.5 w-3.5" />
                 Mark all read
@@ -168,7 +168,7 @@ export function NotificationBell({ role }: { role: Role }) {
                     {!n.read && (
                       <span
                         aria-hidden="true"
-                        className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg--brand"
+                        className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-brand"
                       />
                     )}
                   </>
@@ -208,7 +208,7 @@ export function NotificationBell({ role }: { role: Role }) {
                       type="button"
                       onClick={() => dismiss(n.id)}
                       aria-label={`Dismiss: ${n.title}`}
-                      className="absolute right-3 top-4 rounded-md p-1 text-slate-300 transition-colors hover:text-slate-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring--brand/40"
+                      className="absolute right-3 top-4 rounded-md p-1 text-slate-300 transition-colors hover:text-slate-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/40"
                     >
                       <IconX className="h-3.5 w-3.5" />
                     </button>
