@@ -27,8 +27,8 @@ export const metadata: Metadata = {
   description:
     "MYHitch Connect is a marketplace connecting customers with professional, personal, commercial and community service providers.",
   icons: {
-    icon: "/logo.jpeg",
-    apple: "/logo.jpeg",
+    icon: "/myhitch-connect/logo.jpeg",
+    apple: "/myhitch-connect/logo.jpeg",
   },
 };
 

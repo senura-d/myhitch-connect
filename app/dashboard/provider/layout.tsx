@@ -55,7 +55,7 @@ export default function ProviderDashboardLayout({
         <div className="space-y-8">
           <Link href="/" className="flex items-center">
             <Image
-              src="/logo.png"
+              src="/myhitch-connect/logo.png"
               alt="MYHitch Connect"
               width={160}
               height={56}

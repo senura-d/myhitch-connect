@@ -43,7 +43,7 @@ export function Header() {
         {/* Brand Logo */}
         <Link href="/" className="flex shrink-0 items-center group">
           <Image
-            src="/logo.png"
+            src="/myhitch-connect/logo.png"
             alt="MYHitch Connect"
             width={160}
             height={56}
