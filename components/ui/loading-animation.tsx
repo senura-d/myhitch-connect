@@ -134,7 +134,7 @@ export function LoadingAnimation({
         >
           <div className={cn("relative flex items-center justify-center", current.logoClass)}>
             <Image
-              src="/myhitch-connect/logo-mark.png"
+              src="/myhitch-connect/logo-stacked.png"
               alt="MYHitch Connect"
               width={current.logo}
               height={current.logo}
@@ -148,12 +148,6 @@ export function LoadingAnimation({
       {/* Modern Typography and Sleek Progress Scanner */}
       {showText && (
         <div className={cn("flex flex-col items-center text-center", current.textClass)}>
-          {/* Brand Wordmark Title */}
-          <div className="flex items-center gap-1.5 font-black tracking-widest text-slate-900 text-xs sm:text-sm uppercase">
-            <span>MYHITCH</span>
-            <span className="text-brand">CONNECT</span>
-          </div>
-
           {/* Subtitle / Dynamic Status with Animated Dots */}
           <div className={cn("mt-1 font-semibold text-slate-500 flex items-center gap-1", current.subClass)}>
             <span>{text}</span>
