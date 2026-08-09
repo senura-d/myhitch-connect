@@ -57,11 +57,11 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
         <div className="space-y-8">
           <Link href="/" className="flex items-center">
             <Image
-              src="/myhitch-connect/logo.png"
+              src="/myhitch-connect/logo-horizontal.png"
               alt="MYHitch Connect"
-              width={160}
-              height={56}
-              className="h-16 md:h-20 w-auto object-contain"
+              width={620}
+              height={200}
+              className="h-11 w-auto object-contain"
               priority
             />
           </Link>
@@ -76,7 +76,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                   aria-current={active ? "page" : undefined}
                   className={`w-full flex items-center gap-3.5 px-4 py-3 rounded-2xl text-xs font-bold transition-all ${
                     active
-                      ? "bg-[#1b76ff] text-white shadow-md shadow-blue-500/25"
+                      ? "bg-[#24a1dc] text-white shadow-md shadow-blue-500/25"
                       : "text-slate-500 hover:bg-slate-50 hover:text-slate-900"
                   }`}
                 >
@@ -158,7 +158,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                 href={href}
                 aria-current={active ? "page" : undefined}
                 className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-bold whitespace-nowrap transition-all ${
-                  active ? "bg-[#1b76ff] text-white" : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+                  active ? "bg-[#24a1dc] text-white" : "bg-slate-100 text-slate-600 hover:bg-slate-200"
                 }`}
               >
                 <Icon className="h-3.5 w-3.5" />

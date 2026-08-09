@@ -111,7 +111,7 @@ export default function AdminListingsPage() {
                   <tr key={item.listing.id} className="hover:bg-slate-50/80 transition-colors">
                     <td className="py-3.5 px-3">
                       <div className="flex items-center gap-2.5">
-                        <div className="h-7 w-7 rounded-lg bg-blue-50 text-[#1b76ff] flex items-center justify-center shrink-0">
+                        <div className="h-7 w-7 rounded-lg bg-blue-50 text-[#24a1dc] flex items-center justify-center shrink-0">
                           <IconBox className="h-4 w-4" />
                         </div>
                         <div>
@@ -157,7 +157,7 @@ export default function AdminListingsPage() {
           <span>Showing {filtered.length} of {filtered.length} listings</span>
           <div className="flex items-center gap-1">
             <button className="h-7 w-7 rounded-lg border border-slate-200 flex items-center justify-center hover:bg-slate-50"><IconChevronLeft className="h-4 w-4" /></button>
-            <button className="h-7 w-7 rounded-lg bg-[#1b76ff] text-white font-bold flex items-center justify-center shadow-xs">1</button>
+            <button className="h-7 w-7 rounded-lg bg-[#24a1dc] text-white font-bold flex items-center justify-center shadow-xs">1</button>
             <button className="h-7 w-7 rounded-lg border border-slate-200 flex items-center justify-center hover:bg-slate-50"><IconChevronRight className="h-4 w-4" /></button>
           </div>
         </div>

@@ -164,7 +164,7 @@ export default function ProviderVerificationPage() {
               <Button
                 type="submit"
                 size="sm"
-                className="rounded-full bg-[#1b76ff] px-5 text-xs font-bold text-white hover:bg-[#145ed8]"
+                className="rounded-full bg-[#24a1dc] px-5 text-xs font-bold text-white hover:bg-[#1b7faf]"
               >
                 Submit for review
               </Button>

@@ -39,52 +39,52 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-zinc-200 bg-white/95 backdrop-blur">
-      <div className="container mx-auto flex h-20 md:h-24 items-center justify-between gap-3 px-4 sm:px-6 lg:px-6 2xl:gap-4 2xl:px-8">
+      <div className="container mx-auto flex h-14 md:h-16 items-center justify-between gap-3 px-4 sm:px-6 lg:px-6 2xl:gap-4 2xl:px-8">
         {/* Brand Logo */}
         <Link href="/" className="flex shrink-0 items-center group">
           <Image
-            src="/myhitch-connect/logo.png"
+            src="/myhitch-connect/logo-horizontal.png"
             alt="MYHitch Connect"
-            width={160}
-            height={56}
-            className="h-16 md:h-20 w-auto object-contain group-hover:opacity-90 transition-opacity duration-200"
+            width={620}
+            height={200}
+            className="h-7 md:h-8 w-auto object-contain transition-opacity duration-200 group-hover:opacity-90"
             priority
           />
         </Link>
 
         {/* Desktop Navigation - ORDER: Home -> Explore Services -> Search Providers -> About Us -> Contact Us -> Dashboard (if logged in) */}
-        <nav className="hidden xl:flex shrink-0 items-center gap-4 2xl:gap-6 whitespace-nowrap">
+        <nav className="hidden xl:flex shrink-0 items-center gap-3.5 2xl:gap-5 whitespace-nowrap">
           {/* 1. Home */}
           <Link
             href="/"
-            className="flex items-center gap-1.5 text-sm font-semibold text-black hover:text-brand transition-colors"
+            className="flex items-center gap-1.5 text-xs md:text-[13px] font-semibold text-black hover:text-brand transition-colors"
           >
-            <IconHome className="h-4 w-4 text-brand" />
+            <IconHome className="h-3.5 w-3.5 text-brand" />
             <span>Home</span>
           </Link>
 
           {/* 2. Explore Services — goes straight to the category hub */}
           <Link
             href="/category"
-            className="flex items-center gap-1.5 text-sm font-semibold text-black hover:text-brand transition-colors"
+            className="flex items-center gap-1.5 text-xs md:text-[13px] font-semibold text-black hover:text-brand transition-colors"
           >
-            <IconLayoutGrid className="h-4 w-4 text-brand" />
+            <IconLayoutGrid className="h-3.5 w-3.5 text-brand" />
             <span>Explore Services</span>
           </Link>
 
           {/* 3. Search Providers */}
           <Link
             href="/search"
-            className="flex items-center gap-1.5 text-sm font-semibold text-black hover:text-brand transition-colors"
+            className="flex items-center gap-1.5 text-xs md:text-[13px] font-semibold text-black hover:text-brand transition-colors"
           >
-            <IconSearch className="h-4 w-4 text-brand" />
+            <IconSearch className="h-3.5 w-3.5 text-brand" />
             <span>Search Providers</span>
           </Link>
 
           {/* 4. About Us */}
           <Link
             href="/about"
-            className="text-sm font-semibold text-black hover:text-brand transition-colors"
+            className="text-xs md:text-[13px] font-semibold text-black hover:text-brand transition-colors"
           >
             <span>About Us</span>
           </Link>
@@ -92,7 +92,7 @@ export function Header() {
           {/* 5. Contact Us */}
           <Link
             href="/contact"
-            className="text-sm font-semibold text-black hover:text-brand transition-colors"
+            className="text-xs md:text-[13px] font-semibold text-black hover:text-brand transition-colors"
           >
             <span>Contact Us</span>
           </Link>
@@ -193,10 +193,10 @@ export function Header() {
             <Button
               asChild
               size="sm"
-              className="gap-1.5 rounded-full bg-[#1b76ff] hover:bg-[#145ed8] font-bold text-xs text-white uppercase tracking-wider shadow-md shadow-blue-500/20 px-5 transition-all hover:shadow-lg hover:shadow-blue-500/30"
+              className="h-8 gap-1.5 rounded-full bg-[#24a1dc] hover:bg-[#1b7faf] font-bold text-[11px] text-white uppercase tracking-wider shadow-xs shadow-blue-500/20 px-4 transition-all hover:shadow-md hover:shadow-blue-500/30"
             >
               <Link href="/login">
-                <IconLogin className="h-4 w-4 text-white" />
+                <IconLogin className="h-3.5 w-3.5 text-white" />
                 <span>Log In</span>
               </Link>
             </Button>
@@ -385,7 +385,7 @@ export function Header() {
             ) : (
               <Button
                 asChild
-                className="w-full justify-center rounded-xl bg-[#1b76ff] hover:bg-[#145ed8] font-bold text-white shadow-md shadow-blue-500/20 text-xs uppercase tracking-wider h-11 transition-all"
+                className="w-full justify-center rounded-xl bg-[#24a1dc] hover:bg-[#1b7faf] font-bold text-white shadow-md shadow-blue-500/20 text-xs uppercase tracking-wider h-11 transition-all"
               >
                 <Link href="/login" onClick={() => setMobileMenuOpen(false)}>
                   <IconLogin className="h-4 w-4 mr-2" />

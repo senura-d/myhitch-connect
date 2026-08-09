@@ -60,7 +60,7 @@ export default function AdminSettingsPage() {
           {/* GENERAL SYSTEM TOGGLES */}
           <div className="rounded-3xl bg-white border border-slate-200/80 p-6 shadow-xl shadow-blue-500/5 space-y-5">
             <div className="border-b border-slate-100 pb-3 flex items-center gap-2">
-              <IconShield className="h-5 w-5 text-[#1b76ff]" />
+              <IconShield className="h-5 w-5 text-[#24a1dc]" />
               <h3 className="font-extrabold text-base text-slate-900">Governance & Security Controls</h3>
             </div>
 
@@ -75,7 +75,7 @@ export default function AdminSettingsPage() {
                   type="checkbox"
                   checked={maintenance}
                   onChange={(e) => setMaintenance(e.target.checked)}
-                  className="rounded h-4 w-4 border-slate-300 text-[#1b76ff] focus:ring-[#1b76ff] cursor-pointer"
+                  className="rounded h-4 w-4 border-slate-300 text-[#24a1dc] focus:ring-[#24a1dc] cursor-pointer"
                 />
               </div>
 
@@ -89,7 +89,7 @@ export default function AdminSettingsPage() {
                   type="checkbox"
                   checked={autoVerify}
                   onChange={(e) => setAutoVerify(e.target.checked)}
-                  className="rounded h-4 w-4 border-slate-300 text-[#1b76ff] focus:ring-[#1b76ff] cursor-pointer"
+                  className="rounded h-4 w-4 border-slate-300 text-[#24a1dc] focus:ring-[#24a1dc] cursor-pointer"
                 />
               </div>
 
@@ -103,7 +103,7 @@ export default function AdminSettingsPage() {
                   type="checkbox"
                   checked={emailAlerts}
                   onChange={(e) => setEmailAlerts(e.target.checked)}
-                  className="rounded h-4 w-4 border-slate-300 text-[#1b76ff] focus:ring-[#1b76ff] cursor-pointer"
+                  className="rounded h-4 w-4 border-slate-300 text-[#24a1dc] focus:ring-[#24a1dc] cursor-pointer"
                 />
               </div>
             </div>
@@ -112,7 +112,7 @@ export default function AdminSettingsPage() {
           {/* FINANCIAL SETTINGS */}
           <div className="rounded-3xl bg-white border border-slate-200/80 p-6 shadow-xl shadow-blue-500/5 space-y-5">
             <div className="border-b border-slate-100 pb-3 flex items-center gap-2">
-              <IconPercentage className="h-5 w-5 text-[#1b76ff]" />
+              <IconPercentage className="h-5 w-5 text-[#24a1dc]" />
               <h3 className="font-extrabold text-base text-slate-900">Financial Brokerage Commissions</h3>
             </div>
 

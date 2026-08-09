@@ -55,11 +55,11 @@ export default function ProviderDashboardLayout({
         <div className="space-y-8">
           <Link href="/" className="flex items-center">
             <Image
-              src="/myhitch-connect/logo.png"
+              src="/myhitch-connect/logo-horizontal.png"
               alt="MYHitch Connect"
-              width={160}
-              height={56}
-              className="h-16 md:h-20 w-auto object-contain"
+              width={620}
+              height={200}
+              className="h-11 w-auto object-contain"
               priority
             />
           </Link>
@@ -74,7 +74,7 @@ export default function ProviderDashboardLayout({
                   aria-current={active ? "page" : undefined}
                   className={`w-full flex items-center gap-3.5 px-4 py-3 rounded-2xl text-xs font-bold transition-all ${
                     active
-                      ? "bg-[#1b76ff] text-white shadow-md shadow-blue-500/25"
+                      ? "bg-[#24a1dc] text-white shadow-md shadow-blue-500/25"
                       : "text-slate-500 hover:bg-slate-50 hover:text-slate-900"
                   }`}
                 >
@@ -132,7 +132,7 @@ export default function ProviderDashboardLayout({
             <Button
               asChild
               size="sm"
-              className="rounded-full bg-[#1b76ff] hover:bg-[#145ed8] text-white font-bold text-xs gap-1.5 h-9 px-4 shadow-md shadow-blue-500/20"
+              className="rounded-full bg-[#24a1dc] hover:bg-[#1b7faf] text-white font-bold text-xs gap-1.5 h-9 px-4 shadow-md shadow-blue-500/20"
             >
               <Link href="/dashboard/provider/services">
                 <IconPlus className="h-4 w-4" />
@@ -155,7 +155,7 @@ export default function ProviderDashboardLayout({
                 href={href}
                 aria-current={active ? "page" : undefined}
                 className={`shrink-0 flex items-center gap-1.5 px-3 py-2 rounded-xl text-[11px] font-bold transition-all ${
-                  active ? "bg-[#1b76ff] text-white" : "text-slate-500 hover:bg-slate-50"
+                  active ? "bg-[#24a1dc] text-white" : "text-slate-500 hover:bg-slate-50"
                 }`}
               >
                 <Icon className="h-3.5 w-3.5" />

@@ -191,7 +191,7 @@ export default function ProviderSupportPage() {
             <Button
               type="submit"
               size="sm"
-              className="w-full rounded-full bg-[#1b76ff] text-xs font-bold text-white hover:bg-[#145ed8]"
+              className="w-full rounded-full bg-[#24a1dc] text-xs font-bold text-white hover:bg-[#1b7faf]"
             >
               Send message
             </Button>
@@ -206,7 +206,7 @@ export default function ProviderSupportPage() {
               Prefer the public form?{" "}
               <Link
                 href="/contact"
-                className="font-bold text-[#1b76ff] hover:underline"
+                className="font-bold text-[#24a1dc] hover:underline"
               >
                 Contact us
               </Link>

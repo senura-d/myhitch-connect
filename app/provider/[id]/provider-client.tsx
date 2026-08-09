@@ -4,6 +4,7 @@ import React, { use, useState } from "react";
 import Link from "next/link";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
+import { LoadingAnimation } from "@/components/ui/loading-animation";
 import { useProvider } from "@/hooks/use-providers";
 import { useListingsByProvider } from "@/hooks/use-listings";
 import { useReviewsForProvider } from "@/hooks/use-reviews";
@@ -118,8 +119,8 @@ export default function ProviderProfilePage({ params }: { params: Promise<{ id: 
     return (
       <div className="min-h-screen flex flex-col bg-background">
         <Header />
-        <main className="flex-1 container mx-auto px-4 py-16 text-center">
-          <div className="h-64 bg-muted animate-pulse rounded-2xl" />
+        <main className="flex-1 container mx-auto px-4 py-16 flex items-center justify-center">
+          <LoadingAnimation size="md" text="Loading provider profile..." />
         </main>
         <Footer />
       </div>

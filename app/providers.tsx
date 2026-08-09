@@ -4,6 +4,7 @@ import * as React from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/sonner";
 import { SessionProvider } from "@/lib/mock-api/session";
+import { InitialSplashLoader } from "@/components/ui/initial-splash-loader";
 
 export function AppProviders({ children }: { children: React.ReactNode }) {
   const [queryClient] = React.useState(
@@ -23,6 +24,7 @@ export function AppProviders({ children }: { children: React.ReactNode }) {
   return (
     <QueryClientProvider client={queryClient}>
       <SessionProvider>
+        <InitialSplashLoader />
         {children}
         <Toaster richColors position="top-right" />
       </SessionProvider>

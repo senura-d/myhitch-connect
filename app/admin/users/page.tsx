@@ -119,7 +119,7 @@ export default function AdminUsersPage() {
                             className="h-8 w-8 rounded-full object-cover shrink-0"
                           />
                         ) : (
-                          <div className="h-8 w-8 rounded-full bg-blue-50 text-[#1b76ff] flex items-center justify-center font-bold text-xs shrink-0">
+                          <div className="h-8 w-8 rounded-full bg-blue-50 text-[#24a1dc] flex items-center justify-center font-bold text-xs shrink-0">
                             {u.name.charAt(0)}
                           </div>
                         )}
@@ -167,7 +167,7 @@ export default function AdminUsersPage() {
           <span>Showing {filtered.length} of {filtered.length} users</span>
           <div className="flex items-center gap-1">
             <button className="h-7 w-7 rounded-lg border border-slate-200 flex items-center justify-center hover:bg-slate-50"><IconChevronLeft className="h-4 w-4" /></button>
-            <button className="h-7 w-7 rounded-lg bg-[#1b76ff] text-white font-bold flex items-center justify-center shadow-xs">1</button>
+            <button className="h-7 w-7 rounded-lg bg-[#24a1dc] text-white font-bold flex items-center justify-center shadow-xs">1</button>
             <button className="h-7 w-7 rounded-lg border border-slate-200 flex items-center justify-center hover:bg-slate-50"><IconChevronRight className="h-4 w-4" /></button>
           </div>
         </div>

@@ -91,6 +91,7 @@
     "role": "provider",
     "name": "Harbor Plumbing & Gas",
     "email": "harbor-plumbing-and-gas@example.test",
+    "avatarUrl": "https://images.unsplash.com/photo-1540569014015-19a7be504e3a?auto=format&fit=crop&w=300&q=80",
     "providerId": "prov-05"
   },
   {

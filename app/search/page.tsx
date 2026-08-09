@@ -4,11 +4,11 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Header } from "@/components/layout/header";
+import { HeroBackdrop } from "@/components/home/hero-backdrop";
 import { Footer } from "@/components/layout/footer";
 import { useSearchListings } from "@/hooks/use-listings";
 import { useTaxonomy } from "@/hooks/use-taxonomy";
 import { RatingStars } from "@/components/ui/rating-stars";
-import { StatusBadge } from "@/components/ui/status-badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
@@ -19,6 +19,9 @@ import {
   IconFilter,
   IconBuildingStore,
   IconSparkles,
+  IconCategory,
+  IconChevronDown,
+  IconRotate2,
 } from "@tabler/icons-react";
 
 const SERVICE_IMAGES: Record<string, string> = {
@@ -60,61 +63,29 @@ export default function SearchPage() {
       <Header />
 
       <main className="flex-1 overflow-x-clip">
-        {/* HERO WAVE BACKDROP */}
-        <section className="relative overflow-hidden bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to-brand-dark text-white py-14 lg:py-16">
-          <svg
-            className="absolute inset-0 h-full w-full opacity-20 pointer-events-none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <defs>
-              <pattern
-                id="search-grid"
-                width="40"
-                height="40"
-                patternUnits="userSpaceOnUse"
-              >
-                <path
-                  d="M 40 0 L 0 0 0 40"
-                  fill="none"
-                  stroke="white"
-                  strokeWidth="1"
-                  strokeDasharray="2 2"
-                />
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#search-grid)" />
-          </svg>
+        {/* HERO BACKDROP */}
+        <section className="relative overflow-hidden text-slate-900 py-14 lg:py-16 bg-white border-b border-slate-200/80">
+          <HeroBackdrop
+            images={[
+              "/myhitch-connect/search-hero-backdrop.png",
+            ]}
+          />
 
-          <svg
-            className="absolute -top-16 -left-16 w-120 h-120 opacity-30 pointer-events-none"
-            viewBox="0 0 500 500"
-            fill="none"
-          >
-            <path
-              d="M0,250 C150,180 350,320 500,200 L500,0 L0,0 Z"
-              fill="url(#searchGrad1)"
-            />
-            <defs>
-              <linearGradient id="searchGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#ffffff" stopOpacity="0.8" />
-                <stop offset="100%" stopColor="#3b82f6" stopOpacity="0.1" />
-              </linearGradient>
-            </defs>
-          </svg>
+          <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-2xl text-left space-y-3">
+              <div className="inline-flex items-center gap-2 rounded-full bg-brand/10 backdrop-blur-md px-3.5 py-1 text-[11px] font-bold text-brand border border-brand/20 shadow-xs">
+                <IconSparkles className="h-3.5 w-3.5 text-brand" />
+                <span>SEARCH & FIND LICENSED PROVIDERS</span>
+              </div>
 
-          <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl">
-            <div className="inline-flex items-center gap-2 rounded-full bg-white/15 backdrop-blur-md px-3.5 py-1 text-[11px] font-bold text-white border border-white/25 mb-3 shadow-lg">
-              <IconSparkles className="h-3.5 w-3.5 text-blue-200" />
-              <span>SEARCH & FIND LICENSED PROVIDERS</span>
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black leading-tight tracking-tight text-slate-950 uppercase">
+                EXPLORE MARKETPLACE <span className="gradient-brand-text">SERVICE LISTINGS</span>
+              </h1>
+
+              <p className="text-xs sm:text-sm text-slate-600 max-w-xl leading-relaxed font-medium">
+                Browse verified providers, filter by service category and location to connect directly with experts.
+              </p>
             </div>
-
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-wider text-white uppercase leading-tight">
-              EXPLORE MARKETPLACE <span className="underline underline-offset-8 decoration-white/50">SERVICE LISTINGS</span>
-            </h1>
-
-            <p className="mt-2 text-xs sm:text-sm text-blue-100/90 max-w-xl mx-auto leading-relaxed font-medium">
-              Browse verified providers, filter by service category and location to connect directly with experts.
-            </p>
           </div>
         </section>
 
@@ -139,7 +110,7 @@ export default function SearchPage() {
                     placeholder="e.g. Plumbing, Cleaning"
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
-                    className="h-10 border border-slate-200 border-l-4 border-l-brand bg-[#f4f6fa] pl-10! text-xs font-medium text-slate-900 placeholder:text-slate-400 focus-visible:bg-white focus-visible:ring-1 focus-visible:ring-brand rounded-r-xl rounded-l-none transition-all"
+                    className="h-11 border border-slate-200/90 bg-slate-50/80 pl-10! pr-4 text-xs font-semibold text-slate-900 placeholder:text-slate-400 focus-visible:bg-white focus-visible:border-brand focus-visible:ring-2 focus-visible:ring-brand/20 rounded-full transition-all shadow-2xs"
                   />
                 </div>
               </div>
@@ -147,18 +118,22 @@ export default function SearchPage() {
               {/* Category Dropdown */}
               <div className="space-y-1.5">
                 <label className="text-[11px] font-extrabold text-slate-700 uppercase tracking-wider block">Category</label>
-                <select
-                  value={selectedCategory}
-                  onChange={(e) => setSelectedCategory(e.target.value)}
-                  className="w-full h-10 px-3.5 text-xs font-semibold rounded-r-xl rounded-l-none border border-slate-200 border-l-4 border-l-brand bg-[#f4f6fa] text-slate-900 focus:outline-none focus:bg-white focus:ring-1 focus:ring-brand transition-all"
-                >
-                  <option value="">All Categories</option>
-                  {taxonomy?.map((cat) => (
-                    <option key={cat.id} value={cat.id}>
-                      {cat.name}
-                    </option>
-                  ))}
-                </select>
+                <div className="relative flex items-center">
+                  <IconCategory className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-brand z-10 pointer-events-none" />
+                  <select
+                    value={selectedCategory}
+                    onChange={(e) => setSelectedCategory(e.target.value)}
+                    className="w-full h-11 pl-10 pr-9 text-xs font-semibold rounded-full border border-slate-200/90 bg-slate-50/80 text-slate-900 focus:outline-none focus:bg-white focus:border-brand focus:ring-2 focus:ring-brand/20 transition-all appearance-none cursor-pointer shadow-2xs"
+                  >
+                    <option value="">All Categories</option>
+                    {taxonomy?.map((cat) => (
+                      <option key={cat.id} value={cat.id}>
+                        {cat.name}
+                      </option>
+                    ))}
+                  </select>
+                  <IconChevronDown className="absolute right-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400 pointer-events-none" />
+                </div>
               </div>
 
               {/* Location Input */}
@@ -170,7 +145,7 @@ export default function SearchPage() {
                     placeholder="Suburb or postcode"
                     value={location}
                     onChange={(e) => setLocation(e.target.value)}
-                    className="h-10 border border-slate-200 border-l-4 border-l-brand bg-[#f4f6fa] pl-10! text-xs font-medium text-slate-900 placeholder:text-slate-400 focus-visible:bg-white focus-visible:ring-1 focus-visible:ring-brand rounded-r-xl rounded-l-none transition-all"
+                    className="h-11 border border-slate-200/90 bg-slate-50/80 pl-10! pr-4 text-xs font-semibold text-slate-900 placeholder:text-slate-400 focus-visible:bg-white focus-visible:border-brand focus-visible:ring-2 focus-visible:ring-brand/20 rounded-full transition-all shadow-2xs"
                   />
                 </div>
               </div>
@@ -179,14 +154,15 @@ export default function SearchPage() {
               <div>
                 <Button
                   variant="outline"
-                  className="w-full h-10 rounded-full border border-slate-300 bg-slate-100 hover:bg-slate-200 text-slate-800 font-extrabold text-xs transition-all shadow-xs"
+                  className="w-full h-11 rounded-full border border-slate-200 bg-slate-100/90 hover:bg-slate-200 hover:text-slate-900 text-slate-700 font-extrabold text-xs transition-all shadow-2xs gap-1.5"
                   onClick={() => {
                     setQuery("");
                     setSelectedCategory("");
                     setLocation("");
                   }}
                 >
-                  Reset Filters
+                  <IconRotate2 className="h-3.5 w-3.5 text-slate-500" />
+                  <span>Reset Filters</span>
                 </Button>
               </div>
             </div>
@@ -222,9 +198,6 @@ export default function SearchPage() {
                           {listing.pricing.method.replace("_", " ")}
                         </Badge>
                       </div>
-                      <div className="absolute top-2.5 left-2.5">
-                        <StatusBadge status={provider.verificationStatus} />
-                      </div>
                     </div>
 
                     <CardHeader className="p-4 pb-1.5 space-y-1">
@@ -259,7 +232,7 @@ export default function SearchPage() {
                         </span>
                       </div>
 
-                      <Button asChild size="sm" className="h-8 px-3.5 text-[11px] font-bold rounded-full bg-[#1b76ff] hover:bg-[#145ed8] text-white shadow-xs">
+                      <Button asChild size="sm" className="h-8 px-3.5 text-[11px] font-bold rounded-full bg-[#24a1dc] hover:bg-[#1b7faf] text-white shadow-xs">
                         <Link href={`/provider/${provider.id}/service/${listing.id}`}>
                           View Details
                         </Link>

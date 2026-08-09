@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { useVerificationQueue, useAdminStats } from "@/hooks/use-admin";
+import { LoadingAnimation } from "@/components/ui/loading-animation";
 import { useSetProviderVerificationStatus } from "@/hooks/use-providers";
 import { StatusBadge } from "@/components/ui/status-badge";
 import { Button } from "@/components/ui/button";
@@ -36,7 +37,11 @@ export default function AdminVerificationQueuePage() {
   };
 
   if (isLoading) {
-    return <p className="text-xs text-slate-400">Loading verification queue...</p>;
+    return (
+      <div className="flex h-[60vh] items-center justify-center">
+        <LoadingAnimation size="md" text="Loading verification queue..." />
+      </div>
+    );
   }
 
   return (
@@ -58,7 +63,7 @@ export default function AdminVerificationQueuePage() {
         <div className="lg:col-span-4 space-y-6">
           {/* MODERATION PROFILE CARD */}
           <div className="rounded-3xl bg-white border border-slate-200/80 overflow-hidden shadow-xl shadow-blue-500/5">
-            <div className="h-28 bg-linear-to-r from-[#2c89ff] via-[#1c6df3] to-brand-dark relative" />
+            <div className="h-28 bg-linear-to-r from-[#35c6e6] via-[#24a1dc] to-brand-dark relative" />
             <div className="p-6 pt-0 text-center relative space-y-4">
               <div className="relative -mt-14 inline-block">
                 <div className="h-24 w-24 rounded-full border-4 border-white overflow-hidden shadow-lg relative mx-auto bg-slate-100 flex items-center justify-center text-brand">
@@ -275,7 +280,7 @@ export default function AdminVerificationQueuePage() {
               <span>Showing {queue?.length || 0} of {queue?.length || 0} applications</span>
               <div className="flex items-center gap-1">
                 <button className="h-7 w-7 rounded-lg border border-slate-200 flex items-center justify-center hover:bg-slate-50"><IconChevronLeft className="h-4 w-4" /></button>
-                <button className="h-7 w-7 rounded-lg bg-[#1b76ff] text-white font-bold flex items-center justify-center shadow-xs">1</button>
+                <button className="h-7 w-7 rounded-lg bg-[#24a1dc] text-white font-bold flex items-center justify-center shadow-xs">1</button>
                 <button className="h-7 w-7 rounded-lg border border-slate-200 flex items-center justify-center hover:bg-slate-50"><IconChevronRight className="h-4 w-4" /></button>
               </div>
             </div>

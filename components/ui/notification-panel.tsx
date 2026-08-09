@@ -124,7 +124,7 @@ export function NotificationBell({ role }: { role: Role }) {
               <button
                 type="button"
                 onClick={markAllRead}
-                className="flex items-center gap-1 text-[11px] font-bold text-brand transition-colors hover:text-[#1b76ff]"
+                className="flex items-center gap-1 text-[11px] font-bold text-brand transition-colors hover:text-[#24a1dc]"
               >
                 <IconCheck className="h-3.5 w-3.5" />
                 Mark all read

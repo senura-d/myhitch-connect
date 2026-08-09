@@ -16,8 +16,8 @@
   --font-sans: var(--font-plus-jakarta), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-space-mono), ui-monospace, SFMono-Regular, monospace;
   --font-heading: var(--font-plus-jakarta), sans-serif;
-  --color-brand: #2b89ff;
-  --color-brand-dark: #0946cd;
+  --color-brand: #24a1dc;
+  --color-brand-dark: #16688f;
   --color-brand-light: #f0f7ff;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -69,14 +69,14 @@
   --card-foreground: #0f172a;
   --popover: #ffffff;
   --popover-foreground: #0f172a;
-  --primary: #2b89ff;
+  --primary: #24a1dc;
   --primary-foreground: #ffffff;
   --secondary: #f0f7ff;
-  --secondary-foreground: #0946cd;
+  --secondary-foreground: #16688f;
   --muted: #f8fafc;
   --muted-foreground: #64748b;
   --accent: #eef6ff;
-  --accent-foreground: #2b89ff;
+  --accent-foreground: #24a1dc;
   --destructive: #ef4444;
   --destructive-foreground: #ffffff;
   --success: #10b981;
@@ -85,21 +85,21 @@
   --warning-foreground: #000000;
   --border: #e2e8f0;
   --input: #e2e8f0;
-  --ring: #2b89ff;
-  --chart-1: #2b89ff;
-  --chart-2: #1c6df3;
+  --ring: #24a1dc;
+  --chart-1: #24a1dc;
+  --chart-2: #24a1dc;
   --chart-3: #60a5fa;
   --chart-4: #93c5fd;
   --chart-5: #bfdbfe;
   --radius: 0.75rem;
   --sidebar: #ffffff;
   --sidebar-foreground: #0f172a;
-  --sidebar-primary: #2b89ff;
+  --sidebar-primary: #24a1dc;
   --sidebar-primary-foreground: #ffffff;
   --sidebar-accent: #f0f7ff;
-  --sidebar-accent-foreground: #2b89ff;
+  --sidebar-accent-foreground: #24a1dc;
   --sidebar-border: #e2e8f0;
-  --sidebar-ring: #2b89ff;
+  --sidebar-ring: #24a1dc;
 }
 
 @keyframes pulse-subtle {
@@ -141,11 +141,11 @@
 }
 
 .gradient-brand-text {
-  background: linear-gradient(135deg, #2b89ff 0%, #0946cd 100%);
+  background: linear-gradient(135deg, #24a1dc 0%, #16688f 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gradient-brand-bg {
-  background: linear-gradient(135deg, #2c89ff 0%, #1c6df3 50%, #0946cd 100%);
+  background: linear-gradient(135deg, #35c6e6 0%, #24a1dc 50%, #16688f 100%);
 }

@@ -149,7 +149,7 @@ export default function ProviderSettingsPage() {
                   className="h-20 w-20 rounded-2xl object-cover shadow-lg shadow-blue-500/25"
                 />
               ) : (
-                <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to-brand-dark text-3xl font-black text-white shadow-lg shadow-blue-500/25">
+                <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-linear-to-br from-[#35c6e6] via-[#24a1dc] to-brand-dark text-3xl font-black text-white shadow-lg shadow-blue-500/25">
                   {(provider?.businessName ?? user?.name ?? "B").charAt(0)}
                 </div>
               )}
@@ -159,7 +159,7 @@ export default function ProviderSettingsPage() {
                 onClick={() => fileInputRef.current?.click()}
                 disabled={!user}
                 aria-label={user?.avatarUrl ? "Change business logo" : "Add business logo"}
-                className="absolute -bottom-1 -right-1 flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-[#1b76ff] text-white shadow-md transition-colors hover:bg-[#145ed8] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1b76ff]/40 disabled:cursor-not-allowed disabled:opacity-40"
+                className="absolute -bottom-1 -right-1 flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-[#24a1dc] text-white shadow-md transition-colors hover:bg-[#1b7faf] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#24a1dc]/40 disabled:cursor-not-allowed disabled:opacity-40"
               >
                 {user?.avatarUrl ? (
                   <IconPencil className="h-4 w-4" />
@@ -184,7 +184,7 @@ export default function ProviderSettingsPage() {
                 type="button"
                 onClick={() => fileInputRef.current?.click()}
                 disabled={!user}
-                className="text-[#1b76ff] hover:underline disabled:cursor-not-allowed disabled:opacity-40"
+                className="text-[#24a1dc] hover:underline disabled:cursor-not-allowed disabled:opacity-40"
               >
                 {user?.avatarUrl ? "Change logo" : "Add logo"}
               </button>
@@ -263,7 +263,7 @@ export default function ProviderSettingsPage() {
             type="button"
             size="sm"
             onClick={() => toast.success("Business profile saved")}
-            className="rounded-full bg-[#1b76ff] px-5 text-xs font-bold text-white hover:bg-[#145ed8]"
+            className="rounded-full bg-[#24a1dc] px-5 text-xs font-bold text-white hover:bg-[#1b7faf]"
           >
             Save profile
           </Button>

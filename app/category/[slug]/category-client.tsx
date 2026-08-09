@@ -8,6 +8,7 @@ import { useTaxonomy } from "@/hooks/use-taxonomy";
 import { CategoryContent } from "@/components/category/category-content";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { HeroBackdrop } from "@/components/home/hero-backdrop";
 import { IconShieldCheck, IconCheck } from "@tabler/icons-react";
 
 const CATEGORY_BANNERS: Record<string, { image: string; tag: string }> = {
@@ -77,60 +78,43 @@ export default function CategoryDetailPage({ params }: { params: Promise<{ slug:
 
       <main className="flex-1 overflow-x-clip">
         {/* MODERN SPLIT HERO SECTION */}
-        <section className="relative overflow-hidden bg-slate-50 text-slate-900 py-12 md:py-16 border-b border-slate-200/70">
-          <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-              {/* Text Content */}
-              <div className="space-y-4">
-                {/* Breadcrumbs */}
-                <nav aria-label="Breadcrumb" className="mb-2 flex items-center gap-2 text-[11px] font-bold uppercase tracking-wider text-slate-400">
-                  <Link href="/" className="hover:text-brand transition-colors">Home</Link>
-                  <span>/</span>
-                  <span className="text-brand">{category.name}</span>
-                </nav>
+        <section className="relative overflow-hidden py-16 text-white md:py-20">
+          <HeroBackdrop images={[categoryMeta.image]} dim={55} />
 
-                <Badge className="bg-brand/10 text-brand font-bold border border-brand/20 shadow-2xs px-3 py-1 rounded-full text-xs hover:bg-brand/15 transition-colors">
-                  {categoryMeta.tag}
-                </Badge>
+          <div className="container relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <nav
+              aria-label="Breadcrumb"
+              className="mb-3 flex items-center gap-2 text-[11px] font-bold uppercase tracking-wider text-white/60"
+            >
+              <Link href="/" className="transition-colors hover:text-white">
+                Home
+              </Link>
+              <span>/</span>
+              <span className="text-white">{category.name}</span>
+            </nav>
 
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-slate-900 leading-tight">
-                  {category.name}
-                </h1>
+            <Badge className="rounded-full border border-white/25 bg-white/15 px-3 py-1 text-xs font-bold text-white backdrop-blur-md hover:bg-white/20">
+              {categoryMeta.tag}
+            </Badge>
 
-                <p className="text-sm text-slate-600 leading-relaxed pt-1 max-w-lg">
-                  {category.description}
-                </p>
+            <h1 className="mt-4 text-3xl font-black leading-tight tracking-tight text-white sm:text-4xl lg:text-5xl">
+              {category.name}
+            </h1>
 
-                <div className="pt-2 flex flex-wrap items-center gap-2 text-xs font-medium text-slate-700">
-                  <span className="inline-flex items-center gap-1.5 bg-white border border-slate-200 px-3 py-1.5 rounded-full shadow-2xs text-[11px] font-semibold">
-                    <IconCheck className="h-3.5 w-3.5 text-brand" /> Licence & Registration Verified
-                  </span>
-                  <span className="inline-flex items-center gap-1.5 bg-white border border-slate-200 px-3 py-1.5 rounded-full shadow-2xs text-[11px] font-semibold">
-                    <IconShieldCheck className="h-3.5 w-3.5 text-brand" /> Public Liability Insured
-                  </span>
-                </div>
-              </div>
+            <p className="mt-3 max-w-2xl text-sm leading-relaxed text-white/85">
+              {category.description}
+            </p>
 
-              {/* Image Content */}
-              <div className="relative aspect-4/3 w-full rounded-2xl overflow-hidden shadow-2xl border border-slate-200/50">
-                <img
-                  src={categoryMeta.image}
-                  alt={category.name}
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-linear-to-tr from-brand/10 to-transparent mix-blend-overlay" />
-                
-                {/* Floating Trust Badge */}
-                <div className="absolute bottom-4 left-4 flex items-center gap-3 p-3 bg-white/90 backdrop-blur-md border border-slate-200/80 rounded-xl shadow-lg">
-                  <div className="h-10 w-10 rounded-full bg-brand/10 flex items-center justify-center text-brand shrink-0">
-                    <IconShieldCheck size={24} strokeWidth={2} />
-                  </div>
-                  <div>
-                    <p className="text-xs font-bold text-slate-900 leading-none">100% Verified</p>
-                    <p className="text-[9px] text-slate-500 font-semibold uppercase tracking-wider mt-1">Background Checked</p>
-                  </div>
-                </div>
-              </div>
+            <div className="mt-6 flex flex-wrap items-center gap-2 text-xs font-medium">
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-white/25 bg-white/10 px-3 py-1.5 text-[11px] font-semibold text-white backdrop-blur-md">
+                <IconCheck className="h-3.5 w-3.5" /> Licence &amp; Registration Verified
+              </span>
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-white/25 bg-white/10 px-3 py-1.5 text-[11px] font-semibold text-white backdrop-blur-md">
+                <IconShieldCheck className="h-3.5 w-3.5" /> Public Liability Insured
+              </span>
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-white/25 bg-white/10 px-3 py-1.5 text-[11px] font-semibold text-white backdrop-blur-md">
+                <IconShieldCheck className="h-3.5 w-3.5" /> 100% Background Checked
+              </span>
             </div>
           </div>
         </section>

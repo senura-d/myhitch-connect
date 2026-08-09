@@ -187,7 +187,7 @@ export function CategoryContent({
                   <Button
                     asChild
                     size="sm"
-                    className="h-8 rounded-full bg-[#1b76ff] px-4 text-xs font-bold text-white shadow-md shadow-blue-500/20 hover:bg-[#145ed8] transition-all"
+                    className="h-8 rounded-full bg-[#24a1dc] px-4 text-xs font-bold text-white shadow-md shadow-blue-500/20 hover:bg-[#1b7faf] transition-all"
                   >
                     <Link href={`/provider/${provider.id}/service/${listing.id}`}>
                       Book Service
@@ -221,9 +221,17 @@ export function CategoryContent({
               <div>
                 <div className="mb-3.5 flex items-start justify-between gap-3">
                   <div className="flex items-center gap-3">
-                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-brand/20 bg-linear-to-br from-brand/10 to-brand/5 text-base font-extrabold text-brand shadow-2xs">
-                      {provider.businessName.charAt(0)}
-                    </div>
+                    {provider.logoUrl ? (
+                      <img
+                        src={provider.logoUrl}
+                        alt={provider.businessName}
+                        className="h-11 w-11 shrink-0 rounded-xl object-cover border border-brand/20 shadow-2xs"
+                      />
+                    ) : (
+                      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-brand/20 bg-linear-to-br from-brand/10 to-brand/5 text-base font-extrabold text-brand shadow-2xs">
+                        {provider.businessName.charAt(0)}
+                      </div>
+                    )}
                     <div>
                       <h3 className="text-sm font-bold text-slate-900 transition-colors group-hover:text-brand">
                         <Link href={`/provider/${provider.id}`}>

@@ -50,7 +50,7 @@ export default function ProviderServicesPage() {
         <Button
           size="sm"
           onClick={() => toast.info("Listing builder isn't wired up in this demo yet")}
-          className="gap-1.5 rounded-full bg-[#1b76ff] text-xs font-bold text-white shadow-md shadow-blue-500/20 hover:bg-[#145ed8]"
+          className="gap-1.5 rounded-full bg-[#24a1dc] text-xs font-bold text-white shadow-md shadow-blue-500/20 hover:bg-[#1b7faf]"
         >
           <IconPlus className="h-4 w-4" />
           <span>New listing</span>
@@ -78,7 +78,7 @@ export default function ProviderServicesPage() {
           {listings?.map((listing) => (
             <article
               key={listing.id}
-              className="group flex flex-col overflow-hidden rounded-2xl border border-slate-200/80 bg-white transition-all hover:border-[#1b76ff]/50 hover:shadow-lg hover:shadow-blue-500/5"
+              className="group flex flex-col overflow-hidden rounded-2xl border border-slate-200/80 bg-white transition-all hover:border-[#24a1dc]/50 hover:shadow-lg hover:shadow-blue-500/5"
             >
               <div className="relative h-32 w-full overflow-hidden bg-slate-100">
                 <Image
@@ -117,7 +117,7 @@ export default function ProviderServicesPage() {
                       <span className="block text-[10px] font-bold uppercase tracking-wider text-slate-400">
                         Price
                       </span>
-                      <span className="text-base font-black text-[#1b76ff]">
+                      <span className="text-base font-black text-[#24a1dc]">
                         ${listing.pricing.amount || "Quote"}
                       </span>
                     </div>
@@ -160,7 +160,7 @@ export default function ProviderServicesPage() {
                     className={`mt-3 w-full rounded-full text-xs font-bold ${
                       listing.status === "published"
                         ? "bg-slate-100 text-slate-700 hover:bg-slate-200"
-                        : "bg-[#1b76ff] text-white hover:bg-[#145ed8]"
+                        : "bg-[#24a1dc] text-white hover:bg-[#1b7faf]"
                     }`}
                   >
                     {listing.status === "published" ? "Pause listing" : "Publish listing"}

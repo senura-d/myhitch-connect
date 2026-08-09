@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { Header } from "@/components/layout/header";
+import { HeroBackdrop } from "@/components/home/hero-backdrop";
 import { Footer } from "@/components/layout/footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -71,44 +72,29 @@ export default function ContactUsPage() {
       <Header />
 
       <main className="flex-1">
-        {/* HERO BANNER SECTION MATCHING LOGIN WAVE GRAPHICS */}
-        <section className="relative overflow-hidden bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to-brand-dark text-white py-16 lg:py-20">
-          <svg
-            className="absolute inset-0 h-full w-full opacity-20 pointer-events-none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <defs>
-              <pattern
-                id="contact-grid"
-                width="40"
-                height="40"
-                patternUnits="userSpaceOnUse"
-              >
-                <path
-                  d="M 40 0 L 0 0 0 40"
-                  fill="none"
-                  stroke="white"
-                  strokeWidth="1"
-                  strokeDasharray="2 2"
-                />
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#contact-grid)" />
-          </svg>
+        {/* HERO BANNER SECTION */}
+        <section className="relative overflow-hidden text-slate-900 py-16 lg:py-20 bg-white border-b border-slate-200/80">
+          <HeroBackdrop
+            images={[
+              "/myhitch-connect/contact-hero-backdrop.png",
+            ]}
+          />
 
-          <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl">
-            <div className="inline-flex items-center gap-2 rounded-full bg-white/15 backdrop-blur-md px-4 py-1.5 text-xs font-bold text-white border border-white/25 mb-4 shadow-lg">
-              <IconHeadset className="h-4 w-4 text-blue-200" />
-              <span>MYHitch Customer & Provider Support</span>
+          <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-2xl text-left space-y-4">
+              <div className="inline-flex items-center gap-2 rounded-full bg-brand/10 backdrop-blur-md px-4 py-1.5 text-xs font-bold text-brand border border-brand/20 shadow-xs">
+                <IconHeadset className="h-4 w-4 text-brand" />
+                <span>MYHitch Customer & Provider Support</span>
+              </div>
+
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-slate-950 uppercase leading-[1.15]">
+                WE&apos;RE HERE TO <span className="gradient-brand-text">HELP YOU</span>
+              </h1>
+
+              <p className="text-sm sm:text-base text-slate-600 max-w-xl leading-relaxed font-medium">
+                Have questions about booking a provider, verifying trade credentials, or managing your listing? Reach out to our Australian support team.
+              </p>
             </div>
-
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-wider text-white uppercase leading-tight">
-              WE&apos;RE HERE TO <span className="underline underline-offset-8 decoration-white/50">HELP YOU</span>
-            </h1>
-
-            <p className="mt-3 text-xs sm:text-sm text-blue-100/90 max-w-xl mx-auto leading-relaxed font-medium">
-              Have questions about booking a provider, verifying trade credentials, or managing your listing? Reach out to our Australian support team.
-            </p>
           </div>
         </section>
 
@@ -131,7 +117,7 @@ export default function ContactUsPage() {
 
                 <div className="space-y-4">
                   <div className="p-5 rounded-3xl bg-slate-50/70 border border-slate-200/80 flex items-start gap-4 hover:border-brand transition-all hover:shadow-xl hover:shadow-blue-500/5">
-                    <div className="h-11 w-11 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to-brand-dark text-white flex shrink-0 items-center justify-center shadow-md shadow-blue-500/20">
+                    <div className="h-11 w-11 rounded-2xl bg-linear-to-br from-[#35c6e6] via-[#24a1dc] to-brand-dark text-white flex shrink-0 items-center justify-center shadow-md shadow-blue-500/20">
                       <IconMail className="h-5 w-5" />
                     </div>
                     <div>
@@ -142,7 +128,7 @@ export default function ContactUsPage() {
                   </div>
 
                   <div className="p-5 rounded-3xl bg-slate-50/70 border border-slate-200/80 flex items-start gap-4 hover:border-brand transition-all hover:shadow-xl hover:shadow-blue-500/5">
-                    <div className="h-11 w-11 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to-brand-dark text-white flex shrink-0 items-center justify-center shadow-md shadow-blue-500/20">
+                    <div className="h-11 w-11 rounded-2xl bg-linear-to-br from-[#35c6e6] via-[#24a1dc] to-brand-dark text-white flex shrink-0 items-center justify-center shadow-md shadow-blue-500/20">
                       <IconBuildingStore className="h-5 w-5" />
                     </div>
                     <div>
@@ -153,7 +139,7 @@ export default function ContactUsPage() {
                   </div>
 
                   <div className="p-5 rounded-3xl bg-slate-50/70 border border-slate-200/80 flex items-start gap-4 hover:border-brand transition-all hover:shadow-xl hover:shadow-blue-500/5">
-                    <div className="h-11 w-11 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to-brand-dark text-white flex shrink-0 items-center justify-center shadow-md shadow-blue-500/20">
+                    <div className="h-11 w-11 rounded-2xl bg-linear-to-br from-[#35c6e6] via-[#24a1dc] to-brand-dark text-white flex shrink-0 items-center justify-center shadow-md shadow-blue-500/20">
                       <IconPhone className="h-5 w-5" />
                     </div>
                     <div>
@@ -164,7 +150,7 @@ export default function ContactUsPage() {
                   </div>
 
                   <div className="p-5 rounded-3xl bg-slate-50/70 border border-slate-200/80 flex items-start gap-4 hover:border-brand transition-all hover:shadow-xl hover:shadow-blue-500/5">
-                    <div className="h-11 w-11 rounded-2xl bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to-brand-dark text-white flex shrink-0 items-center justify-center shadow-md shadow-blue-500/20">
+                    <div className="h-11 w-11 rounded-2xl bg-linear-to-br from-[#35c6e6] via-[#24a1dc] to-brand-dark text-white flex shrink-0 items-center justify-center shadow-md shadow-blue-500/20">
                       <IconMapPin className="h-5 w-5" />
                     </div>
                     <div>
@@ -187,7 +173,7 @@ export default function ContactUsPage() {
 
                   {submittedSuccess ? (
                     <div className="p-8 rounded-3xl bg-brand-light border border-brand/40 text-center space-y-4 my-8">
-                      <div className="h-14 w-14 rounded-full bg-[#1b76ff] text-white mx-auto flex items-center justify-center shadow-lg shadow-blue-500/30">
+                      <div className="h-14 w-14 rounded-full bg-[#24a1dc] text-white mx-auto flex items-center justify-center shadow-lg shadow-blue-500/30">
                         <IconCheck className="h-7 w-7 text-white" />
                       </div>
                       <h4 className="text-xl font-black text-slate-900">Message Sent Successfully!</h4>
@@ -196,7 +182,7 @@ export default function ContactUsPage() {
                       </p>
                       <Button
                         onClick={() => setSubmittedSuccess(false)}
-                        className="rounded-full bg-[#1b76ff] text-white hover:bg-[#145ed8] font-bold text-xs uppercase tracking-widest px-6 shadow-md"
+                        className="rounded-full bg-[#24a1dc] text-white hover:bg-[#1b7faf] font-bold text-xs uppercase tracking-widest px-6 shadow-md"
                       >
                         Send Another Message
                       </Button>
@@ -275,7 +261,7 @@ export default function ContactUsPage() {
                             placeholder="How can we assist you?"
                             value={formData.subject}
                             onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                            className="h-11 border border-slate-200 border-l-4 border-l-brand bg-[#f8fafc] pl-10! text-xs font-semibold text-slate-900 placeholder:text-slate-500 focus-visible:bg-white focus-visible:ring-2 focus-visible:ring-brand/40 rounded-r-xl rounded-l-none transition-all shadow-xs"
+                            className="h-11 border border-slate-200 bg-[#f8fafc] pl-10! text-xs font-semibold text-slate-900 placeholder:text-slate-500 focus-visible:bg-white focus-visible:border-brand focus-visible:ring-2 focus-visible:ring-brand/20 rounded-xl transition-all shadow-xs"
                           />
                         </div>
                       </div>
@@ -298,7 +284,7 @@ export default function ContactUsPage() {
                       <Button
                         type="submit"
                         disabled={isSubmitting}
-                        className="w-full h-12 rounded-full bg-linear-to-r from-[#2c89ff] via-[#1c6df3] to-brand-dark hover:opacity-95 text-white font-black text-xs uppercase tracking-widest shadow-lg shadow-blue-500/25 transition-all active:scale-[0.99] gap-2 mt-3"
+                        className="w-full h-12 rounded-full bg-linear-to-r from-[#35c6e6] via-[#24a1dc] to-brand-dark hover:opacity-95 text-white font-black text-xs uppercase tracking-widest shadow-lg shadow-blue-500/25 transition-all active:scale-[0.99] gap-2 mt-3"
                       >
                         {isSubmitting ? (
                           <span>Sending Inquiry...</span>

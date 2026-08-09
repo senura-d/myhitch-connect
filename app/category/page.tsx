@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Header } from "@/components/layout/header";
+import { HeroBackdrop } from "@/components/home/hero-backdrop";
 import { Footer } from "@/components/layout/footer";
 import { useTaxonomy } from "@/hooks/use-taxonomy";
 import { Button } from "@/components/ui/button";
@@ -46,72 +47,64 @@ export default function CategoryIndexPage() {
       <Header />
 
       <main className="flex-1 overflow-x-clip">
-        {/* MASTHEAD WITH HERO WAVE GRAPHICS & BACKDROP (MATCHING LOGIN/HOMEPAGE) */}
-        <section className="relative overflow-hidden bg-linear-to-br from-[#2c89ff] via-[#1c6df3] to-brand-dark text-white py-16 lg:py-24">
-          {/* Abstract SVG Grid Lines */}
-          <svg
-            className="absolute inset-0 h-full w-full opacity-20 pointer-events-none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <defs>
-              <pattern
-                id="cat-grid"
-                width="40"
-                height="40"
-                patternUnits="userSpaceOnUse"
-              >
-                <path
-                  d="M 40 0 L 0 0 0 40"
-                  fill="none"
-                  stroke="white"
-                  strokeWidth="1"
-                  strokeDasharray="2 2"
-                />
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#cat-grid)" />
-          </svg>
-
-          {/* Curved Vector Waves */}
-          <svg
-            className="absolute -top-16 -left-16 w-120 h-120 opacity-30 pointer-events-none"
-            viewBox="0 0 500 500"
-            fill="none"
-          >
-            <path
-              d="M0,250 C150,180 350,320 500,200 L500,0 L0,0 Z"
-              fill="url(#catGrad1)"
-            />
-            <defs>
-              <linearGradient id="catGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#ffffff" stopOpacity="0.8" />
-                <stop offset="100%" stopColor="#3b82f6" stopOpacity="0.1" />
-              </linearGradient>
-            </defs>
-          </svg>
-
-
+        {/* MASTHEAD WITH HERO BACKDROP */}
+        <section className="relative overflow-hidden text-slate-900 py-14 lg:py-16 bg-white border-b border-slate-200/80">
+          <HeroBackdrop
+            images={[
+              "/myhitch-connect/category-hero-backdrop.png",
+            ]}
+          />
 
           <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="inline-flex items-center gap-2 rounded-full bg-white/15 backdrop-blur-md px-4 py-1.5 text-xs font-bold text-white border border-white/25 mb-4 shadow-lg">
-              <IconSparkles className="h-4 w-4 text-blue-200" />
-              <span>THE SERVICE REGISTER</span>
-            </div>
+            <div className="max-w-2xl text-left space-y-3">
+              <div className="inline-flex items-center gap-2 rounded-full bg-brand/10 backdrop-blur-md px-3.5 py-1 text-[11px] font-bold text-brand border border-brand/20 shadow-xs">
+                <IconSparkles className="h-3.5 w-3.5 text-brand" />
+                <span>THE SERVICE REGISTER</span>
+              </div>
 
-            <h1 className="mt-2 max-w-4xl text-3xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-wider text-white uppercase">
-              EVERY TRADE WE <span className="underline underline-offset-8 decoration-white/50">AUDIT AND LIST</span>
-            </h1>
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black leading-tight tracking-tight text-slate-950 uppercase">
+                EVERY TRADE WE <span className="gradient-brand-text">AUDIT AND LIST</span>
+              </h1>
 
-            <p className="mt-4 max-w-xl text-xs sm:text-sm leading-relaxed text-blue-100/90 font-medium">
-              Nobody appears on this register until their licence, registration and public liability cover have been checked against official sources.
-            </p>
+              <p className="text-xs sm:text-sm leading-relaxed text-slate-600 font-medium max-w-xl">
+                Nobody appears on this register until their licence, registration and public liability cover have been checked against official sources.
+              </p>
 
-            {/* REGISTER STATS */}
-            <div className="mt-8 grid max-w-3xl grid-cols-2 gap-x-8 gap-y-6 sm:grid-cols-4">
-              <RegisterStat value={taxonomy?.length ?? 0} label="Categories" />
-              <RegisterStat value={totalSubcategories} label="Subcategories" />
-              <RegisterStat value={totalServiceTypes} label="Service types" />
-              <RegisterStat value="100%" label="Licence audited" />
+              {/* REGISTER STATS */}
+              <div className="pt-3 grid max-w-xl grid-cols-2 gap-x-6 gap-y-3 sm:grid-cols-4 border-t border-slate-200/80">
+                <div>
+                  <div className="text-xl font-black tabular-nums tracking-tight text-slate-900 sm:text-2xl">
+                    {taxonomy?.length ?? 0}
+                  </div>
+                  <div className="text-[10px] font-extrabold uppercase tracking-[0.14em] text-slate-500">
+                    Categories
+                  </div>
+                </div>
+                <div>
+                  <div className="text-xl font-black tabular-nums tracking-tight text-slate-900 sm:text-2xl">
+                    {totalSubcategories}
+                  </div>
+                  <div className="text-[10px] font-extrabold uppercase tracking-[0.14em] text-slate-500">
+                    Subcategories
+                  </div>
+                </div>
+                <div>
+                  <div className="text-xl font-black tabular-nums tracking-tight text-slate-900 sm:text-2xl">
+                    {totalServiceTypes}
+                  </div>
+                  <div className="text-[10px] font-extrabold uppercase tracking-[0.14em] text-slate-500">
+                    Service types
+                  </div>
+                </div>
+                <div>
+                  <div className="text-xl font-black tabular-nums tracking-tight text-emerald-600 sm:text-2xl">
+                    100%
+                  </div>
+                  <div className="text-[10px] font-extrabold uppercase tracking-[0.14em] text-slate-500">
+                    Licence audited
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -138,7 +131,7 @@ export default function CategoryIndexPage() {
                       onClick={() => setActiveId(cat.id)}
                       className={`w-full flex items-center justify-between p-3 rounded-2xl text-xs font-bold text-left transition-all ${
                         isCurrent
-                          ? "bg-[#1b76ff] text-white shadow-md shadow-blue-500/20"
+                          ? "bg-[#24a1dc] text-white shadow-md shadow-blue-500/20"
                           : "text-slate-700 hover:bg-slate-50 hover:text-slate-900"
                       }`}
                     >
@@ -165,7 +158,7 @@ export default function CategoryIndexPage() {
                       {active.description}
                     </p>
                   </div>
-                  <Button asChild size="sm" className="rounded-full bg-[#1b76ff] hover:bg-[#145ed8] text-white font-bold text-xs uppercase tracking-wider px-5 shadow-md shrink-0">
+                  <Button asChild size="sm" className="rounded-full bg-[#24a1dc] hover:bg-[#1b7faf] text-white font-bold text-xs uppercase tracking-wider px-5 shadow-md shrink-0">
                     <Link href={`/category/${active.slug}`}>
                       Explore {active.name} &rarr;
                     </Link>

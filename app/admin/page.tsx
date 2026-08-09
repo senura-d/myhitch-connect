@@ -102,7 +102,7 @@ export default function AdminOverviewPage() {
           <Button
             size="sm"
             onClick={() => scrollToDesk("audit")}
-            className="rounded-full bg-[#1b76ff] hover:bg-[#145ed8] text-white font-bold text-xs gap-1.5 h-10 px-4 shadow-md shadow-blue-500/20"
+            className="rounded-full bg-[#24a1dc] hover:bg-[#1b7faf] text-white font-bold text-xs gap-1.5 h-10 px-4 shadow-md shadow-blue-500/20"
           >
             <IconSparkles className="h-4 w-4" />
             <span>Audit Desk</span>
@@ -245,7 +245,7 @@ export default function AdminOverviewPage() {
           </div>
 
           <div className="pt-4 border-t border-slate-100 flex justify-end">
-            <Link href="/admin/providers/verification" className="text-xs font-bold text-[#1b76ff] hover:underline flex items-center gap-0.5">
+            <Link href="/admin/providers/verification" className="text-xs font-bold text-[#24a1dc] hover:underline flex items-center gap-0.5">
               <span>View Verification Queue</span>
               <IconChevronRight className="h-4 w-4" />
             </Link>
@@ -300,9 +300,9 @@ export default function AdminOverviewPage() {
                 <span className="text-[9px] font-bold block text-slate-300">Cleaning Bookings</span>
                 <span className="text-[10px] font-black block text-white">Value: $14,200</span>
               </div>
-              <span className="text-[8px] font-extrabold text-[#1b76ff]">+21%</span>
+              <span className="text-[8px] font-extrabold text-[#24a1dc]">+21%</span>
               <div className="w-5 bg-slate-50 border border-slate-100 rounded-full h-20 relative overflow-hidden">
-                <div className="absolute bottom-0 left-0 right-0 bg-linear-to-t from-brand-dark to-[#1b76ff] h-16 rounded-full" />
+                <div className="absolute bottom-0 left-0 right-0 bg-linear-to-t from-brand-dark to-[#24a1dc] h-16 rounded-full" />
               </div>
               <span className="text-[9px] font-extrabold text-slate-800">Wed</span>
             </div>
@@ -396,12 +396,12 @@ export default function AdminOverviewPage() {
                     <tr key={item.booking.id} className="hover:bg-slate-50/50 transition-colors">
                       <td className="py-3.5 px-3">
                         <div className="flex items-center gap-2.5">
-                          <div className="h-8 w-8 rounded-xl bg-blue-50 text-[#1b76ff] flex items-center justify-center shrink-0">
+                          <div className="h-8 w-8 rounded-xl bg-blue-50 text-[#24a1dc] flex items-center justify-center shrink-0">
                             <IconFolder className="h-4 w-4" />
                           </div>
                           <div>
                             <span className="font-extrabold text-slate-900 block">{item.booking.id}</span>
-                            <span className="text-[10px] text-[#1b76ff] block font-extrabold">
+                            <span className="text-[10px] text-[#24a1dc] block font-extrabold">
                               {item.provider?.businessName || "General Provider"}
                             </span>
                           </div>
@@ -416,7 +416,7 @@ export default function AdminOverviewPage() {
                         <div className="flex items-center gap-3">
                           <div className="h-1.5 w-24 bg-slate-100 rounded-full overflow-hidden shrink-0">
                             <div
-                              className="h-full bg-linear-to-r from-[#1b76ff] to-brand-dark rounded-full transition-all duration-300"
+                              className="h-full bg-linear-to-r from-[#24a1dc] to-brand-dark rounded-full transition-all duration-300"
                               style={{ width: `${progressVal}%` }}
                             />
                           </div>

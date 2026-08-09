@@ -216,8 +216,8 @@ export function ExportAuditDesk({ id }: { id?: string }) {
                     key={d.key}
                     className={`flex cursor-pointer items-center gap-3 rounded-2xl border p-3 transition-colors focus-within:ring-2 focus-within:ring-brand/40 ${
                       selected
-                        ? "border-[#1b76ff] bg-blue-50/60"
-                        : "border-slate-200 bg-white hover:border-[#1b76ff]/40"
+                        ? "border-[#24a1dc] bg-blue-50/60"
+                        : "border-slate-200 bg-white hover:border-[#24a1dc]/40"
                     }`}
                   >
                     <input
@@ -236,7 +236,7 @@ export function ExportAuditDesk({ id }: { id?: string }) {
                     </span>
                     <span
                       className={`shrink-0 rounded-full px-2 py-0.5 text-[10px] font-extrabold tabular-nums ${
-                        selected ? "bg-[#1b76ff] text-white" : "bg-slate-100 text-slate-500"
+                        selected ? "bg-[#24a1dc] text-white" : "bg-slate-100 text-slate-500"
                       }`}
                     >
                       {count}
@@ -251,7 +251,7 @@ export function ExportAuditDesk({ id }: { id?: string }) {
             type="button"
             onClick={() => handleExport(dataset)}
             disabled={countFor(dataset) === 0}
-            className="mt-5 w-full gap-1.5 rounded-full bg-[#1b76ff] text-xs font-bold text-white shadow-md shadow-blue-500/20 hover:bg-[#145ed8]"
+            className="mt-5 w-full gap-1.5 rounded-full bg-[#24a1dc] text-xs font-bold text-white shadow-md shadow-blue-500/20 hover:bg-[#1b7faf]"
           >
             <IconDownload className="h-4 w-4" />
             <span>

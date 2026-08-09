@@ -87,7 +87,7 @@ export default function ProviderBookingsPage() {
               aria-pressed={active}
               className={`shrink-0 rounded-xl border px-4 py-2 text-xs font-bold transition-all ${
                 active
-                  ? "border-[#1b76ff] bg-[#1b76ff] text-white shadow-md shadow-blue-500/20"
+                  ? "border-[#24a1dc] bg-[#24a1dc] text-white shadow-md shadow-blue-500/20"
                   : "border-slate-200/80 bg-white text-slate-700 hover:bg-slate-50"
               }`}
             >
@@ -125,7 +125,7 @@ export default function ProviderBookingsPage() {
             return (
               <article
                 key={booking.id}
-                className="rounded-2xl border border-slate-200/80 bg-white p-5 transition-all hover:border-[#1b76ff]/50 hover:shadow-lg hover:shadow-blue-500/5"
+                className="rounded-2xl border border-slate-200/80 bg-white p-5 transition-all hover:border-[#24a1dc]/50 hover:shadow-lg hover:shadow-blue-500/5"
               >
                 <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
                   <div className="min-w-0 flex-1">
@@ -162,7 +162,7 @@ export default function ProviderBookingsPage() {
                     <span className="block text-[10px] font-bold uppercase tracking-wider text-slate-400">
                       Job value
                     </span>
-                    <span className="text-lg font-black text-[#1b76ff]">
+                    <span className="text-lg font-black text-[#24a1dc]">
                       ${booking.breakdown.total}
                     </span>
                   </div>
@@ -181,7 +181,7 @@ export default function ProviderBookingsPage() {
                         }
                         className={
                           i === 0
-                            ? "rounded-full bg-[#1b76ff] text-xs font-bold text-white hover:bg-[#145ed8]"
+                            ? "rounded-full bg-[#24a1dc] text-xs font-bold text-white hover:bg-[#1b7faf]"
                             : "rounded-full border-slate-300 text-xs font-bold text-slate-700 hover:border-rose-300 hover:text-rose-600"
                         }
                       >

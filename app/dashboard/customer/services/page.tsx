@@ -30,7 +30,7 @@ export default function CustomerServicesPage() {
           asChild
           size="sm"
           variant="outline"
-          className="gap-1.5 rounded-full border-slate-300 text-xs font-bold text-slate-700 hover:border-[#1b76ff] hover:text-[#1b76ff]"
+          className="gap-1.5 rounded-full border-slate-300 text-xs font-bold text-slate-700 hover:border-[#24a1dc] hover:text-[#24a1dc]"
         >
           <Link href="/search">
             <IconSearch className="h-4 w-4" />
@@ -50,7 +50,7 @@ export default function CustomerServicesPage() {
             <Link
               key={cat.id}
               href={`/category/${cat.slug}`}
-              className="group flex items-center gap-4 rounded-2xl border border-slate-200/80 bg-white p-4 transition-all hover:border-[#1b76ff]/50 hover:shadow-lg hover:shadow-blue-500/5"
+              className="group flex items-center gap-4 rounded-2xl border border-slate-200/80 bg-white p-4 transition-all hover:border-[#24a1dc]/50 hover:shadow-lg hover:shadow-blue-500/5"
             >
               <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-xl bg-slate-100">
                 <Image
@@ -65,7 +65,7 @@ export default function CustomerServicesPage() {
               <div className="min-w-0 flex-1">
                 <div className="flex items-center gap-2">
                   {getCategoryIcon(cat.icon, "h-4 w-4 text-brand")}
-                  <h3 className="truncate text-sm font-extrabold text-slate-900 transition-colors group-hover:text-[#1b76ff]">
+                  <h3 className="truncate text-sm font-extrabold text-slate-900 transition-colors group-hover:text-[#24a1dc]">
                     {cat.name}
                   </h3>
                 </div>
@@ -74,7 +74,7 @@ export default function CustomerServicesPage() {
                 </p>
               </div>
 
-              <IconArrowRight className="h-4 w-4 shrink-0 text-slate-300 transition-transform group-hover:translate-x-0.5 group-hover:text-[#1b76ff]" />
+              <IconArrowRight className="h-4 w-4 shrink-0 text-slate-300 transition-transform group-hover:translate-x-0.5 group-hover:text-[#24a1dc]" />
             </Link>
           ))}
         </div>
@@ -100,7 +100,7 @@ export default function CustomerServicesPage() {
             {featured?.map(({ listing, provider }) => (
               <article
                 key={listing.id}
-                className="group flex flex-col overflow-hidden rounded-2xl border border-slate-200/80 bg-white transition-all hover:border-[#1b76ff]/50 hover:shadow-lg hover:shadow-blue-500/5"
+                className="group flex flex-col overflow-hidden rounded-2xl border border-slate-200/80 bg-white transition-all hover:border-[#24a1dc]/50 hover:shadow-lg hover:shadow-blue-500/5"
               >
                 <div className="relative h-32 w-full overflow-hidden bg-slate-100">
                   <Image
@@ -114,7 +114,7 @@ export default function CustomerServicesPage() {
 
                 <div className="flex flex-1 flex-col justify-between p-4">
                   <div>
-                    <h3 className="line-clamp-1 text-sm font-extrabold text-slate-900 transition-colors group-hover:text-[#1b76ff]">
+                    <h3 className="line-clamp-1 text-sm font-extrabold text-slate-900 transition-colors group-hover:text-[#24a1dc]">
                       {listing.title}
                     </h3>
                     <p className="mt-1 text-[11px] font-semibold text-slate-500">
@@ -133,7 +133,7 @@ export default function CustomerServicesPage() {
                       <span className="block text-[10px] font-bold uppercase tracking-wider text-slate-400">
                         From
                       </span>
-                      <span className="text-base font-black text-[#1b76ff]">
+                      <span className="text-base font-black text-[#24a1dc]">
                         ${listing.pricing.amount || "Quote"}
                       </span>
                     </div>
@@ -141,7 +141,7 @@ export default function CustomerServicesPage() {
                     <Button
                       asChild
                       size="sm"
-                      className="h-8 rounded-full bg-[#1b76ff] px-3 text-xs font-bold text-white hover:bg-[#145ed8]"
+                      className="h-8 rounded-full bg-[#24a1dc] px-3 text-xs font-bold text-white hover:bg-[#1b7faf]"
                     >
                       <Link href={`/provider/${provider.id}/service/${listing.id}`}>
                         Book
