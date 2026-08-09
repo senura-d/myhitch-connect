@@ -55,65 +55,67 @@ const DEFAULT_BAND: Band = {
 
 const BANDS: { match: (path: string) => boolean; band: Band }[] = [
   {
-    match: (p) => p.startsWith("/category"),
+    match: (p) => p.includes("category"),
     band: {
       eyebrow: "EXPLORE SERVICES",
-      heading: "Five categories. Every trade we cover.",
+      heading: "Five core sectors. Every trade covered.",
       blurb:
-        "From licensed plumbers and electricians to accountants, trainers and wedding photographers — browse by category to see exactly which services sit under each one.",
+        "From certified plumbers and electricians to accountants, fitness coaches and creative specialists — browse by industry to find vetted professionals.",
       items: [
-        { icon: IconLayoutGrid, term: "Browse by category", detail: "Five main categories, each with its own subcategories.", tag: "Structured" },
-        { icon: IconFilter, term: "Filter as you go", detail: "Narrow a category down to the exact service you need.", tag: "Fast" },
-        { icon: IconTargetArrow, term: "Straight to a quote", detail: "Every listing links to a verified provider who can price it.", tag: "Direct" },
+        { icon: IconLayoutGrid, term: "Browse Categories", detail: "5 major industries with 100+ specialized sub-trades.", tag: "Organized" },
+        { icon: IconFilter, term: "Precision Filters", detail: "Narrow down services by specialization and location.", tag: "Fast" },
+        { icon: IconTargetArrow, term: "Instant Quotes", detail: "Request tailored quotes directly from verified providers.", tag: "Direct" },
       ],
     },
   },
   {
-    match: (p) => p.startsWith("/search"),
+    match: (p) => p.includes("search"),
     band: {
       eyebrow: "SEARCH PROVIDERS",
-      heading: "Find the right provider near you",
+      heading: "Find verified local professionals in seconds",
       blurb:
-        "Search the register by service and suburb. Every result is a business whose licence and insurance we have already checked, so there is nothing to vet yourself.",
+        "Search Australia's verified register by trade and postcode. Every listing has completed credential, ABN, and insurance checks.",
       items: [
-        { icon: IconSearch, term: "Search by service", detail: "Describe the job and see who can do it.", tag: "Simple" },
-        { icon: IconMapPin, term: "Filter by suburb", detail: "Only providers who actually cover your area.", tag: "Local" },
-        { icon: IconShieldCheck, term: "Pre-vetted results", detail: "Licence and insurance checked before listing.", tag: "Verified" },
+        { icon: IconSearch, term: "Search by Trade", detail: "Describe your job and see instant matching specialists.", tag: "Simple" },
+        { icon: IconMapPin, term: "Filter by Postcode", detail: "Connect only with providers servicing your suburb.", tag: "Local" },
+        { icon: IconShieldCheck, term: "Pre-Vetted Listings", detail: "ABN, licenses & public liability verified.", tag: "Verified" },
       ],
     },
   },
   {
-    match: (p) => p.startsWith("/about"),
+    match: (p) => p.includes("about"),
     band: {
       eyebrow: "ABOUT MYHITCH CONNECT",
-      heading: "Built to take the guesswork out of hiring",
+      heading: "Building Australia's most trusted service marketplace",
       blurb:
-        "We started MYHitch Connect because finding a tradesperson you can trust still meant asking around and hoping for the best. We do the checking, so you can just book.",
+        "We created MYHitch Connect to eliminate the guesswork in hiring trades and professionals. Transparent verification, zero fake accounts, and dedicated Australian support.",
       items: [
-        { icon: IconTargetArrow, term: "Our mission", detail: "Make every hire in Australia a verified one.", tag: "Purpose" },
-        { icon: IconUsers, term: "Who we serve", detail: "Homeowners, businesses and community groups.", tag: "Nationwide" },
-        { icon: IconHeartHandshake, term: "For providers", detail: "Verified businesses get found by ready customers.", tag: "Two-sided" },
+        { icon: IconTargetArrow, term: "Our Mission", detail: "Make every trade and service hire a verified one.", tag: "Purpose" },
+        { icon: IconUsers, term: "Nationwide Reach", detail: "Connecting households, communities & businesses.", tag: "Australia" },
+        { icon: IconHeartHandshake, term: "Provider Growth", detail: "Helping legitimate businesses build lasting trust.", tag: "Partner" },
       ],
     },
   },
   {
-    match: (p) => p.startsWith("/contact"),
+    match: (p) => p.includes("contact"),
     band: {
-      eyebrow: "CONTACT US",
-      heading: "Talk to a real person",
+      eyebrow: "CONTACT & SUPPORT",
+      heading: "Here to assist you across Australia",
       blurb:
-        "Questions about a booking, a provider or your account? Our support team is based in Australia and answers every message.",
+        "Have a question about a booking, provider verification, or your account? Our Australian support team is ready to help.",
       items: [
-        { icon: IconMail, term: "Email us", detail: "support@myhitchconnect.test — replies within 1 business day.", tag: "Anytime" },
-        { icon: IconPhone, term: "Call us", detail: "1300 000 000 for urgent booking issues.", tag: "Direct" },
-        { icon: IconClock, term: "Opening hours", detail: "Monday to Friday, 9am to 5pm AEST.", tag: "AEST" },
+        { icon: IconMail, term: "Email Support", detail: "support@myhitchconnect.com.au — 1 business day response.", tag: "Anytime" },
+        { icon: IconPhone, term: "Direct Line", detail: "1300 000 000 for urgent booking and verification queries.", tag: "Direct" },
+        { icon: IconClock, term: "Operating Hours", detail: "Monday to Friday, 9:00 AM to 5:00 PM AEST.", tag: "AEST" },
       ],
     },
   },
 ];
 
-function bandForPath(pathname: string): Band {
-  return BANDS.find((b) => b.match(pathname))?.band ?? DEFAULT_BAND;
+function bandForPath(pathname: string | null): Band {
+  if (!pathname) return DEFAULT_BAND;
+  const cleanPath = pathname.replace(/^\/myhitch-connect/, "");
+  return BANDS.find((b) => b.match(cleanPath))?.band ?? DEFAULT_BAND;
 }
 
 const SERVICE_CATEGORIES = [
