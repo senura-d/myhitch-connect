@@ -78,11 +78,11 @@ function FooterColumn({
 }
 
 /* =========================================================================
-   1. HOME FOOTER BAND: Verified Trust Shield & Security Guarantee
+   1. HOME FOOTER BAND: Verified Trust Shield & Security Guarantee (White UI)
    ========================================================================= */
 function HomeFooterBand() {
   return (
-    <div className="rounded-3xl bg-linear-to-br from-slate-50 via-blue-50/40 to-slate-50 border border-blue-100/90 p-6 sm:p-8 lg:p-10 shadow-sm my-8">
+    <div className="rounded-3xl bg-white border border-slate-200/90 p-6 sm:p-8 lg:p-10 shadow-lg shadow-blue-500/5 my-8">
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-10 items-center">
         <div className="lg:col-span-5 space-y-3">
           <div className="inline-flex items-center gap-1.5 rounded-full bg-brand-light px-3 py-1 text-[11px] font-bold text-brand border border-brand/20">
@@ -107,7 +107,7 @@ function HomeFooterBand() {
             return (
               <div
                 key={item.term}
-                className="group relative flex flex-col justify-between rounded-2xl border border-slate-200/80 bg-white p-4 transition-all duration-200 hover:-translate-y-0.5 hover:border-brand/40 hover:shadow-lg hover:shadow-blue-500/5"
+                className="group relative flex flex-col justify-between rounded-2xl border border-slate-200/80 bg-slate-50/70 p-4 transition-all duration-200 hover:-translate-y-0.5 hover:border-brand/40 hover:bg-white hover:shadow-lg hover:shadow-blue-500/5"
               >
                 <div className="space-y-2.5">
                   <div className="flex items-center justify-between">
@@ -137,30 +137,28 @@ function HomeFooterBand() {
 }
 
 /* =========================================================================
-   2. EXPLORE SERVICES FOOTER BAND: Industry Quick-Launch Matrix
+   2. EXPLORE SERVICES FOOTER BAND: Industry Quick-Launch Matrix (White UI)
    ========================================================================= */
 function CategoryFooterBand() {
   return (
-    <div className="rounded-3xl bg-linear-to-r from-slate-900 via-[#10364f] to-slate-900 text-white p-6 sm:p-8 lg:p-10 shadow-xl shadow-blue-900/10 my-8 overflow-hidden relative">
-      <div className="absolute top-0 right-0 w-96 h-96 bg-brand/20 rounded-full blur-3xl pointer-events-none" />
-      
+    <div className="rounded-3xl bg-white border border-slate-200/90 p-6 sm:p-8 lg:p-10 shadow-lg shadow-blue-500/5 my-8 relative overflow-hidden">
       <div className="relative z-10 space-y-6">
-        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 border-b border-white/10 pb-6">
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 border-b border-slate-100 pb-6">
           <div className="space-y-2 max-w-xl">
-            <div className="inline-flex items-center gap-1.5 rounded-full bg-white/10 backdrop-blur-md px-3 py-1 text-[11px] font-bold text-cyan-300 border border-white/20">
-              <IconLayoutGrid className="h-3.5 w-3.5 text-cyan-300" />
+            <div className="inline-flex items-center gap-1.5 rounded-full bg-brand-light px-3 py-1 text-[11px] font-bold text-brand border border-brand/20">
+              <IconLayoutGrid className="h-3.5 w-3.5 text-brand" />
               <span>EXPLORE ALL CATEGORIES</span>
             </div>
-            <h2 className="text-2xl sm:text-3xl font-black tracking-tight text-white">
+            <h2 className="text-2xl sm:text-3xl font-black tracking-tight text-slate-900">
               Five core sectors. Over 100+ verified trades.
             </h2>
-            <p className="text-xs sm:text-sm text-blue-100/85 font-normal leading-relaxed">
+            <p className="text-xs sm:text-sm text-slate-600 font-medium leading-relaxed">
               Whether you need urgent home repairs, tax accounting, personal wellness, or wedding photography, jump straight to your industry below.
             </p>
           </div>
           <Link
             href="/search"
-            className="self-start lg:self-center inline-flex items-center gap-2 rounded-full bg-white text-brand-dark font-extrabold text-xs px-5 py-2.5 shadow-md transition-all hover:bg-brand-light hover:text-brand hover:scale-105 active:scale-95 shrink-0"
+            className="self-start lg:self-center inline-flex items-center gap-2 rounded-full bg-brand hover:bg-brand-dark text-white font-extrabold text-xs px-5 py-2.5 shadow-md shadow-blue-500/20 transition-all hover:scale-105 active:scale-95 shrink-0"
           >
             <span>Search All Providers</span>
             <IconArrowRight className="h-4 w-4" />
@@ -179,15 +177,15 @@ function CategoryFooterBand() {
             <Link
               key={cat.href}
               href={cat.href}
-              className="flex flex-col justify-between p-3.5 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/15 transition-all group backdrop-blur-xs"
+              className="flex flex-col justify-between p-3.5 rounded-2xl bg-slate-50/80 hover:bg-white border border-slate-200/80 hover:border-brand/40 hover:shadow-md transition-all group"
             >
               <div className="flex items-center justify-between">
-                <span className="text-xs font-bold text-white group-hover:text-cyan-300 transition-colors">
+                <span className="text-xs font-bold text-slate-900 group-hover:text-brand transition-colors">
                   {cat.name}
                 </span>
-                <IconArrowUpRight className="h-3.5 w-3.5 text-blue-200 group-hover:text-cyan-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+                <IconArrowUpRight className="h-3.5 w-3.5 text-slate-400 group-hover:text-brand group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
               </div>
-              <span className="text-[10px] text-blue-200/80 font-medium mt-2 block">
+              <span className="text-[10px] text-slate-500 font-semibold mt-2 block">
                 {cat.count}
               </span>
             </Link>
@@ -199,7 +197,7 @@ function CategoryFooterBand() {
 }
 
 /* =========================================================================
-   3. SEARCH PROVIDERS FOOTER BAND: Live Discovery 3-Step Roadmap
+   3. SEARCH PROVIDERS FOOTER BAND: Live Discovery 3-Step Roadmap (White UI)
    ========================================================================= */
 function SearchFooterBand() {
   return (
@@ -276,27 +274,27 @@ function SearchFooterBand() {
 }
 
 /* =========================================================================
-   4. ABOUT US FOOTER BAND: Mission Spotlight & Impact Metrics
+   4. ABOUT US FOOTER BAND: Mission Spotlight & Impact Metrics (White UI)
    ========================================================================= */
 function AboutFooterBand() {
   return (
-    <div className="rounded-3xl bg-linear-to-br from-slate-900 via-[#103b57] to-slate-900 text-white p-6 sm:p-8 lg:p-10 shadow-xl shadow-blue-950/15 my-8 relative overflow-hidden">
+    <div className="rounded-3xl bg-white border border-slate-200/90 p-6 sm:p-8 lg:p-10 shadow-lg shadow-blue-500/5 my-8 relative overflow-hidden">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         <div className="lg:col-span-5 space-y-3">
-          <div className="inline-flex items-center gap-1.5 rounded-full bg-white/10 backdrop-blur-md px-3 py-1 text-[11px] font-bold text-cyan-300 border border-white/20">
-            <IconUsers className="h-3.5 w-3.5 text-cyan-300" />
+          <div className="inline-flex items-center gap-1.5 rounded-full bg-brand-light px-3 py-1 text-[11px] font-bold text-brand border border-brand/20">
+            <IconUsers className="h-3.5 w-3.5 text-brand" />
             <span>OUR AUSTRALIAN MARKETPLACE PROMISE</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight leading-tight">
+          <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight leading-tight">
             Building Australia&apos;s most trusted service network
           </h2>
-          <p className="text-xs sm:text-sm text-blue-100/90 font-normal leading-relaxed">
+          <p className="text-xs sm:text-sm text-slate-600 font-medium leading-relaxed">
             We started MYHitch Connect to eliminate the guesswork in hiring trades and professionals. Transparent verification, zero fake accounts, and fair marketplace policies.
           </p>
           <div className="pt-2">
             <Link
               href="/login?tab=signup&role=provider"
-              className="inline-flex items-center gap-2 rounded-full bg-brand hover:bg-brand-dark text-white font-extrabold text-xs px-5 py-2.5 shadow-md transition-all active:scale-95"
+              className="inline-flex items-center gap-2 rounded-full bg-brand hover:bg-brand-dark text-white font-extrabold text-xs px-5 py-2.5 shadow-md shadow-blue-500/20 transition-all active:scale-95"
             >
               <span>Join as a Verified Provider</span>
               <IconArrowRight className="h-4 w-4" />
@@ -326,16 +324,16 @@ function AboutFooterBand() {
             return (
               <div
                 key={item.title}
-                className="rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 p-4 flex flex-col justify-between hover:bg-white/15 transition-all"
+                className="rounded-2xl bg-slate-50/80 border border-slate-200/80 p-4 flex flex-col justify-between hover:bg-white hover:border-brand/40 hover:shadow-md transition-all group"
               >
-                <div className="h-8 w-8 rounded-xl bg-brand/30 border border-brand/40 flex items-center justify-center text-cyan-300 mb-3 shadow-xs">
+                <div className="h-8 w-8 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-brand group-hover:bg-brand group-hover:text-white transition-all mb-3 shadow-xs">
                   <Icon className="h-4 w-4" />
                 </div>
                 <div>
-                  <h3 className="text-xs font-black text-white uppercase tracking-wider">
+                  <h3 className="text-xs font-black text-slate-900 uppercase tracking-wider group-hover:text-brand transition-colors">
                     {item.title}
                   </h3>
-                  <p className="text-[11px] text-blue-100/80 mt-1 leading-relaxed font-normal">
+                  <p className="text-[11px] text-slate-600 mt-1 leading-relaxed font-medium">
                     {item.subtitle}
                   </p>
                 </div>
@@ -349,11 +347,11 @@ function AboutFooterBand() {
 }
 
 /* =========================================================================
-   5. CONTACT US FOOTER BAND: Interactive Support Hub & Direct Access
+   5. CONTACT US FOOTER BAND: Interactive Support Hub (White UI)
    ========================================================================= */
 function ContactFooterBand() {
   return (
-    <div className="rounded-3xl bg-linear-to-br from-slate-50 via-blue-50/30 to-slate-50 border border-blue-100/80 p-6 sm:p-8 lg:p-10 shadow-sm my-8">
+    <div className="rounded-3xl bg-white border border-slate-200/90 p-6 sm:p-8 lg:p-10 shadow-lg shadow-blue-500/5 my-8">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         <div className="lg:col-span-4 space-y-2.5">
           <div className="inline-flex items-center gap-1.5 rounded-full bg-brand-light px-3 py-1 text-[11px] font-bold text-brand border border-brand/20">
@@ -371,7 +369,7 @@ function ContactFooterBand() {
         <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-3.5">
           <a
             href="mailto:support@myhitchconnect.com.au"
-            className="group flex flex-col justify-between p-4 rounded-2xl bg-white border border-slate-200/90 hover:border-brand/40 hover:shadow-md transition-all"
+            className="group flex flex-col justify-between p-4 rounded-2xl bg-slate-50/80 border border-slate-200/90 hover:border-brand/40 hover:bg-white hover:shadow-md transition-all"
           >
             <div className="flex items-center justify-between mb-3">
               <div className="h-8 w-8 rounded-xl bg-brand-light text-brand group-hover:bg-brand group-hover:text-white transition-colors flex items-center justify-center shadow-xs">
@@ -393,7 +391,7 @@ function ContactFooterBand() {
 
           <a
             href="tel:1300000000"
-            className="group flex flex-col justify-between p-4 rounded-2xl bg-white border border-slate-200/90 hover:border-brand/40 hover:shadow-md transition-all"
+            className="group flex flex-col justify-between p-4 rounded-2xl bg-slate-50/80 border border-slate-200/90 hover:border-brand/40 hover:bg-white hover:shadow-md transition-all"
           >
             <div className="flex items-center justify-between mb-3">
               <div className="h-8 w-8 rounded-xl bg-brand-light text-brand group-hover:bg-brand group-hover:text-white transition-colors flex items-center justify-center shadow-xs">
@@ -413,7 +411,7 @@ function ContactFooterBand() {
             </div>
           </a>
 
-          <div className="flex flex-col justify-between p-4 rounded-2xl bg-white border border-slate-200/90">
+          <div className="flex flex-col justify-between p-4 rounded-2xl bg-slate-50/80 border border-slate-200/90">
             <div className="flex items-center justify-between mb-3">
               <div className="h-8 w-8 rounded-xl bg-brand-light text-brand flex items-center justify-center shadow-xs">
                 <IconClock className="h-4 w-4" />
