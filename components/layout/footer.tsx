@@ -2,7 +2,119 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { IconShieldCheck, IconCheck, IconFileCheck, IconRefresh, IconSparkles } from "@tabler/icons-react";
+import { usePathname } from "next/navigation";
+import {
+  IconShieldCheck,
+  IconCheck,
+  IconFileCheck,
+  IconRefresh,
+  IconSparkles,
+  IconLayoutGrid,
+  IconSearch,
+  IconMapPin,
+  IconFilter,
+  IconUsers,
+  IconTargetArrow,
+  IconMail,
+  IconPhone,
+  IconClock,
+  IconHeartHandshake,
+} from "@tabler/icons-react";
+
+
+/**
+ * The footer band changes with the page. Repeating the same trust promise on
+ * every route wastes the most-read strip in the footer, so each section gets
+ * copy that matches what the visitor is actually doing there.
+ */
+type BandItem = {
+  icon: typeof IconShieldCheck;
+  term: string;
+  detail: string;
+  tag: string;
+};
+
+type Band = {
+  eyebrow: string;
+  heading: string;
+  blurb: string;
+  items: BandItem[];
+};
+
+const DEFAULT_BAND: Band = {
+  eyebrow: "THE MYHITCH TRUST PROMISE",
+  heading: "Every provider is checked before you meet them",
+  blurb:
+    "We verify trade licences, business registration and public liability cover against official Australian registers. Nobody is listed on MYHitch Connect until those checks pass.",
+  items: [
+    { icon: IconFileCheck, term: "Licence & ABN", detail: "Matched against state registers and the ABR.", tag: "Verified" },
+    { icon: IconShieldCheck, term: "Public Liability", detail: "Cover confirmed before any listing goes live.", tag: "Insured" },
+    { icon: IconRefresh, term: "Re-Checked", detail: "Automatically, before a policy or licence expires.", tag: "Continuous" },
+  ],
+};
+
+const BANDS: { match: (path: string) => boolean; band: Band }[] = [
+  {
+    match: (p) => p.startsWith("/category"),
+    band: {
+      eyebrow: "EXPLORE SERVICES",
+      heading: "Five categories. Every trade we cover.",
+      blurb:
+        "From licensed plumbers and electricians to accountants, trainers and wedding photographers — browse by category to see exactly which services sit under each one.",
+      items: [
+        { icon: IconLayoutGrid, term: "Browse by category", detail: "Five main categories, each with its own subcategories.", tag: "Structured" },
+        { icon: IconFilter, term: "Filter as you go", detail: "Narrow a category down to the exact service you need.", tag: "Fast" },
+        { icon: IconTargetArrow, term: "Straight to a quote", detail: "Every listing links to a verified provider who can price it.", tag: "Direct" },
+      ],
+    },
+  },
+  {
+    match: (p) => p.startsWith("/search"),
+    band: {
+      eyebrow: "SEARCH PROVIDERS",
+      heading: "Find the right provider near you",
+      blurb:
+        "Search the register by service and suburb. Every result is a business whose licence and insurance we have already checked, so there is nothing to vet yourself.",
+      items: [
+        { icon: IconSearch, term: "Search by service", detail: "Describe the job and see who can do it.", tag: "Simple" },
+        { icon: IconMapPin, term: "Filter by suburb", detail: "Only providers who actually cover your area.", tag: "Local" },
+        { icon: IconShieldCheck, term: "Pre-vetted results", detail: "Licence and insurance checked before listing.", tag: "Verified" },
+      ],
+    },
+  },
+  {
+    match: (p) => p.startsWith("/about"),
+    band: {
+      eyebrow: "ABOUT MYHITCH CONNECT",
+      heading: "Built to take the guesswork out of hiring",
+      blurb:
+        "We started MYHitch Connect because finding a tradesperson you can trust still meant asking around and hoping for the best. We do the checking, so you can just book.",
+      items: [
+        { icon: IconTargetArrow, term: "Our mission", detail: "Make every hire in Australia a verified one.", tag: "Purpose" },
+        { icon: IconUsers, term: "Who we serve", detail: "Homeowners, businesses and community groups.", tag: "Nationwide" },
+        { icon: IconHeartHandshake, term: "For providers", detail: "Verified businesses get found by ready customers.", tag: "Two-sided" },
+      ],
+    },
+  },
+  {
+    match: (p) => p.startsWith("/contact"),
+    band: {
+      eyebrow: "CONTACT US",
+      heading: "Talk to a real person",
+      blurb:
+        "Questions about a booking, a provider or your account? Our support team is based in Australia and answers every message.",
+      items: [
+        { icon: IconMail, term: "Email us", detail: "support@myhitchconnect.test — replies within 1 business day.", tag: "Anytime" },
+        { icon: IconPhone, term: "Call us", detail: "1300 000 000 for urgent booking issues.", tag: "Direct" },
+        { icon: IconClock, term: "Opening hours", detail: "Monday to Friday, 9am to 5pm AEST.", tag: "AEST" },
+      ],
+    },
+  },
+];
+
+function bandForPath(pathname: string): Band {
+  return BANDS.find((b) => b.match(pathname))?.band ?? DEFAULT_BAND;
+}
 
 const SERVICE_CATEGORIES = [
   { href: "/category/home-trade-services", label: "Home & Trade Services" },
@@ -59,6 +171,9 @@ function FooterColumn({
 }
 
 export function Footer() {
+  const pathname = usePathname();
+  const band = bandForPath(pathname);
+
   return (
     <footer className="border-t border-zinc-200 bg-white text-black">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -67,39 +182,18 @@ export function Footer() {
           <div className="lg:col-span-5 space-y-3">
             <div className="inline-flex items-center gap-1.5 rounded-full bg-brand-light px-3 py-1 text-[11px] font-bold text-brand border border-brand/20">
               <IconSparkles className="h-3.5 w-3.5 text-brand" />
-              <span>THE MYHITCH TRUST PROMISE</span>
+              <span>{band.eyebrow}</span>
             </div>
             <h2 className="text-2xl font-black tracking-tight text-slate-900 sm:text-3xl leading-tight">
-              Every provider is checked before you meet them
+              {band.heading}
             </h2>
             <p className="text-xs sm:text-sm leading-relaxed text-slate-600 font-medium max-w-md">
-              We verify trade licences, business registration and public
-              liability cover against official Australian registers. Nobody is
-              listed on MYHitch Connect until those checks pass.
+              {band.blurb}
             </p>
           </div>
 
           <div className="lg:col-span-7 grid grid-cols-1 gap-3.5 sm:grid-cols-3">
-            {[
-              {
-                icon: IconFileCheck,
-                term: "Licence & ABN",
-                detail: "Matched against state registers and the ABR.",
-                tag: "Verified",
-              },
-              {
-                icon: IconShieldCheck,
-                term: "Public Liability",
-                detail: "Cover confirmed before any listing goes live.",
-                tag: "Insured",
-              },
-              {
-                icon: IconRefresh,
-                term: "Re-Checked",
-                detail: "Automatically, before a policy or licence expires.",
-                tag: "Continuous",
-              },
-            ].map((item) => {
+            {band.items.map((item) => {
               const Icon = item.icon;
               return (
                 <div
