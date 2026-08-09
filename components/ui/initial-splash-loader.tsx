@@ -16,7 +16,7 @@ export function InitialSplashLoader() {
         return;
       }
     } catch {
-      // If sessionStorage is unavailable (e.g. strict security mode), proceed
+      // If sessionStorage is unavailable, proceed safely
     }
 
     // First load of the website: show splash
@@ -24,7 +24,7 @@ export function InitialSplashLoader() {
 
     const fadeTimer = setTimeout(() => {
       setIsFadingOut(true);
-    }, 1200);
+    }, 1300);
 
     const removeTimer = setTimeout(() => {
       setShowSplash(false);
@@ -33,7 +33,7 @@ export function InitialSplashLoader() {
       } catch {
         // Ignore
       }
-    }, 1700);
+    }, 1800);
 
     return () => {
       clearTimeout(fadeTimer);
@@ -46,11 +46,16 @@ export function InitialSplashLoader() {
   return (
     <div
       aria-hidden="true"
-      className={`fixed inset-0 z-9999 flex items-center justify-center bg-white transition-opacity duration-500 ease-out ${
-        isFadingOut ? "opacity-0 pointer-events-none" : "opacity-100"
+      className={`fixed inset-0 z-9999 flex items-center justify-center bg-white/95 backdrop-blur-3xl transition-all duration-500 ease-out ${
+        isFadingOut ? "opacity-0 scale-102 pointer-events-none" : "opacity-100 scale-100"
       }`}
     >
-      <LoadingAnimation fullPage={false} size="lg" text="Connecting to MYHitch..." />
+      {/* Ambient background aura */}
+      <div className="absolute w-96 h-96 rounded-full bg-cyan-400/10 blur-3xl pointer-events-none animate-pulse" />
+      
+      <div className="relative z-10">
+        <LoadingAnimation fullPage={false} size="lg" text="Connecting to verified network" />
+      </div>
     </div>
   );
 }
