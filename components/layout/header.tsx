@@ -43,11 +43,11 @@ export function Header() {
         {/* Brand Logo */}
         <Link href="/" className="flex shrink-0 items-center group">
           <Image
-            src="/myhitch-connect/logo-horizontal.png"
+            src="/myhitch-connect/logo-stacked.png"
             alt="MYHitch Connect"
-            width={620}
+            width={200}
             height={200}
-            className="h-7 md:h-8 w-auto object-contain transition-opacity duration-200 group-hover:opacity-90"
+            className="h-9 md:h-10 w-auto object-contain transition-opacity duration-200 group-hover:opacity-90"
             priority
           />
         </Link>
@@ -247,12 +247,12 @@ export function Header() {
             <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest px-2 mb-2">Navigation</div>
             <Link
               href="/"
-              className="flex items-center justify-between p-2 rounded-xl text-sm font-bold text-slate-700 hover:bg-brand-light hover:text-brand transition-all"
+              className="flex items-center justify-between p-2 rounded-xl text-sm font-bold text-slate-700 hover:bg-slate-50 hover:text-brand transition-all"
               onClick={() => setMobileMenuOpen(false)}
             >
               <div className="flex items-center gap-3">
-                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand/10 text-brand">
-                  <IconHome className="h-4.5 w-4.5" />
+                <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-linear-to-br from-[#35c6e6] via-[#24a1dc] to-brand-dark text-white shadow-sm shadow-blue-500/20">
+                  <IconHome className="h-4 w-4" />
                 </div>
                 <span>Home Page</span>
               </div>
@@ -261,12 +261,12 @@ export function Header() {
 
             <Link
               href="/category"
-              className="flex items-center justify-between p-2 rounded-xl text-sm font-bold text-slate-700 hover:bg-brand-light hover:text-brand transition-all"
+              className="flex items-center justify-between p-2 rounded-xl text-sm font-bold text-slate-700 hover:bg-slate-50 hover:text-brand transition-all"
               onClick={() => setMobileMenuOpen(false)}
             >
               <div className="flex items-center gap-3">
-                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-indigo-50 text-indigo-600">
-                  <IconLayoutGrid className="h-4.5 w-4.5" />
+                <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-linear-to-br from-[#35c6e6] via-[#24a1dc] to-brand-dark text-white shadow-sm shadow-blue-500/20">
+                  <IconLayoutGrid className="h-4 w-4" />
                 </div>
                 <span>Explore Services</span>
               </div>
@@ -275,12 +275,12 @@ export function Header() {
 
             <Link
               href="/search"
-              className="flex items-center justify-between p-2 rounded-xl text-sm font-bold text-slate-700 hover:bg-brand-light hover:text-brand transition-all"
+              className="flex items-center justify-between p-2 rounded-xl text-sm font-bold text-slate-700 hover:bg-slate-50 hover:text-brand transition-all"
               onClick={() => setMobileMenuOpen(false)}
             >
               <div className="flex items-center gap-3">
-                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-50 text-emerald-600">
-                  <IconSearch className="h-4.5 w-4.5" />
+                <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-linear-to-br from-[#35c6e6] via-[#24a1dc] to-brand-dark text-white shadow-sm shadow-blue-500/20">
+                  <IconSearch className="h-4 w-4" />
                 </div>
                 <span>Search Providers</span>
               </div>
@@ -289,12 +289,12 @@ export function Header() {
 
             <Link
               href="/about"
-              className="flex items-center justify-between p-2 rounded-xl text-sm font-bold text-slate-700 hover:bg-brand-light hover:text-brand transition-all"
+              className="flex items-center justify-between p-2 rounded-xl text-sm font-bold text-slate-700 hover:bg-slate-50 hover:text-brand transition-all"
               onClick={() => setMobileMenuOpen(false)}
             >
               <div className="flex items-center gap-3">
-                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-amber-50 text-amber-600">
-                  <IconInfoCircle className="h-4.5 w-4.5" />
+                <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-linear-to-br from-[#35c6e6] via-[#24a1dc] to-brand-dark text-white shadow-sm shadow-blue-500/20">
+                  <IconInfoCircle className="h-4 w-4" />
                 </div>
                 <span>About Us</span>
               </div>
@@ -303,12 +303,12 @@ export function Header() {
 
             <Link
               href="/contact"
-              className="flex items-center justify-between p-2 rounded-xl text-sm font-bold text-slate-700 hover:bg-brand-light hover:text-brand transition-all"
+              className="flex items-center justify-between p-2 rounded-xl text-sm font-bold text-slate-700 hover:bg-slate-50 hover:text-brand transition-all"
               onClick={() => setMobileMenuOpen(false)}
             >
               <div className="flex items-center gap-3">
-                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-rose-50 text-rose-600">
-                  <IconMail className="h-4.5 w-4.5" />
+                <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-linear-to-br from-[#35c6e6] via-[#24a1dc] to-brand-dark text-white shadow-sm shadow-blue-500/20">
+                  <IconMail className="h-4 w-4" />
                 </div>
                 <span>Contact Us</span>
               </div>
@@ -323,12 +323,12 @@ export function Header() {
               {user.role === "customer" && (
                 <Link
                   href="/dashboard/customer"
-                  className="flex items-center justify-between p-2 rounded-xl text-sm font-bold text-brand bg-brand-light/50 hover:bg-brand-light transition-all"
+                  className="flex items-center justify-between p-2 rounded-xl text-sm font-bold text-slate-700 hover:bg-slate-50 hover:text-brand transition-all"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   <div className="flex items-center gap-3">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand text-white">
-                      <IconUser className="h-4.5 w-4.5" />
+                    <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-linear-to-br from-[#35c6e6] via-[#24a1dc] to-brand-dark text-white shadow-sm shadow-blue-500/20">
+                      <IconUser className="h-4 w-4" />
                     </div>
                     <span>Customer Dashboard</span>
                   </div>
@@ -338,12 +338,12 @@ export function Header() {
               {user.role === "provider" && (
                 <Link
                   href="/dashboard/provider"
-                  className="flex items-center justify-between p-2 rounded-xl text-sm font-bold text-brand bg-brand-light/50 hover:bg-brand-light transition-all"
+                  className="flex items-center justify-between p-2 rounded-xl text-sm font-bold text-slate-700 hover:bg-slate-50 hover:text-brand transition-all"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   <div className="flex items-center gap-3">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand text-white">
-                      <IconBuildingStore className="h-4.5 w-4.5" />
+                    <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-linear-to-br from-[#35c6e6] via-[#24a1dc] to-brand-dark text-white shadow-sm shadow-blue-500/20">
+                      <IconBuildingStore className="h-4 w-4" />
                     </div>
                     <span>Provider Dashboard</span>
                   </div>
@@ -353,12 +353,12 @@ export function Header() {
               {user.role === "admin" && (
                 <Link
                   href="/admin/providers/verification"
-                  className="flex items-center justify-between p-2 rounded-xl text-sm font-bold text-brand bg-brand-light/50 hover:bg-brand-light transition-all"
+                  className="flex items-center justify-between p-2 rounded-xl text-sm font-bold text-slate-700 hover:bg-slate-50 hover:text-brand transition-all"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   <div className="flex items-center gap-3">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand text-white">
-                      <IconUserCheck className="h-4.5 w-4.5" />
+                    <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-linear-to-br from-[#35c6e6] via-[#24a1dc] to-brand-dark text-white shadow-sm shadow-blue-500/20">
+                      <IconUserCheck className="h-4 w-4" />
                     </div>
                     <span>Admin Verification Queue</span>
                   </div>

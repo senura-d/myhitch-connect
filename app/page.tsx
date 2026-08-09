@@ -431,7 +431,7 @@ export default function Home() {
               {/* Step 1 */}
               <div className="group rounded-3xl bg-white border border-slate-200/80 p-6 hover:border-brand/40 hover:shadow-xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
                 <div>
-                  <div className="h-12 w-12 rounded-2xl bg-blue-50/80 text-brand flex items-center justify-center mb-6 border border-brand/10 shadow-2xs group-hover:scale-105 transition-transform font-black text-base">
+                  <div className="h-12 w-12 rounded-2xl bg-linear-to-br from-[#35c6e6] via-[#24a1dc] to-brand-dark text-white flex items-center justify-center mb-6 shadow-md shadow-blue-500/25 group-hover:scale-105 transition-transform font-black text-base">
                     01
                   </div>
                   <h3 className="font-extrabold text-base text-slate-900 group-hover:text-brand transition-colors mb-2">
@@ -451,7 +451,7 @@ export default function Home() {
               {/* Step 2 */}
               <div className="group rounded-3xl bg-white border border-slate-200/80 p-6 hover:border-brand/40 hover:shadow-xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
                 <div>
-                  <div className="h-12 w-12 rounded-2xl bg-blue-50/80 text-brand flex items-center justify-center mb-6 border border-brand/10 shadow-2xs group-hover:scale-105 transition-transform font-black text-base">
+                  <div className="h-12 w-12 rounded-2xl bg-linear-to-br from-[#35c6e6] via-[#24a1dc] to-brand-dark text-white flex items-center justify-center mb-6 shadow-md shadow-blue-500/25 group-hover:scale-105 transition-transform font-black text-base">
                     02
                   </div>
                   <h3 className="font-extrabold text-base text-slate-900 group-hover:text-brand transition-colors mb-2">
@@ -471,7 +471,7 @@ export default function Home() {
               {/* Step 3 */}
               <div className="group rounded-3xl bg-white border border-slate-200/80 p-6 hover:border-brand/40 hover:shadow-xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
                 <div>
-                  <div className="h-12 w-12 rounded-2xl bg-blue-50/80 text-brand flex items-center justify-center mb-6 border border-brand/10 shadow-2xs group-hover:scale-105 transition-transform font-black text-base">
+                  <div className="h-12 w-12 rounded-2xl bg-linear-to-br from-[#35c6e6] via-[#24a1dc] to-brand-dark text-white flex items-center justify-center mb-6 shadow-md shadow-blue-500/25 group-hover:scale-105 transition-transform font-black text-base">
                     03
                   </div>
                   <h3 className="font-extrabold text-base text-slate-900 group-hover:text-brand transition-colors mb-2">

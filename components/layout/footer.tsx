@@ -111,8 +111,8 @@ function HomeFooterBand() {
               >
                 <div className="space-y-2.5">
                   <div className="flex items-center justify-between">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-brand-light text-brand group-hover:bg-brand group-hover:text-white transition-colors shadow-xs">
-                      <Icon className="h-4 w-4" />
+                    <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-linear-to-br from-[#35c6e6] via-[#24a1dc] to-brand-dark text-white shadow-md shadow-blue-500/20">
+                      <Icon className="h-5 w-5 text-white" />
                     </div>
                     <span className="text-[9px] font-extrabold uppercase tracking-wider text-emerald-700 bg-emerald-50 border border-emerald-200/80 px-2 py-0.5 rounded-full">
                       {item.tag}
@@ -255,8 +255,8 @@ function SearchFooterBand() {
                 <span className="text-2xl font-black text-slate-300 group-hover:text-brand transition-colors">
                   {item.step}
                 </span>
-                <div className="h-8 w-8 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-brand group-hover:bg-brand group-hover:text-white transition-all shadow-xs">
-                  <Icon className="h-4 w-4" />
+                <div className="h-10 w-10 rounded-2xl bg-linear-to-br from-[#35c6e6] via-[#24a1dc] to-brand-dark flex items-center justify-center text-white shadow-md shadow-blue-500/20">
+                  <Icon className="h-5 w-5 text-white" />
                 </div>
               </div>
               <h3 className="text-sm font-extrabold text-slate-900 group-hover:text-brand transition-colors">
@@ -326,8 +326,8 @@ function AboutFooterBand() {
                 key={item.title}
                 className="rounded-2xl bg-slate-50/80 border border-slate-200/80 p-4 flex flex-col justify-between hover:bg-white hover:border-brand/40 hover:shadow-md transition-all group"
               >
-                <div className="h-8 w-8 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-brand group-hover:bg-brand group-hover:text-white transition-all mb-3 shadow-xs">
-                  <Icon className="h-4 w-4" />
+                <div className="h-10 w-10 rounded-2xl bg-linear-to-br from-[#35c6e6] via-[#24a1dc] to-brand-dark flex items-center justify-center text-white mb-3 shadow-md shadow-blue-500/20">
+                  <Icon className="h-5 w-5 text-white" />
                 </div>
                 <div>
                   <h3 className="text-xs font-black text-slate-900 uppercase tracking-wider group-hover:text-brand transition-colors">
@@ -372,8 +372,8 @@ function ContactFooterBand() {
             className="group flex flex-col justify-between p-4 rounded-2xl bg-slate-50/80 border border-slate-200/90 hover:border-brand/40 hover:bg-white hover:shadow-md transition-all"
           >
             <div className="flex items-center justify-between mb-3">
-              <div className="h-8 w-8 rounded-xl bg-brand-light text-brand group-hover:bg-brand group-hover:text-white transition-colors flex items-center justify-center shadow-xs">
-                <IconMail className="h-4 w-4" />
+              <div className="h-10 w-10 rounded-2xl bg-linear-to-br from-[#35c6e6] via-[#24a1dc] to-brand-dark text-white flex items-center justify-center shadow-md shadow-blue-500/20">
+                <IconMail className="h-5 w-5 text-white" />
               </div>
               <span className="text-[9px] font-extrabold uppercase text-brand bg-brand-light px-2 py-0.5 rounded-full">
                 Email
@@ -394,8 +394,8 @@ function ContactFooterBand() {
             className="group flex flex-col justify-between p-4 rounded-2xl bg-slate-50/80 border border-slate-200/90 hover:border-brand/40 hover:bg-white hover:shadow-md transition-all"
           >
             <div className="flex items-center justify-between mb-3">
-              <div className="h-8 w-8 rounded-xl bg-brand-light text-brand group-hover:bg-brand group-hover:text-white transition-colors flex items-center justify-center shadow-xs">
-                <IconPhone className="h-4 w-4" />
+              <div className="h-10 w-10 rounded-2xl bg-linear-to-br from-[#35c6e6] via-[#24a1dc] to-brand-dark text-white flex items-center justify-center shadow-md shadow-blue-500/20">
+                <IconPhone className="h-5 w-5 text-white" />
               </div>
               <span className="text-[9px] font-extrabold uppercase text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full">
                 Phone
@@ -413,8 +413,8 @@ function ContactFooterBand() {
 
           <div className="flex flex-col justify-between p-4 rounded-2xl bg-slate-50/80 border border-slate-200/90">
             <div className="flex items-center justify-between mb-3">
-              <div className="h-8 w-8 rounded-xl bg-brand-light text-brand flex items-center justify-center shadow-xs">
-                <IconClock className="h-4 w-4" />
+              <div className="h-10 w-10 rounded-2xl bg-linear-to-br from-[#35c6e6] via-[#24a1dc] to-brand-dark text-white flex items-center justify-center shadow-md shadow-blue-500/20">
+                <IconClock className="h-5 w-5 text-white" />
               </div>
               <span className="inline-flex items-center gap-1 text-[9px] font-extrabold uppercase text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
@@ -461,14 +461,14 @@ export function Footer() {
         {renderedBand}
 
         {/* Logo above link columns */}
-        <div className="border-t border-slate-200/80 pt-4 pb-2">
-          <Link href="/" className="flex items-center group">
+        <div className="border-t border-slate-200/80 pt-6 pb-2">
+          <Link href="/" className="inline-flex items-center group">
             <Image
-              src="/myhitch-connect/logo-horizontal.png"
+              src="/myhitch-connect/logo-stacked.png"
               alt="MYHitch Connect"
-              width={620}
+              width={200}
               height={200}
-              className="h-12 w-auto object-contain transition-opacity duration-200 group-hover:opacity-80"
+              className="h-16 w-auto object-contain transition-opacity duration-200 group-hover:opacity-80"
             />
           </Link>
         </div>

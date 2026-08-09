@@ -140,8 +140,8 @@ export default function AboutUsPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="p-6 rounded-3xl bg-white border border-slate-200/80 shadow-xs space-y-3 hover:border-brand transition-all hover:shadow-xl hover:shadow-blue-500/10">
-                <div className="h-12 w-12 rounded-2xl bg-brand-light text-brand border border-brand/30 flex items-center justify-center">
-                  <IconShieldCheck className="h-6 w-6" />
+                <div className="h-12 w-12 rounded-2xl bg-linear-to-br from-[#35c6e6] via-[#24a1dc] to-brand-dark text-white flex items-center justify-center shadow-md shadow-blue-500/25">
+                  <IconShieldCheck className="h-6 w-6 text-white" />
                 </div>
                 <h3 className="font-extrabold text-base text-slate-900">1. Licence Verification</h3>
                 <p className="text-xs text-slate-500 leading-relaxed">
@@ -150,8 +150,8 @@ export default function AboutUsPage() {
               </div>
 
               <div className="p-6 rounded-3xl bg-white border border-slate-200/80 shadow-xs space-y-3 hover:border-brand transition-all hover:shadow-xl hover:shadow-blue-500/10">
-                <div className="h-12 w-12 rounded-2xl bg-brand-light text-brand border border-brand/30 flex items-center justify-center">
-                  <IconUserCheck className="h-6 w-6" />
+                <div className="h-12 w-12 rounded-2xl bg-linear-to-br from-[#35c6e6] via-[#24a1dc] to-brand-dark text-white flex items-center justify-center shadow-md shadow-blue-500/25">
+                  <IconUserCheck className="h-6 w-6 text-white" />
                 </div>
                 <h3 className="font-extrabold text-base text-slate-900">2. Insurance Compliance</h3>
                 <p className="text-xs text-slate-500 leading-relaxed">
@@ -160,8 +160,8 @@ export default function AboutUsPage() {
               </div>
 
               <div className="p-6 rounded-3xl bg-white border border-slate-200/80 shadow-xs space-y-3 hover:border-brand transition-all hover:shadow-xl hover:shadow-blue-500/10">
-                <div className="h-12 w-12 rounded-2xl bg-brand-light text-brand border border-brand/30 flex items-center justify-center">
-                  <IconStar className="h-6 w-6" />
+                <div className="h-12 w-12 rounded-2xl bg-linear-to-br from-[#35c6e6] via-[#24a1dc] to-brand-dark text-white flex items-center justify-center shadow-md shadow-blue-500/25">
+                  <IconStar className="h-6 w-6 text-white" />
                 </div>
                 <h3 className="font-extrabold text-base text-slate-900">3. Authentic Reviews</h3>
                 <p className="text-xs text-slate-500 leading-relaxed">
@@ -170,8 +170,8 @@ export default function AboutUsPage() {
               </div>
 
               <div className="p-6 rounded-3xl bg-white border border-slate-200/80 shadow-xs space-y-3 hover:border-brand transition-all hover:shadow-xl hover:shadow-blue-500/10">
-                <div className="h-12 w-12 rounded-2xl bg-brand-light text-brand border border-brand/30 flex items-center justify-center">
-                  <IconClock className="h-6 w-6" />
+                <div className="h-12 w-12 rounded-2xl bg-linear-to-br from-[#35c6e6] via-[#24a1dc] to-brand-dark text-white flex items-center justify-center shadow-md shadow-blue-500/25">
+                  <IconClock className="h-6 w-6 text-white" />
                 </div>
                 <h3 className="font-extrabold text-base text-slate-900">4. Fast Direct Booking</h3>
                 <p className="text-xs text-slate-500 leading-relaxed">
