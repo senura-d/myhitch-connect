@@ -67,7 +67,7 @@ export default function SearchPage() {
         <section className="relative overflow-hidden text-slate-900 py-14 lg:py-16 bg-white border-b border-slate-200/80">
           <HeroBackdrop
             images={[
-              "/myhitch-connect/search-hero-backdrop.png",
+              "/search-hero-backdrop.png",
             ]}
           />
 

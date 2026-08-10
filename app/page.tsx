@@ -97,15 +97,21 @@ export default function Home() {
 
       <main className="flex-1 overflow-x-clip">
         {/* HERO — photographic backdrop */}
-        <section className="relative flex min-h-[85vh] lg:min-h-[88vh] flex-col justify-center overflow-hidden px-4 sm:px-6 lg:px-8 py-16 lg:py-24 text-slate-900 bg-white">
+        <section className="relative flex min-h-[85vh] lg:min-h-[88vh] flex-col justify-center overflow-hidden px-4 sm:px-6 lg:px-8 pt-10 sm:pt-12 lg:pt-16 pb-16 lg:pb-24 text-slate-900 bg-white">
           <HeroBackdrop />
 
           <div className="container relative z-10 mx-auto max-w-7xl">
-            <div className="max-w-2xl text-left space-y-6">
-              {/* Badge Tag */}
-              <div className="inline-flex items-center gap-2 rounded-full bg-brand/10 backdrop-blur-md px-4 py-1.5 text-xs font-bold text-brand border border-brand/20 shadow-xs">
-                <IconSparkles className="h-4 w-4 text-brand" />
-                <span>Verified Trade Professionals, Consultants & Experts</span>
+            <div className="max-w-2xl text-left space-y-5 sm:space-y-6">
+              {/* Hero Brand Logo */}
+              <div className="inline-block -mt-4 sm:-mt-6 lg:-mt-10 mb-1 sm:mb-2">
+                <Image
+                  src="/logo-stacked.png"
+                  alt="MYHitch Connect Logo"
+                  width={300}
+                  height={160}
+                  className="h-20 sm:h-24 md:h-28 lg:h-32 w-auto object-contain drop-shadow-xs"
+                  priority
+                />
               </div>
 
               {/* Heading */}

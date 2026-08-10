@@ -57,7 +57,7 @@ export default function CustomerDashboardLayout({
         <div className="space-y-8">
           <Link href="/" className="flex items-center">
             <Image
-              src="/myhitch-connect/logo-horizontal.png"
+              src="/logo-horizontal.png"
               alt="MYHitch Connect"
               width={620}
               height={200}

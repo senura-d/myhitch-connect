@@ -51,7 +51,7 @@ export default function CategoryIndexPage() {
         <section className="relative overflow-hidden text-slate-900 py-14 lg:py-16 bg-white border-b border-slate-200/80">
           <HeroBackdrop
             images={[
-              "/myhitch-connect/category-hero-backdrop.png",
+              "/category-hero-backdrop.png",
             ]}
           />
 

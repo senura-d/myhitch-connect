@@ -464,7 +464,7 @@ export function Footer() {
         <div className="border-t border-slate-200/80 pt-6 pb-2">
           <Link href="/" className="inline-flex items-center group">
             <Image
-              src="/myhitch-connect/logo-stacked.png"
+              src="/logo-stacked.png"
               alt="MYHitch Connect"
               width={200}
               height={200}

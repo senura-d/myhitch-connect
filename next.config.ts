@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/myhitch-connect",
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH || "",
   compress: true,
   experimental: {
     // Tree-shakes @tabler/icons-react so only the icons you import are bundled

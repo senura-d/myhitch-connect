@@ -29,7 +29,7 @@ export default function AboutUsPage() {
         <section className="relative overflow-hidden text-slate-900 py-14 lg:py-16 bg-white border-b border-slate-200/80">
           <HeroBackdrop
             images={[
-              "/myhitch-connect/about-hero-backdrop.png",
+              "/about-hero-backdrop.png",
             ]}
           />
 

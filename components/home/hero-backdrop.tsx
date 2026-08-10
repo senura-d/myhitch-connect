@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 
 const DEFAULT_IMAGES = [
-  "/myhitch-connect/hero-backdrop.png",
+  "/hero-backdrop.png",
 ];
 
 export function HeroBackdrop({
@@ -13,7 +13,7 @@ export function HeroBackdrop({
   images?: string[];
   dim?: number;
 }) {
-  const imgSrc = images[0] || "/myhitch-connect/hero-backdrop.png";
+  const imgSrc = images[0] || "/hero-backdrop.png";
 
   return (
     <div aria-hidden="true" className="absolute inset-0 z-0 overflow-hidden bg-white">

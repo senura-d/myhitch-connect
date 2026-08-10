@@ -76,7 +76,7 @@ export default function ContactUsPage() {
         <section className="relative overflow-hidden text-slate-900 py-16 lg:py-20 bg-white border-b border-slate-200/80">
           <HeroBackdrop
             images={[
-              "/myhitch-connect/contact-hero-backdrop.png",
+              "/contact-hero-backdrop.png",
             ]}
           />
 

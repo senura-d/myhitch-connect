@@ -134,7 +134,7 @@ export function LoadingAnimation({
         >
           <div className={cn("relative flex items-center justify-center", current.logoClass)}>
             <Image
-              src="/myhitch-connect/logo-stacked.png"
+              src="/logo-stacked.png"
               alt="MYHitch Connect"
               width={current.logo}
               height={current.logo}
