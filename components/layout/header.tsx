@@ -53,38 +53,38 @@ export function Header() {
         </Link>
 
         {/* Desktop Navigation - ORDER: Home -> Explore Services -> Search Providers -> About Us -> Contact Us -> Dashboard (if logged in) */}
-        <nav className="hidden xl:flex shrink-0 items-center gap-3.5 2xl:gap-5 whitespace-nowrap">
+        <nav className="hidden xl:flex shrink-0 items-center gap-6 2xl:gap-8 whitespace-nowrap">
           {/* 1. Home */}
           <Link
             href="/"
-            className="flex items-center gap-1.5 text-xs md:text-[13px] font-semibold text-black hover:text-brand transition-colors"
+            className="flex items-center gap-2 text-xs md:text-[13px] 2xl:text-sm font-semibold text-black hover:text-brand transition-colors px-1 py-1"
           >
-            <IconHome className="h-3.5 w-3.5 text-brand" />
+            <IconHome className="h-4 w-4 text-brand" />
             <span>Home</span>
           </Link>
 
           {/* 2. Explore Services — goes straight to the category hub */}
           <Link
             href="/category"
-            className="flex items-center gap-1.5 text-xs md:text-[13px] font-semibold text-black hover:text-brand transition-colors"
+            className="flex items-center gap-2 text-xs md:text-[13px] 2xl:text-sm font-semibold text-black hover:text-brand transition-colors px-1 py-1"
           >
-            <IconLayoutGrid className="h-3.5 w-3.5 text-brand" />
+            <IconLayoutGrid className="h-4 w-4 text-brand" />
             <span>Explore Services</span>
           </Link>
 
           {/* 3. Search Providers */}
           <Link
             href="/search"
-            className="flex items-center gap-1.5 text-xs md:text-[13px] font-semibold text-black hover:text-brand transition-colors"
+            className="flex items-center gap-2 text-xs md:text-[13px] 2xl:text-sm font-semibold text-black hover:text-brand transition-colors px-1 py-1"
           >
-            <IconSearch className="h-3.5 w-3.5 text-brand" />
+            <IconSearch className="h-4 w-4 text-brand" />
             <span>Search Providers</span>
           </Link>
 
           {/* 4. About Us */}
           <Link
             href="/about"
-            className="text-xs md:text-[13px] font-semibold text-black hover:text-brand transition-colors"
+            className="text-xs md:text-[13px] 2xl:text-sm font-semibold text-black hover:text-brand transition-colors px-1 py-1"
           >
             <span>About Us</span>
           </Link>
@@ -92,7 +92,7 @@ export function Header() {
           {/* 5. Contact Us */}
           <Link
             href="/contact"
-            className="text-xs md:text-[13px] font-semibold text-black hover:text-brand transition-colors"
+            className="text-xs md:text-[13px] 2xl:text-sm font-semibold text-black hover:text-brand transition-colors px-1 py-1"
           >
             <span>Contact Us</span>
           </Link>
