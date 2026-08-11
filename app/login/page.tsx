@@ -27,6 +27,7 @@ import {
   IconHome,
 } from "@tabler/icons-react";
 import type { Role } from "@/types/user";
+import { assetPath } from "@/lib/asset-path";
 
 type SignupRole = Exclude<Role, "admin">;
 
@@ -106,7 +107,7 @@ function LoginPageInner() {
       <div className="relative hidden lg:flex lg:col-span-6 flex-col justify-between p-10 overflow-hidden bg-slate-900 text-white">
         {/* Backdrop Image - Positioned to show the right side (person on laptop & digital nodes) */}
         <Image
-          src="/login-hero-backdrop.png"
+          src={assetPath("/login-hero-backdrop.png")}
           alt="MYHitch Connect"
           fill
           priority
@@ -121,7 +122,7 @@ function LoginPageInner() {
         {/* Top Header */}
         <Link href="/" className="relative z-10 inline-flex items-center">
           <Image
-            src="/logo-horizontal-white.png"
+            src={assetPath("/logo-horizontal-white.png")}
             alt="MYHitch Connect"
             width={620}
             height={200}

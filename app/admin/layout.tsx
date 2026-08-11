@@ -19,6 +19,7 @@ import {
   IconHome,
 } from "@tabler/icons-react";
 import { NotificationBell } from "@/components/ui/notification-panel";
+import { assetPath } from "@/lib/asset-path";
 
 const NAV = [
   { href: "/admin", label: "Admin Overview", icon: IconLayoutDashboard },
@@ -57,7 +58,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
         <div className="space-y-8">
           <Link href="/" className="flex items-center">
             <Image
-              src="/logo-horizontal.png"
+              src={assetPath("/logo-horizontal.png")}
               alt="MYHitch Connect"
               width={620}
               height={200}

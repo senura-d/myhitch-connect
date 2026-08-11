@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import { assetPath } from "@/lib/asset-path";
 
 const DEFAULT_IMAGES = [
   "/hero-backdrop.png",
@@ -13,7 +14,9 @@ export function HeroBackdrop({
   images?: string[];
   dim?: number;
 }) {
-  const imgSrc = images[0] || "/hero-backdrop.png";
+  // Callers pass plain "/foo.png"; the basePath is applied here so every page
+  // using this component stays correct on GitHub Pages.
+  const imgSrc = assetPath(images[0] || "/hero-backdrop.png");
 
   return (
     <div aria-hidden="true" className="absolute inset-0 z-0 overflow-hidden bg-white">

@@ -29,6 +29,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { useSession } from "@/lib/mock-api/session";
+import { assetPath } from "@/lib/asset-path";
 
 
 export function Header() {
@@ -43,7 +44,7 @@ export function Header() {
         {/* Brand Logo */}
         <Link href="/" className="flex shrink-0 items-center group">
           <Image
-            src="/logo-stacked.png"
+            src={assetPath("/logo-stacked.png")}
             alt="MYHitch Connect"
             width={200}
             height={200}

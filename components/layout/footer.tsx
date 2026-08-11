@@ -22,6 +22,7 @@ import {
   IconArrowRight,
   IconArrowUpRight,
 } from "@tabler/icons-react";
+import { assetPath } from "@/lib/asset-path";
 
 const SERVICE_CATEGORIES = [
   { href: "/category/home-trade-services", label: "Home & Trade Services" },
@@ -464,7 +465,7 @@ export function Footer() {
         <div className="border-t border-slate-200/80 pt-6 pb-2">
           <Link href="/" className="inline-flex items-center group">
             <Image
-              src="/logo-stacked.png"
+              src={assetPath("/logo-stacked.png")}
               alt="MYHitch Connect"
               width={200}
               height={200}

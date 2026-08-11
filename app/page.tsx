@@ -34,6 +34,7 @@ import {
   IconCheck,
   IconCircleDot,
 } from "@tabler/icons-react";
+import { assetPath } from "@/lib/asset-path";
 
 const SERVICE_IMAGES: Record<string, string> = {
   "st-plumbing-repair": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=75",
@@ -105,7 +106,7 @@ export default function Home() {
               {/* Hero Brand Logo */}
               <div className="inline-block -mt-4 sm:-mt-6 lg:-mt-10 mb-1 sm:mb-2">
                 <Image
-                  src="/logo-stacked.png"
+                  src={assetPath("/logo-stacked.png")}
                   alt="MYHitch Connect Logo"
                   width={300}
                   height={160}

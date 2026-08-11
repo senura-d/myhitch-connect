@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import { assetPath } from "@/lib/asset-path";
 
 interface LoadingAnimationProps extends React.HTMLAttributes<HTMLDivElement> {
   size?: "sm" | "md" | "lg";
@@ -134,7 +135,7 @@ export function LoadingAnimation({
         >
           <div className={cn("relative flex items-center justify-center", current.logoClass)}>
             <Image
-              src="/logo-stacked.png"
+              src={assetPath("/logo-stacked.png")}
               alt="MYHitch Connect"
               width={current.logo}
               height={current.logo}

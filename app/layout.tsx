@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { AppProviders } from "./providers";
+import { assetPath } from "@/lib/asset-path";
 import { Plus_Jakarta_Sans, Space_Mono } from "next/font/google";
 
 const plusJakarta = Plus_Jakarta_Sans({
@@ -26,9 +27,11 @@ export const metadata: Metadata = {
   },
   description:
     "MYHitch Connect is a marketplace connecting customers with professional, personal, commercial and community service providers.",
+  // Metadata icon hrefs are emitted verbatim — basePath is not applied — so
+  // they need the same prefix as the images.
   icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-icon.png",
+    icon: assetPath("/favicon.ico"),
+    apple: assetPath("/apple-icon.png"),
   },
 };
 
